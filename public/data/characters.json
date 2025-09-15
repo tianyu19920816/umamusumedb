@@ -8,7 +8,7 @@
     "skills": "[\"Eating Machine\",\"Victory Equation\",\"Sprint Turbo\",\"Front Runner\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":0,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"F\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"C\"}",
-    "image_url": "/images/characters/special_week.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/special_week.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -21,7 +21,7 @@
     "skills": "[\"Escape Artist\",\"Concentration\",\"Leading Pride\",\"Speedster\"]",
     "growth_rates": "{\"speed\":20,\"stamina\":0,\"power\":0,\"guts\":0,\"wisdom\":10}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"E\",\"chase\":\"D\"}",
-    "image_url": "/images/characters/silence_suzuka.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/silence_suzuka.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -34,7 +34,7 @@
     "skills": "[\"Miracle Run\",\"Victory Aura\",\"Emperor Step\",\"Never Give Up\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":10,\"power\":0,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"E\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"C\"}",
-    "image_url": "/images/characters/tokai_teio.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/tokai_teio.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -47,7 +47,7 @@
     "skills": "[\"Long Distance Runner\",\"Pride of Mejiro\",\"Stamina Eater\",\"Endurance\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":20,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
-    "image_url": "/images/characters/mejiro_mcqueen.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/mejiro_mcqueen.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -60,7 +60,7 @@
     "skills": "[\"Unpredictable\",\"Golden Spirit\",\"Wild Intuition\",\"Stamina Keep\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":10,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"F\",\"lead\":\"E\",\"between\":\"C\",\"chase\":\"A\"}",
-    "image_url": "/images/characters/gold_ship.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/gold_ship.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -73,7 +73,7 @@
     "skills": "[\"Fierce Rivalry\",\"Power Charge\",\"Strong Heart\",\"Determination\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":0,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"B\"}",
-    "image_url": "/images/characters/vodka.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/vodka.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -86,7 +86,7 @@
     "skills": "[\"Scarlet Acceleration\",\"Front Runner\",\"Speed Star\",\"Concentration\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":0,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"D\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
-    "image_url": "/images/characters/daiwa_scarlet.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/daiwa_scarlet.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -99,7 +99,7 @@
     "skills": "[\"Wonder Charge\",\"Recovery\",\"All-rounder\",\"Focus\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":10,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"F\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"F\",\"between\":\"A\",\"chase\":\"A\"}",
-    "image_url": "/images/characters/grass_wonder.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/grass_wonder.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -112,7 +112,7 @@
     "skills": "[\"Condor Flight\",\"Speed Machine\",\"Dirt Master\",\"Acceleration\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":0,\"power\":10,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"F\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
-    "image_url": "/images/characters/el_condor_pasa.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/el_condor_pasa.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -125,7 +125,7 @@
     "skills": "[\"Gray Monster\",\"Late Charge\",\"Power Break\",\"Fighting Spirit\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":0,\"power\":20,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"A\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"F\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
-    "image_url": "/images/characters/oguri_cap.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/oguri_cap.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -138,7 +138,7 @@
     "skills": "[\"Emperor Authority\",\"Stamina Master\",\"Leading Edge\",\"Precision\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":15,\"power\":5,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"F\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"C\"}",
-    "image_url": "/images/characters/symboli_rudolf.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/symboli_rudolf.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -151,7 +151,7 @@
     "skills": "[\"Super Car\",\"Speed Limit Break\",\"Quick Start\",\"Speedster\"]",
     "growth_rates": "{\"speed\":20,\"stamina\":0,\"power\":0,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"E\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"E\",\"chase\":\"G\"}",
-    "image_url": "/images/characters/maruzensky.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/maruzensky.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -164,7 +164,7 @@
     "skills": "[\"Miracle Sprint\",\"Speed Burst\",\"Quick Feet\",\"Concentration\"]",
     "growth_rates": "{\"speed\":15,\"stamina\":0,\"power\":5,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"F\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
-    "image_url": "/images/characters/fuji_kiseki.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/fuji_kiseki.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -177,7 +177,7 @@
     "skills": "[\"Bakushin Sprint\",\"Sprint Specialist\",\"Quick Dash\",\"Acceleration\"]",
     "growth_rates": "{\"speed\":20,\"stamina\":0,\"power\":0,\"guts\":0,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"A\",\"mile\":\"C\",\"medium\":\"F\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"E\",\"chase\":\"G\"}",
-    "image_url": "/images/characters/sakura_bakushin_o.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/sakura_bakushin_o.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -190,7 +190,7 @@
     "skills": "[\"Never Give Up\",\"Persistence\",\"Crowd Favorite\",\"Fighting Spirit\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":0,\"power\":0,\"guts\":15,\"wisdom\":5}",
     "aptitudes": "{\"turf\":\"G\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"D\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"C\"}",
-    "image_url": "/images/characters/haru_urara.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/haru_urara.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -203,7 +203,7 @@
     "skills": "[\"Bronze Collector\",\"Third Place Expert\",\"Steady Pace\",\"Endurance\"]",
     "growth_rates": "{\"speed\":0,\"stamina\":10,\"power\":0,\"guts\":10,\"wisdom\":0}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
-    "image_url": "/images/characters/nice_nature.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/nice_nature.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   },
@@ -216,7 +216,7 @@
     "skills": "[\"Short Temper\",\"Speed Up\",\"Focus\",\"Quick Recovery\"]",
     "growth_rates": "{\"speed\":10,\"stamina\":0,\"power\":5,\"guts\":0,\"wisdom\":5}",
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"C\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"B\"}",
-    "image_url": "/images/characters/king_halo.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/characters/king_halo.png",
     "created_at": "2025-09-11 08:46:26",
     "updated_at": "2025-09-11 08:46:26"
   }

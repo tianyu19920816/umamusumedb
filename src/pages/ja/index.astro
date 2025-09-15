@@ -1,0 +1,276 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import HeaderJa from '@/components/HeaderJa.astro';
+import CharacterCard from '@/components/CharacterCard';
+import SupportCardCard from '@/components/SupportCardCard';
+import { characters, supportCards, getTierListByCategory } from '@/lib/static-content';
+import { Search, Filter, TrendingUp, Users, Star, Trophy, ChevronRight, Sparkles } from 'lucide-react';
+
+// Get featured content
+const featuredCharacters = characters.slice(0, 6);
+const featuredCards = supportCards.filter(card => card.rarity === 'SSR').slice(0, 6);
+const topTierCharacters = getTierListByCategory('overall')
+  .filter(item => item.item_type === 'character' && ['SS', 'S'].includes(item.tier))
+  .slice(0, 4);
+---
+
+<Layout title="ウマ娘DB - ウマ娘プリティーダービー完全データベース">
+  <HeaderJa />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-uma-primary via-uma-secondary to-uma-accent py-20">
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center text-white max-w-4xl mx-auto">
+          <h1 class="text-5xl md:text-6xl font-display mb-6 animate-fade-in">
+            ウマ娘データベース
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 opacity-90">
+            キャラクター、サポートカード、攻略情報の完全ガイド
+          </p>
+          
+          <!-- Main Search Bar -->
+          <div class="relative max-w-2xl mx-auto">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-gray-400" />
+            <input
+              type="text"
+              id="main-search"
+              placeholder="キャラクターやカードを検索..."
+              class="w-full pl-14 pr-6 py-4 rounded-full text-lg text-gray-900 bg-white shadow-2xl focus:outline-none focus:ring-4 focus:ring-uma-accent/50"
+            />
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="grid grid-cols-3 gap-4 mt-12 max-w-lg mx-auto">
+            <div class="glass rounded-lg p-4">
+              <div class="text-3xl font-bold">{characters.length}</div>
+              <div class="text-sm opacity-90">キャラクター</div>
+            </div>
+            <div class="glass rounded-lg p-4">
+              <div class="text-3xl font-bold">{supportCards.length}</div>
+              <div class="text-sm opacity-90">サポートカード</div>
+            </div>
+            <div class="glass rounded-lg p-4">
+              <div class="text-3xl font-bold">30+</div>
+              <div class="text-sm opacity-90">スキル</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-6">
+          <a href="/ja/characters" class="group glass rounded-xl p-6 hover:shadow-xl transition-shadow">
+            <Users className="w-10 h-10 text-uma-primary mb-3" />
+            <h3 class="font-display text-lg mb-2">キャラクター</h3>
+            <p class="text-sm text-gray-600">全ウマ娘のステータスと育成情報</p>
+            <ChevronRight className="w-5 h-5 text-uma-primary mt-3 group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <a href="/ja/cards" class="group glass rounded-xl p-6 hover:shadow-xl transition-shadow">
+            <Sparkles className="w-10 h-10 text-uma-secondary mb-3" />
+            <h3 class="font-display text-lg mb-2">サポートカード</h3>
+            <p class="text-sm text-gray-600">効果とスキル情報</p>
+            <ChevronRight className="w-5 h-5 text-uma-secondary mt-3 group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <a href="/ja/tier-list" class="group glass rounded-xl p-6 hover:shadow-xl transition-shadow">
+            <Trophy className="w-10 h-10 text-uma-accent mb-3" />
+            <h3 class="font-display text-lg mb-2">ティアリスト</h3>
+            <p class="text-sm text-gray-600">最新のランキング評価</p>
+            <ChevronRight className="w-5 h-5 text-uma-accent mt-3 group-hover:translate-x-1 transition-transform" />
+          </a>
+          
+          <a href="/ja/guides" class="group glass rounded-xl p-6 hover:shadow-xl transition-shadow">
+            <Star className="w-10 h-10 text-yellow-500 mb-3" />
+            <h3 class="font-display text-lg mb-2">攻略ガイド</h3>
+            <p class="text-sm text-gray-600">育成のコツと戦略</p>
+            <ChevronRight className="w-5 h-5 text-yellow-500 mt-3 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Content Tabs -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-display gradient-text mb-8 text-center">注目コンテンツ</h2>
+        
+        <!-- Tab Navigation -->
+        <div class="flex justify-center mb-8">
+          <div class="inline-flex rounded-lg glass p-1">
+            <button class="tab-btn active" data-tab="characters">キャラクター</button>
+            <button class="tab-btn" data-tab="support-cards">サポートカード</button>
+            <button class="tab-btn" data-tab="tier-list">ティアリスト</button>
+          </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab-content">
+          <!-- Characters Tab -->
+          <div class="tab-content active" id="characters-tab">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredCharacters.map((character) => (
+                <CharacterCard character={character} client:load />
+              ))}
+            </div>
+            <div class="text-center mt-8">
+              <a href="/ja/characters" class="btn-primary">
+                全キャラクターを見る
+              </a>
+            </div>
+          </div>
+
+          <!-- Support Cards Tab -->
+          <div class="tab-content" id="support-cards-tab">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {featuredCards.map((card) => (
+                <SupportCardCard card={card} client:load />
+              ))}
+            </div>
+            <div class="text-center mt-8">
+              <a href="/ja/cards" class="btn-primary">
+                全サポートカードを見る
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier List Tab -->
+          <div class="tab-content" id="tier-list-tab">
+            <div class="glass rounded-xl p-6">
+              <h3 class="text-xl font-display mb-4">トップティアキャラクター</h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                {topTierCharacters.map((item: any) => (
+                  <div class="flex items-center justify-between p-4 bg-white rounded-lg">
+                    <div>
+                      <span class={`tier-badge tier-${item.tier.toLowerCase()} px-2 py-1 rounded text-xs font-bold mr-2`}>
+                        {item.tier}
+                      </span>
+                      <span class="font-semibold">{item.item_name}</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-green-500" />
+                      <span class="text-sm text-gray-600">{item.votes} 票</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div class="text-center mt-6">
+                <a href="/ja/tier-list" class="btn-secondary">
+                  完全なティアリストを見る
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Filters Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="glass rounded-xl p-6">
+          <h3 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Filter className="w-5 h-5 text-uma-primary" />
+            詳細検索
+          </h3>
+          
+          <div class="grid md:grid-cols-4 gap-4">
+            <select class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white">
+              <option>全タイプ</option>
+              <option>スピード</option>
+              <option>スタミナ</option>
+              <option>パワー</option>
+              <option>根性</option>
+              <option>賢さ</option>
+            </select>
+            
+            <select class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white">
+              <option>全レアリティ</option>
+              <option>SSR</option>
+              <option>SR</option>
+              <option>R</option>
+            </select>
+            
+            <select class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white">
+              <option>全距離</option>
+              <option>短距離</option>
+              <option>マイル</option>
+              <option>中距離</option>
+              <option>長距離</option>
+            </select>
+            
+            <button class="btn-primary">
+              検索
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .tab-btn {
+      @apply px-6 py-2 rounded-lg font-medium transition-all;
+      @apply hover:bg-uma-primary/10;
+    }
+    
+    .tab-btn.active {
+      @apply bg-gradient-to-r from-uma-primary to-uma-secondary text-white;
+    }
+    
+    .tab-content {
+      @apply hidden;
+    }
+    
+    .tab-content.active {
+      @apply block;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out;
+    }
+  </style>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabName = btn.getAttribute('data-tab');
+        
+        // Update button states
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update content visibility
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        document.getElementById(`${tabName}-tab`)?.classList.add('active');
+      });
+    });
+
+    // Main search functionality
+    const searchInput = document.getElementById('main-search') as HTMLInputElement;
+    searchInput?.addEventListener('input', (e) => {
+      const query = (e.target as HTMLInputElement).value.toLowerCase();
+      // ここで検索ロジックを実装
+      console.log('検索中:', query);
+    });
+  </script>
+</Layout>

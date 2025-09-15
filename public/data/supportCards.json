@@ -8,7 +8,7 @@
     "effects": "{\"speed_bonus\":10,\"friendship_bonus\":35,\"training_bonus\":15,\"motivation_bonus\":5,\"skill_pt_bonus\":35}",
     "skills": "[\"Arc Maestro\",\"Speedster\",\"Concentration\",\"Quick Feet\",\"Leading Edge\"]",
     "events": "[\"Training Together\",\"Race Strategy Discussion\",\"Special Training\"]",
-    "image_url": "/images/support_cards/kitasan_black_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/kitasan_black_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -20,7 +20,7 @@
     "effects": "{\"speed_bonus\":12,\"power_bonus\":3,\"training_bonus\":10,\"skill_pt_bonus\":30,\"race_bonus\":5}",
     "skills": "[\"Sprint Gear\",\"Quick Start\",\"Speed Burst\",\"Acceleration\",\"Sprint Turbo\"]",
     "events": "[\"Beach Training\",\"Summer Festival\",\"Speed Challenge\"]",
-    "image_url": "/images/support_cards/sakura_bakushin_o_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/sakura_bakushin_o_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -32,7 +32,7 @@
     "effects": "{\"speed_bonus\":15,\"training_bonus\":5,\"friendship_bonus\":30,\"hint_level_bonus\":2,\"skill_pt_bonus\":25}",
     "skills": "[\"Escape Artist\",\"Speedster\",\"Leading Pride\",\"Position Keep\",\"Quick Escape\"]",
     "events": "[\"Turbo Training\",\"Engine Check\",\"Full Speed Ahead\"]",
-    "image_url": "/images/support_cards/twin_turbo_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/twin_turbo_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -44,7 +44,7 @@
     "effects": "{\"stamina_bonus\":12,\"friendship_bonus\":32,\"motivation_bonus\":5,\"recovery_bonus\":10,\"skill_pt_bonus\":30}",
     "skills": "[\"Circle Recovery\",\"Pacer\",\"Stamina Keep\",\"Recovery\",\"Long Runner\"]",
     "events": "[\"Relaxation Time\",\"Stamina Building\",\"Mental Training\"]",
-    "image_url": "/images/support_cards/super_creek_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/super_creek_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -56,7 +56,7 @@
     "effects": "{\"stamina_bonus\":10,\"wisdom_bonus\":5,\"friendship_bonus\":35,\"skill_pt_bonus\":35,\"training_bonus\":10}",
     "skills": "[\"Stamina Eater\",\"Long Distance Master\",\"Pride of Mejiro\",\"Endurance\",\"Nutrition Management\"]",
     "events": "[\"Tea Time\",\"Elegant Training\",\"Family Pride\"]",
-    "image_url": "/images/support_cards/mejiro_mcqueen_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/mejiro_mcqueen_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -68,7 +68,7 @@
     "effects": "{\"power_bonus\":15,\"guts_bonus\":3,\"training_bonus\":15,\"friendship_bonus\":25,\"skill_pt_bonus\":30}",
     "skills": "[\"Power Charge\",\"Muscle Training\",\"Strong Impact\",\"Power Break\",\"Fighting Spirit\"]",
     "events": "[\"Weight Training\",\"Power Building\",\"Strength Test\"]",
-    "image_url": "/images/support_cards/yayoi_akikawa_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/yayoi_akikawa_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -80,7 +80,7 @@
     "effects": "{\"power_bonus\":12,\"stamina_bonus\":5,\"training_bonus\":10,\"race_bonus\":10,\"skill_pt_bonus\":35}",
     "skills": "[\"Gray Monster\",\"Power Break\",\"Strong Heart\",\"Late Charge\",\"All-out\"]",
     "events": "[\"Eating Contest\",\"Power Training\",\"Food Festival\"]",
-    "image_url": "/images/support_cards/oguri_cap_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/oguri_cap_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -92,7 +92,7 @@
     "effects": "{\"guts_bonus\":12,\"power_bonus\":5,\"friendship_bonus\":30,\"skill_pt_bonus\":35,\"training_bonus\":10}",
     "skills": "[\"Never Give Up\",\"Determination\",\"Fighting Spirit\",\"Mental Strength\",\"Guts Up\"]",
     "events": "[\"Mental Training\",\"Courage Building\",\"Will Power Test\"]",
-    "image_url": "/images/support_cards/gold_city_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/gold_city_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -104,7 +104,7 @@
     "effects": "{\"wisdom_bonus\":12,\"speed_bonus\":3,\"skill_pt_bonus\":40,\"friendship_bonus\":25,\"hint_level_bonus\":3}",
     "skills": "[\"Practice Partner\",\"Wisdom Eye\",\"Analysis\",\"Strategy Planning\",\"Race Reading\"]",
     "events": "[\"Strategy Meeting\",\"Data Analysis\",\"Race Planning\"]",
-    "image_url": "/images/support_cards/fine_motion_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/fine_motion_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -116,7 +116,7 @@
     "effects": "{\"wisdom_bonus\":15,\"training_bonus\":10,\"skill_pt_bonus\":35,\"motivation_bonus\":5,\"friendship_bonus\":20}",
     "skills": "[\"Perfect Planning\",\"Strategic Mind\",\"Calculation\",\"Efficiency Expert\",\"Data Driven\"]",
     "events": "[\"Planning Session\",\"Schedule Management\",\"Optimization Training\"]",
-    "image_url": "/images/support_cards/mejiro_dober_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/mejiro_dober_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -128,7 +128,7 @@
     "effects": "{\"all_stats_bonus\":5,\"friendship_bonus\":40,\"motivation_bonus\":10,\"skill_pt_bonus\":30,\"training_bonus\":10}",
     "skills": "[\"Friendship Power\",\"Team Spirit\",\"Mutual Support\",\"Bonds of Trust\",\"Together\"]",
     "events": "[\"Team Building\",\"Friendship Training\",\"Bond Strengthening\"]",
-    "image_url": "/images/support_cards/mr_cb_ssr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/mr_cb_ssr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -140,7 +140,7 @@
     "effects": "{\"power_bonus\":8,\"stamina_bonus\":4,\"training_bonus\":5,\"skill_pt_bonus\":20}",
     "skills": "[\"Power Charge\",\"Strong Heart\",\"Rivalry\",\"Determination\"]",
     "events": "[\"Rivalry Training\",\"Competition\"]",
-    "image_url": "/images/support_cards/vodka_sr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/vodka_sr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -152,7 +152,7 @@
     "effects": "{\"speed_bonus\":8,\"power_bonus\":3,\"friendship_bonus\":20,\"skill_pt_bonus\":25}",
     "skills": "[\"Eating Machine\",\"Sprint Turbo\",\"Quick Recovery\"]",
     "events": "[\"Lunch Time\",\"Academy Life\"]",
-    "image_url": "/images/support_cards/special_week_sr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/special_week_sr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -164,7 +164,7 @@
     "effects": "{\"stamina_bonus\":9,\"guts_bonus\":3,\"training_bonus\":8,\"skill_pt_bonus\":20}",
     "skills": "[\"Unpredictable\",\"Stamina Keep\",\"Wild Intuition\"]",
     "events": "[\"Chaos Training\",\"Random Event\"]",
-    "image_url": "/images/support_cards/gold_ship_sr.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/gold_ship_sr.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -176,7 +176,7 @@
     "effects": "{\"guts_bonus\":6,\"stamina_bonus\":2,\"friendship_bonus\":15,\"skill_pt_bonus\":10}",
     "skills": "[\"Never Give Up\",\"Persistence\"]",
     "events": "[\"Cheerful Training\"]",
-    "image_url": "/images/support_cards/haru_urara_r.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/haru_urara_r.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -188,7 +188,7 @@
     "effects": "{\"wisdom_bonus\":6,\"speed_bonus\":2,\"skill_pt_bonus\":15,\"training_bonus\":3}",
     "skills": "[\"Bronze Collector\",\"Steady Pace\"]",
     "events": "[\"Third Place Training\"]",
-    "image_url": "/images/support_cards/nice_nature_r.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/nice_nature_r.png",
     "created_at": "2025-09-11 08:47:45"
   },
   {
@@ -200,7 +200,7 @@
     "effects": "{\"speed_bonus\":5,\"power_bonus\":3,\"skill_pt_bonus\":10,\"friendship_bonus\":10}",
     "skills": "[\"Short Temper\",\"Speed Up\"]",
     "events": "[\"Mood Training\"]",
-    "image_url": "/images/support_cards/king_halo_r.png",
+    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/images/support-cards/king_halo_r.png",
     "created_at": "2025-09-11 08:47:45"
   }
 ]

@@ -1,0 +1,242 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import { supportCards } from '@/lib/static-content';
+import { Star, Zap, Heart, Brain, Shield, Sparkles, Users, TrendingUp, Award } from 'lucide-react';
+
+export function getStaticPaths() {
+  return supportCards.map((card) => ({
+    params: { id: card.id },
+    props: { card },
+  }));
+}
+
+const { card } = Astro.props;
+
+// Type colors and icons
+const typeConfig = {
+  speed: { color: 'bg-red-500', icon: Zap, label: 'Speed' },
+  stamina: { color: 'bg-green-500', icon: Heart, label: 'Stamina' },
+  power: { color: 'bg-orange-500', icon: Sparkles, label: 'Power' },
+  guts: { color: 'bg-purple-500', icon: Star, label: 'Guts' },
+  wisdom: { color: 'bg-blue-500', icon: Brain, label: 'Wisdom' },
+  friend: { color: 'bg-pink-500', icon: Users, label: 'Friend' }
+};
+
+const config = typeConfig[card.type as keyof typeof typeConfig] || typeConfig.speed;
+const TypeIcon = config.icon;
+
+// Rarity colors
+const rarityColors = {
+  SSR: 'bg-gradient-to-r from-yellow-400 to-yellow-600',
+  SR: 'bg-gradient-to-r from-purple-400 to-purple-600',
+  R: 'bg-gradient-to-r from-gray-400 to-gray-600'
+};
+---
+
+<Layout title={`${card.name_en} - Support Cards - UmamusumeDB`}>
+  <Header />
+  
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-6">
+      <ol class="flex items-center space-x-2">
+        <li><a href="/" class="text-uma-primary hover:underline">Home</a></li>
+        <li class="text-gray-400">/</li>
+        <li><a href="/cards" class="text-uma-primary hover:underline">Support Cards</a></li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-600">{card.name_en}</li>
+      </ol>
+    </nav>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Left Column - Card Image and Basic Info -->
+      <div class="lg:col-span-1">
+        <div class="glass rounded-xl p-6 sticky top-20">
+          <!-- Card Image -->
+          <div class="relative aspect-[3/4] bg-gradient-to-br from-uma-primary/20 to-uma-secondary/20 rounded-lg mb-4 overflow-hidden">
+            <!-- Rarity Badge -->
+            <div class={`absolute top-3 left-3 z-10 px-3 py-1 rounded-full text-white font-bold text-sm ${rarityColors[card.rarity as keyof typeof rarityColors]}`}>
+              {card.rarity}
+            </div>
+            
+            <!-- Type Badge -->
+            <div class={`absolute top-3 right-3 z-10 w-12 h-12 rounded-full ${config.color} flex items-center justify-center`}>
+              <TypeIcon className="w-6 h-6 text-white" />
+            </div>
+
+            {card.image_url ? (
+              <img 
+                src={card.image_url} 
+                alt={card.name_en}
+                class="absolute inset-0 w-full h-full object-contain object-center"
+                loading="lazy"
+              />
+            ) : (
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-uma-primary to-uma-secondary rounded-full flex items-center justify-center">
+                    <TypeIcon className="w-16 h-16 text-white" />
+                  </div>
+                  <p class="text-gray-500">Support Card Image</p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <!-- Basic Info -->
+          <div class="space-y-3">
+            <h1 class="text-2xl font-display gradient-text">{card.name_en}</h1>
+            <p class="text-lg font-jp text-gray-600">{card.name_jp}</p>
+            
+            <!-- Type and Rarity -->
+            <div class="flex items-center gap-4">
+              <div class="flex items-center gap-2">
+                <TypeIcon className="w-5 h-5 text-uma-primary" />
+                <span class="font-medium">{config.label}</span>
+              </div>
+              <div class={`px-3 py-1 rounded-full text-white text-xs font-bold ${rarityColors[card.rarity as keyof typeof rarityColors]}`}>
+                {card.rarity}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Detailed Effects -->
+      <div class="lg:col-span-2 space-y-6">
+        <!-- Main Effects Section -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <TrendingUp className="w-5 h-5 text-uma-primary" />
+            Training Effects
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-4">
+            {Object.entries(card.effects || {}).map(([key, value]) => (
+              <div class="bg-white rounded-lg p-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-gray-600 capitalize">
+                    {key.replace(/_/g, ' ')}
+                  </span>
+                  <span class="text-lg font-bold text-uma-primary">
+                    +{value}%
+                  </span>
+                </div>
+                <div class="mt-2 h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div 
+                    class="h-full bg-gradient-to-r from-uma-primary to-uma-secondary transition-all duration-500"
+                    style={{width: `${Math.min(Number(value) * 2, 100)}%`}}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Zap className="w-5 h-5 text-uma-primary" />
+            Available Skills
+          </h2>
+          
+          <div class="grid gap-3">
+            {card.skills?.map((skill: string) => (
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition-shadow">
+                <div class={`w-10 h-10 ${config.color} bg-opacity-20 rounded-full flex items-center justify-center`}>
+                  <Zap className={`w-5 h-5 text-${config.color.replace('bg-', '')}`} />
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-semibold">{skill}</h3>
+                  <p class="text-sm text-gray-600">Skill effect will be applied during training</p>
+                </div>
+                <div class="text-xs px-2 py-1 bg-gray-100 rounded-full">
+                  Lv.1
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Events Section -->
+        {card.events && card.events.length > 0 && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Award className="w-5 h-5 text-uma-primary" />
+              Unique Events
+            </h2>
+            
+            <div class="space-y-3">
+              {card.events.map((event: string, index: number) => (
+                <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+                  <div class="w-8 h-8 bg-uma-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span class="text-sm font-bold text-uma-accent">{index + 1}</span>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">{event}</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                      Trigger this event for additional training bonuses
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Usage Tips -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Shield className="w-5 h-5 text-uma-primary" />
+            Usage Tips
+          </h2>
+          
+          <div class="prose prose-sm max-w-none text-gray-600">
+            <p>This {card.rarity} {config.label} support card provides excellent training bonuses:</p>
+            <ul>
+              <li>Best paired with <strong>{config.label}-focused</strong> Uma Musume characters</li>
+              <li>Provides significant <strong>{Object.keys(card.effects || {})[0]?.replace(/_/g, ' ')}</strong> bonuses</li>
+              <li>Unlock all {card.skills?.length || 0} skills for maximum effectiveness</li>
+              <li>{card.events?.length ? `Features ${card.events.length} unique events for extra bonuses` : 'Standard training bonuses apply'}</li>
+              <li>Recommended for {card.rarity === 'SSR' ? 'competitive' : card.rarity === 'SR' ? 'balanced' : 'budget'} team compositions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Recommended Pairings -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Users className="w-5 h-5 text-uma-primary" />
+            Recommended Character Pairings
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-3">
+            <div class="bg-white rounded-lg p-3">
+              <h4 class="font-semibold text-sm mb-1">Special Week</h4>
+              <p class="text-xs text-gray-600">Excellent synergy with speed training</p>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <h4 class="font-semibold text-sm mb-1">Silence Suzuka</h4>
+              <p class="text-xs text-gray-600">Maximizes speed potential</p>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <h4 class="font-semibold text-sm mb-1">Tokai Teio</h4>
+              <p class="text-xs text-gray-600">Balanced stat growth</p>
+            </div>
+            <div class="bg-white rounded-lg p-3">
+              <h4 class="font-semibold text-sm mb-1">Mejiro McQueen</h4>
+              <p class="text-xs text-gray-600">Long distance specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    .prose ul {
+      @apply list-disc list-inside space-y-1;
+    }
+  </style>
+</Layout>

@@ -1,0 +1,353 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import HeaderJa from '@/components/HeaderJa.astro';
+import { characters } from '@/lib/static-content';
+import { Star, Zap, Heart, Brain, Shield, TrendingUp, Trophy, Award } from 'lucide-react';
+
+export function getStaticPaths() {
+  return characters.map((character) => ({
+    params: { id: character.id },
+    props: { character },
+  }));
+}
+
+const { character } = Astro.props;
+
+// Helper function to get aptitude color
+function getAptitudeColor(value: string) {
+  switch(value) {
+    case 'S': return 'text-red-500 font-bold';
+    case 'A': return 'text-orange-500 font-bold';
+    case 'B': return 'text-yellow-500';
+    case 'C': return 'text-green-500';
+    case 'D': return 'text-blue-500';
+    case 'E': return 'text-gray-500';
+    case 'F': return 'text-gray-400';
+    case 'G': return 'text-gray-300';
+    default: return 'text-gray-500';
+  }
+}
+
+function getBestStat(attributes: any) {
+  if (!attributes) return 'スピード';
+  const stats = ['speed', 'stamina', 'power', 'guts', 'wisdom'];
+  const statNames: Record<string, string> = {
+    speed: 'スピード',
+    stamina: 'スタミナ',
+    power: 'パワー',
+    guts: '根性',
+    wisdom: '賢さ'
+  };
+  let best = 'speed';
+  let max = 0;
+  for (const stat of stats) {
+    if (attributes[stat] > max) {
+      max = attributes[stat];
+      best = stat;
+    }
+  }
+  return statNames[best];
+}
+
+function getBestDistance(aptitudes: any) {
+  if (!aptitudes) return 'マイル';
+  const distances = ['sprint', 'mile', 'medium', 'long'];
+  const distNames: Record<string, string> = {
+    sprint: '短距離',
+    mile: 'マイル',
+    medium: '中距離',
+    long: '長距離'
+  };
+  const values: Record<string, number> = { 'S': 7, 'A': 6, 'B': 5, 'C': 4, 'D': 3, 'E': 2, 'F': 1, 'G': 0 };
+  let best = 'mile';
+  let maxScore = 0;
+  for (const dist of distances) {
+    const score = values[aptitudes[dist]] || 0;
+    if (score > maxScore) {
+      maxScore = score;
+      best = dist;
+    }
+  }
+  return distNames[best];
+}
+
+function getBestStrategy(aptitudes: any) {
+  if (!aptitudes) return '差し';
+  const strategies = ['leader', 'better', 'chaser'];
+  const stratNames: Record<string, string> = {
+    leader: '逃げ',
+    better: '差し',
+    chaser: '追込'
+  };
+  const values: Record<string, number> = { 'S': 7, 'A': 6, 'B': 5, 'C': 4, 'D': 3, 'E': 2, 'F': 1, 'G': 0 };
+  let best = 'better';
+  let maxScore = 0;
+  for (const strat of strategies) {
+    const score = values[aptitudes[strat]] || 0;
+    if (score > maxScore) {
+      maxScore = score;
+      best = strat;
+    }
+  }
+  return stratNames[best];
+}
+---
+
+<Layout title={`${character.name_jp || character.name_en} - ウマ娘DB`}>
+  <HeaderJa />
+  
+  <main class="container mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-6">
+      <ol class="flex items-center space-x-2">
+        <li><a href="/ja" class="text-uma-primary hover:underline">ホーム</a></li>
+        <li class="text-gray-400">/</li>
+        <li><a href="/ja/characters" class="text-uma-primary hover:underline">キャラクター</a></li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-600">{character.name_jp || character.name_en}</li>
+      </ol>
+    </nav>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Left Column - Character Image and Basic Info -->
+      <div class="lg:col-span-1">
+        <div class="glass rounded-xl p-6 sticky top-20">
+          <!-- Character Image -->
+          <div class="relative aspect-[3/4] bg-gradient-to-br from-uma-primary/20 to-uma-secondary/20 rounded-lg mb-4 overflow-hidden">
+            {character.image_url ? (
+              <img 
+                src={character.image_url} 
+                alt={character.name_jp}
+                class="absolute inset-0 w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            ) : (
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-uma-primary to-uma-secondary rounded-full flex items-center justify-center">
+                    <Trophy className="w-16 h-16 text-white" />
+                  </div>
+                  <p class="text-gray-500">キャラクター画像</p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <!-- Basic Info -->
+          <div class="space-y-3">
+            <h1 class="text-2xl font-display gradient-text">{character.name_jp || character.name_en}</h1>
+            <p class="text-lg text-gray-600">{character.name_en}</p>
+            
+            <!-- Rarity -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-600">レアリティ:</span>
+              <div class="flex">
+                {Array.from({ length: character.rarity }, () => (
+                  <Star className="w-5 h-5 fill-uma-accent text-uma-accent" />
+                ))}
+              </div>
+            </div>
+
+            <!-- Birthday -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-600">誕生日:</span>
+              <span class="font-medium">{character.birthday || '不明'}</span>
+            </div>
+
+            <!-- CV -->
+            <div class="flex items-center gap-2">
+              <span class="text-sm text-gray-600">声優:</span>
+              <span class="font-medium">{character.cv || '不明'}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Detailed Stats -->
+      <div class="lg:col-span-2 space-y-6">
+        <!-- Stats Section -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <TrendingUp className="w-5 h-5 text-uma-primary" />
+            基本ステータス
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">⚡</span>
+                <div class="flex-1">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium">スピード</span>
+                    <span class="text-sm font-bold">{character.attributes?.speed || 0}</span>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="bg-red-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.speed || 0) / 120) * 100}%`}}></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">❤️</span>
+                <div class="flex-1">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium">スタミナ</span>
+                    <span class="text-sm font-bold">{character.attributes?.stamina || 0}</span>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="bg-green-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.stamina || 0) / 120) * 100}%`}}></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">💪</span>
+                <div class="flex-1">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium">パワー</span>
+                    <span class="text-sm font-bold">{character.attributes?.power || 0}</span>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="bg-orange-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.power || 0) / 120) * 100}%`}}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🔥</span>
+                <div class="flex-1">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium">根性</span>
+                    <span class="text-sm font-bold">{character.attributes?.guts || 0}</span>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="bg-purple-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.guts || 0) / 120) * 100}%`}}></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="text-2xl">🧠</span>
+                <div class="flex-1">
+                  <div class="flex justify-between mb-1">
+                    <span class="text-sm font-medium">賢さ</span>
+                    <span class="text-sm font-bold">{character.attributes?.wisdom || 0}</span>
+                  </div>
+                  <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div class="bg-blue-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.wisdom || 0) / 120) * 100}%`}}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aptitudes Section -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Award className="w-5 h-5 text-uma-primary" />
+            レース適性
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Distance Aptitudes -->
+            <div>
+              <h3 class="font-semibold mb-3 text-gray-700">距離適性</h3>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">短距離</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.sprint || 'G')} text-lg`}>{character.aptitudes?.sprint || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">マイル</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.mile || 'G')} text-lg`}>{character.aptitudes?.mile || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">中距離</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.medium || 'G')} text-lg`}>{character.aptitudes?.medium || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">長距離</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.long || 'G')} text-lg`}>{character.aptitudes?.long || 'G'}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Track Aptitudes -->
+            <div>
+              <h3 class="font-semibold mb-3 text-gray-700">馬場・戦略適性</h3>
+              <div class="space-y-2">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">芝</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.turf || 'G')} text-lg`}>{character.aptitudes?.turf || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">ダート</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.dirt || 'G')} text-lg`}>{character.aptitudes?.dirt || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">逃げ</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.leader || 'G')} text-lg`}>{character.aptitudes?.leader || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">差し</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.better || 'G')} text-lg`}>{character.aptitudes?.better || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">追込</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.chaser || 'G')} text-lg`}>{character.aptitudes?.chaser || 'G'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        {character.skills && character.skills.length > 0 && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Zap className="w-5 h-5 text-uma-primary" />
+              固有スキル
+            </h2>
+            
+            <div class="grid gap-3">
+              {character.skills.map((skill: string) => (
+                <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
+                  <div class="w-10 h-10 bg-gradient-to-br from-uma-accent/20 to-uma-accent/10 rounded-full flex items-center justify-center">
+                    <Zap className="w-5 h-5 text-uma-accent" />
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">{skill}</h3>
+                    <p class="text-sm text-gray-600">固有スキル効果の説明</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Training Tips -->
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Shield className="w-5 h-5 text-uma-primary" />
+            育成のコツ
+          </h2>
+          
+          <div class="prose prose-sm max-w-none text-gray-600">
+            <p>{character.name_jp || character.name_en}の適性に基づいた推奨育成戦略:</p>
+            <ul>
+              <li>最適な育成方針: <strong>{getBestStat(character.attributes)}</strong>特化</li>
+              <li>推奨距離: <strong>{getBestDistance(character.aptitudes)}</strong></li>
+              <li>推奨戦略: <strong>{getBestStrategy(character.aptitudes)}</strong></li>
+              <li>長所を活かすサポートカードと組み合わせる</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    .prose ul {
+      @apply list-disc list-inside space-y-1;
+    }
+  </style>
+</Layout>

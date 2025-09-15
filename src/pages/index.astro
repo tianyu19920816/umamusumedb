@@ -17,15 +17,17 @@ const topTierCharacters = tierList
   .slice(0, 6);
 ---
 
-<Layout title="UmamusumeDB - Complete Database for Umamusume Pretty Derby">
+<Layout 
+  title="UmamusumeDB - #1 Database for Uma Musume Pretty Derby"
+  description="UmamusumeDB is the most comprehensive database for Uma Musume Pretty Derby. Find characters, support cards, tier lists, and team building guides.">
   <Header />
   
   <main class="container mx-auto px-4 py-6">
     <!-- Hero Search Section -->
     <div class="glass rounded-2xl p-8 mb-8 bg-gradient-to-br from-uma-primary/10 to-uma-secondary/10">
       <div class="text-center mb-6">
-        <h1 class="text-4xl md:text-5xl font-display gradient-text mb-3">UmamusumeDB</h1>
-        <p class="text-lg text-gray-600">The Complete Database for Umamusume Pretty Derby</p>
+        <h1 class="text-4xl md:text-5xl font-display gradient-text mb-3">UmamusumeDB - Uma Musume Database</h1>
+        <p class="text-lg text-gray-600">Welcome to UmamusumeDB, your ultimate resource for Uma Musume Pretty Derby game data, tier lists, and strategies</p>
       </div>
       
       <!-- Main Search Bar -->
@@ -35,7 +37,7 @@ const topTierCharacters = tierList
           <input
             type="text"
             id="global-search"
-            placeholder="Search characters, support cards, skills..."
+            placeholder="Search UmamusumeDB for characters, cards, skills..."
             class="w-full pl-12 pr-4 py-4 text-lg rounded-xl border-2 border-uma-primary/20 bg-white/90 focus:outline-none focus:border-uma-primary shadow-lg"
           />
         </div>
@@ -98,7 +100,7 @@ const topTierCharacters = tierList
     <!-- Characters Tab -->
     <div class="tab-content active" id="characters">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-display">All Characters</h2>
+        <h2 class="text-2xl font-display">UmamusumeDB Characters Collection</h2>
         <div class="flex gap-2">
           <select id="char-sort" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
             <option value="name">Sort by Name</option>
@@ -131,7 +133,7 @@ const topTierCharacters = tierList
     <!-- Support Cards Tab -->
     <div class="tab-content" id="support-cards">
       <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-display">Support Cards</h2>
+        <h2 class="text-2xl font-display">UmamusumeDB Support Cards Database</h2>
         <div class="flex gap-2">
           <select id="card-rarity" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
             <option value="all">All Rarities</option>
@@ -187,18 +189,17 @@ const topTierCharacters = tierList
                 </div>
                 <div class="flex-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3">
                   {items.map((item) => (
-                    <div class="bg-white rounded-lg p-3 shadow hover:shadow-lg transition-shadow">
+                    <a href={`/${item.item_type === 'character' ? 'characters' : 'cards'}/${item.item_id}`} 
+                       class="bg-white rounded-lg p-3 shadow hover:shadow-lg transition-shadow block hover:scale-105">
                       <h4 class="font-semibold text-sm mb-1">{item.item_name}</h4>
-                      <p class="text-xs text-gray-500 font-jp">{item.item_name_jp}</p>
                       <div class="flex items-center justify-between mt-2">
-                        <span class="text-xs text-gray-600">{item.votes} votes</span>
                         {item.item_type === 'character' ? (
                           <Users className="w-3 h-3 text-uma-primary" />
                         ) : (
                           <Sparkles className="w-3 h-3 text-uma-secondary" />
                         )}
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -210,8 +211,54 @@ const topTierCharacters = tierList
 
     <!-- No Results -->
     <div id="no-results" class="hidden text-center py-12">
-      <p class="text-xl text-gray-500">No results found</p>
+      <p class="text-xl text-gray-500">No results found in UmamusumeDB</p>
     </div>
+
+    <!-- SEO Content Section -->
+    <section class="mt-12 glass rounded-2xl p-8 mb-8">
+      <h2 class="text-2xl font-display mb-4">About UmamusumeDB</h2>
+      <div class="prose max-w-none text-gray-700">
+        <p class="mb-4">
+          <strong>UmamusumeDB</strong> is your comprehensive online database for Uma Musume Pretty Derby. 
+          Our platform provides detailed information about all characters, support cards, and game mechanics 
+          to help trainers build the perfect team.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+          <div>
+            <h3 class="font-bold text-lg mb-2">Why Choose UmamusumeDB?</h3>
+            <ul class="text-sm space-y-1">
+              <li>• Complete character database with stats</li>
+              <li>• All SSR, SR, and R support cards</li>
+              <li>• Community-driven tier lists</li>
+              <li>• Regular updates from UmamusumeDB team</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">UmamusumeDB Features</h3>
+            <ul class="text-sm space-y-1">
+              <li>• Advanced search and filtering</li>
+              <li>• Team composition guides</li>
+              <li>• Training optimization tips</li>
+              <li>• Skill inheritance calculator</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">Join UmamusumeDB Community</h3>
+            <ul class="text-sm space-y-1">
+              <li>• Share your team builds</li>
+              <li>• Vote on tier lists</li>
+              <li>• Contribute to UmamusumeDB wiki</li>
+              <li>• Get the latest game updates</li>
+            </ul>
+          </div>
+        </div>
+        <p class="mt-6 text-sm">
+          Whether you're a new trainer or a veteran player, <strong>UmamusumeDB</strong> has all the resources 
+          you need to excel in Uma Musume Pretty Derby. Browse our database, check the latest tier lists, 
+          and optimize your teams with UmamusumeDB's comprehensive tools and guides.
+        </p>
+      </div>
+    </section>
   </main>
 
   <style>

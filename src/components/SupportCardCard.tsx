@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Zap, Heart, Brain, Users, Sparkles } from 'lucide-react';
+import PlaceholderImage from './PlaceholderImage';
 
 interface SupportCard {
   id: string;
@@ -57,11 +58,26 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
       </div>
 
       {/* Card Image */}
-      <div className="relative h-48 bg-gradient-to-br from-uma-primary/20 to-uma-secondary/20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-4">
-          <h3 className="text-white font-bold text-lg">{card.name_en}</h3>
-          <p className="text-white/80 text-sm font-jp">{card.name_jp}</p>
+      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-uma-primary/10 to-uma-secondary/10">
+        {card.image_url ? (
+          <img 
+            src={card.image_url} 
+            alt={card.name_en}
+            className="absolute inset-0 w-full h-full object-contain object-center"
+            loading="lazy"
+          />
+        ) : (
+          <PlaceholderImage 
+            type="card" 
+            name={card.name_en} 
+            rarity={card.rarity}
+            className="absolute inset-0"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+          <h3 className="text-white font-bold text-lg drop-shadow-lg">{card.name_en}</h3>
+          <p className="text-white/90 text-sm font-jp drop-shadow-lg">{card.name_jp}</p>
         </div>
       </div>
 
@@ -104,10 +120,10 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
         </div>
       )}
 
-      {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-        <button className="btn-secondary">View Details</button>
-      </div>
+      {/* Hover Overlay - Make it clickable as a link */}
+      <a href={`/cards/${card.id}`} className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <span className="btn-secondary">View Details</span>
+      </a>
     </div>
   );
 }
