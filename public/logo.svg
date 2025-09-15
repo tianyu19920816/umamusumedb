@@ -1,0 +1,43 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horseshoe shape -->
+  <path d="M24 4C24 4 8 8 8 24C8 32 10 36 12 38C14 40 16 40 18 40C20 40 20 38 20 36V32C20 30 20 28 22 28H26C28 28 28 30 28 32V36C28 38 28 40 30 40C32 40 34 40 36 38C38 36 40 32 40 24C40 8 24 4 24 4Z" 
+        stroke="url(#gradient1)" 
+        stroke-width="3" 
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  
+  <!-- Inner horseshoe detail -->
+  <path d="M24 10C24 10 14 12 14 24C14 28 15 30 16 31C17 32 18 32 19 32C20 32 20 31 20 30V28C20 26 20 24 22 24H26C28 24 28 26 28 28V30C28 31 28 32 29 32C30 32 31 32 32 31C33 30 34 28 34 24C34 12 24 10 24 10Z" 
+        fill="url(#gradient2)"
+        opacity="0.8"/>
+  
+  <!-- Nail holes -->
+  <circle cx="16" cy="16" r="1.5" fill="#2C1F3D"/>
+  <circle cx="32" cy="16" r="1.5" fill="#2C1F3D"/>
+  <circle cx="14" cy="22" r="1.5" fill="#2C1F3D"/>
+  <circle cx="34" cy="22" r="1.5" fill="#2C1F3D"/>
+  <circle cx="14" cy="28" r="1.5" fill="#2C1F3D"/>
+  <circle cx="34" cy="28" r="1.5" fill="#2C1F3D"/>
+  
+  <!-- Sparkle effects -->
+  <path d="M10 12L11 13L10 14L9 13Z" fill="#FFC107" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </path>
+  <path d="M38 12L39 13L38 14L37 13Z" fill="#FFC107" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="gradient1" x1="24" y1="4" x2="24" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B9D"/>
+      <stop offset="0.5" stop-color="#C66FBC"/>
+      <stop offset="1" stop-color="#87CEEB"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="24" y1="10" x2="24" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B9D"/>
+      <stop offset="1" stop-color="#C66FBC"/>
+    </linearGradient>
+  </defs>
+</svg>

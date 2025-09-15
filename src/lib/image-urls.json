@@ -1,0 +1,11 @@
+{
+  "characters": {},
+  "supportCards": {},
+  "skills": {},
+  "defaults": {
+    "character": "https://via.placeholder.com/300x400/ff6b9d/ffffff?text=Character",
+    "supportCard": "https://via.placeholder.com/300x400/c66bbc/ffffff?text=Support+Card",
+    "skill": "https://via.placeholder.com/64x64/ffc107/ffffff?text=Skill"
+  },
+  "r2BaseUrl": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/umamusume"
+}

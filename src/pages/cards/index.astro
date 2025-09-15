@@ -1,0 +1,236 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import SupportCardCard from '@/components/SupportCardCard';
+import { supportCards } from '@/lib/static-content';
+import { Filter, Search, Grid, List, Zap, Heart, Brain, Star, Sparkles, Users } from 'lucide-react';
+
+// Group cards by rarity
+const cardsByRarity = supportCards.reduce((acc, card) => {
+  const rarity = card.rarity;
+  if (!acc[rarity]) acc[rarity] = [];
+  acc[rarity].push(card);
+  return acc;
+}, {} as Record<string, typeof supportCards>);
+
+// Count cards by type
+const typeCount = supportCards.reduce((acc, card) => {
+  acc[card.type] = (acc[card.type] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+---
+
+<Layout title="Support Cards">
+  <Header />
+  
+  <main class="container mx-auto px-4 py-8">
+    <!-- Page Header -->
+    <div class="mb-8">
+      <h1 class="text-4xl font-display gradient-text mb-4">Support Cards</h1>
+      <p class="text-gray-600">Browse all support cards and their effects</p>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
+      <div class="glass rounded-lg p-4 text-center">
+        <Zap className="w-8 h-8 mx-auto mb-2 text-red-500" />
+        <div class="font-bold">{typeCount.speed || 0}</div>
+        <div class="text-xs text-gray-600">Speed</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <Heart className="w-8 h-8 mx-auto mb-2 text-green-500" />
+        <div class="font-bold">{typeCount.stamina || 0}</div>
+        <div class="text-xs text-gray-600">Stamina</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <Sparkles className="w-8 h-8 mx-auto mb-2 text-orange-500" />
+        <div class="font-bold">{typeCount.power || 0}</div>
+        <div class="text-xs text-gray-600">Power</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <Star className="w-8 h-8 mx-auto mb-2 text-purple-500" />
+        <div class="font-bold">{typeCount.guts || 0}</div>
+        <div class="text-xs text-gray-600">Guts</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <Brain className="w-8 h-8 mx-auto mb-2 text-blue-500" />
+        <div class="font-bold">{typeCount.wisdom || 0}</div>
+        <div class="text-xs text-gray-600">Wisdom</div>
+      </div>
+      <div class="glass rounded-lg p-4 text-center">
+        <Users className="w-8 h-8 mx-auto mb-2 text-pink-500" />
+        <div class="font-bold">{typeCount.friend || 0}</div>
+        <div class="text-xs text-gray-600">Friend</div>
+      </div>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="glass rounded-xl p-4 mb-8">
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Search Bar -->
+        <div class="flex-1 relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <input
+            type="text"
+            id="card-search"
+            placeholder="Search support cards..."
+            class="w-full pl-10 pr-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50 focus:outline-none focus:border-uma-primary"
+          />
+        </div>
+
+        <!-- Rarity Filter -->
+        <select id="rarity-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Rarities</option>
+          <option value="SSR">SSR Only</option>
+          <option value="SR">SR Only</option>
+          <option value="R">R Only</option>
+        </select>
+
+        <!-- Type Filter -->
+        <select id="type-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Types</option>
+          <option value="speed">Speed</option>
+          <option value="stamina">Stamina</option>
+          <option value="power">Power</option>
+          <option value="guts">Guts</option>
+          <option value="wisdom">Wisdom</option>
+          <option value="friend">Friend</option>
+        </select>
+
+        <!-- View Toggle -->
+        <div class="flex gap-2">
+          <button id="grid-view" class="p-2 rounded-lg bg-uma-primary/10 text-uma-primary">
+            <Grid className="w-5 h-5" />
+          </button>
+          <button id="list-view" class="p-2 rounded-lg hover:bg-uma-primary/10">
+            <List className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Display -->
+    <div id="cards-container">
+      {['SSR', 'SR', 'R'].map((rarity) => {
+        const cards = cardsByRarity[rarity];
+        if (!cards || cards.length === 0) return null;
+        
+        return (
+          <div class="mb-12" data-rarity={rarity}>
+            <div class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-display">{rarity} Cards</h2>
+              <div class={`px-3 py-1 rounded-full text-white font-bold text-sm ${
+                rarity === 'SSR' ? 'rarity-ssr' : 
+                rarity === 'SR' ? 'rarity-sr' : 'rarity-r'
+              }`}>
+                {cards.length} cards
+              </div>
+            </div>
+            
+            <div id="grid-container" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {cards.map((card) => (
+                <div class="card-item" 
+                     data-name={card.name_en.toLowerCase()} 
+                     data-rarity={card.rarity}
+                     data-type={card.type}>
+                  <SupportCardCard card={card} client:load />
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" class="hidden text-center py-12">
+      <p class="text-xl text-gray-500">No support cards found matching your filters</p>
+    </div>
+  </main>
+
+  <style>
+    /* List view styles */
+    .list-view #grid-container {
+      @apply grid-cols-1 gap-4;
+    }
+    
+    .list-view .card-item {
+      @apply max-w-full;
+    }
+  </style>
+
+  <script>
+    // Search and filter functionality
+    const searchInput = document.getElementById('card-search') as HTMLInputElement;
+    const rarityFilter = document.getElementById('rarity-filter') as HTMLSelectElement;
+    const typeFilter = document.getElementById('type-filter') as HTMLSelectElement;
+    const gridViewBtn = document.getElementById('grid-view');
+    const listViewBtn = document.getElementById('list-view');
+    const container = document.getElementById('cards-container');
+    const noResults = document.getElementById('no-results');
+
+    function filterCards() {
+      const searchTerm = searchInput?.value.toLowerCase() || '';
+      const selectedRarity = rarityFilter?.value || 'all';
+      const selectedType = typeFilter?.value || 'all';
+      
+      let hasResults = false;
+      
+      // Filter individual cards
+      document.querySelectorAll('.card-item').forEach((item) => {
+        const name = item.getAttribute('data-name') || '';
+        const rarity = item.getAttribute('data-rarity') || '';
+        const type = item.getAttribute('data-type') || '';
+        
+        const matchesSearch = name.includes(searchTerm);
+        const matchesRarity = selectedRarity === 'all' || rarity === selectedRarity;
+        const matchesType = selectedType === 'all' || type === selectedType;
+        
+        if (matchesSearch && matchesRarity && matchesType) {
+          (item as HTMLElement).style.display = '';
+          hasResults = true;
+        } else {
+          (item as HTMLElement).style.display = 'none';
+        }
+      });
+      
+      // Hide empty rarity sections
+      document.querySelectorAll('[data-rarity]').forEach((section) => {
+        const visibleItems = section.querySelectorAll('.card-item:not([style*="display: none"])');
+        (section as HTMLElement).style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+      
+      // Show/hide no results message
+      if (noResults) {
+        noResults.classList.toggle('hidden', hasResults);
+      }
+      if (container) {
+        container.classList.toggle('hidden', !hasResults);
+      }
+    }
+
+    // View toggle
+    function setGridView() {
+      document.body.classList.remove('list-view');
+      gridViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
+      gridViewBtn?.classList.remove('hover:bg-uma-primary/10');
+      listViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
+      listViewBtn?.classList.add('hover:bg-uma-primary/10');
+    }
+
+    function setListView() {
+      document.body.classList.add('list-view');
+      listViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
+      listViewBtn?.classList.remove('hover:bg-uma-primary/10');
+      gridViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
+      gridViewBtn?.classList.add('hover:bg-uma-primary/10');
+    }
+
+    // Event listeners
+    searchInput?.addEventListener('input', filterCards);
+    rarityFilter?.addEventListener('change', filterCards);
+    typeFilter?.addEventListener('change', filterCards);
+    gridViewBtn?.addEventListener('click', setGridView);
+    listViewBtn?.addEventListener('click', setListView);
+  </script>
+</Layout>

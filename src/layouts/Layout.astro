@@ -1,0 +1,75 @@
+---
+import '@/styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { 
+  title, 
+  description = 'Comprehensive database and tools for Umamusume Pretty Derby', 
+  image = '/og-image.png' 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO -->
+    <title>{title} | UmamusumeDB</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="umamusume, pretty derby, database, tier list, team builder, guide" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${title} | UmamusumeDB`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${title} | UmamusumeDB`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#FF6B9D" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-uma-light via-white to-uma-sky/10">
+    <div class="relative">
+      <!-- Background decoration -->
+      <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-uma-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-uma-secondary/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-uma-accent/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <!-- Main content -->
+      <div class="relative z-10">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Selection color */
+  ::selection {
+    background-color: rgb(var(--uma-primary) / 0.3);
+    color: rgb(var(--uma-dark));
+  }
+</style>

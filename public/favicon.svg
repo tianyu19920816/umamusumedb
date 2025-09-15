@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="6" fill="#2C1F3D"/>
+  <path d="M16 6C16 6 7 8 7 16C7 20 8 22 9 23C10 24 11 24 12 24C13 24 13 23 13 22V20C13 19 13 18 14 18H18C19 18 19 19 19 20V22C19 23 19 24 20 24C21 24 22 24 23 23C24 22 25 20 25 16C25 8 16 6 16 6Z" 
+        fill="url(#favicon-gradient)"
+        stroke="white"
+        stroke-width="0.5"/>
+  <circle cx="11" cy="12" r="1" fill="#FFC107"/>
+  <circle cx="21" cy="12" r="1" fill="#FFC107"/>
+  <defs>
+    <linearGradient id="favicon-gradient" x1="16" y1="6" x2="16" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B9D"/>
+      <stop offset="1" stop-color="#C66FBC"/>
+    </linearGradient>
+  </defs>
+</svg>

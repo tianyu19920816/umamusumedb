@@ -1,0 +1,88 @@
+---
+import { Search, Menu, X } from 'lucide-react';
+---
+
+<header class="sticky top-0 z-50 glass">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 group">
+        <img src="/logo.svg" alt="UmamusumeDB" class="w-10 h-10 group-hover:animate-bounce" />
+        <span class="font-display text-2xl gradient-text">UmamusumeDB</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="/characters" class="font-medium hover:text-uma-primary transition-colors">
+          Characters
+        </a>
+        <a href="/cards" class="font-medium hover:text-uma-primary transition-colors">
+          Support Cards
+        </a>
+        <a href="/tier-list" class="font-medium hover:text-uma-primary transition-colors">
+          Tier List
+        </a>
+        <a href="/tools" class="font-medium hover:text-uma-primary transition-colors">
+          Tools
+        </a>
+        <a href="/guides" class="font-medium hover:text-uma-primary transition-colors">
+          Guides
+        </a>
+      </div>
+
+      <!-- Search & Mobile Menu -->
+      <div class="flex items-center space-x-4">
+        <button class="p-2 hover:bg-uma-primary/10 rounded-lg transition-colors">
+          <Search class="w-5 h-5" />
+        </button>
+        
+        <!-- Language Switcher -->
+        <select class="hidden md:block px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+          <option value="en">EN</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+        </select>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 hover:bg-uma-primary/10 rounded-lg transition-colors">
+          <Menu class="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-uma-primary/20">
+      <div class="flex flex-col space-y-3">
+        <a href="/characters" class="font-medium hover:text-uma-primary transition-colors py-2">
+          Characters
+        </a>
+        <a href="/cards" class="font-medium hover:text-uma-primary transition-colors py-2">
+          Support Cards
+        </a>
+        <a href="/tier-list" class="font-medium hover:text-uma-primary transition-colors py-2">
+          Tier List
+        </a>
+        <a href="/tools" class="font-medium hover:text-uma-primary transition-colors py-2">
+          Tools
+        </a>
+        <a href="/guides" class="font-medium hover:text-uma-primary transition-colors py-2">
+          Guides
+        </a>
+        <select class="px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

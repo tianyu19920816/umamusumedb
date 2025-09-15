@@ -1,0 +1,42 @@
+{
+  "name": "umamusumedb",
+  "version": "1.0.0",
+  "description": "Comprehensive database and tools for Umamusume Pretty Derby",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb",
+    "deploy:preview": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb --branch=preview",
+    "data:update": "node scripts/export-to-json.js",
+    "images:upload": "node scripts/upload-images-to-r2.js"
+  },
+  "keywords": [
+    "umamusume",
+    "database",
+    "cloudflare",
+    "astro"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "astro": "^5.1.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.2",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.5",
+    "better-sqlite3": "^12.2.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.101.0"
+  }
+}

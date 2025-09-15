@@ -1,0 +1,194 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import CharacterCard from '@/components/CharacterCard';
+import { characters } from '@/lib/static-content';
+import { Filter, Search, Grid, List } from 'lucide-react';
+
+// Group characters by rarity
+const charactersByRarity = characters.reduce((acc, char) => {
+  const rarity = char.rarity || 1;
+  if (!acc[rarity]) acc[rarity] = [];
+  acc[rarity].push(char);
+  return acc;
+}, {} as Record<number, typeof characters>);
+---
+
+<Layout title="Characters">
+  <Header />
+  
+  <main class="container mx-auto px-4 py-8">
+    <!-- Page Header -->
+    <div class="mb-8">
+      <h1 class="text-4xl font-display gradient-text mb-4">Characters</h1>
+      <p class="text-gray-600">Browse all Uma Musume characters and their stats</p>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="glass rounded-xl p-4 mb-8">
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Search Bar -->
+        <div class="flex-1 relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <input
+            type="text"
+            id="character-search"
+            placeholder="Search characters..."
+            class="w-full pl-10 pr-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50 focus:outline-none focus:border-uma-primary"
+          />
+        </div>
+
+        <!-- Rarity Filter -->
+        <select id="rarity-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Rarities</option>
+          <option value="3">3★ Only</option>
+          <option value="2">2★ Only</option>
+          <option value="1">1★ Only</option>
+        </select>
+
+        <!-- Aptitude Filter -->
+        <select id="aptitude-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Distances</option>
+          <option value="sprint">Sprint</option>
+          <option value="mile">Mile</option>
+          <option value="medium">Medium</option>
+          <option value="long">Long</option>
+        </select>
+
+        <!-- View Toggle -->
+        <div class="flex gap-2">
+          <button id="grid-view" class="p-2 rounded-lg bg-uma-primary/10 text-uma-primary">
+            <Grid className="w-5 h-5" />
+          </button>
+          <button id="list-view" class="p-2 rounded-lg hover:bg-uma-primary/10">
+            <List className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Characters Display -->
+    <div id="characters-container">
+      {Object.entries(charactersByRarity)
+        .sort(([a], [b]) => Number(b) - Number(a))
+        .map(([rarity, chars]) => (
+          <div class="mb-12" data-rarity={rarity}>
+            <div class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-display">
+                {rarity === '3' ? 'Three Star' : rarity === '2' ? 'Two Star' : 'One Star'}
+              </h2>
+              <div class="flex gap-1">
+                {Array.from({ length: Number(rarity) }, (_, i) => (
+                  <span class="text-uma-accent">★</span>
+                ))}
+              </div>
+              <span class="text-gray-500">({chars.length} characters)</span>
+            </div>
+            
+            <div id="grid-container" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {chars.map((character) => (
+                <div class="character-item" 
+                     data-name={character.name_en.toLowerCase()} 
+                     data-rarity={character.rarity}
+                     data-aptitudes={JSON.stringify(character.aptitudes)}>
+                  <CharacterCard character={character} client:load />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="no-results" class="hidden text-center py-12">
+      <p class="text-xl text-gray-500">No characters found matching your filters</p>
+    </div>
+  </main>
+
+  <style>
+    /* List view styles */
+    .list-view #grid-container {
+      @apply grid-cols-1 gap-4;
+    }
+    
+    .list-view .character-item {
+      @apply max-w-full;
+    }
+  </style>
+
+  <script>
+    // Search and filter functionality
+    const searchInput = document.getElementById('character-search') as HTMLInputElement;
+    const rarityFilter = document.getElementById('rarity-filter') as HTMLSelectElement;
+    const aptitudeFilter = document.getElementById('aptitude-filter') as HTMLSelectElement;
+    const gridViewBtn = document.getElementById('grid-view');
+    const listViewBtn = document.getElementById('list-view');
+    const container = document.getElementById('characters-container');
+    const noResults = document.getElementById('no-results');
+
+    function filterCharacters() {
+      const searchTerm = searchInput?.value.toLowerCase() || '';
+      const selectedRarity = rarityFilter?.value || 'all';
+      const selectedAptitude = aptitudeFilter?.value || 'all';
+      
+      let hasResults = false;
+      
+      // Filter individual characters
+      document.querySelectorAll('.character-item').forEach((item) => {
+        const name = item.getAttribute('data-name') || '';
+        const rarity = item.getAttribute('data-rarity') || '';
+        const aptitudes = JSON.parse(item.getAttribute('data-aptitudes') || '{}');
+        
+        const matchesSearch = name.includes(searchTerm);
+        const matchesRarity = selectedRarity === 'all' || rarity === selectedRarity;
+        const matchesAptitude = selectedAptitude === 'all' || 
+          (aptitudes[selectedAptitude] && ['A', 'B'].includes(aptitudes[selectedAptitude]));
+        
+        if (matchesSearch && matchesRarity && matchesAptitude) {
+          (item as HTMLElement).style.display = '';
+          hasResults = true;
+        } else {
+          (item as HTMLElement).style.display = 'none';
+        }
+      });
+      
+      // Hide empty rarity sections
+      document.querySelectorAll('[data-rarity]').forEach((section) => {
+        const visibleItems = section.querySelectorAll('.character-item:not([style*="display: none"])');
+        (section as HTMLElement).style.display = visibleItems.length > 0 ? '' : 'none';
+      });
+      
+      // Show/hide no results message
+      if (noResults) {
+        noResults.classList.toggle('hidden', hasResults);
+      }
+      if (container) {
+        container.classList.toggle('hidden', !hasResults);
+      }
+    }
+
+    // View toggle
+    function setGridView() {
+      document.body.classList.remove('list-view');
+      gridViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
+      gridViewBtn?.classList.remove('hover:bg-uma-primary/10');
+      listViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
+      listViewBtn?.classList.add('hover:bg-uma-primary/10');
+    }
+
+    function setListView() {
+      document.body.classList.add('list-view');
+      listViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
+      listViewBtn?.classList.remove('hover:bg-uma-primary/10');
+      gridViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
+      gridViewBtn?.classList.add('hover:bg-uma-primary/10');
+    }
+
+    // Event listeners
+    searchInput?.addEventListener('input', filterCharacters);
+    rarityFilter?.addEventListener('change', filterCharacters);
+    aptitudeFilter?.addEventListener('change', filterCharacters);
+    gridViewBtn?.addEventListener('click', setGridView);
+    listViewBtn?.addEventListener('click', setListView);
+  </script>
+</Layout>
