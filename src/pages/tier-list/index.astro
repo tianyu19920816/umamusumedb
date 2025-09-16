@@ -2,21 +2,11 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import { getTierListByCategory } from '@/lib/static-content';
-import { Trophy, Users, Zap, Heart, Brain, Star, Sparkles, Info } from 'lucide-react';
+import { Trophy, Info } from 'lucide-react';
 
-// Get tier lists for different categories
+// Get tier lists for overall category (only category with data)
 const overallCharacters = getTierListByCategory('overall').filter(item => item.item_type === 'character');
 const overallCards = getTierListByCategory('overall').filter(item => item.item_type === 'support_card');
-const speedCharacters = getTierListByCategory('speed').filter(item => item.item_type === 'character');
-const speedCards = getTierListByCategory('speed').filter(item => item.item_type === 'support_card');
-const staminaCharacters = getTierListByCategory('stamina').filter(item => item.item_type === 'character');
-const staminaCards = getTierListByCategory('stamina').filter(item => item.item_type === 'support_card');
-const powerCharacters = getTierListByCategory('power').filter(item => item.item_type === 'character');
-const powerCards = getTierListByCategory('power').filter(item => item.item_type === 'support_card');
-const wisdomCharacters = getTierListByCategory('wisdom').filter(item => item.item_type === 'character');
-const wisdomCards = getTierListByCategory('wisdom').filter(item => item.item_type === 'support_card');
-const gutsCharacters = getTierListByCategory('guts').filter(item => item.item_type === 'character');
-const gutsCards = getTierListByCategory('guts').filter(item => item.item_type === 'support_card');
 
 // Group by tier
 function groupByTier(items: any[]) {
@@ -29,16 +19,6 @@ function groupByTier(items: any[]) {
 
 const overallCharacterTiers = groupByTier(overallCharacters);
 const overallCardTiers = groupByTier(overallCards);
-const speedCharacterTiers = groupByTier(speedCharacters);
-const speedCardTiers = groupByTier(speedCards);
-const staminaCharacterTiers = groupByTier(staminaCharacters);
-const staminaCardTiers = groupByTier(staminaCards);
-const powerCharacterTiers = groupByTier(powerCharacters);
-const powerCardTiers = groupByTier(powerCards);
-const wisdomCharacterTiers = groupByTier(wisdomCharacters);
-const wisdomCardTiers = groupByTier(wisdomCards);
-const gutsCharacterTiers = groupByTier(gutsCharacters);
-const gutsCardTiers = groupByTier(gutsCards);
 ---
 
 <Layout title="Tier Lists - UmamusumeDB">
@@ -70,31 +50,11 @@ const gutsCardTiers = groupByTier(gutsCards);
     <div class="flex flex-wrap gap-2 mb-8">
       <button class="tab-btn active" data-tab="overall-characters">
         <Trophy className="w-4 h-4 mr-2" />
-        Overall Characters
+        Characters
       </button>
       <button class="tab-btn" data-tab="overall-cards">
         <Trophy className="w-4 h-4 mr-2" />
-        Overall Cards
-      </button>
-      <button class="tab-btn" data-tab="speed">
-        <Zap className="w-4 h-4 mr-2" />
-        Speed
-      </button>
-      <button class="tab-btn" data-tab="stamina">
-        <Heart className="w-4 h-4 mr-2" />
-        Stamina
-      </button>
-      <button class="tab-btn" data-tab="power">
-        <Sparkles className="w-4 h-4 mr-2" />
-        Power
-      </button>
-      <button class="tab-btn" data-tab="wisdom">
-        <Brain className="w-4 h-4 mr-2" />
-        Wisdom
-      </button>
-      <button class="tab-btn" data-tab="guts">
-        <Star className="w-4 h-4 mr-2" />
-        Guts
+        Support Cards
       </button>
     </div>
 
@@ -173,97 +133,6 @@ const gutsCardTiers = groupByTier(gutsCards);
         })}
       </div>
 
-      <!-- Speed Tab -->
-      <div class="tab-content" id="speed">
-        <h2 class="text-2xl font-display mb-6">Speed Tier List</h2>
-        
-        <h3 class="text-xl font-display mb-4">Characters</h3>
-        {['SS', 'S', 'A', 'B', 'C'].map(tier => {
-          const items = speedCharacterTiers[tier] || [];
-          if (items.length === 0) return null;
-          
-          return (
-            <div class="tier-row glass rounded-xl p-4 mb-4">
-              <div class="flex items-start gap-4">
-                <div class={`tier-badge tier-${tier.toLowerCase()} px-4 py-2 rounded-lg text-white font-bold text-xl min-w-[60px] text-center`}>
-                  {tier}
-                </div>
-                <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-                  {items.map((item: any) => (
-                    <a href={`/characters/${item.item_id}`} class="tier-item bg-white rounded-lg p-3 shadow hover:shadow-lg transition-all hover:scale-105">
-                      <div class="flex items-center justify-between mb-2">
-                        <h3 class="font-semibold text-sm">{item.item_name}</h3>
-                        <div class="flex gap-1">
-                          {Array.from({ length: item.item_rarity || 3 }, () => (
-                            <span class="text-uma-accent text-xs">★</span>
-                          ))}
-                        </div>
-                      </div>
-                      <div class="text-xs text-uma-primary hover:underline">
-                        View Details →
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-        
-        <h3 class="text-xl font-display mb-4 mt-6">Support Cards</h3>
-        {['SS', 'S', 'A', 'B', 'C'].map(tier => {
-          const items = speedCardTiers[tier] || [];
-          if (items.length === 0) return null;
-          
-          return (
-            <div class="tier-row glass rounded-xl p-4 mb-4">
-              <div class="flex items-start gap-4">
-                <div class={`tier-badge tier-${tier.toLowerCase()} px-4 py-2 rounded-lg text-white font-bold text-xl min-w-[60px] text-center`}>
-                  {tier}
-                </div>
-                <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-                  {items.map((item: any) => (
-                    <a href={`/cards/${item.item_id}`} class="tier-item bg-white rounded-lg p-3 shadow hover:shadow-lg transition-all hover:scale-105">
-                      <div class="flex items-center justify-between mb-2">
-                        <h3 class="font-semibold text-sm">{item.item_name}</h3>
-                        <span class={`text-xs px-2 py-1 rounded font-bold text-white ${
-                          item.item_rarity === 'SSR' ? 'rarity-ssr' : 
-                          item.item_rarity === 'SR' ? 'rarity-sr' : 'rarity-r'
-                        }`}>
-                          {item.item_rarity}
-                        </span>
-                      </div>
-                      <div class="text-xs text-uma-primary hover:underline">
-                        View Details →
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      <div class="tab-content" id="stamina">
-        <h2 class="text-2xl font-display mb-6">Stamina Tier List</h2>
-        <p class="text-gray-600">No stamina tier list data available yet.</p>
-      </div>
-
-      <div class="tab-content" id="power">
-        <h2 class="text-2xl font-display mb-6">Power Tier List</h2>
-        <p class="text-gray-600">No power tier list data available yet.</p>
-      </div>
-
-      <div class="tab-content" id="wisdom">
-        <h2 class="text-2xl font-display mb-6">Wisdom Tier List</h2>
-        <p class="text-gray-600">No wisdom tier list data available yet.</p>
-      </div>
-
-      <div class="tab-content" id="guts">
-        <h2 class="text-2xl font-display mb-6">Guts Tier List</h2>
-        <p class="text-gray-600">No guts tier list data available yet.</p>
-      </div>
     </div>
   </main>
 

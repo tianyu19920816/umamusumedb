@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import SupportCardCard from '@/components/SupportCardCard';
 import { supportCards } from '@/lib/static-content';
-import { Filter, Search, Grid, List, Zap, Heart, Brain, Star, Sparkles, Users } from 'lucide-react';
+import { Filter, Search, Zap, Heart, Brain, Star, Sparkles, Users } from 'lucide-react';
 
 // Group cards by rarity
 const cardsByRarity = supportCards.reduce((acc, card) => {
@@ -97,15 +97,6 @@ const typeCount = supportCards.reduce((acc, card) => {
           <option value="friend">Friend</option>
         </select>
 
-        <!-- View Toggle -->
-        <div class="flex gap-2">
-          <button id="grid-view" class="p-2 rounded-lg bg-uma-primary/10 text-uma-primary">
-            <Grid className="w-5 h-5" />
-          </button>
-          <button id="list-view" class="p-2 rounded-lg hover:bg-uma-primary/10">
-            <List className="w-5 h-5" />
-          </button>
-        </div>
       </div>
     </div>
 
@@ -148,24 +139,12 @@ const typeCount = supportCards.reduce((acc, card) => {
     </div>
   </main>
 
-  <style>
-    /* List view styles */
-    .list-view #grid-container {
-      @apply grid-cols-1 gap-4;
-    }
-    
-    .list-view .card-item {
-      @apply max-w-full;
-    }
-  </style>
 
   <script>
     // Search and filter functionality
     const searchInput = document.getElementById('card-search') as HTMLInputElement;
     const rarityFilter = document.getElementById('rarity-filter') as HTMLSelectElement;
     const typeFilter = document.getElementById('type-filter') as HTMLSelectElement;
-    const gridViewBtn = document.getElementById('grid-view');
-    const listViewBtn = document.getElementById('list-view');
     const container = document.getElementById('cards-container');
     const noResults = document.getElementById('no-results');
 
@@ -209,28 +188,10 @@ const typeCount = supportCards.reduce((acc, card) => {
       }
     }
 
-    // View toggle
-    function setGridView() {
-      document.body.classList.remove('list-view');
-      gridViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
-      gridViewBtn?.classList.remove('hover:bg-uma-primary/10');
-      listViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
-      listViewBtn?.classList.add('hover:bg-uma-primary/10');
-    }
-
-    function setListView() {
-      document.body.classList.add('list-view');
-      listViewBtn?.classList.add('bg-uma-primary/10', 'text-uma-primary');
-      listViewBtn?.classList.remove('hover:bg-uma-primary/10');
-      gridViewBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
-      gridViewBtn?.classList.add('hover:bg-uma-primary/10');
-    }
 
     // Event listeners
     searchInput?.addEventListener('input', filterCards);
     rarityFilter?.addEventListener('change', filterCards);
     typeFilter?.addEventListener('change', filterCards);
-    gridViewBtn?.addEventListener('click', setGridView);
-    listViewBtn?.addEventListener('click', setListView);
   </script>
 </Layout>

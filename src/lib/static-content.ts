@@ -7,10 +7,15 @@ import skillsData from '../../public/data/skills.json';
 // Process character data
 export const characters = charactersData.map((char: any) => ({
   ...char,
-  attributes: typeof char.attributes === 'string' ? JSON.parse(char.attributes) : char.attributes,
-  skills: typeof char.skills === 'string' ? JSON.parse(char.skills) : char.skills,
+  initial_stats: typeof char.initial_stats === 'string' ? JSON.parse(char.initial_stats) : char.initial_stats,
+  max_stats: typeof char.max_stats === 'string' ? JSON.parse(char.max_stats) : char.max_stats,
   growth_rates: typeof char.growth_rates === 'string' ? JSON.parse(char.growth_rates) : char.growth_rates,
-  aptitudes: typeof char.aptitudes === 'string' ? JSON.parse(char.aptitudes) : char.aptitudes
+  aptitudes: typeof char.aptitudes === 'string' ? JSON.parse(char.aptitudes) : char.aptitudes,
+  unique_skill: typeof char.unique_skill === 'string' && char.unique_skill !== 'null' ? JSON.parse(char.unique_skill) : char.unique_skill,
+  awakening_skills: typeof char.awakening_skills === 'string' ? JSON.parse(char.awakening_skills) : char.awakening_skills,
+  // Keep attributes for backward compatibility
+  attributes: typeof char.initial_stats === 'string' ? JSON.parse(char.initial_stats) : char.initial_stats,
+  skills: typeof char.awakening_skills === 'string' ? JSON.parse(char.awakening_skills) : char.awakening_skills
 }));
 
 // Process support card data

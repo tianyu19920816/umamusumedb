@@ -85,12 +85,19 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
       <div className="p-4 border-b border-gray-100">
         <h4 className="font-semibold text-sm text-gray-700 mb-2">Effects</h4>
         <div className="grid grid-cols-2 gap-2 text-xs">
-          {Object.entries(card.effects).slice(0, 4).map(([key, value]) => (
-            <div key={key} className="flex justify-between">
-              <span className="text-gray-600 capitalize">{key.replace(/_/g, ' ')}:</span>
-              <span className="font-semibold text-uma-primary">+{value}</span>
-            </div>
-          ))}
+          {Object.entries(card.effects).slice(0, 4).map(([key, value]) => {
+            // Handle nested effect values (like lv1, lv30, etc.)
+            const displayValue = typeof value === 'object' && value !== null 
+              ? (value.lv50 || value.lv45 || value.lv40 || value.lv35 || value.lv30 || value.lv1 || '—')
+              : value;
+            
+            return (
+              <div key={key} className="flex justify-between">
+                <span className="text-gray-600 capitalize">{key.replace(/_/g, ' ')}:</span>
+                <span className="font-semibold text-uma-primary">+{displayValue}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
 

@@ -4,7 +4,7 @@ import Header from '@/components/Header.astro';
 import CharacterCard from '@/components/CharacterCard';
 import SupportCardCard from '@/components/SupportCardCard';
 import { characters, supportCards, getTierListByCategory } from '@/lib/static-content';
-import { Search, Filter, Trophy, Users, Sparkles, ChevronRight, Star, Grid, List } from 'lucide-react';
+import { Search, Filter, Trophy, Users, Sparkles, ChevronRight, Star } from 'lucide-react';
 
 // Load all data
 const tierList = getTierListByCategory('overall');
@@ -108,12 +108,6 @@ const topTierCharacters = tierList
             <option value="speed">Sort by Speed</option>
             <option value="stamina">Sort by Stamina</option>
           </select>
-          <button id="char-grid-view" class="p-2 rounded-lg bg-uma-primary/10 text-uma-primary">
-            <Grid className="w-4 h-4" />
-          </button>
-          <button id="char-list-view" class="p-2 rounded-lg hover:bg-uma-primary/10">
-            <List className="w-4 h-4" />
-          </button>
         </div>
       </div>
       
@@ -297,10 +291,6 @@ const topTierCharacters = tierList
       @apply block;
     }
     
-    .list-view #characters-grid,
-    .list-view #cards-grid {
-      @apply grid-cols-1 gap-2;
-    }
   </style>
 
   <script>
@@ -440,21 +430,6 @@ const topTierCharacters = tierList
     cardRarity?.addEventListener('change', filterCards);
     cardType?.addEventListener('change', filterCards);
     
-    // View toggle
-    const charGridBtn = document.getElementById('char-grid-view');
-    const charListBtn = document.getElementById('char-list-view');
-    
-    charGridBtn?.addEventListener('click', () => {
-      document.body.classList.remove('list-view');
-      charGridBtn.classList.add('bg-uma-primary/10', 'text-uma-primary');
-      charListBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
-    });
-    
-    charListBtn?.addEventListener('click', () => {
-      document.body.classList.add('list-view');
-      charListBtn.classList.add('bg-uma-primary/10', 'text-uma-primary');
-      charGridBtn?.classList.remove('bg-uma-primary/10', 'text-uma-primary');
-    });
     
     // Tier list category filter
     const tierFilterBtns = document.querySelectorAll('.tier-filter-btn');
@@ -465,8 +440,7 @@ const topTierCharacters = tierList
         tierFilterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         
-        // In production, this would fetch from API
-        console.log(`Loading tier list for category: ${category}`);
+        // Load tier list for selected category
       });
     });
   </script>

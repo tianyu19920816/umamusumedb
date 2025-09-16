@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dbPath = path.join(__dirname, '../data/umamusume.db');
+const dbPath = path.join(__dirname, '../database/umamusume.db');
 const db = new Database(dbPath);
 
 console.log('📦 Exporting database to JSON...');
@@ -38,9 +38,7 @@ try {
       FROM tier_lists t
       LEFT JOIN characters c ON t.item_type = 'character' AND t.item_id = c.id
       LEFT JOIN support_cards s ON t.item_type = 'support_card' AND t.item_id = s.id
-    `).all(),
-    teams: db.prepare('SELECT * FROM teams').all(),
-    events: db.prepare('SELECT * FROM events').all()
+    `).all()
   };
 
   // Create public data directory

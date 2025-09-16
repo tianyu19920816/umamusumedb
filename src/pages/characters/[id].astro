@@ -151,7 +151,7 @@ function getBestStrategy(aptitudes: any) {
         <div class="glass rounded-xl p-6">
           <h2 class="text-xl font-display mb-4 flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-uma-primary" />
-            Base Statistics
+            Character Statistics
           </h2>
           
           <div class="grid md:grid-cols-2 gap-4">
@@ -161,10 +161,16 @@ function getBestStrategy(aptitudes: any) {
                 <div class="flex-1">
                   <div class="flex justify-between mb-1">
                     <span class="text-sm font-medium">Speed</span>
-                    <span class="text-sm font-bold">{character.attributes?.speed || 0}</span>
+                    <div class="text-sm">
+                      <span class="font-bold">{character.initial_stats?.speed || 0}</span>
+                      <span class="text-gray-500"> / {character.max_stats?.speed || 1200}</span>
+                      {character.growth_rates?.speed && (
+                        <span class="text-uma-accent ml-1">({character.growth_rates.speed})</span>
+                      )}
+                    </div>
                   </div>
                   <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div class="bg-red-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.speed || 0) / 120) * 100}%`}}></div>
+                    <div class="bg-red-500 h-full transition-all duration-500" style={{width: `${((character.initial_stats?.speed || 0) / (character.max_stats?.speed || 1200)) * 100}%`}}></div>
                   </div>
                 </div>
               </div>
@@ -173,10 +179,16 @@ function getBestStrategy(aptitudes: any) {
                 <div class="flex-1">
                   <div class="flex justify-between mb-1">
                     <span class="text-sm font-medium">Stamina</span>
-                    <span class="text-sm font-bold">{character.attributes?.stamina || 0}</span>
+                    <div class="text-sm">
+                      <span class="font-bold">{character.initial_stats?.stamina || 0}</span>
+                      <span class="text-gray-500"> / {character.max_stats?.stamina || 1200}</span>
+                      {character.growth_rates?.stamina && (
+                        <span class="text-uma-accent ml-1">({character.growth_rates.stamina})</span>
+                      )}
+                    </div>
                   </div>
                   <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div class="bg-green-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.stamina || 0) / 120) * 100}%`}}></div>
+                    <div class="bg-green-500 h-full transition-all duration-500" style={{width: `${((character.initial_stats?.stamina || 0) / (character.max_stats?.stamina || 1200)) * 100}%`}}></div>
                   </div>
                 </div>
               </div>
@@ -185,10 +197,16 @@ function getBestStrategy(aptitudes: any) {
                 <div class="flex-1">
                   <div class="flex justify-between mb-1">
                     <span class="text-sm font-medium">Power</span>
-                    <span class="text-sm font-bold">{character.attributes?.power || 0}</span>
+                    <div class="text-sm">
+                      <span class="font-bold">{character.initial_stats?.power || 0}</span>
+                      <span class="text-gray-500"> / {character.max_stats?.power || 1200}</span>
+                      {character.growth_rates?.power && (
+                        <span class="text-uma-accent ml-1">({character.growth_rates.power})</span>
+                      )}
+                    </div>
                   </div>
                   <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div class="bg-orange-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.power || 0) / 120) * 100}%`}}></div>
+                    <div class="bg-orange-500 h-full transition-all duration-500" style={{width: `${((character.initial_stats?.power || 0) / (character.max_stats?.power || 1200)) * 100}%`}}></div>
                   </div>
                 </div>
               </div>
@@ -199,10 +217,16 @@ function getBestStrategy(aptitudes: any) {
                 <div class="flex-1">
                   <div class="flex justify-between mb-1">
                     <span class="text-sm font-medium">Guts</span>
-                    <span class="text-sm font-bold">{character.attributes?.guts || 0}</span>
+                    <div class="text-sm">
+                      <span class="font-bold">{character.initial_stats?.guts || 0}</span>
+                      <span class="text-gray-500"> / {character.max_stats?.guts || 1200}</span>
+                      {character.growth_rates?.guts && (
+                        <span class="text-uma-accent ml-1">({character.growth_rates.guts})</span>
+                      )}
+                    </div>
                   </div>
                   <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div class="bg-purple-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.guts || 0) / 120) * 100}%`}}></div>
+                    <div class="bg-purple-500 h-full transition-all duration-500" style={{width: `${((character.initial_stats?.guts || 0) / (character.max_stats?.guts || 1200)) * 100}%`}}></div>
                   </div>
                 </div>
               </div>
@@ -211,10 +235,16 @@ function getBestStrategy(aptitudes: any) {
                 <div class="flex-1">
                   <div class="flex justify-between mb-1">
                     <span class="text-sm font-medium">Wisdom</span>
-                    <span class="text-sm font-bold">{character.attributes?.wisdom || 0}</span>
+                    <div class="text-sm">
+                      <span class="font-bold">{character.initial_stats?.wisdom || 0}</span>
+                      <span class="text-gray-500"> / {character.max_stats?.wisdom || 1200}</span>
+                      {character.growth_rates?.wisdom && (
+                        <span class="text-uma-accent ml-1">({character.growth_rates.wisdom})</span>
+                      )}
+                    </div>
                   </div>
                   <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                    <div class="bg-blue-500 h-full transition-all duration-500" style={{width: `${((character.attributes?.wisdom || 0) / 120) * 100}%`}}></div>
+                    <div class="bg-blue-500 h-full transition-all duration-500" style={{width: `${((character.initial_stats?.wisdom || 0) / (character.max_stats?.wisdom || 1200)) * 100}%`}}></div>
                   </div>
                 </div>
               </div>
@@ -282,23 +312,45 @@ function getBestStrategy(aptitudes: any) {
           </div>
         </div>
 
-        <!-- Skills Section -->
-        {character.skills && character.skills.length > 0 && (
+        <!-- Unique Skill Section -->
+        {character.unique_skill && (
           <div class="glass rounded-xl p-6">
             <h2 class="text-xl font-display mb-4 flex items-center gap-2">
               <Zap className="w-5 h-5 text-uma-primary" />
-              Unique Skills
+              Unique Skill
+            </h2>
+            
+            <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+              <div class="w-10 h-10 bg-gradient-to-br from-uma-accent/20 to-uma-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Zap className="w-5 h-5 text-uma-accent" />
+              </div>
+              <div>
+                <h3 class="font-semibold">{character.unique_skill.name_en || 'Unique Skill'}</h3>
+                <p class="text-sm font-jp text-gray-500">{character.unique_skill.name_jp || ''}</p>
+                <p class="text-sm text-gray-600 mt-1">{character.unique_skill.effect || 'Special skill effect'}</p>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        <!-- Awakening Skills Section -->
+        {character.awakening_skills && character.awakening_skills.length > 0 && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Star className="w-5 h-5 text-uma-primary" />
+              Awakening Skills
             </h2>
             
             <div class="grid gap-3">
-              {character.skills.map((skill: string) => (
-                <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
-                  <div class="w-10 h-10 bg-gradient-to-br from-uma-accent/20 to-uma-accent/10 rounded-full flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-uma-accent" />
+              {character.awakening_skills.map((skill: any) => (
+                <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+                  <div class="w-10 h-10 bg-gradient-to-br from-uma-secondary/20 to-uma-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Star className="w-5 h-5 text-uma-secondary" />
                   </div>
                   <div>
-                    <h3 class="font-semibold">{skill}</h3>
-                    <p class="text-sm text-gray-600">Unique skill effect description</p>
+                    <h3 class="font-semibold">{skill.name_en || skill}</h3>
+                    {skill.name_jp && <p class="text-sm font-jp text-gray-500">{skill.name_jp}</p>}
+                    {skill.effect && <p class="text-sm text-gray-600 mt-1">{skill.effect}</p>}
                   </div>
                 </div>
               ))}
