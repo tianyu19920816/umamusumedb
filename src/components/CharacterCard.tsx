@@ -78,10 +78,13 @@ export default function CharacterCard({ character, tier }: CharacterCardProps) {
         </div>
       </div>
 
-      {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-        <a href={`/characters/${character.id}`} className="btn-secondary">View Details</a>
-      </div>
+      {/* Hover Overlay - Make entire overlay clickable */}
+      <a 
+        href={`/characters/${character.id}`} 
+        className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer"
+      >
+        <span className="btn-secondary pointer-events-none">View Details</span>
+      </a>
     </div>
   );
 }
