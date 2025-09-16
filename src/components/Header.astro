@@ -1,5 +1,5 @@
 ---
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu, X, Github } from 'lucide-react';
 ---
 
 <header class="sticky top-0 z-50 glass">
@@ -33,6 +33,13 @@ import { Search, Menu, X } from 'lucide-react';
           <Search class="w-5 h-5" />
         </button>
         
+        <!-- GitHub Link -->
+        <a href="https://github.com/tianyu19920816/umamusumedb" target="_blank" rel="noopener noreferrer" 
+           class="hidden md:flex items-center gap-1 px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm hover:bg-uma-primary/10 transition-colors">
+          <Github class="w-4 h-4" />
+          <span>GitHub</span>
+        </a>
+        
         <!-- Language Switcher -->
         <div class="hidden md:flex items-center gap-2">
           <a href="/" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm hover:bg-uma-primary/10 transition-colors">
@@ -64,6 +71,11 @@ import { Search, Menu, X } from 'lucide-react';
         </a>
         <a href="/tier-list" class="font-medium hover:text-uma-primary transition-colors py-2">
           Tier List
+        </a>
+        <a href="https://github.com/tianyu19920816/umamusumedb" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center gap-1 font-medium hover:text-uma-primary transition-colors py-2">
+          <Github class="w-4 h-4" />
+          <span>GitHub</span>
         </a>
         <div class="flex gap-2">
           <a href="/" class="px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-center hover:bg-uma-primary/10 transition-colors">

@@ -1,0 +1,108 @@
+{
+  "characterStructure": {
+    "baseStats": {
+      "speed": {
+        "min": 0,
+        "max": 1200,
+        "description": "Base speed stat"
+      },
+      "stamina": {
+        "min": 0,
+        "max": 1200,
+        "description": "Base stamina stat"
+      },
+      "power": {
+        "min": 0,
+        "max": 1200,
+        "description": "Base power stat"
+      },
+      "guts": {
+        "min": 0,
+        "max": 1200,
+        "description": "Base guts stat"
+      },
+      "wisdom": {
+        "min": 0,
+        "max": 1200,
+        "description": "Base wisdom stat"
+      }
+    },
+    "growthRates": {
+      "speed": {
+        "type": "percentage",
+        "description": "Speed growth rate %"
+      },
+      "stamina": {
+        "type": "percentage",
+        "description": "Stamina growth rate %"
+      },
+      "power": {
+        "type": "percentage",
+        "description": "Power growth rate %"
+      },
+      "guts": {
+        "type": "percentage",
+        "description": "Guts growth rate %"
+      },
+      "wisdom": {
+        "type": "percentage",
+        "description": "Wisdom growth rate %"
+      }
+    },
+    "aptitudes": {
+      "surface": [
+        "G",
+        "F",
+        "E",
+        "D",
+        "C",
+        "B",
+        "A",
+        "S"
+      ],
+      "distance": [
+        "Sprint",
+        "Mile",
+        "Medium",
+        "Long"
+      ],
+      "strategy": [
+        "Escape",
+        "Lead",
+        "Between",
+        "Chase"
+      ]
+    },
+    "skills": {
+      "unique": [],
+      "awakening": [],
+      "general": []
+    }
+  },
+  "supportCardStructure": {
+    "effects": {
+      "level1": {},
+      "level30": {},
+      "level35": {},
+      "level40": {},
+      "level45": {},
+      "level50": {}
+    },
+    "bonuses": {
+      "friendship": "Friendship bonus %",
+      "training": "Training efficiency %",
+      "motivation": "Motivation bonus %",
+      "skillPt": "Skill point bonus %",
+      "race": "Race bonus %",
+      "fanCount": "Fan count bonus %",
+      "hintLevel": "Hint level up",
+      "hintFrequency": "Hint frequency up",
+      "specialty": "Specialty rate up",
+      "initialBond": "Initial bond gauge"
+    },
+    "skills": {
+      "training": [],
+      "events": []
+    }
+  }
+}

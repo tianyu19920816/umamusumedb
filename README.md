@@ -1,106 +1,161 @@
-# UmamusumeDB - Umamusume Pretty Derby Database
+# UmamusumeDB - Uma Musume Pretty Derby Database
 
-A comprehensive database and tools platform for Umamusume Pretty Derby, built with Astro and Cloudflare Workers.
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-orange)](https://umamusumedb.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## 🌟 Features
+A comprehensive database and tools platform for Uma Musume Pretty Derby, built with modern web technologies and powered by open-source data.
 
-- **Character Database**: Browse all Uma Musume characters with detailed stats
-- **Support Card Database**: Complete collection of support cards with effects
-- **Tier Lists**: Community-voted rankings for characters and support cards
-- **Responsive Design**: Mobile-friendly interface with Umamusume-themed styling
-- **Fast Performance**: Edge-deployed on Cloudflare Workers
+🌐 **Live Site**: [https://umamusumedb.com](https://umamusumedb.com)
 
-## 🚀 Quick Start
+## Features
 
-### Development
+- 📊 **Complete Character Database** - Browse all Uma Musume with detailed stats and skills
+- 🎴 **Support Card Collection** - Filter and search support cards with effects
+- 🏆 **Tier Lists** - Community-driven rankings for characters and cards
+- 🌍 **Multi-language Support** - English and Japanese interfaces
+- ⚡ **Lightning Fast** - Static site with CDN distribution
+- 📱 **Mobile Friendly** - Responsive design for all devices
 
+## Tech Stack
+
+- **Frontend Framework**: [Astro](https://astro.build) (Static Site Generator)
+- **UI Components**: React + TypeScript
+- **Styling**: Tailwind CSS
+- **Database**: SQLite (Development) → Static JSON (Production)
+- **Image Storage**: Cloudflare R2
+- **Hosting**: Cloudflare Pages
+- **Analytics**: Google Analytics
+
+## Data Sources & Credits
+
+This project wouldn't be possible without these amazing open-source projects:
+
+### Primary Data Sources
+
+- **[UmaMusumeAPI](https://github.com/SimpleSandman/UmaMusumeAPI)** - Community REST API based on Uma Musume: Pretty Derby's master.mdb file
+  - Provides accurate game data including character stats, support cards, and skills
+  - Maintained by SimpleSandman
+
+- **[umamusume-db-translate](https://github.com/FabulousCupcake/umamusume-db-translate)** - Translation database for Uma Musume Pretty Derby
+  - Comprehensive translations for game content
+  - Browser-based master.mdb manipulation tools
+  - Maintained by FabulousCupcake
+
+### Special Thanks
+
+We extend our gratitude to:
+- The Uma Musume Pretty Derby community for continuous support
+- All contributors to the open-source projects we depend on
+- Cygames for creating this amazing game
+
+## Installation
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- SQLite3
+
+### Setup
+
+1. Clone the repository:
 ```bash
-# Install dependencies
+git clone https://github.com/tianyu19920816/umamusumedb.git
+cd umamusumedb
+```
+
+2. Install dependencies:
+```bash
 npm install
-
-# Export database to JSON (required first time)
-node scripts/export-to-json.js
-
-# Build the project
-npm run build
-
-# Start development server with Wrangler
-npx wrangler pages dev ./dist --port 3000 --compatibility-flags nodejs_compat
 ```
 
-### Production Deployment
-
+3. Set up environment variables:
 ```bash
-# Build for production
-npm run build
-
-# Deploy to Cloudflare Pages
-npx wrangler pages deploy dist --project-name=umamusumedb
+cp .env.example .env
+# Edit .env with your Cloudflare credentials
 ```
 
-## 📊 Data Management
-
-The project uses a local SQLite database during development that gets exported to static JSON files for deployment:
-
+4. Export data to JSON:
 ```bash
-# Update character data
-node scripts/collect-characters.js
-
-# Update support card data
-node scripts/collect-support-cards.js
-
-# Update skill data
-node scripts/collect-skills.js
-
-# Create tier list data
-node scripts/create-tier-lists.js
-
-# Export all data to JSON
 node scripts/export-to-json.js
 ```
 
-## 🛠 Tech Stack
+5. Start development server:
+```bash
+npm run dev
+```
 
-- **Frontend**: Astro, React, Tailwind CSS
-- **Backend**: Hono (Edge-first framework)
-- **Database**: SQLite (dev) → JSON (production)
-- **Deployment**: Cloudflare Pages + Workers
-- **Storage**: Cloudflare R2 (for images)
-- **Cache**: Cloudflare KV
+## Development
 
-## 📁 Project Structure
+### Project Structure
 
 ```
 umamusumedb/
 ├── src/
-│   ├── pages/          # Astro pages
+│   ├── pages/          # Astro pages (static generation)
 │   ├── components/     # React components
-│   ├── api/           # Hono API routes
-│   └── lib/           # Utilities
-├── database/          # Database schema and seeds
-├── scripts/           # Data collection scripts
+│   ├── layouts/        # Page layouts
+│   ├── lib/           # Utilities and data fetching
+│   └── styles/        # Global styles
 ├── public/
-│   └── data/         # Static JSON data
-└── dist/             # Build output
+│   └── data/          # Static JSON data files
+├── scripts/           # Data collection and export scripts
+├── database/          # SQLite database (development only)
+└── dist/             # Build output (static files)
 ```
 
-## 🎨 Design
+### Available Scripts
 
-The site features a Umamusume-themed design with:
-- Pink/Purple gradient color scheme
-- Horseshoe logo
-- Glass morphism effects
-- Animated elements
-- Responsive grid layouts
+```bash
+# Development
+npm run dev              # Start dev server
+npm run build           # Build for production
+npm run preview         # Preview production build
 
-## 📝 License
+# Data Management
+node scripts/collect-characters.js    # Update character data
+node scripts/collect-support-cards.js # Update support card data
+node scripts/export-to-json.js       # Export to JSON files
 
-MIT
+# Deployment
+npm run deploy          # Deploy to Cloudflare Pages
+```
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-## ⚠️ Disclaimer
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This is a fan-made project and is not affiliated with Cygames or the official Umamusume Pretty Derby game.
+## Data Accuracy
+
+We strive to maintain accurate game data by:
+- Regularly syncing with official game updates
+- Using verified open-source data sources
+- Community validation and feedback
+
+If you find any data discrepancies, please [open an issue](https://github.com/tianyu19920816/umamusumedb/issues).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This is an unofficial fan-made project. Uma Musume Pretty Derby and all related content are property of Cygames. This project is not affiliated with or endorsed by Cygames.
+
+All game data is sourced from publicly available information and open-source projects. We respect intellectual property rights and will promptly address any concerns.
+
+## Contact
+
+- Website: [https://umamusumedb.com](https://umamusumedb.com)
+- GitHub: [https://github.com/tianyu19920816/umamusumedb](https://github.com/tianyu19920816/umamusumedb)
+- Issues: [Report a bug](https://github.com/tianyu19920816/umamusumedb/issues)
+
+---
+
+Made with ❤️ by the Uma Musume community
