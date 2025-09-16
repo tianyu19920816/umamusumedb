@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { characters, supportCards } from '@/lib/static-content';
 
 export const GET: APIRoute = ({ site }) => {
-  const siteUrl = site?.toString() || 'https://umamusumedb.pages.dev';
+  const siteUrl = site?.toString() || 'https://umamusumedb.com';
   
   // Static pages
   const staticPages = [

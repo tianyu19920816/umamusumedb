@@ -48,12 +48,12 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
   return (
     <div className="group relative bg-white rounded-xl overflow-hidden shadow-lg card-hover">
       {/* Rarity Badge */}
-      <div className={`absolute top-2 left-2 z-10 px-3 py-1 rounded-full text-white font-bold text-sm ${rarityColors[card.rarity]}`}>
+      <div className={`absolute top-2 left-2 z-20 px-3 py-1 rounded-full text-white font-bold text-sm ${rarityColors[card.rarity]}`}>
         {card.rarity}
       </div>
 
       {/* Type Badge */}
-      <div className={`absolute top-2 right-2 z-10 w-10 h-10 rounded-full ${typeColors[card.type]} flex items-center justify-center`}>
+      <div className={`absolute top-2 right-2 z-20 w-10 h-10 rounded-full ${typeColors[card.type]} flex items-center justify-center`}>
         <TypeIcon className="w-5 h-5 text-white" />
       </div>
 
@@ -75,7 +75,7 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+        <div className="absolute bottom-0 left-0 right-0 p-4">
           <h3 className="text-white font-bold text-lg drop-shadow-lg">{card.name_en}</h3>
           <p className="text-white/90 text-sm font-jp drop-shadow-lg">{card.name_jp}</p>
         </div>
@@ -123,7 +123,7 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
       {/* Hover Overlay - Make entire overlay clickable */}
       <a 
         href={`/cards/${card.id}`} 
-        className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer"
+        className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer z-30"
       >
         <span className="btn-secondary pointer-events-none">View Details</span>
       </a>
