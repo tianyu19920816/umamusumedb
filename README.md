@@ -1,6 +1,5 @@
 # UmamusumeDB - Uma Musume Pretty Derby Database
 
-[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-orange)](https://umamusumedb.com)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A comprehensive database and tools platform for Uma Musume Pretty Derby, built with modern web technologies and powered by open-source data.
@@ -22,8 +21,6 @@ A comprehensive database and tools platform for Uma Musume Pretty Derby, built w
 - **UI Components**: React + TypeScript
 - **Styling**: Tailwind CSS
 - **Database**: SQLite (Development) → Static JSON (Production)
-- **Image Storage**: Cloudflare R2
-- **Hosting**: Cloudflare Pages
 - **Analytics**: Google Analytics
 
 ## Data Sources & Credits
@@ -69,18 +66,12 @@ cd umamusumedb
 npm install
 ```
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-# Edit .env with your Cloudflare credentials
-```
-
-4. Export data to JSON:
+3. Export data to JSON:
 ```bash
 node scripts/export-to-json.js
 ```
 
-5. Start development server:
+4. Start development server:
 ```bash
 npm run dev
 ```
@@ -100,7 +91,6 @@ umamusumedb/
 ├── public/
 │   └── data/          # Static JSON data files
 ├── scripts/           # Data collection and export scripts
-├── database/          # SQLite database (development only)
 └── dist/             # Build output (static files)
 ```
 
@@ -113,17 +103,12 @@ npm run build           # Build for production
 npm run preview         # Preview production build
 
 # Data Management
-node scripts/collect-characters.js    # Update character data
-node scripts/collect-support-cards.js # Update support card data
 node scripts/export-to-json.js       # Export to JSON files
-
-# Deployment
-npm run deploy          # Deploy to Cloudflare Pages
 ```
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please feel free to submit a Pull Request.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -134,9 +119,9 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ## Data Accuracy
 
 We strive to maintain accurate game data by:
-- Regularly syncing with official game updates
 - Using verified open-source data sources
 - Community validation and feedback
+- Regular updates from game data
 
 If you find any data discrepancies, please [open an issue](https://github.com/tianyu19920816/umamusumedb/issues).
 
@@ -149,12 +134,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 This is an unofficial fan-made project. Uma Musume Pretty Derby and all related content are property of Cygames. This project is not affiliated with or endorsed by Cygames.
 
 All game data is sourced from publicly available information and open-source projects. We respect intellectual property rights and will promptly address any concerns.
-
-## Contact
-
-- Website: [https://umamusumedb.com](https://umamusumedb.com)
-- GitHub: [https://github.com/tianyu19920816/umamusumedb](https://github.com/tianyu19920816/umamusumedb)
-- Issues: [Report a bug](https://github.com/tianyu19920816/umamusumedb/issues)
 
 ---
 

@@ -93,3 +93,16 @@ coverage/
 # R2 local development
 .r2/
 r2-assets/
+
+# Project specific sensitive files
+CLAUDE.md
+.env.example
+wrangler.toml
+.dev.vars
+scripts/upload-to-r2.js
+scripts/r2-urls.json
+
+# Database files (contains local data)
+database/
+*.db
+*.sqlite
