@@ -10,6 +10,12 @@ export const GET: APIRoute = ({ site }) => {
     '/characters',
     '/cards', 
     '/tier-list',
+    '/tools',
+    '/tools/factor-calculator',
+    '/tools/training-calculator',
+    '/tools/support-deck',
+    '/tools/training-goals',
+    '/tools/skill-builder',
     '/ja',
     '/ja/characters'
   ];
@@ -58,6 +64,7 @@ ${allPages.map(page => {
 function getPriority(page: string): string {
   if (page === '') return '1.0';
   if (page === '/characters' || page === '/cards' || page === '/tier-list') return '0.9';
+  if (page === '/tools' || page.includes('/tools/')) return '0.9';
   if (page === '/ja' || page === '/ja/characters') return '0.8';
   if (page.includes('/characters/') || page.includes('/cards/')) return '0.7';
   return '0.5';

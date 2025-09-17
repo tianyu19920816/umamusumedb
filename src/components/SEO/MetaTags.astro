@@ -1,0 +1,72 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  canonicalURL?: string;
+  type?: 'website' | 'article';
+  keywords?: string;
+}
+
+const {
+  title,
+  description,
+  image = 'https://umamusumedb.com/og-image.png',
+  canonicalURL = Astro.url.href,
+  type = 'website',
+  keywords = 'uma musume, pretty derby, umamusume database, ウマ娘, プリティーダービー, support cards, tier list, training calculator, character stats'
+} = Astro.props;
+
+const siteUrl = 'https://umamusumedb.com';
+const fullTitle = title.includes('UmamusumeDB') ? title : `${title} | UmamusumeDB`;
+---
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+<meta name="author" content="UmamusumeDB" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="UmamusumeDB" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="zh_CN" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={fullTitle} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={image} />
+<meta property="twitter:site" content="@umamusumedb" />
+<meta property="twitter:creator" content="@umamusumedb" />
+
+<!-- Additional SEO Meta Tags -->
+<meta name="googlebot" content="index, follow" />
+<meta name="bingbot" content="index, follow" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="UmamusumeDB" />
+<meta name="application-name" content="UmamusumeDB" />
+<meta name="msapplication-TileColor" content="#4F46E5" />
+<meta name="theme-color" content="#4F46E5" />
+
+<!-- Preconnect to external domains -->
+<link rel="preconnect" href="https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev" />
+<link rel="dns-prefetch" href="https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev" />
+
+<!-- Language alternatives -->
+<link rel="alternate" hreflang="en" href={canonicalURL} />
+<link rel="alternate" hreflang="ja" href={canonicalURL.replace('umamusumedb.com', 'umamusumedb.com/ja')} />
+<link rel="alternate" hreflang="x-default" href={canonicalURL} />

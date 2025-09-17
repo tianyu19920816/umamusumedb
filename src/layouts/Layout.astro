@@ -1,16 +1,22 @@
 ---
 import '@/styles/global.css';
+import MetaTags from '@/components/SEO/MetaTags.astro';
+import StructuredData from '@/components/SEO/StructuredData.astro';
 
 export interface Props {
   title: string;
   description?: string;
   image?: string;
+  structuredDataType?: 'website' | 'character' | 'supportCard' | 'tool';
+  structuredData?: any;
 }
 
 const { 
   title, 
-  description = 'Comprehensive database and tools for Umamusume Pretty Derby', 
-  image = '/og-image.png' 
+  description = 'Comprehensive database and tools for Uma Musume Pretty Derby - Characters, Support Cards, Tier Lists, Training Calculators', 
+  image = 'https://umamusumedb.com/og-image.png',
+  structuredDataType = 'website',
+  structuredData
 } = Astro.props;
 ---
 
@@ -34,19 +40,24 @@ const {
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- SEO -->
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta name="keywords" content="umamusumedb, umamusume, uma musume pretty derby, database, tier list, support cards, characters, team builder, guide" />
+    <!-- SEO Meta Tags -->
+    <MetaTags 
+      title={title}
+      description={description}
+      image={image}
+      canonicalURL={Astro.url.href}
+    />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <!-- Structured Data -->
+    <StructuredData 
+      type={structuredDataType}
+      data={structuredData}
+    />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

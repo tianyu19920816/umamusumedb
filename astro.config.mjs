@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
+  site: 'https://umamusumedb.com',
   output: 'static',
   integrations: [
     react(),
@@ -22,5 +23,9 @@ export default defineConfig({
     assets: 'assets',
     // Output directory for Cloudflare Pages
     outDir: './dist'
+  },
+  // Prefetch links for better performance
+  prefetch: {
+    prefetchAll: true
   }
 });
