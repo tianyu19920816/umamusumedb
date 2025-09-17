@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TrainingGoals from '../../components/tools/TrainingGoals';
+---
+
+<Layout title="Training Goals Tracker - UmamusumeDB" description="Track and manage training goals for each Uma Musume character">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Training Goals Tracker</h1>
+      <p class="text-gray-600">Track your progress through each character's training goals and get tips for completing them.</p>
+    </div>
+    
+    <TrainingGoals client:load />
+  </div>
+</Layout>

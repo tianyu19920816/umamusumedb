@@ -1,0 +1,79 @@
+[
+  {
+    "id": "arc_maestro",
+    "name_en": "Arc Maestro",
+    "name_jp": "アーク・マエストロ",
+    "type": "unique",
+    "effect": "Speed +0.45 m/s on curves",
+    "activation": "Final corner on curve",
+    "duration": "3.0s",
+    "cooldown": "Once per race",
+    "tier": "SS"
+  },
+  {
+    "id": "triumphant_pulse",
+    "name_en": "Triumphant Pulse",
+    "name_jp": "トリンフパルス",
+    "type": "unique",
+    "effect": "Speed +0.35 m/s, Power +300",
+    "activation": "Final spurt",
+    "duration": "3.0s",
+    "cooldown": "Once per race",
+    "tier": "SS"
+  },
+  {
+    "id": "bakushin_burst",
+    "name_en": "Bakushin Burst",
+    "name_jp": "バクシン",
+    "type": "unique",
+    "effect": "Speed +0.45 m/s in sprint races",
+    "activation": "Immediately in sprint/mile",
+    "duration": "Entire race",
+    "cooldown": "None",
+    "tier": "S"
+  },
+  {
+    "id": "transcendent_flash",
+    "name_en": "Transcendent Flash",
+    "name_jp": "先頭の景色は譲らない",
+    "type": "unique",
+    "effect": "Speed +0.55 m/s when leading",
+    "activation": "When in lead position",
+    "duration": "While leading",
+    "cooldown": "None",
+    "tier": "SS"
+  },
+  {
+    "id": "speed_star",
+    "name_en": "Speed Star",
+    "name_jp": "スピードスター",
+    "type": "common",
+    "effect": "Speed +0.15 m/s",
+    "activation": "Middle phase",
+    "duration": "3.0s",
+    "cooldown": "30s",
+    "tier": "A"
+  },
+  {
+    "id": "stamina_keep",
+    "name_en": "Stamina Keep",
+    "name_jp": "スタミナキープ",
+    "type": "common",
+    "effect": "Stamina consumption -15%",
+    "activation": "Middle phase",
+    "duration": "3.0s",
+    "cooldown": "30s",
+    "tier": "A"
+  },
+  {
+    "id": "positioning",
+    "name_en": "Positioning",
+    "name_jp": "ポジショニング",
+    "type": "common",
+    "effect": "Easier to maintain position",
+    "activation": "Start of race",
+    "duration": "12.0s",
+    "cooldown": "None",
+    "tier": "B"
+  }
+]

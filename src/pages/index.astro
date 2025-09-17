@@ -4,7 +4,7 @@ import Header from '@/components/Header.astro';
 import CharacterCard from '@/components/CharacterCard';
 import SupportCardCard from '@/components/SupportCardCard';
 import { characters, supportCards, getTierListByCategory } from '@/lib/static-content';
-import { Search, Filter, Trophy, Users, Sparkles, ChevronRight, Star } from 'lucide-react';
+import { Search, Filter, Trophy, Users, Sparkles, ChevronRight, Star, Calculator, TrendingUp } from 'lucide-react';
 
 // Load all data
 const tierList = getTierListByCategory('overall');
@@ -78,6 +78,65 @@ const topTierCharacters = tierList
           <div class="text-2xl font-bold gradient-text">100+</div>
           <div class="text-xs text-gray-600">Updates</div>
         </div>
+      </div>
+    </div>
+
+    <!-- Quick Tools Section -->
+    <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+        <Calculator className="w-5 h-5 text-purple-600" />
+        Training Tools
+      </h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/tools/factor-calculator" class="bg-white rounded-lg p-4 hover:shadow-lg transition-shadow border-2 border-yellow-200 hover:border-yellow-400">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+              <Star className="w-5 h-5 text-yellow-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold">Factor Calculator</h3>
+              <p class="text-xs text-gray-600">Calculate inheritance rates</p>
+            </div>
+          </div>
+          <div class="text-sm text-gray-700">
+            Optimize your breeding strategy with precise factor inheritance probability calculations.
+          </div>
+        </a>
+        
+        <a href="/tools/training-calculator" class="bg-white rounded-lg p-4 hover:shadow-lg transition-shadow border-2 border-purple-200 hover:border-purple-400">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+              <TrendingUp className="w-5 h-5 text-purple-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold">Training Calculator</h3>
+              <p class="text-xs text-gray-600">Optimize stat gains</p>
+            </div>
+          </div>
+          <div class="text-sm text-gray-700">
+            Calculate optimal training paths and maximize your stat gains with support cards.
+          </div>
+        </a>
+        
+        <a href="/tools/support-deck" class="bg-white rounded-lg p-4 hover:shadow-lg transition-shadow border-2 border-red-200 hover:border-red-400">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+              <Sparkles className="w-5 h-5 text-red-600" />
+            </div>
+            <div>
+              <h3 class="font-semibold">Deck Builder</h3>
+              <p class="text-xs text-gray-600">Build optimal decks</p>
+            </div>
+          </div>
+          <div class="text-sm text-gray-700">
+            Create the perfect 6-card support deck with synergy analysis and templates.
+          </div>
+        </a>
+      </div>
+      <div class="mt-4 text-center">
+        <a href="/tools" class="text-sm text-purple-600 hover:text-purple-700 font-medium">
+          View All Tools →
+        </a>
       </div>
     </div>
 

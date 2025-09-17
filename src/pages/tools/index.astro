@@ -1,0 +1,117 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Users, Trophy, TrendingUp, Zap, Sparkles, Calculator, Star, Target, Package } from 'lucide-react';
+---
+
+<Layout title="Tools - UmamusumeDB" description="Essential tools and calculators for Uma Musume Pretty Derby">
+  <div className="container mx-auto px-4 py-8">
+    <div className="mb-8">
+      <h1 className="text-3xl font-bold mb-4">Training Tools</h1>
+      <p className="text-gray-600">
+        Optimize your Uma Musume training with our comprehensive suite of tools and calculators.
+      </p>
+    </div>
+
+    <div className="min-h-screen">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="/tools/factor-calculator"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-yellow-400"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                <Star className="w-6 h-6 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-bold">Factor Calculator</h3>
+            </div>
+            <p className="text-gray-600">
+              Calculate factor inheritance probabilities and optimize your breeding strategy.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/tools/team-builder"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow opacity-50 pointer-events-none"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Users className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold">Team Builder</h3>
+            </div>
+            <p className="text-gray-600">
+              Build and optimize your Uma Musume teams with our advanced team builder.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Coming Soon</span>
+          </a>
+
+          <a
+            href="/tools/training-calculator"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-purple-400"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold">Training Calculator</h3>
+            </div>
+            <p className="text-gray-600">
+              Calculate optimal training paths and stat distributions for your Uma Musume.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/tools/support-deck"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-red-400"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <Sparkles className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold">Support Deck Builder</h3>
+            </div>
+            <p className="text-gray-600">
+              Create the perfect support card deck for your training needs.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/tools/training-goals"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-green-400"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <Target className="w-6 h-6 text-green-600" />
+              </div>
+              <h3 className="text-xl font-bold">Training Goals</h3>
+            </div>
+            <p className="text-gray-600">
+              Track your progress through each character's training goals.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-green-100 text-green-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/tools/skill-builder"
+            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-indigo-400"
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                <Package className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-bold">Skill Builder</h3>
+            </div>
+            <p className="text-gray-600">
+              Build optimal skill combinations with budget management and combo recommendations.
+            </p>
+            <span className="inline-block mt-2 text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">NEW</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

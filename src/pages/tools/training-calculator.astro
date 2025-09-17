@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TrainingCalculator from '../../components/tools/TrainingCalculator';
+---
+
+<Layout title="Training Calculator - UmamusumeDB" description="Calculate optimal training paths and maximize stat gains in Uma Musume">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Training Calculator</h1>
+      <p class="text-gray-600">Plan your training schedule and calculate expected stat gains with different support card setups.</p>
+    </div>
+    
+    <TrainingCalculator client:load />
+  </div>
+</Layout>

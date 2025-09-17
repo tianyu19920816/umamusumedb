@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SkillBuilder from '../../components/tools/SkillBuilder';
+---
+
+<Layout title="Skill Builder - UmamusumeDB" description="Build optimal skill combinations for your Uma Musume">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Skill Combination Builder</h1>
+      <p class="text-gray-600">Create powerful skill combinations and discover synergies for different race strategies.</p>
+    </div>
+    
+    <SkillBuilder client:load />
+  </div>
+</Layout>

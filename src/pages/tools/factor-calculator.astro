@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FactorCalculator from '../../components/tools/FactorCalculator';
+---
+
+<Layout title="Factor Inheritance Calculator - UmamusumeDB" description="Calculate factor inheritance probabilities and optimize your breeding strategy in Uma Musume">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Factor Inheritance Calculator</h1>
+      <p class="text-gray-600">Calculate the probability of inheriting factors from parent Uma Musume and optimize your breeding strategy.</p>
+    </div>
+    
+    <FactorCalculator client:load />
+  </div>
+</Layout>

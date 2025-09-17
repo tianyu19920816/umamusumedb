@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SupportDeckBuilder from '../../components/tools/SupportDeckBuilder';
+---
+
+<Layout title="Support Deck Builder - UmamusumeDB" description="Build optimal support card decks for different training strategies in Uma Musume">
+  <div class="container mx-auto px-4 py-8">
+    <div class="mb-8">
+      <h1 class="text-3xl font-bold mb-4">Support Deck Builder</h1>
+      <p class="text-gray-600">Create the perfect support card deck for your training strategy. Analyze synergies and optimize your card combinations.</p>
+    </div>
+    
+    <SupportDeckBuilder client:load />
+  </div>
+</Layout>
