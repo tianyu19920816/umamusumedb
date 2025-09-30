@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/format-sitemap.mjs",
     "preview": "astro preview",
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb",
     "deploy:preview": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb --branch=preview",

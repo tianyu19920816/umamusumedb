@@ -1,0 +1,5 @@
+# Redirect sitemap.xml to sitemap-index.xml
+/sitemap.xml /sitemap-index.xml 301
+
+# Ensure trailing slashes work correctly
+/* /:splat 200
