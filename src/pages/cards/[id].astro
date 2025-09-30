@@ -43,7 +43,7 @@ const rarityColors = {
       <ol class="flex items-center space-x-2">
         <li><a href="/" class="text-uma-primary hover:underline">Home</a></li>
         <li class="text-gray-400">/</li>
-        <li><a href="/cards" class="text-uma-primary hover:underline">Support Cards</a></li>
+        <li><a href="/cards/" class="text-uma-primary hover:underline">Support Cards</a></li>
         <li class="text-gray-400">/</li>
         <li class="text-gray-600">{card.name_en}</li>
       </ol>
@@ -113,24 +113,46 @@ const rarityColors = {
           </h2>
           
           <div class="grid md:grid-cols-2 gap-4">
-            {Object.entries(card.effects || {}).map(([key, value]) => (
-              <div class="bg-white rounded-lg p-4">
-                <div class="flex justify-between items-center">
-                  <span class="text-sm text-gray-600 capitalize">
-                    {key.replace(/_/g, ' ')}
-                  </span>
-                  <span class="text-lg font-bold text-uma-primary">
-                    +{value}%
-                  </span>
+            {Object.entries(card.effects || {}).map(([key, value]) => {
+              // Check if value is an object with level data
+              const isLevelData = typeof value === 'object' && value !== null && 'lv1' in value;
+              const displayValue = isLevelData ? value.lv50 : value;
+
+              return (
+                <div class="bg-white rounded-lg p-4">
+                  <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm text-gray-600 capitalize">
+                      {key.replace(/_/g, ' ')}
+                    </span>
+                    <span class="text-lg font-bold text-uma-primary">
+                      +{displayValue}
+                    </span>
+                  </div>
+                  {isLevelData && (
+                    <div class="text-xs text-gray-500 space-y-1">
+                      <div class="flex justify-between">
+                        <span>Lv.1:</span>
+                        <span>+{value.lv1}</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>Lv.30:</span>
+                        <span>+{value.lv30}</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span>Lv.50:</span>
+                        <span class="font-bold text-uma-primary">+{value.lv50}</span>
+                      </div>
+                    </div>
+                  )}
+                  <div class="mt-2 h-2 bg-gray-200 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-gradient-to-r from-uma-primary to-uma-secondary transition-all duration-500"
+                      style={{width: `${Math.min(Number(displayValue) * 2, 100)}%`}}
+                    />
+                  </div>
                 </div>
-                <div class="mt-2 h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div 
-                    class="h-full bg-gradient-to-r from-uma-primary to-uma-secondary transition-all duration-500"
-                    style={{width: `${Math.min(Number(value) * 2, 100)}%`}}
-                  />
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 

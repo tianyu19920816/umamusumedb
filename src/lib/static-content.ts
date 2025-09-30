@@ -1,6 +1,6 @@
 // Import JSON data directly for static builds
 import charactersData from '../../public/data/characters.json';
-import supportCardsData from '../../public/data/supportCards.json';
+import supportCardsData from '../../public/data/support-cards.json';
 import tierListsData from '../../public/data/tierLists.json';
 import skillsData from '../../public/data/skills.json';
 

@@ -89,7 +89,7 @@ export default function SupportDeckBuilder() {
   const [showAnalysis, setShowAnalysis] = useState(true);
 
   useEffect(() => {
-    fetch('/data/supportCards.json')
+    fetch('/data/support-cards.json')
       .then(res => res.json())
       .then(data => {
         const parsed = data.map((card: any) => ({

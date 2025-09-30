@@ -5,7 +5,7 @@
     "name_jp": "アーク・マエストロ",
     "description_en": "Speed +0.45 m/s on curves",
     "description_jp": "アーク・マエストロ",
-    "effect": "Speed +0.45 m/s on curves",
+    "effect": "Speed Speed +++ on curves",
     "trigger_condition": "Final corner on curve",
     "duration": "3.0s",
     "cooldown": "Once per race",
@@ -13,7 +13,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/arc_maestro.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "triumphant_pulse",
@@ -21,7 +22,7 @@
     "name_jp": "トリンフパルス",
     "description_en": "Speed +0.35 m/s, Power +300",
     "description_jp": "トリンフパルス",
-    "effect": "Speed +0.35 m/s, Power +300",
+    "effect": "Speed Speed +++, Power +300",
     "trigger_condition": "Final spurt",
     "duration": "3.0s",
     "cooldown": "Once per race",
@@ -29,7 +30,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/triumphant_pulse.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "bakushin_burst",
@@ -37,7 +39,7 @@
     "name_jp": "バクシン",
     "description_en": "Speed +0.45 m/s in sprint races",
     "description_jp": "バクシン",
-    "effect": "Speed +0.45 m/s in sprint races",
+    "effect": "Speed Speed +++ in sprint races",
     "trigger_condition": "Immediately in sprint/mile",
     "duration": "Entire race",
     "cooldown": "None",
@@ -45,7 +47,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/bakushin_burst.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "transcendent_flash",
@@ -53,7 +56,7 @@
     "name_jp": "先頭の景色は譲らない",
     "description_en": "Speed +0.55 m/s when leading",
     "description_jp": "先頭の景色は譲らない",
-    "effect": "Speed +0.55 m/s when leading",
+    "effect": "Speed Speed +++ when leading",
     "trigger_condition": "When in lead position",
     "duration": "While leading",
     "cooldown": "None",
@@ -61,7 +64,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/transcendent_flash.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "speed_star",
@@ -69,15 +73,16 @@
     "name_jp": "スピードスター",
     "description_en": "Speed +0.15 m/s",
     "description_jp": "スピードスター",
-    "effect": "Speed +0.15 m/s",
+    "effect": "Speed Speed +++",
     "trigger_condition": "Middle phase",
     "duration": "3.0s",
     "cooldown": "30s",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/speed_star.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "stamina_keep",
@@ -89,11 +94,12 @@
     "trigger_condition": "Middle phase",
     "duration": "3.0s",
     "cooldown": "30s",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/stamina_keep.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "positioning",
@@ -105,11 +111,12 @@
     "trigger_condition": "Start of race",
     "duration": "12.0s",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/positioning.png",
-    "created_at": "2025-09-16 10:01:31"
+    "created_at": "2025-09-16 10:01:31",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "escape_artist",
@@ -117,15 +124,16 @@
     "name_jp": "逃げの達人",
     "description_en": "Speed +0.25 m/s when escaping",
     "description_jp": "逃げの達人",
-    "effect": "Speed +0.25 m/s when escaping",
+    "effect": "Speed Speed +++ when escaping",
     "trigger_condition": "Start of race",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/escape_artist.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "leading_pride",
@@ -137,11 +145,12 @@
     "trigger_condition": "When in 1st place",
     "duration": "While leading",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "85-90%",
     "skill_type": "common",
     "rarity": "S",
     "icon_url": "/icons/skills/leading_pride.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "chase_down",
@@ -153,11 +162,12 @@
     "trigger_condition": "When overtaking",
     "duration": "2.0s",
     "cooldown": "10s",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/chase_down.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "stamina_save",
@@ -169,11 +179,12 @@
     "trigger_condition": "Middle phase",
     "duration": "5.0s",
     "cooldown": "30s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/stamina_save.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "pace_control",
@@ -185,11 +196,12 @@
     "trigger_condition": "Throughout race",
     "duration": "Variable",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/pace_control.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "final_push",
@@ -197,15 +209,16 @@
     "name_jp": "最後の一押し",
     "description_en": "Speed +0.35 m/s",
     "description_jp": "最後の一押し",
-    "effect": "Speed +0.35 m/s",
+    "effect": "Speed Speed +++",
     "trigger_condition": "Last 200m",
     "duration": "3.0s",
     "cooldown": "Once per race",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/final_push.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "sprint_turbo",
@@ -213,15 +226,16 @@
     "name_jp": "スプリントターボ",
     "description_en": "Speed +0.45 m/s in sprint",
     "description_jp": "スプリントターボ",
-    "effect": "Speed +0.45 m/s in sprint",
+    "effect": "Speed Speed +++ in sprint",
     "trigger_condition": "Sprint races only",
     "duration": "5.0s",
     "cooldown": "Once per race",
-    "activation_rate": "100%",
+    "activation_rate": "85-90%",
     "skill_type": "common",
     "rarity": "S",
     "icon_url": "/icons/skills/sprint_turbo.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "mile_champion",
@@ -233,11 +247,12 @@
     "trigger_condition": "Mile races only",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/mile_champion.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "long_runner",
@@ -249,11 +264,12 @@
     "trigger_condition": "Long distance only",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/long_runner.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "dirt_master",
@@ -261,15 +277,16 @@
     "name_jp": "ダートマスター",
     "description_en": "Speed +0.25 m/s on dirt",
     "description_jp": "ダートマスター",
-    "effect": "Speed +0.25 m/s on dirt",
+    "effect": "Speed Speed +++ on dirt",
     "trigger_condition": "Dirt tracks only",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/dirt_master.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "rain_master",
@@ -277,15 +294,16 @@
     "name_jp": "雨の達人",
     "description_en": "Speed +0.30 m/s in rain",
     "description_jp": "雨の達人",
-    "effect": "Speed +0.30 m/s in rain",
+    "effect": "Speed Speed +++ in rain",
     "trigger_condition": "Rainy weather",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/rain_master.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "shadow_roll",
@@ -293,7 +311,7 @@
     "name_jp": "シャドーロール",
     "description_en": "All stats +300, Speed +0.45 m/s",
     "description_jp": "シャドーロール",
-    "effect": "All stats +300, Speed +0.45 m/s",
+    "effect": "All stats +300, Speed Speed +++",
     "trigger_condition": "Final spurt",
     "duration": "5.0s",
     "cooldown": "Once per race",
@@ -301,7 +319,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/shadow_roll.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "emperors_authority",
@@ -317,7 +336,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/emperors_authority.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "turbo_engine",
@@ -325,7 +345,7 @@
     "name_jp": "ターボエンジン",
     "description_en": "Speed +0.55 m/s when escaping",
     "description_jp": "ターボエンジン",
-    "effect": "Speed +0.55 m/s when escaping",
+    "effect": "Speed Speed +++ when escaping",
     "trigger_condition": "When leading",
     "duration": "While leading",
     "cooldown": "None",
@@ -333,7 +353,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/turbo_engine.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "scarlet_impact",
@@ -341,7 +362,7 @@
     "name_jp": "スカーレットインパクト",
     "description_en": "Explosive speed +0.50 m/s",
     "description_jp": "スカーレットインパクト",
-    "effect": "Explosive speed +0.50 m/s",
+    "effect": "Explosive speed Speed +++",
     "trigger_condition": "Random in final phase",
     "duration": "3.0s",
     "cooldown": "Once per race",
@@ -349,7 +370,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/scarlet_impact.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "never_give_up",
@@ -361,11 +383,12 @@
     "trigger_condition": "Low stamina",
     "duration": "Rest of race",
     "cooldown": "Once per race",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/never_give_up.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "comeback",
@@ -373,15 +396,16 @@
     "name_jp": "カムバック",
     "description_en": "Speed +0.35 m/s when behind",
     "description_jp": "カムバック",
-    "effect": "Speed +0.35 m/s when behind",
+    "effect": "Speed Speed +++ when behind",
     "trigger_condition": "When in 5th or lower",
     "duration": "3.0s",
     "cooldown": "20s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/comeback.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "acceleration",
@@ -393,11 +417,12 @@
     "trigger_condition": "Corner exit",
     "duration": "2.0s",
     "cooldown": "15s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/acceleration.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "curve_specialist",
@@ -409,11 +434,12 @@
     "trigger_condition": "During curves",
     "duration": "While in curve",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/curve_specialist.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "straight_line_recovery",
@@ -425,11 +451,12 @@
     "trigger_condition": "On straight sections",
     "duration": "2.0s",
     "cooldown": "20s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/straight_line_recovery.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "power_sprint",
@@ -441,11 +468,12 @@
     "trigger_condition": "Last 300m",
     "duration": "Rest of race",
     "cooldown": "Once per race",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/power_sprint.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "concentration",
@@ -457,11 +485,12 @@
     "trigger_condition": "Start of race",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/concentration.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "skill_master",
@@ -473,11 +502,12 @@
     "trigger_condition": "Start of race",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/skill_master.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "perfect_timing",
@@ -489,11 +519,12 @@
     "trigger_condition": "Variable",
     "duration": "Variable",
     "cooldown": "Variable",
-    "activation_rate": "100%",
+    "activation_rate": "85-90%",
     "skill_type": "common",
     "rarity": "S",
     "icon_url": "/icons/skills/perfect_timing.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "energy_drink",
@@ -509,7 +540,8 @@
     "skill_type": "training",
     "rarity": "B",
     "icon_url": "/icons/skills/energy_drink.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "good_mood",
@@ -525,7 +557,8 @@
     "skill_type": "training",
     "rarity": "A",
     "icon_url": "/icons/skills/good_mood.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "all_rounder",
@@ -537,11 +570,12 @@
     "trigger_condition": "Start of race",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "common",
     "rarity": "B",
     "icon_url": "/icons/skills/all_rounder.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "triple_crown",
@@ -557,7 +591,8 @@
     "skill_type": "unique",
     "rarity": "SS",
     "icon_url": "/icons/skills/triple_crown.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "machine_gun_pace",
@@ -569,11 +604,12 @@
     "trigger_condition": "When escaping",
     "duration": "While leading",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "A",
     "icon_url": "/icons/skills/machine_gun_pace.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "blue_rose_prayer",
@@ -589,7 +625,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/blue_rose_prayer.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "emperors_dance",
@@ -597,7 +634,7 @@
     "name_jp": "帝王の舞",
     "description_en": "Speed +0.40 m/s, Guts +300",
     "description_jp": "帝王の舞",
-    "effect": "Speed +0.40 m/s, Guts +300",
+    "effect": "Speed Speed +++, Guts +300",
     "trigger_condition": "When injured/tired",
     "duration": "4.0s",
     "cooldown": "Once per race",
@@ -605,7 +642,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/emperors_dance.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "condors_flight",
@@ -613,15 +651,16 @@
     "name_jp": "コンドルの飛翔",
     "description_en": "Speed +0.45 m/s on dirt",
     "description_jp": "コンドルの飛翔",
-    "effect": "Speed +0.45 m/s on dirt",
+    "effect": "Speed Speed +++ on dirt",
     "trigger_condition": "Dirt track",
     "duration": "5.0s",
     "cooldown": "30s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "A",
     "icon_url": "/icons/skills/condors_flight.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "wonder_charge",
@@ -633,11 +672,12 @@
     "trigger_condition": "Rainy weather",
     "duration": "3.0s",
     "cooldown": "20s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "A",
     "icon_url": "/icons/skills/wonder_charge.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "steady_pace",
@@ -649,11 +689,12 @@
     "trigger_condition": "Throughout race",
     "duration": "Entire race",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "75-85%",
     "skill_type": "common",
     "rarity": "A",
     "icon_url": "/icons/skills/steady_pace.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Activation rate improves with Wit stat (300+ recommended)"
   },
   {
     "id": "bronze_collector",
@@ -665,11 +706,12 @@
     "trigger_condition": "When in 3rd place",
     "duration": "While in 3rd",
     "cooldown": "None",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "B",
     "icon_url": "/icons/skills/bronze_collector.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "white_lightning",
@@ -677,15 +719,16 @@
     "name_jp": "白い稲妻",
     "description_en": "Speed +0.40 m/s on straights",
     "description_jp": "白い稲妻",
-    "effect": "Speed +0.40 m/s on straights",
+    "effect": "Speed Speed +++ on straights",
     "trigger_condition": "Straight sections",
     "duration": "3.0s",
     "cooldown": "15s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "A",
     "icon_url": "/icons/skills/white_lightning.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "victory_ticket",
@@ -697,11 +740,12 @@
     "trigger_condition": "Last 100m",
     "duration": "Rest of race",
     "cooldown": "Once per race",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "B",
     "icon_url": "/icons/skills/victory_ticket.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "shuttle_burst",
@@ -709,7 +753,7 @@
     "name_jp": "シャトルバースト",
     "description_en": "Speed +0.55 m/s in sprint",
     "description_jp": "シャトルバースト",
-    "effect": "Speed +0.55 m/s in sprint",
+    "effect": "Speed Speed +++ in sprint",
     "trigger_condition": "Sprint races",
     "duration": "5.0s",
     "cooldown": "Once per race",
@@ -717,7 +761,8 @@
     "skill_type": "unique",
     "rarity": "S",
     "icon_url": "/icons/skills/shuttle_burst.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "empress_pride",
@@ -729,11 +774,12 @@
     "trigger_condition": "When challenged",
     "duration": "4.0s",
     "cooldown": "20s",
-    "activation_rate": "100%",
+    "activation_rate": "70-80%",
     "skill_type": "unique",
     "rarity": "A",
     "icon_url": "/icons/skills/empress_pride.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   },
   {
     "id": "food_fighter",
@@ -749,6 +795,7 @@
     "skill_type": "training",
     "rarity": "C",
     "icon_url": "/icons/skills/food_fighter.png",
-    "created_at": "2025-09-17 03:54:47"
+    "created_at": "2025-09-17 03:54:47",
+    "wit_dependency": "Not affected by Wit stat"
   }
 ]
