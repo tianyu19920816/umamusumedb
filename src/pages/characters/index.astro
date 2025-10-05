@@ -46,13 +46,29 @@ const charactersByRarity = characters.reduce((acc, char) => {
           <option value="1">1★ Only</option>
         </select>
 
-        <!-- Aptitude Filter -->
-        <select id="aptitude-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+        <!-- Distance Filter -->
+        <select id="distance-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
           <option value="all">All Distances</option>
           <option value="sprint">Sprint</option>
           <option value="mile">Mile</option>
           <option value="medium">Medium</option>
           <option value="long">Long</option>
+        </select>
+
+        <!-- Running Style Filter -->
+        <select id="running-style-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Styles</option>
+          <option value="escape">Escape</option>
+          <option value="lead">Lead</option>
+          <option value="between">Between</option>
+          <option value="chase">Chase</option>
+        </select>
+
+        <!-- Surface Filter -->
+        <select id="surface-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
+          <option value="all">All Surfaces</option>
+          <option value="turf">Turf</option>
+          <option value="dirt">Dirt</option>
         </select>
 
       </div>
@@ -101,42 +117,50 @@ const charactersByRarity = characters.reduce((acc, char) => {
     // Search and filter functionality
     const searchInput = document.getElementById('character-search') as HTMLInputElement;
     const rarityFilter = document.getElementById('rarity-filter') as HTMLSelectElement;
-    const aptitudeFilter = document.getElementById('aptitude-filter') as HTMLSelectElement;
+    const distanceFilter = document.getElementById('distance-filter') as HTMLSelectElement;
+    const runningStyleFilter = document.getElementById('running-style-filter') as HTMLSelectElement;
+    const surfaceFilter = document.getElementById('surface-filter') as HTMLSelectElement;
     const container = document.getElementById('characters-container');
     const noResults = document.getElementById('no-results');
 
     function filterCharacters() {
       const searchTerm = searchInput?.value.toLowerCase() || '';
       const selectedRarity = rarityFilter?.value || 'all';
-      const selectedAptitude = aptitudeFilter?.value || 'all';
-      
+      const selectedDistance = distanceFilter?.value || 'all';
+      const selectedRunningStyle = runningStyleFilter?.value || 'all';
+      const selectedSurface = surfaceFilter?.value || 'all';
+
       let hasResults = false;
-      
+
       // Filter individual characters
       document.querySelectorAll('.character-item').forEach((item) => {
         const name = item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         const aptitudes = JSON.parse(item.getAttribute('data-aptitudes') || '{}');
-        
+
         const matchesSearch = name.includes(searchTerm);
         const matchesRarity = selectedRarity === 'all' || rarity === selectedRarity;
-        const matchesAptitude = selectedAptitude === 'all' || 
-          (aptitudes[selectedAptitude] && ['A', 'B'].includes(aptitudes[selectedAptitude]));
-        
-        if (matchesSearch && matchesRarity && matchesAptitude) {
+        const matchesDistance = selectedDistance === 'all' ||
+          (aptitudes[selectedDistance] && ['S', 'A', 'B'].includes(aptitudes[selectedDistance]));
+        const matchesRunningStyle = selectedRunningStyle === 'all' ||
+          (aptitudes[selectedRunningStyle] && ['S', 'A', 'B'].includes(aptitudes[selectedRunningStyle]));
+        const matchesSurface = selectedSurface === 'all' ||
+          (aptitudes[selectedSurface] && ['S', 'A', 'B'].includes(aptitudes[selectedSurface]));
+
+        if (matchesSearch && matchesRarity && matchesDistance && matchesRunningStyle && matchesSurface) {
           (item as HTMLElement).style.display = '';
           hasResults = true;
         } else {
           (item as HTMLElement).style.display = 'none';
         }
       });
-      
+
       // Hide empty rarity sections
       document.querySelectorAll('[data-rarity]').forEach((section) => {
         const visibleItems = section.querySelectorAll('.character-item:not([style*="display: none"])');
         (section as HTMLElement).style.display = visibleItems.length > 0 ? '' : 'none';
       });
-      
+
       // Show/hide no results message
       if (noResults) {
         noResults.classList.toggle('hidden', hasResults);
@@ -149,6 +173,8 @@ const charactersByRarity = characters.reduce((acc, char) => {
     // Event listeners
     searchInput?.addEventListener('input', filterCharacters);
     rarityFilter?.addEventListener('change', filterCharacters);
-    aptitudeFilter?.addEventListener('change', filterCharacters);
+    distanceFilter?.addEventListener('change', filterCharacters);
+    runningStyleFilter?.addEventListener('change', filterCharacters);
+    surfaceFilter?.addEventListener('change', filterCharacters);
   </script>
 </Layout>

@@ -1,781 +1,13 @@
 [
   {
-    "id": "oguri_cap_starlight",
-    "name_en": "Oguri Cap (Starlight Beat)",
-    "name_jp": "オグリキャップ（スターライトビート）",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 89,
-      "stamina": 77,
-      "power": 102,
-      "guts": 87,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 15,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "A",
-      "sprint": "E",
-      "mile": "A",
-      "medium": "A",
-      "long": "B",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Triumphant Pulse",
-      "name_jp": "トリンフパルス",
-      "effect": "Powerful acceleration in the final spurt"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "narita_taishin_nevertheless",
-    "name_en": "Narita Taishin (Nevertheless)",
-    "name_jp": "ナリタタイシン（ネバーザレス）",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 110,
-      "power": 95,
-      "guts": 75,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 20,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "A",
-      "long": "A",
-      "escape": "G",
-      "lead": "G",
-      "between": "B",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Nevertheless",
-      "name_jp": "ネバーザレス",
-      "effect": "Massive stamina recovery and speed boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "agnes_tachyon_tachnology",
-    "name_en": "Agnes Tachyon (Tach-nology)",
-    "name_jp": "アグネスタキオン（タキノロジー）",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 92,
-      "stamina": 88,
-      "power": 90,
-      "guts": 75,
-      "wisdom": 105
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 5,
-      "guts": 0,
-      "wisdom": 10
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "F",
-      "mile": "B",
-      "medium": "A",
-      "long": "B",
-      "escape": "E",
-      "lead": "A",
-      "between": "A",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Tach-nology",
-      "name_jp": "タキノロジー",
-      "effect": "Scientific precision boosts all stats mid-race"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "seiun_sky_reeling",
-    "name_en": "Seiun Sky (Reeling in the Big One)",
-    "name_jp": "セイウンスカイ（大漁旗）",
+    "id": "admire_vega_2025",
+    "name_en": "Admire Vega",
+    "name_jp": "アドマイヤベガ",
     "rarity": 3,
     "initial_stats": {
       "speed": 88,
-      "stamina": 95,
-      "power": 82,
-      "guts": 85,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 0,
-      "guts": 0,
-      "wisdom": 20
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "A",
-      "lead": "B",
-      "between": "C",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Big Catch",
-      "name_jp": "大漁旗",
-      "effect": "Speed boost when leading in late race"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "sakura_bakushin_o",
-    "name_en": "Sakura Bakushin O",
-    "name_jp": "サクラバクシンオー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 115,
-      "stamina": 65,
-      "power": 95,
-      "guts": 85,
-      "wisdom": 80
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 20,
-      "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "A",
-      "mile": "A",
-      "medium": "G",
-      "long": "G",
-      "escape": "A",
-      "lead": "C",
-      "between": "G",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Bakushin Burst",
-      "name_jp": "バクシン",
-      "effect": "Explosive speed boost in sprint races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "curren_chan",
-    "name_en": "Curren Chan",
-    "name_jp": "カレンチャン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 102,
-      "stamina": 68,
-      "power": 100,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 20,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "C",
-      "sprint": "A",
-      "mile": "B",
-      "medium": "G",
-      "long": "G",
-      "escape": "B",
-      "lead": "A",
-      "between": "C",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Karen Step",
-      "name_jp": "カレンステップ",
-      "effect": "Graceful acceleration in sprint races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/curren_chan.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "smart_falcon",
-    "name_en": "Smart Falcon",
-    "name_jp": "スマートファルコン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 95,
-      "stamina": 82,
-      "power": 93,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "C",
-      "dirt": "A",
-      "sprint": "E",
-      "mile": "A",
-      "medium": "A",
-      "long": "C",
-      "escape": "C",
-      "lead": "A",
-      "between": "B",
-      "chase": "E"
-    },
-    "unique_skill": {
-      "name_en": "Falcon Strike",
-      "name_jp": "ファルコンストライク",
-      "effect": "Sharp acceleration on dirt tracks"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/smart_falcon.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "special_week_2025",
-    "name_en": "Special Week",
-    "name_jp": "スペシャルウィーク",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 77,
-      "stamina": 76,
-      "power": 77,
-      "guts": 102,
-      "wisdom": 97
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "F",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "C",
-      "lead": "A",
-      "between": "B",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Eat Up and Work Hard♪",
-      "name_jp": "食い下がり",
-      "effect": "Stamina recovery when surrounded"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/special_week_2025.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "silence_suzuka_2025",
-    "name_en": "Silence Suzuka",
-    "name_jp": "サイレンススズカ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 103,
-      "stamina": 71,
-      "power": 64,
-      "guts": 96,
-      "wisdom": 106
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 20,
-      "stamina": 0,
-      "power": 0,
-      "guts": 0,
-      "wisdom": 10
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "E",
-      "mile": "A",
-      "medium": "A",
-      "long": "B",
-      "escape": "A",
-      "lead": "C",
-      "between": "E",
-      "chase": "D"
-    },
-    "unique_skill": {
-      "name_en": "Transcendent Flash",
-      "name_jp": "先頭の景色は譲らない",
-      "effect": "Massive speed boost when leading"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "gold_ship_2025",
-    "name_en": "Gold Ship",
-    "name_jp": "ゴールドシップ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 82,
-      "stamina": 94,
-      "power": 103,
-      "guts": 67,
-      "wisdom": 94
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "F",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "F",
-      "lead": "E",
-      "between": "C",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Unpredictable Chaos",
-      "name_jp": "不沈艦、抜錨ォッ！",
-      "effect": "Random massive stat boosts"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/gold_ship_2025.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "mejiro_mcqueen_2025",
-    "name_en": "Mejiro McQueen",
-    "name_jp": "メジロマックイーン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 72,
-      "stamina": 109,
-      "power": 84,
-      "guts": 79,
-      "wisdom": 96
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 20,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "E",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Mejiro Family Pride",
-      "name_jp": "貴顕の使命を果たすべく",
-      "effect": "Perfect pacing increases speed"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png",
-    "created_at": "2025-09-16 10:01:31",
-    "updated_at": "2025-09-16 10:01:31"
-  },
-  {
-    "id": "daiwa_scarlet_2025",
-    "name_en": "Daiwa Scarlet",
-    "name_jp": "ダイワスカーレット",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 95,
-      "stamina": 75,
-      "power": 100,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 15,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "E",
-      "mile": "A",
-      "medium": "A",
-      "long": "C",
-      "escape": "A",
-      "lead": "C",
-      "between": "B",
-      "chase": "E"
-    },
-    "unique_skill": {
-      "name_en": "Scarlet Impact",
-      "name_jp": "スカーレットインパクト",
-      "effect": "Explosive acceleration when leading"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "vodka_2025",
-    "name_en": "Vodka",
-    "name_jp": "ウオッカ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 88,
-      "stamina": 85,
-      "power": 95,
-      "guts": 92,
-      "wisdom": 80
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 10,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "B",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Strong Heart",
-      "name_jp": "ストロングハート",
-      "effect": "Stamina recovery in final corner"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/vodka_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "manhattan_cafe_2025",
-    "name_en": "Manhattan Cafe",
-    "name_jp": "マンハッタンカフェ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 75,
-      "stamina": 105,
+      "stamina": 80,
       "power": 85,
-      "guts": 75,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 20,
-      "power": 5,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "B",
-      "long": "A",
-      "escape": "G",
-      "lead": "G",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Cafe's Rhythm",
-      "name_jp": "カフェリズム",
-      "effect": "Perfect pacing in long distance"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "tokai_teio_2025",
-    "name_en": "Tokai Teio",
-    "name_jp": "トウカイテイオー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 93,
-      "stamina": 82,
-      "power": 88,
-      "guts": 92,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 5,
-      "guts": 10,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "E",
-      "mile": "B",
-      "medium": "A",
-      "long": "A",
-      "escape": "C",
-      "lead": "A",
-      "between": "A",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Emperor's Dance",
-      "name_jp": "帝王の舞",
-      "effect": "Speed and guts boost when injured"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/tokai_teio_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "el_condor_pasa_2025",
-    "name_en": "El Condor Pasa",
-    "name_jp": "エルコンドルパサー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 90,
-      "stamina": 78,
-      "power": 95,
-      "guts": 87,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 15,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "B",
-      "dirt": "A",
-      "sprint": "G",
-      "mile": "A",
-      "medium": "A",
-      "long": "E",
-      "escape": "E",
-      "lead": "A",
-      "between": "A",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Condor's Flight",
-      "name_jp": "コンドルの飛翔",
-      "effect": "Speed boost on dirt tracks"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "grass_wonder_2025",
-    "name_en": "Grass Wonder",
-    "name_jp": "グラスワンダー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 88,
-      "power": 90,
       "guts": 82,
       "wisdom": 95
     },
@@ -787,399 +19,15 @@
       "wisdom": 1200
     },
     "growth_rates": {
-      "speed": 5,
-      "stamina": 10,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "G",
-      "mile": "A",
-      "medium": "A",
-      "long": "B",
-      "escape": "G",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Wonder Charge",
-      "name_jp": "ワンダーチャージ",
-      "effect": "Acceleration in rain conditions"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/grass_wonder_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "symboli_rudolf_2025",
-    "name_en": "Symboli Rudolf",
-    "name_jp": "シンボリルドルフ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 95,
-      "power": 85,
-      "guts": 85,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 10,
+      "speed": 10,
+      "stamina": 0,
       "power": 5,
-      "guts": 0,
+      "guts": 5,
       "wisdom": 10
     },
     "aptitudes": {
       "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "A",
-      "between": "A",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Emperor's Authority",
-      "name_jp": "皇帝の威厳",
-      "effect": "All stats boost when in top 3"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "rice_shower_2025",
-    "name_en": "Rice Shower",
-    "name_jp": "ライスシャワー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 72,
-      "stamina": 115,
-      "power": 78,
-      "guts": 85,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 25,
-      "power": 0,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "G",
-      "medium": "B",
-      "long": "A",
-      "escape": "A",
-      "lead": "C",
-      "between": "C",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Blue Rose Prayer",
-      "name_jp": "青薔薇の祈り",
-      "effect": "Massive stamina conservation"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/rice_shower_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "mihono_bourbon_2025",
-    "name_en": "Mihono Bourbon",
-    "name_jp": "ミホノブルボン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 98,
-      "stamina": 82,
-      "power": 85,
-      "guts": 75,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 15,
-      "stamina": 5,
-      "power": 5,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "E",
-      "mile": "B",
-      "medium": "A",
-      "long": "A",
-      "escape": "A",
-      "lead": "G",
-      "between": "G",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Cyborg Sprint",
-      "name_jp": "サイボーグスプリント",
-      "effect": "Constant high speed when leading"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "biwa_hayahide_2025",
-    "name_en": "Biwa Hayahide",
-    "name_jp": "ビワハヤヒデ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 80,
-      "stamina": 95,
-      "power": 88,
-      "guts": 82,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 15,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
       "dirt": "E",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "A",
-      "between": "A",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Steady Pace",
-      "name_jp": "ステディペース",
-      "effect": "Perfect rhythm in long races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "winning_ticket_2025",
-    "name_en": "Winning Ticket",
-    "name_jp": "ウイニングチケット",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 90,
-      "power": 85,
-      "guts": 88,
-      "wisdom": 82
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 10,
-      "power": 5,
-      "guts": 10,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "B",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Victory Ticket",
-      "name_jp": "ビクトリーチケット",
-      "effect": "Guts boost in crucial moments"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/winning_ticket_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "nice_nature_2025",
-    "name_en": "Nice Nature",
-    "name_jp": "ナイスネイチャ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 78,
-      "stamina": 92,
-      "power": 82,
-      "guts": 95,
-      "wisdom": 83
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 5,
-      "guts": 15,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "A",
-      "long": "A",
-      "escape": "G",
-      "lead": "G",
-      "between": "B",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Third Place Magic",
-      "name_jp": "3位の魔法",
-      "effect": "Stats boost when in 3rd place"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/nice_nature_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "tamamo_cross_2025",
-    "name_en": "Tamamo Cross",
-    "name_jp": "タマモクロス",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 88,
-      "stamina": 85,
-      "power": 92,
-      "guts": 85,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 5,
-      "power": 15,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "C",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "C",
-      "lead": "A",
-      "between": "B",
-      "chase": "E"
-    },
-    "unique_skill": {
-      "name_en": "White Lightning",
-      "name_jp": "白い稲妻",
-      "effect": "Speed burst in straight lines"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "oguri_cap_original",
-    "name_en": "Oguri Cap (Original)",
-    "name_jp": "オグリキャップ（オリジナル）",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 87,
-      "stamina": 75,
-      "power": 98,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 15,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
       "sprint": "E",
       "mile": "A",
       "medium": "A",
@@ -1190,492 +38,12 @@
       "chase": "A"
     },
     "unique_skill": {
-      "name_en": "Gray Monster",
-      "name_jp": "グレーモンスター",
-      "effect": "Power burst in final spurt"
+      "name_en": "Starlight Road",
+      "name_jp": "スターライトロード",
+      "effect": "Speed boost under night races"
     },
     "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_original.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "king_halo_2025",
-    "name_en": "King Halo",
-    "name_jp": "キングヘイロー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 92,
-      "stamina": 72,
-      "power": 88,
-      "guts": 83,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 10
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "A",
-      "mile": "A",
-      "medium": "C",
-      "long": "G",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "King's Pride",
-      "name_jp": "王の誇り",
-      "effect": "Wisdom boost in short races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/king_halo_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "taiki_shuttle_2025",
-    "name_en": "Taiki Shuttle",
-    "name_jp": "タイキシャトル",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 105,
-      "stamina": 68,
-      "power": 92,
-      "guts": 85,
-      "wisdom": 80
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 20,
-      "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "A",
-      "sprint": "A",
-      "mile": "A",
-      "medium": "E",
-      "long": "G",
-      "escape": "C",
-      "lead": "A",
-      "between": "C",
-      "chase": "E"
-    },
-    "unique_skill": {
-      "name_en": "Shuttle Burst",
-      "name_jp": "シャトルバースト",
-      "effect": "Extreme speed in sprint races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "air_groove_2025",
-    "name_en": "Air Groove",
-    "name_jp": "エアグルーヴ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 82,
-      "power": 90,
-      "guts": 88,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 5,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "B",
-      "medium": "A",
-      "long": "B",
-      "escape": "G",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Empress Pride",
-      "name_jp": "女帝のプライド",
-      "effect": "All-around stat boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/air_groove_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "mayano_topgun_2025",
-    "name_en": "Mayano Top Gun",
-    "name_jp": "マヤノトップガン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 82,
-      "stamina": 88,
-      "power": 92,
-      "guts": 78,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 15,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "E",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Top Gun Maverick",
-      "name_jp": "トップガンマーベリック",
-      "effect": "Power boost in chase position"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "twin_turbo_2025",
-    "name_en": "Twin Turbo",
-    "name_jp": "ツインターボ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 110,
-      "stamina": 65,
-      "power": 80,
-      "guts": 90,
-      "wisdom": 75
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 25,
-      "stamina": 0,
-      "power": 0,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "C",
-      "sprint": "C",
-      "mile": "A",
-      "medium": "B",
-      "long": "E",
-      "escape": "A",
-      "lead": "G",
-      "between": "G",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Turbo Engine",
-      "name_jp": "ターボエンジン",
-      "effect": "Extreme speed when escaping"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/twin_turbo_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "ikuno_dictus_2025",
-    "name_en": "Ikuno Dictus",
-    "name_jp": "イクノディクタス",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 75,
-      "stamina": 88,
-      "power": 85,
-      "guts": 92,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 5,
-      "guts": 15,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "E",
-      "mile": "C",
-      "medium": "A",
-      "long": "B",
-      "escape": "G",
-      "lead": "B",
-      "between": "A",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Dictus Authority",
-      "name_jp": "ディクタスの威厳",
-      "effect": "Guts and stamina boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "mejiro_dober_2025",
-    "name_en": "Mejiro Dober",
-    "name_jp": "メジロドーベル",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 78,
-      "stamina": 95,
-      "power": 82,
-      "guts": 80,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 15,
-      "power": 5,
-      "guts": 0,
-      "wisdom": 10
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "F",
-      "medium": "B",
-      "long": "A",
-      "escape": "G",
-      "lead": "E",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Mejiro Determination",
-      "name_jp": "メジロの決意",
-      "effect": "Stamina boost in long races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "narita_brian_2025",
-    "name_en": "Narita Brian",
-    "name_jp": "ナリタブライアン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 92,
-      "stamina": 88,
-      "power": 95,
-      "guts": 85,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "E",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Shadow Roll",
-      "name_jp": "シャドーロール",
-      "effect": "Overwhelming power in all positions"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/narita_brian_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "zenno_rob_roy_2025",
-    "name_en": "Zenno Rob Roy",
-    "name_jp": "ゼンノロブロイ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 80,
-      "stamina": 92,
-      "power": 88,
-      "guts": 85,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 15,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "G",
-      "medium": "A",
-      "long": "A",
-      "escape": "G",
-      "lead": "E",
-      "between": "B",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Rob Roy's March",
-      "name_jp": "ロブロイの行進",
-      "effect": "Steady pace throughout race"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "sweep_tosho_2025",
-    "name_en": "Sweep Tosho",
-    "name_jp": "スイープトウショウ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 78,
-      "power": 90,
-      "guts": 87,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 15,
-      "guts": 10,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "G",
-      "mile": "B",
-      "medium": "A",
-      "long": "B",
-      "escape": "G",
-      "lead": "E",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Sweep Away",
-      "name_jp": "スイープアウェイ",
-      "effect": "Chase acceleration boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/admire_vega_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -1728,16 +96,208 @@
     "updated_at": "2025-09-17 03:54:47"
   },
   {
-    "id": "hishi_akebono_2025",
-    "name_en": "Hishi Akebono",
-    "name_jp": "ヒシアケボノ",
+    "id": "agnes_tachyon_tachnology",
+    "name_en": "Agnes Tachyon (Tach-nology)",
+    "name_jp": "アグネスタキオン（タキノロジー）",
     "rarity": 3,
     "initial_stats": {
-      "speed": 98,
-      "stamina": 60,
-      "power": 88,
+      "speed": 92,
+      "stamina": 88,
+      "power": 90,
+      "guts": 75,
+      "wisdom": 105
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 5,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "F",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Tach-nology",
+      "name_jp": "タキノロジー",
+      "effect": "Scientific precision boosts all stats mid-race"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "air_groove_2025",
+    "name_en": "Air Groove",
+    "name_jp": "エアグルーヴ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 82,
+      "power": 90,
+      "guts": 88,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 5,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Empress Pride",
+      "name_jp": "女帝のプライド",
+      "effect": "All-around stat boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/air_groove_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "air_messiah",
+    "name_en": "Air Messiah",
+    "name_jp": "エアメサイア",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 91,
+      "stamina": 88,
+      "power": 89,
       "guts": 89,
-      "wisdom": 75
+      "wisdom": 93
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 0,
+      "guts": 15,
+      "wisdom": 15
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "C",
+      "mile": "B",
+      "medium": "A",
+      "long": "G",
+      "escape": "G",
+      "lead": "B",
+      "between": "A",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Tracing Bloodline, Sprouting Future",
+      "name_jp": "辿る血脈、芽吹く未来",
+      "effect": "Inherited hope acceleration skill"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/air_messiah.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "almond_eye_2025",
+    "name_en": "Almond Eye",
+    "name_jp": "アーモンドアイ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 92,
+      "stamina": 85,
+      "power": 92,
+      "guts": 86,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Almond Brilliance",
+      "name_jp": "アーモンドの輝き",
+      "effect": "All-distance excellence"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/almond_eye_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "aston_machan",
+    "name_en": "Aston Machan",
+    "name_jp": "アストンマーチャン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 99,
+      "stamina": 73,
+      "power": 97,
+      "guts": 98,
+      "wisdom": 83
     },
     "max_stats": {
       "speed": 1200,
@@ -1749,762 +309,42 @@
     "growth_rates": {
       "speed": 20,
       "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "B",
-      "dirt": "A",
-      "sprint": "A",
-      "mile": "B",
-      "medium": "E",
-      "long": "G",
-      "escape": "B",
-      "lead": "A",
-      "between": "C",
-      "chase": "G"
-    },
-    "unique_skill": {
-      "name_en": "Dawn Break",
-      "name_jp": "夜明けの光",
-      "effect": "Sprint specialist boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "matikane_fukukitaru_2025",
-    "name_en": "Matikane Fukukitaru",
-    "name_jp": "マチカネフクキタル",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 75,
-      "stamina": 100,
-      "power": 80,
-      "guts": 90,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 20,
       "power": 0,
       "guts": 10,
       "wisdom": 0
     },
     "aptitudes": {
       "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "G",
-      "medium": "B",
-      "long": "A",
-      "escape": "C",
-      "lead": "B",
-      "between": "B",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Lucky Fortune",
-      "name_jp": "福来る",
-      "effect": "Random stat boosts"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "yukino_bijin_2025",
-    "name_en": "Yukino Bijin",
-    "name_jp": "ユキノビジン",
-    "rarity": 2,
-    "initial_stats": {
-      "speed": 82,
-      "stamina": 70,
-      "power": 85,
-      "guts": 78,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "C",
-      "sprint": "B",
-      "mile": "A",
-      "medium": "C",
-      "long": "G",
-      "escape": "E",
-      "lead": "C",
-      "between": "B",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Snow Beauty",
-      "name_jp": "雪の美人",
-      "effect": "Speed boost in cold weather"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "mr_cb_2025",
-    "name_en": "Mr. C.B.",
-    "name_jp": "ミスターシービー",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 85,
-      "power": 88,
-      "guts": 87,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 5,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "C.B. Revolution",
-      "name_jp": "C.B.レボリューション",
-      "effect": "Triple crown power"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/mr_cb_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "haru_urara_2025",
-    "name_en": "Haru Urara",
-    "name_jp": "ハルウララ",
-    "rarity": 1,
-    "initial_stats": {
-      "speed": 70,
-      "stamina": 65,
-      "power": 70,
-      "guts": 100,
-      "wisdom": 75
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 0,
-      "power": 0,
-      "guts": 30,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "G",
-      "dirt": "A",
+      "dirt": "G",
       "sprint": "A",
       "mile": "B",
       "medium": "G",
       "long": "G",
-      "escape": "C",
-      "lead": "B",
-      "between": "B",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Never Give Up",
-      "name_jp": "ネバーギブアップ",
-      "effect": "Guts boost when behind"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/haru_urara_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "admire_vega_2025",
-    "name_en": "Admire Vega",
-    "name_jp": "アドマイヤベガ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 88,
-      "stamina": 80,
-      "power": 85,
-      "guts": 82,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 5,
-      "guts": 5,
-      "wisdom": 10
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "E",
-      "mile": "A",
-      "medium": "A",
-      "long": "C",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Starlight Road",
-      "name_jp": "スターライトロード",
-      "effect": "Speed boost under night races"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/admire_vega_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "inari_one_2025",
-    "name_en": "Inari One",
-    "name_jp": "イナリワン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 75,
-      "power": 88,
-      "guts": 87,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 10,
-      "guts": 10,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "B",
-      "mile": "A",
-      "medium": "B",
-      "long": "E",
-      "escape": "G",
-      "lead": "E",
-      "between": "B",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Fox Spirit",
-      "name_jp": "稲荷の加護",
-      "effect": "Random power boosts"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/inari_one_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "smart_falcon_2025",
-    "name_en": "Smart Falcon",
-    "name_jp": "スマートファルコン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 92,
-      "stamina": 70,
-      "power": 95,
-      "guts": 83,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 0,
-      "power": 15,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "E",
-      "dirt": "A",
-      "sprint": "B",
-      "mile": "A",
-      "medium": "C",
-      "long": "G",
-      "escape": "C",
+      "escape": "A",
       "lead": "A",
-      "between": "B",
-      "chase": "E"
+      "between": "G",
+      "chase": "G"
     },
     "unique_skill": {
-      "name_en": "Falcon Strike",
-      "name_jp": "ファルコンストライク",
-      "effect": "Dirt track domination"
+      "name_en": "Silent Letter",
+      "name_jp": "Silent letter",
+      "effect": "Sprint distance acceleration boost"
     },
     "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/smart_falcon_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
+    "image_url": "https://img.umamusumedb.com/characters/aston_machan.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
   },
   {
-    "id": "seeking_the_pearl_2025",
-    "name_en": "Seeking the Pearl",
-    "name_jp": "シーキングザパール",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 90,
-      "stamina": 68,
-      "power": 87,
-      "guts": 85,
-      "wisdom": 90
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 15,
-      "stamina": 0,
-      "power": 5,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "C",
-      "sprint": "A",
-      "mile": "B",
-      "medium": "E",
-      "long": "G",
-      "escape": "E",
-      "lead": "B",
-      "between": "A",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Pearl Shine",
-      "name_jp": "真珠の輝き",
-      "effect": "Sprint specialization"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "yaeno_muteki_2025",
-    "name_en": "Yaeno Muteki",
-    "name_jp": "ヤエノムテキ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 83,
-      "stamina": 77,
-      "power": 90,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 5,
-      "power": 10,
-      "guts": 10,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "C",
-      "mile": "A",
-      "medium": "A",
-      "long": "E",
-      "escape": "G",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Invincible Spirit",
-      "name_jp": "無敵の魂",
-      "effect": "Guts boost when challenged"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "nakayama_festa_2025",
-    "name_en": "Nakayama Festa",
-    "name_jp": "ナカヤマフェスタ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 75,
-      "stamina": 98,
-      "power": 80,
-      "guts": 82,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 20,
-      "power": 5,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "G",
-      "medium": "B",
-      "long": "A",
-      "escape": "C",
-      "lead": "B",
-      "between": "A",
-      "chase": "C"
-    },
-    "unique_skill": {
-      "name_en": "Festival March",
-      "name_jp": "祭りの行進",
-      "effect": "Stamina efficiency boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "eishin_flash_2025",
-    "name_en": "Eishin Flash",
-    "name_jp": "エイシンフラッシュ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 82,
-      "stamina": 85,
-      "power": 88,
-      "guts": 80,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 10,
-      "power": 10,
-      "guts": 0,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "C",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "B",
-      "between": "A",
-      "chase": "B"
-    },
-    "unique_skill": {
-      "name_en": "Flash of Light",
-      "name_jp": "閃光一閃",
-      "effect": "Speed burst in straight"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/eishin_flash_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "curren_chan_2025",
-    "name_en": "Curren Chan",
-    "name_jp": "カレンチャン",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 95,
-      "stamina": 65,
-      "power": 90,
-      "guts": 85,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 15,
-      "stamina": 0,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "A",
-      "mile": "A",
-      "medium": "E",
-      "long": "G",
-      "escape": "B",
-      "lead": "A",
-      "between": "C",
-      "chase": "E"
-    },
-    "unique_skill": {
-      "name_en": "Karen's Charm",
-      "name_jp": "カレンの魅力",
-      "effect": "Sprint domination"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/curren_chan_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "kawakami_princess_2025",
-    "name_en": "Kawakami Princess",
-    "name_jp": "カワカミプリンセス",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 72,
-      "power": 88,
-      "guts": 90,
-      "wisdom": 85
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 5,
-      "stamina": 0,
-      "power": 10,
-      "guts": 15,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "B",
-      "mile": "A",
-      "medium": "B",
-      "long": "G",
-      "escape": "G",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Princess Authority",
-      "name_jp": "プリンセスの威厳",
-      "effect": "Guts and power combo"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "gold_city_2025",
-    "name_en": "Gold City",
-    "name_jp": "ゴールドシチー",
+    "id": "biwa_hayahide_2025",
+    "name_en": "Biwa Hayahide",
+    "name_jp": "ビワハヤヒデ",
     "rarity": 3,
     "initial_stats": {
       "speed": 80,
-      "stamina": 85,
-      "power": 85,
-      "guts": 85,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 10,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "B",
-      "sprint": "G",
-      "mile": "B",
-      "medium": "A",
-      "long": "B",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Golden Path",
-      "name_jp": "黄金の道",
-      "effect": "Balanced stat boost"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/gold_city_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "satono_diamond_2025",
-    "name_en": "Satono Diamond",
-    "name_jp": "サトノダイヤモンド",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 78,
       "stamina": 95,
-      "power": 85,
+      "power": 88,
       "guts": 82,
-      "wisdom": 100
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 0,
-      "stamina": 15,
-      "power": 5,
-      "guts": 5,
-      "wisdom": 5
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "G",
-      "medium": "B",
-      "long": "A",
-      "escape": "G",
-      "lead": "E",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Diamond Brilliance",
-      "name_jp": "ダイヤモンドの輝き",
-      "effect": "Long distance mastery"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/satono_diamond_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "kitasan_black_2025",
-    "name_en": "Kitasan Black",
-    "name_jp": "キタサンブラック",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 85,
-      "stamina": 95,
-      "power": 90,
-      "guts": 85,
       "wisdom": 95
     },
     "max_stats": {
@@ -2515,17 +355,17 @@
       "wisdom": 1200
     },
     "growth_rates": {
-      "speed": 5,
+      "speed": 0,
       "stamina": 15,
       "power": 10,
       "guts": 0,
-      "wisdom": 0
+      "wisdom": 5
     },
     "aptitudes": {
       "turf": "A",
-      "dirt": "G",
+      "dirt": "E",
       "sprint": "G",
-      "mile": "G",
+      "mile": "E",
       "medium": "A",
       "long": "A",
       "escape": "E",
@@ -2534,60 +374,12 @@
       "chase": "C"
     },
     "unique_skill": {
-      "name_en": "Black Tide",
-      "name_jp": "黒い激流",
-      "effect": "Overwhelming long distance power"
+      "name_en": "Steady Pace",
+      "name_jp": "ステディペース",
+      "effect": "Perfect rhythm in long races"
     },
     "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/kitasan_black_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
-    "id": "daring_tact_2025",
-    "name_en": "Daring Tact",
-    "name_jp": "デアリングタクト",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 88,
-      "stamina": 82,
-      "power": 88,
-      "guts": 87,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "E",
-      "sprint": "G",
-      "mile": "B",
-      "medium": "A",
-      "long": "B",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Daring Challenge",
-      "name_jp": "果敢な挑戦",
-      "effect": "Triple crown specialist"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/daring_tact_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -2640,54 +432,6 @@
     "updated_at": "2025-09-17 03:54:47"
   },
   {
-    "id": "almond_eye_2025",
-    "name_en": "Almond Eye",
-    "name_jp": "アーモンドアイ",
-    "rarity": 3,
-    "initial_stats": {
-      "speed": 92,
-      "stamina": 85,
-      "power": 92,
-      "guts": 86,
-      "wisdom": 95
-    },
-    "max_stats": {
-      "speed": 1200,
-      "stamina": 1200,
-      "power": 1200,
-      "guts": 1200,
-      "wisdom": 1200
-    },
-    "growth_rates": {
-      "speed": 10,
-      "stamina": 5,
-      "power": 10,
-      "guts": 5,
-      "wisdom": 0
-    },
-    "aptitudes": {
-      "turf": "A",
-      "dirt": "G",
-      "sprint": "G",
-      "mile": "A",
-      "medium": "A",
-      "long": "A",
-      "escape": "E",
-      "lead": "C",
-      "between": "A",
-      "chase": "A"
-    },
-    "unique_skill": {
-      "name_en": "Almond Brilliance",
-      "name_jp": "アーモンドの輝き",
-      "effect": "All-distance excellence"
-    },
-    "awakening_skills": [],
-    "image_url": "https://img.umamusumedb.com/characters/almond_eye_2025.png",
-    "created_at": "2025-09-17 03:54:47",
-    "updated_at": "2025-09-17 03:54:47"
-  },
-  {
     "id": "contrail_2025",
     "name_en": "Contrail",
     "name_jp": "コントレイル",
@@ -2734,6 +478,246 @@
     "image_url": "https://img.umamusumedb.com/characters/contrail_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "curren_chan",
+    "name_en": "Curren Chan",
+    "name_jp": "カレンチャン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 102,
+      "stamina": 68,
+      "power": 100,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 20,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "C",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "escape": "B",
+      "lead": "A",
+      "between": "C",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Karen Step",
+      "name_jp": "カレンステップ",
+      "effect": "Graceful acceleration in sprint races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/curren_chan.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "curren_chan_2025",
+    "name_en": "Curren Chan",
+    "name_jp": "カレンチャン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 95,
+      "stamina": 65,
+      "power": 90,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 15,
+      "stamina": 0,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "escape": "B",
+      "lead": "A",
+      "between": "C",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Karen's Charm",
+      "name_jp": "カレンの魅力",
+      "effect": "Sprint domination"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/curren_chan_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "daiwa_scarlet_2025",
+    "name_en": "Daiwa Scarlet",
+    "name_jp": "ダイワスカーレット",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 95,
+      "stamina": 75,
+      "power": 100,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 15,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "escape": "A",
+      "lead": "C",
+      "between": "B",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Scarlet Impact",
+      "name_jp": "スカーレットインパクト",
+      "effect": "Explosive acceleration when leading"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "daring_tact_2025",
+    "name_en": "Daring Tact",
+    "name_jp": "デアリングタクト",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 88,
+      "stamina": 82,
+      "power": 88,
+      "guts": 87,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Daring Challenge",
+      "name_jp": "果敢な挑戦",
+      "effect": "Triple crown specialist"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/daring_tact_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "duramente",
+    "name_en": "Duramente",
+    "name_jp": "ドゥラメンテ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 96,
+      "stamina": 88,
+      "power": 95,
+      "guts": 85,
+      "wisdom": 86
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 20,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "escape": "G",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Red in Black",
+      "name_jp": "羅刹、赤翼にて天上へ至らん",
+      "effect": "Mile and medium distance acceleration"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/duramente.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
   },
   {
     "id": "efforia_2025",
@@ -2784,6 +768,390 @@
     "updated_at": "2025-09-17 03:54:47"
   },
   {
+    "id": "eishin_flash",
+    "name_en": "Eishin Flash",
+    "name_jp": "エイシンフラッシュ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 100,
+      "stamina": 83,
+      "power": 93,
+      "guts": 82,
+      "wisdom": 92
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 20
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "B",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Schwarzes Schwert",
+      "name_jp": "Schwarzes Schwert",
+      "effect": "Late race speed boost for medium and long distances"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/eishin_flash.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "eishin_flash_2025",
+    "name_en": "Eishin Flash",
+    "name_jp": "エイシンフラッシュ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 82,
+      "stamina": 85,
+      "power": 88,
+      "guts": 80,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "B",
+      "between": "A",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Flash of Light",
+      "name_jp": "閃光一閃",
+      "effect": "Speed burst in straight"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/eishin_flash_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "el_condor_pasa_2025",
+    "name_en": "El Condor Pasa",
+    "name_jp": "エルコンドルパサー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 90,
+      "stamina": 78,
+      "power": 95,
+      "guts": 87,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 15,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "B",
+      "dirt": "A",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "escape": "E",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Condor's Flight",
+      "name_jp": "コンドルの飛翔",
+      "effect": "Speed boost on dirt tracks"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "el_condor_pasa_kukulkan",
+    "name_en": "El Condor Pasa (Kukulkan Warrior)",
+    "name_jp": "エルコンドルパサー（ククルカンウォリアー）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 100,
+      "stamina": 75,
+      "power": 91,
+      "guts": 97,
+      "wisdom": 87
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 15,
+      "stamina": 0,
+      "power": 0,
+      "guts": 15,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Condor's Fury",
+      "name_jp": "Condor's Fury",
+      "effect": "Increase acceleration with blazing passion when aiming for the front from midpack on the final corner"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/el_condor_pasa_kukulkan.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "fenomeno",
+    "name_en": "Fenomeno",
+    "name_jp": "フェノーメノ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 75,
+      "stamina": 116,
+      "power": 75,
+      "guts": 99,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 0,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "A",
+      "long": "A",
+      "escape": "C",
+      "lead": "A",
+      "between": "E",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Black Flame of Righteousness",
+      "name_jp": "対象捕捉！正義遂行！",
+      "effect": "Justice enforcement stamina recovery"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/fenomeno.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "fuji_kiseki_shooting_star",
+    "name_en": "Fuji Kiseki (Shooting Star Revue)",
+    "name_jp": "フジキセキ（シューティングスターレビュー）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 95,
+      "stamina": 82,
+      "power": 98,
+      "guts": 88,
+      "wisdom": 87
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 20,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "E",
+      "escape": "C",
+      "lead": "A",
+      "between": "C",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Lights of Vaudeville",
+      "name_jp": "Lights of Vaudeville",
+      "effect": "Greatly increase velocity with a dazzling display when just breaking out of the pack toward the front on the final straight"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/fuji_kiseki_shooting_star.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "gold_city_2025",
+    "name_en": "Gold City",
+    "name_jp": "ゴールドシチー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 80,
+      "stamina": 85,
+      "power": 85,
+      "guts": 85,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Golden Path",
+      "name_jp": "黄金の道",
+      "effect": "Balanced stat boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/gold_city_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "gold_ship_2025",
+    "name_en": "Gold Ship",
+    "name_jp": "ゴールドシップ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 82,
+      "stamina": 94,
+      "power": 103,
+      "guts": 67,
+      "wisdom": 94
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "F",
+      "lead": "E",
+      "between": "C",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Unpredictable Chaos",
+      "name_jp": "不沈艦、抜錨ォッ！",
+      "effect": "Random massive stat boosts"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/gold_ship_2025.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
     "id": "gran_alegria_2025",
     "name_en": "Gran Alegria",
     "name_jp": "グランアレグリア",
@@ -2832,6 +1200,582 @@
     "updated_at": "2025-09-17 03:54:47"
   },
   {
+    "id": "grass_wonder_2025",
+    "name_en": "Grass Wonder",
+    "name_jp": "グラスワンダー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 88,
+      "power": 90,
+      "guts": 82,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Wonder Charge",
+      "name_jp": "ワンダーチャージ",
+      "effect": "Acceleration in rain conditions"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/grass_wonder_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "grass_wonder_jade_cleric",
+    "name_en": "Grass Wonder (Saintly Jade Cleric)",
+    "name_jp": "グラスワンダー（セイントリージェイドクレリック）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 96,
+      "stamina": 92,
+      "power": 88,
+      "guts": 85,
+      "wisdom": 89
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 15,
+      "power": 0,
+      "guts": 0,
+      "wisdom": 15
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "A",
+      "medium": "B",
+      "long": "A",
+      "escape": "F",
+      "lead": "A",
+      "between": "A",
+      "chase": "F"
+    },
+    "unique_skill": {
+      "name_en": "Superior Heal",
+      "name_jp": "Superior Heal",
+      "effect": "Recover endurance with a gentle light when dropping down toward the back mid-race"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/grass_wonder_jade_cleric.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "haru_urara_2025",
+    "name_en": "Haru Urara",
+    "name_jp": "ハルウララ",
+    "rarity": 1,
+    "initial_stats": {
+      "speed": 70,
+      "stamina": 65,
+      "power": 70,
+      "guts": 100,
+      "wisdom": 75
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 0,
+      "guts": 30,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "G",
+      "dirt": "A",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "escape": "C",
+      "lead": "B",
+      "between": "B",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Never Give Up",
+      "name_jp": "ネバーギブアップ",
+      "effect": "Guts boost when behind"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/haru_urara_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "hishi_akebono_2025",
+    "name_en": "Hishi Akebono",
+    "name_jp": "ヒシアケボノ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 98,
+      "stamina": 60,
+      "power": 88,
+      "guts": 89,
+      "wisdom": 75
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 20,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "B",
+      "dirt": "A",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "E",
+      "long": "G",
+      "escape": "B",
+      "lead": "A",
+      "between": "C",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Dawn Break",
+      "name_jp": "夜明けの光",
+      "effect": "Sprint specialist boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "hishi_akebono_halloween",
+    "name_en": "Hishi Akebono (Halloween)",
+    "name_jp": "ヒシアケボノ（ハロウィン）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 91,
+      "stamina": 59,
+      "power": 113,
+      "guts": 101,
+      "wisdom": 86
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 30,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "F",
+      "long": "G",
+      "escape": "B",
+      "lead": "A",
+      "between": "C",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Sugar Parade Start!",
+      "name_jp": "シュガーパレード・始動！",
+      "effect": "Halloween themed power boost skill"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/hishi_akebono_halloween.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "hishi_amazon",
+    "name_en": "Hishi Amazon",
+    "name_jp": "ヒシアマゾン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 93,
+      "stamina": 84,
+      "power": 105,
+      "guts": 82,
+      "wisdom": 86
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 20,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "B",
+      "between": "C",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "You and Me! One-on-One!",
+      "name_jp": "タイマン！デッドヒート！",
+      "effect": "Increase velocity when passing another runner on the outside toward the back on the final straight"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/hishi_amazon.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "ikuno_dictus_2025",
+    "name_en": "Ikuno Dictus",
+    "name_jp": "イクノディクタス",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 75,
+      "stamina": 88,
+      "power": 85,
+      "guts": 92,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 5,
+      "guts": 15,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "B",
+      "between": "A",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Dictus Authority",
+      "name_jp": "ディクタスの威厳",
+      "effect": "Guts and stamina boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "inari_one_2025",
+    "name_en": "Inari One",
+    "name_jp": "イナリワン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 75,
+      "power": 88,
+      "guts": 87,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 10,
+      "guts": 10,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "E",
+      "escape": "G",
+      "lead": "E",
+      "between": "B",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Fox Spirit",
+      "name_jp": "稲荷の加護",
+      "effect": "Random power boosts"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/inari_one_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "jungle_pocket",
+    "name_en": "Jungle Pocket",
+    "name_jp": "ジャングルポケット",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 93,
+      "stamina": 85,
+      "power": 109,
+      "guts": 88,
+      "wisdom": 75
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "D",
+      "between": "A",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Faith in the Feral",
+      "name_jp": "Faith in the Feral",
+      "effect": "Powerful acceleration in medium distance races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/jungle_pocket.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "kawakami_princess_2025",
+    "name_en": "Kawakami Princess",
+    "name_jp": "カワカミプリンセス",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 72,
+      "power": 88,
+      "guts": 90,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 10,
+      "guts": 15,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "G",
+      "escape": "G",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Princess Authority",
+      "name_jp": "プリンセスの威厳",
+      "effect": "Guts and power combo"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "king_halo_2025",
+    "name_en": "King Halo",
+    "name_jp": "キングヘイロー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 92,
+      "stamina": 72,
+      "power": 88,
+      "guts": 83,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "King's Pride",
+      "name_jp": "王の誇り",
+      "effect": "Wisdom boost in short races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/king_halo_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "kitasan_black_2025",
+    "name_en": "Kitasan Black",
+    "name_jp": "キタサンブラック",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 95,
+      "power": 90,
+      "guts": 85,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 15,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Black Tide",
+      "name_jp": "黒い激流",
+      "effect": "Overwhelming long distance power"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/kitasan_black_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
     "id": "loves_only_you_2025",
     "name_en": "Loves Only You",
     "name_jp": "ラヴズオンリーユー",
@@ -2876,6 +1820,1878 @@
     },
     "awakening_skills": [],
     "image_url": "https://img.umamusumedb.com/characters/loves_only_you_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "manhattan_cafe_2025",
+    "name_en": "Manhattan Cafe",
+    "name_jp": "マンハッタンカフェ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 75,
+      "stamina": 105,
+      "power": 85,
+      "guts": 75,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 5,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "B",
+      "long": "A",
+      "escape": "G",
+      "lead": "G",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Cafe's Rhythm",
+      "name_jp": "カフェリズム",
+      "effect": "Perfect pacing in long distance"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "marvelous_sunday_halloween",
+    "name_en": "Marvelous Sunday (Halloween)",
+    "name_jp": "マーベラスサンデー（ハロウィン）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 93,
+      "stamina": 96,
+      "power": 95,
+      "guts": 78,
+      "wisdom": 88
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 7,
+      "stamina": 7,
+      "power": 16,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Wonder Doll Applause",
+      "name_jp": "喝采☆ワンダードール！",
+      "effect": "Halloween themed acceleration skill"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/marvelous_sunday_halloween.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "matikane_fukukitaru_2025",
+    "name_en": "Matikane Fukukitaru",
+    "name_jp": "マチカネフクキタル",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 75,
+      "stamina": 100,
+      "power": 80,
+      "guts": 90,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 0,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "B",
+      "long": "A",
+      "escape": "C",
+      "lead": "B",
+      "between": "B",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Lucky Fortune",
+      "name_jp": "福来る",
+      "effect": "Random stat boosts"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "mayano_topgun_2025",
+    "name_en": "Mayano Top Gun",
+    "name_jp": "マヤノトップガン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 82,
+      "stamina": 88,
+      "power": 92,
+      "guts": 78,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 15,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Top Gun Maverick",
+      "name_jp": "トップガンマーベリック",
+      "effect": "Power boost in chase position"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "mejiro_dober_2025",
+    "name_en": "Mejiro Dober",
+    "name_jp": "メジロドーベル",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 78,
+      "stamina": 95,
+      "power": 82,
+      "guts": 80,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 15,
+      "power": 5,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "B",
+      "long": "A",
+      "escape": "G",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Mejiro Determination",
+      "name_jp": "メジロの決意",
+      "effect": "Stamina boost in long races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "mejiro_mcqueen_2025",
+    "name_en": "Mejiro McQueen",
+    "name_jp": "メジロマックイーン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 72,
+      "stamina": 109,
+      "power": 84,
+      "guts": 79,
+      "wisdom": 96
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Mejiro Family Pride",
+      "name_jp": "貴顕の使命を果たすべく",
+      "effect": "Perfect pacing increases speed"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "mihono_bourbon_2025",
+    "name_en": "Mihono Bourbon",
+    "name_jp": "ミホノブルボン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 98,
+      "stamina": 82,
+      "power": 85,
+      "guts": 75,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 15,
+      "stamina": 5,
+      "power": 5,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "E",
+      "mile": "B",
+      "medium": "A",
+      "long": "A",
+      "escape": "A",
+      "lead": "G",
+      "between": "G",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Cyborg Sprint",
+      "name_jp": "サイボーグスプリント",
+      "effect": "Constant high speed when leading"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "mr_cb_2025",
+    "name_en": "Mr. C.B.",
+    "name_jp": "ミスターシービー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 85,
+      "power": 88,
+      "guts": 87,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 5,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "C.B. Revolution",
+      "name_jp": "C.B.レボリューション",
+      "effect": "Triple crown power"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/mr_cb_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "nakayama_festa_2025",
+    "name_en": "Nakayama Festa",
+    "name_jp": "ナカヤマフェスタ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 75,
+      "stamina": 98,
+      "power": 80,
+      "guts": 82,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 5,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "B",
+      "long": "A",
+      "escape": "C",
+      "lead": "B",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Festival March",
+      "name_jp": "祭りの行進",
+      "effect": "Stamina efficiency boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "narita_brian_2025",
+    "name_en": "Narita Brian",
+    "name_jp": "ナリタブライアン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 92,
+      "stamina": 88,
+      "power": 95,
+      "guts": 85,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Shadow Roll",
+      "name_jp": "シャドーロール",
+      "effect": "Overwhelming power in all positions"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/narita_brian_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "narita_taishin_nevertheless",
+    "name_en": "Narita Taishin (Nevertheless)",
+    "name_jp": "ナリタタイシン（ネバーザレス）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 110,
+      "power": 95,
+      "guts": 75,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 20,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "G",
+      "between": "B",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Nevertheless",
+      "name_jp": "ネバーザレス",
+      "effect": "Massive stamina recovery and speed boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "nice_nature_2025",
+    "name_en": "Nice Nature",
+    "name_jp": "ナイスネイチャ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 78,
+      "stamina": 92,
+      "power": 82,
+      "guts": 95,
+      "wisdom": 83
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 5,
+      "guts": 15,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "G",
+      "between": "B",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Third Place Magic",
+      "name_jp": "3位の魔法",
+      "effect": "Stats boost when in 3rd place"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/nice_nature_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "no_reason",
+    "name_en": "No Reason",
+    "name_jp": "ノーリーズン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 93,
+      "stamina": 85,
+      "power": 94,
+      "guts": 76,
+      "wisdom": 102
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 20,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "C",
+      "escape": "G",
+      "lead": "D",
+      "between": "A",
+      "chase": "F"
+    },
+    "unique_skill": {
+      "name_en": "Swift Crimson Armor",
+      "name_jp": "知宵欺敵、百戦不殆",
+      "effect": "Late running strategy boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/no_reason.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "oguri_cap_original",
+    "name_en": "Oguri Cap (Original)",
+    "name_jp": "オグリキャップ（オリジナル）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 87,
+      "stamina": 75,
+      "power": 98,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 15,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Gray Monster",
+      "name_jp": "グレーモンスター",
+      "effect": "Power burst in final spurt"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_original.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "oguri_cap_starlight",
+    "name_en": "Oguri Cap (Starlight Beat)",
+    "name_jp": "オグリキャップ（スターライトビート）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 89,
+      "stamina": 77,
+      "power": 102,
+      "guts": 87,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 15,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "A",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Triumphant Pulse",
+      "name_jp": "トリンフパルス",
+      "effect": "Powerful acceleration in the final spurt"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "orfevre",
+    "name_en": "Orfevre",
+    "name_jp": "オルフェーヴル",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 101,
+      "stamina": 92,
+      "power": 100,
+      "guts": 72,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "D",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "F",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "My Dominion",
+      "name_jp": "我が覇道、阻むものなし",
+      "effect": "Powerful domination boost for long races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/orfevre.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "rice_shower_2025",
+    "name_en": "Rice Shower",
+    "name_jp": "ライスシャワー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 72,
+      "stamina": 115,
+      "power": 78,
+      "guts": 85,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 25,
+      "power": 0,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "B",
+      "long": "A",
+      "escape": "A",
+      "lead": "C",
+      "between": "C",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Blue Rose Prayer",
+      "name_jp": "青薔薇の祈り",
+      "effect": "Massive stamina conservation"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/rice_shower_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "sakura_bakushin_o",
+    "name_en": "Sakura Bakushin O",
+    "name_jp": "サクラバクシンオー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 115,
+      "stamina": 65,
+      "power": 95,
+      "guts": 85,
+      "wisdom": 80
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 20,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "G",
+      "long": "G",
+      "escape": "A",
+      "lead": "C",
+      "between": "G",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Bakushin Burst",
+      "name_jp": "バクシン",
+      "effect": "Explosive speed boost in sprint races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "satono_diamond_2025",
+    "name_en": "Satono Diamond",
+    "name_jp": "サトノダイヤモンド",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 78,
+      "stamina": 95,
+      "power": 85,
+      "guts": 82,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 15,
+      "power": 5,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "B",
+      "long": "A",
+      "escape": "G",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Diamond Brilliance",
+      "name_jp": "ダイヤモンドの輝き",
+      "effect": "Long distance mastery"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/satono_diamond_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "seeking_the_pearl_2025",
+    "name_en": "Seeking the Pearl",
+    "name_jp": "シーキングザパール",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 90,
+      "stamina": 68,
+      "power": 87,
+      "guts": 85,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 15,
+      "stamina": 0,
+      "power": 5,
+      "guts": 5,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "C",
+      "sprint": "A",
+      "mile": "B",
+      "medium": "E",
+      "long": "G",
+      "escape": "E",
+      "lead": "B",
+      "between": "A",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Pearl Shine",
+      "name_jp": "真珠の輝き",
+      "effect": "Sprint specialization"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "seiun_sky_reeling",
+    "name_en": "Seiun Sky (Reeling in the Big One)",
+    "name_jp": "セイウンスカイ（大漁旗）",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 88,
+      "stamina": 95,
+      "power": 82,
+      "guts": 85,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 10,
+      "power": 0,
+      "guts": 0,
+      "wisdom": 20
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "A",
+      "lead": "B",
+      "between": "C",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Big Catch",
+      "name_jp": "大漁旗",
+      "effect": "Speed boost when leading in late race"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "silence_suzuka_2025",
+    "name_en": "Silence Suzuka",
+    "name_jp": "サイレンススズカ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 103,
+      "stamina": 71,
+      "power": 64,
+      "guts": 96,
+      "wisdom": 106
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 20,
+      "stamina": 0,
+      "power": 0,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "escape": "A",
+      "lead": "C",
+      "between": "E",
+      "chase": "D"
+    },
+    "unique_skill": {
+      "name_en": "Transcendent Flash",
+      "name_jp": "先頭の景色は譲らない",
+      "effect": "Massive speed boost when leading"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "smart_falcon",
+    "name_en": "Smart Falcon",
+    "name_jp": "スマートファルコン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 95,
+      "stamina": 82,
+      "power": 93,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "C",
+      "dirt": "A",
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "escape": "C",
+      "lead": "A",
+      "between": "B",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Falcon Strike",
+      "name_jp": "ファルコンストライク",
+      "effect": "Sharp acceleration on dirt tracks"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/smart_falcon.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "smart_falcon_2025",
+    "name_en": "Smart Falcon",
+    "name_jp": "スマートファルコン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 92,
+      "stamina": 70,
+      "power": 95,
+      "guts": 83,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 15,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "E",
+      "dirt": "A",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "escape": "C",
+      "lead": "A",
+      "between": "B",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Falcon Strike",
+      "name_jp": "ファルコンストライク",
+      "effect": "Dirt track domination"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/smart_falcon_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "special_week_2025",
+    "name_en": "Special Week",
+    "name_jp": "スペシャルウィーク",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 77,
+      "stamina": 76,
+      "power": 77,
+      "guts": 102,
+      "wisdom": 97
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "C",
+      "lead": "A",
+      "between": "B",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Eat Up and Work Hard♪",
+      "name_jp": "食い下がり",
+      "effect": "Stamina recovery when surrounded"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/special_week_2025.png",
+    "created_at": "2025-09-16 10:01:31",
+    "updated_at": "2025-09-16 10:01:31"
+  },
+  {
+    "id": "sweep_tosho_2025",
+    "name_en": "Sweep Tosho",
+    "name_jp": "スイープトウショウ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 78,
+      "power": 90,
+      "guts": 87,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 15,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "escape": "G",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Sweep Away",
+      "name_jp": "スイープアウェイ",
+      "effect": "Chase acceleration boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "symboli_rudolf_2025",
+    "name_en": "Symboli Rudolf",
+    "name_jp": "シンボリルドルフ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 95,
+      "power": 85,
+      "guts": 85,
+      "wisdom": 100
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 10,
+      "power": 5,
+      "guts": 0,
+      "wisdom": 10
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "A",
+      "between": "A",
+      "chase": "B"
+    },
+    "unique_skill": {
+      "name_en": "Emperor's Authority",
+      "name_jp": "皇帝の威厳",
+      "effect": "All stats boost when in top 3"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "taiki_shuttle_2025",
+    "name_en": "Taiki Shuttle",
+    "name_jp": "タイキシャトル",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 105,
+      "stamina": 68,
+      "power": 92,
+      "guts": 85,
+      "wisdom": 80
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 20,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "A",
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "escape": "C",
+      "lead": "A",
+      "between": "C",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Shuttle Burst",
+      "name_jp": "シャトルバースト",
+      "effect": "Extreme speed in sprint races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "tamamo_cross_2025",
+    "name_en": "Tamamo Cross",
+    "name_jp": "タマモクロス",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 88,
+      "stamina": 85,
+      "power": 92,
+      "guts": 85,
+      "wisdom": 90
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 5,
+      "power": 15,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "C",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "escape": "C",
+      "lead": "A",
+      "between": "B",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "White Lightning",
+      "name_jp": "白い稲妻",
+      "effect": "Speed burst in straight lines"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "tokai_teio_2025",
+    "name_en": "Tokai Teio",
+    "name_jp": "トウカイテイオー",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 93,
+      "stamina": 82,
+      "power": 88,
+      "guts": 92,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 5,
+      "power": 5,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "E",
+      "mile": "B",
+      "medium": "A",
+      "long": "A",
+      "escape": "C",
+      "lead": "A",
+      "between": "A",
+      "chase": "C"
+    },
+    "unique_skill": {
+      "name_en": "Emperor's Dance",
+      "name_jp": "帝王の舞",
+      "effect": "Speed and guts boost when injured"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/tokai_teio_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "tosen_jordan",
+    "name_en": "Tosen Jordan",
+    "name_jp": "トーセンジョーダン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 89,
+      "stamina": 98,
+      "power": 75,
+      "guts": 101,
+      "wisdom": 87
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "B",
+      "escape": "C",
+      "lead": "A",
+      "between": "B",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "YEAH☆VIVID TIME!",
+      "name_jp": "YEAH☆VIVID TIME!",
+      "effect": "Powerful speed boost for Pace running style"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/tosen_jordan.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "tsurumaru_tsuyoshi",
+    "name_en": "Tsurumaru Tsuyoshi",
+    "name_jp": "ツルマルツヨシ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 95,
+      "stamina": 94,
+      "power": 74,
+      "guts": 103,
+      "wisdom": 84
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 0,
+      "power": 20,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "F",
+      "sprint": "F",
+      "mile": "D",
+      "medium": "A",
+      "long": "C",
+      "escape": "G",
+      "lead": "A",
+      "between": "A",
+      "chase": "E"
+    },
+    "unique_skill": {
+      "name_en": "Burning Absolute Will",
+      "name_jp": "燃え盛るは絶対の意志",
+      "effect": "Strong spirit acceleration boost"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/tsurumaru_tsuyoshi.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "twin_turbo_2025",
+    "name_en": "Twin Turbo",
+    "name_jp": "ツインターボ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 110,
+      "stamina": 65,
+      "power": 80,
+      "guts": 90,
+      "wisdom": 75
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 25,
+      "stamina": 0,
+      "power": 0,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "C",
+      "sprint": "C",
+      "mile": "A",
+      "medium": "B",
+      "long": "E",
+      "escape": "A",
+      "lead": "G",
+      "between": "G",
+      "chase": "G"
+    },
+    "unique_skill": {
+      "name_en": "Turbo Engine",
+      "name_jp": "ターボエンジン",
+      "effect": "Extreme speed when escaping"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/twin_turbo_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "vodka_2025",
+    "name_en": "Vodka",
+    "name_jp": "ウオッカ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 88,
+      "stamina": 85,
+      "power": 95,
+      "guts": 92,
+      "wisdom": 80
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 10,
+      "power": 10,
+      "guts": 5,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "A",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Strong Heart",
+      "name_jp": "ストロングハート",
+      "effect": "Stamina recovery in final corner"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/vodka_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "win_variation",
+    "name_en": "Win Variation",
+    "name_jp": "ウインバリアシオン",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 100,
+      "power": 94,
+      "guts": 90,
+      "wisdom": 81
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 10,
+      "stamina": 10,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "E",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Allegro of Spirit",
+      "name_jp": "鋭気のアレグロ",
+      "effect": "Recover stamina and boost speed in long races"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/win_variation.png",
+    "created_at": "2025-10-05 00:00:00",
+    "updated_at": "2025-10-05 00:00:00"
+  },
+  {
+    "id": "winning_ticket_2025",
+    "name_en": "Winning Ticket",
+    "name_jp": "ウイニングチケット",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 85,
+      "stamina": 90,
+      "power": 85,
+      "guts": 88,
+      "wisdom": 82
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 10,
+      "power": 5,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "E",
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "escape": "E",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Victory Ticket",
+      "name_jp": "ビクトリーチケット",
+      "effect": "Guts boost in crucial moments"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/winning_ticket_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "yaeno_muteki_2025",
+    "name_en": "Yaeno Muteki",
+    "name_jp": "ヤエノムテキ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 83,
+      "stamina": 77,
+      "power": 90,
+      "guts": 85,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 5,
+      "power": 10,
+      "guts": 10,
+      "wisdom": 0
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "B",
+      "sprint": "C",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "escape": "G",
+      "lead": "C",
+      "between": "A",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Invincible Spirit",
+      "name_jp": "無敵の魂",
+      "effect": "Guts boost when challenged"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "yukino_bijin_2025",
+    "name_en": "Yukino Bijin",
+    "name_jp": "ユキノビジン",
+    "rarity": 2,
+    "initial_stats": {
+      "speed": 82,
+      "stamina": 70,
+      "power": 85,
+      "guts": 78,
+      "wisdom": 85
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 5,
+      "stamina": 0,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "C",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "escape": "E",
+      "lead": "C",
+      "between": "B",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Snow Beauty",
+      "name_jp": "雪の美人",
+      "effect": "Speed boost in cold weather"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png",
+    "created_at": "2025-09-17 03:54:47",
+    "updated_at": "2025-09-17 03:54:47"
+  },
+  {
+    "id": "zenno_rob_roy_2025",
+    "name_en": "Zenno Rob Roy",
+    "name_jp": "ゼンノロブロイ",
+    "rarity": 3,
+    "initial_stats": {
+      "speed": 80,
+      "stamina": 92,
+      "power": 88,
+      "guts": 85,
+      "wisdom": 95
+    },
+    "max_stats": {
+      "speed": 1200,
+      "stamina": 1200,
+      "power": 1200,
+      "guts": 1200,
+      "wisdom": 1200
+    },
+    "growth_rates": {
+      "speed": 0,
+      "stamina": 15,
+      "power": 10,
+      "guts": 0,
+      "wisdom": 5
+    },
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "G",
+      "mile": "G",
+      "medium": "A",
+      "long": "A",
+      "escape": "G",
+      "lead": "E",
+      "between": "B",
+      "chase": "A"
+    },
+    "unique_skill": {
+      "name_en": "Rob Roy's March",
+      "name_jp": "ロブロイの行進",
+      "effect": "Steady pace throughout race"
+    },
+    "awakening_skills": [],
+    "image_url": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   }
