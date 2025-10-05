@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
 import SupportCardCard from '@/components/SupportCardCard';
 import { supportCards } from '@/lib/static-content';
 import { Filter, Search, Zap, Heart, Brain, Star, Sparkles, Users } from 'lucide-react';
@@ -22,12 +23,14 @@ const typeCount = supportCards.reduce((acc, card) => {
 
 <Layout title="Support Cards">
   <Header />
-  
-  <main class="container mx-auto px-4 py-8">
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Support Cards' }]} />
+
     <!-- Page Header -->
-    <div class="mb-8">
-      <h1 class="text-4xl font-display gradient-text mb-4">Support Cards</h1>
-      <p class="text-gray-600">Browse all support cards and their effects</p>
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Support Cards</h1>
+      <p class="text-sm sm:text-base text-gray-600">Browse all support cards and their effects</p>
     </div>
 
     <!-- Stats Overview -->

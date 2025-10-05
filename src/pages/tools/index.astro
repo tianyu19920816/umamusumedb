@@ -1,19 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 ---
 
 <Layout title="Tools - UmamusumeDB" description="Essential tools and calculators for Uma Musume Pretty Derby">
-  <div class="container mx-auto px-4 py-8">
-    <div class="mb-8">
-      <h1 class="text-3xl font-bold mb-4">Training Tools</h1>
-      <p class="text-gray-600">
+  <Header />
+
+  <div class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Tools' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Training Tools</h1>
+      <p class="text-sm sm:text-base text-gray-600">
         Optimize your Uma Musume training with our comprehensive suite of tools and calculators.
       </p>
     </div>
 
     <div class="min-h-screen">
       <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <a
             href="/tools/factor-calculator"
             class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-yellow-400"

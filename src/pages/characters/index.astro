@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
 import CharacterCard from '@/components/CharacterCard';
 import { characters } from '@/lib/static-content';
 import { Search } from 'lucide-react';
@@ -16,12 +17,14 @@ const charactersByRarity = characters.reduce((acc, char) => {
 
 <Layout title="Characters">
   <Header />
-  
-  <main class="container mx-auto px-4 py-8">
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Characters' }]} />
+
     <!-- Page Header -->
-    <div class="mb-8">
-      <h1 class="text-4xl font-display gradient-text mb-4">Characters</h1>
-      <p class="text-gray-600">Browse all Uma Musume characters and their stats</p>
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Characters</h1>
+      <p class="text-sm sm:text-base text-gray-600">Browse all Uma Musume characters and their stats</p>
     </div>
 
     <!-- Filters and Search -->

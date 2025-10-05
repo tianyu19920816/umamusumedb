@@ -15,6 +15,24 @@ const topSupportCards = supportCards.filter(card => card.rarity === 'SSR').slice
 const topTierCharacters = tierList
   .filter(item => item.item_type === 'character' && ['SS', 'S'].includes(item.tier))
   .slice(0, 6);
+
+// Prepare search data for client
+const searchableCharacters = characters.map(c => ({
+  id: c.id,
+  name_en: c.name_en,
+  name_ja: c.name_ja,
+  type: 'character',
+  rarity: c.rarity
+}));
+
+const searchableCards = supportCards.map(c => ({
+  id: c.id,
+  name_en: c.name_en,
+  name_ja: c.name_ja,
+  type: 'card',
+  rarity: c.rarity,
+  cardType: c.type
+}));
 ---
 
 <Layout 
@@ -22,72 +40,72 @@ const topTierCharacters = tierList
   description="UmamusumeDB is the most comprehensive database for Uma Musume Pretty Derby. Find characters, support cards, tier lists, and team building guides.">
   <Header />
   
-  <main class="container mx-auto px-4 py-6">
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-6">
     <!-- Hero Search Section -->
-    <div class="glass rounded-2xl p-8 mb-8 bg-gradient-to-br from-uma-primary/10 to-uma-secondary/10">
-      <div class="text-center mb-6">
-        <h1 class="text-4xl md:text-5xl font-display gradient-text mb-3">UmamusumeDB - Uma Musume Database</h1>
-        <p class="text-lg text-gray-600">Welcome to UmamusumeDB, your ultimate resource for Uma Musume Pretty Derby game data, tier lists, and strategies</p>
+    <div class="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 bg-gradient-to-br from-uma-primary/10 to-uma-secondary/10">
+      <div class="text-center mb-4 sm:mb-6">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display gradient-text mb-2 sm:mb-3 leading-tight">UmamusumeDB - Uma Musume Database</h1>
+        <p class="text-sm sm:text-base md:text-lg text-gray-600 px-2">Welcome to UmamusumeDB, your ultimate resource for Uma Musume Pretty Derby game data, tier lists, and strategies</p>
       </div>
-      
+
       <!-- Main Search Bar -->
       <div class="max-w-3xl mx-auto">
         <div class="relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-6 h-6 text-gray-400" />
+          <Search className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-5 h-5 sm:w-6 sm:h-6 text-gray-400" />
           <input
             type="text"
             id="global-search"
             placeholder="Search UmamusumeDB for characters, cards, skills..."
-            class="w-full pl-12 pr-4 py-4 text-lg rounded-xl border-2 border-uma-primary/20 bg-white/90 focus:outline-none focus:border-uma-primary shadow-lg"
+            class="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-base sm:text-lg rounded-lg sm:rounded-xl border-2 border-uma-primary/20 bg-white/90 focus:outline-none focus:border-uma-primary shadow-lg"
           />
         </div>
-        
+
         <!-- Quick Filters -->
-        <div class="flex flex-wrap gap-2 mt-4 justify-center">
+        <div class="flex flex-wrap gap-2 mt-3 sm:mt-4 justify-center">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="characters">Characters</button>
-          <button class="filter-btn" data-filter="cards">Support Cards</button>
-          <button class="filter-btn" data-filter="ssr">SSR Only</button>
-          <button class="filter-btn" data-filter="tier-s">S+ Tier</button>
+          <button class="filter-btn" data-filter="cards">Cards</button>
+          <button class="filter-btn" data-filter="ssr">SSR</button>
+          <button class="filter-btn hidden sm:inline-flex" data-filter="tier-s">S+ Tier</button>
         </div>
       </div>
-      
+
       <!-- Stats -->
-      <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mt-8">
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 mt-6 sm:mt-8">
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">{characters.length}</div>
-          <div class="text-xs text-gray-600">Characters</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">{characters.length}</div>
+          <div class="text-xs sm:text-sm text-gray-600">Characters</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">{supportCards.length}</div>
-          <div class="text-xs text-gray-600">Support Cards</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">{supportCards.length}</div>
+          <div class="text-xs sm:text-sm text-gray-600">Cards</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">{supportCards.filter(c => c.rarity === 'SSR').length}</div>
-          <div class="text-xs text-gray-600">SSR Cards</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">{supportCards.filter(c => c.rarity === 'SSR').length}</div>
+          <div class="text-xs sm:text-sm text-gray-600">SSR</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">30</div>
-          <div class="text-xs text-gray-600">Skills</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">30</div>
+          <div class="text-xs sm:text-sm text-gray-600">Skills</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">6</div>
-          <div class="text-xs text-gray-600">Categories</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">6</div>
+          <div class="text-xs sm:text-sm text-gray-600">Categories</div>
         </div>
         <div class="text-center">
-          <div class="text-2xl font-bold gradient-text">100+</div>
-          <div class="text-xs text-gray-600">Updates</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">100+</div>
+          <div class="text-xs sm:text-sm text-gray-600">Updates</div>
         </div>
       </div>
     </div>
 
     <!-- Quick Tools Section -->
-    <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 mb-8">
-      <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+    <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg sm:rounded-xl p-4 sm:p-6 mb-6 sm:mb-8">
+      <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2">
         <Calculator className="w-5 h-5 text-purple-600" />
         Training Tools
       </h2>
-      <div class="grid md:grid-cols-3 gap-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
         <a href="/tools/factor-calculator/" class="bg-white rounded-lg p-4 hover:shadow-lg transition-shadow border-2 border-yellow-200 hover:border-yellow-400">
           <div class="flex items-center gap-3 mb-2">
             <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
@@ -141,36 +159,36 @@ const topTierCharacters = tierList
     </div>
 
     <!-- Main Content Tabs -->
-    <div class="flex gap-2 mb-6 overflow-x-auto">
+    <div class="flex gap-2 mb-4 sm:mb-6 overflow-x-auto pb-2 -mx-3 px-3 sm:mx-0 sm:px-0">
       <button class="tab-btn active" data-tab="characters">
-        <Users className="w-4 h-4 mr-2" />
-        Characters
+        <Users className="w-4 h-4 mr-1 sm:mr-2" />
+        <span class="text-sm sm:text-base">Characters</span>
       </button>
       <button class="tab-btn" data-tab="support-cards">
-        <Sparkles className="w-4 h-4 mr-2" />
-        Support Cards
+        <Sparkles className="w-4 h-4 mr-1 sm:mr-2" />
+        <span class="text-sm sm:text-base">Cards</span>
       </button>
       <button class="tab-btn" data-tab="tier-list">
-        <Trophy className="w-4 h-4 mr-2" />
-        Tier Lists
+        <Trophy className="w-4 h-4 mr-1 sm:mr-2" />
+        <span class="text-sm sm:text-base">Tier List</span>
       </button>
     </div>
 
     <!-- Characters Tab -->
     <div class="tab-content active" id="characters">
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-display">UmamusumeDB Characters Collection</h2>
-        <div class="flex gap-2">
-          <select id="char-sort" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
-            <option value="name">Sort by Name</option>
-            <option value="rarity">Sort by Rarity</option>
-            <option value="speed">Sort by Speed</option>
-            <option value="stamina">Sort by Stamina</option>
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-4">
+        <h2 class="text-xl sm:text-2xl font-display">UmamusumeDB Characters</h2>
+        <div class="flex gap-2 w-full sm:w-auto">
+          <select id="char-sort" class="flex-1 sm:flex-none px-3 py-1.5 sm:py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            <option value="name">Name</option>
+            <option value="rarity">Rarity</option>
+            <option value="speed">Speed</option>
+            <option value="stamina">Stamina</option>
           </select>
         </div>
       </div>
-      
-      <div id="characters-grid" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+      <div id="characters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
         {characters.map((character) => (
           <div class="character-item" 
                data-name={character.name_en.toLowerCase()}
@@ -185,17 +203,17 @@ const topTierCharacters = tierList
 
     <!-- Support Cards Tab -->
     <div class="tab-content" id="support-cards">
-      <div class="flex justify-between items-center mb-4">
-        <h2 class="text-2xl font-display">UmamusumeDB Support Cards Database</h2>
-        <div class="flex gap-2">
-          <select id="card-rarity" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
-            <option value="all">All Rarities</option>
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4 mb-4">
+        <h2 class="text-xl sm:text-2xl font-display">Support Cards</h2>
+        <div class="flex gap-2 w-full sm:w-auto flex-wrap sm:flex-nowrap">
+          <select id="card-rarity" class="flex-1 sm:flex-none px-3 py-1.5 sm:py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            <option value="all">All</option>
             <option value="SSR">SSR</option>
             <option value="SR">SR</option>
             <option value="R">R</option>
           </select>
-          <select id="card-type" class="px-3 py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
-            <option value="all">All Types</option>
+          <select id="card-type" class="flex-1 sm:flex-none px-3 py-1.5 sm:py-1 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            <option value="all">Type</option>
             <option value="speed">Speed</option>
             <option value="stamina">Stamina</option>
             <option value="power">Power</option>
@@ -205,8 +223,8 @@ const topTierCharacters = tierList
           </select>
         </div>
       </div>
-      
-      <div id="cards-grid" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+
+      <div id="cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
         {supportCards.map((card) => (
           <div class="card-item"
                data-name={card.name_en.toLowerCase()}
@@ -220,7 +238,7 @@ const topTierCharacters = tierList
 
     <!-- Tier List Tab -->
     <div class="tab-content" id="tier-list">
-      <div class="flex gap-2 mb-4">
+      <div class="flex gap-2 mb-4 overflow-x-auto pb-2 -mx-3 px-3 sm:mx-0 sm:px-0">
         <button class="tier-filter-btn active" data-category="overall">Overall</button>
         <button class="tier-filter-btn" data-category="speed">Speed</button>
         <button class="tier-filter-btn" data-category="stamina">Stamina</button>
@@ -235,12 +253,12 @@ const topTierCharacters = tierList
           if (items.length === 0) return null;
           
           return (
-            <div class="tier-row glass rounded-xl p-4 mb-4">
-              <div class="flex items-start gap-4">
-                <div class={`tier-badge tier-${tier.toLowerCase()} px-4 py-2 rounded-lg text-white font-bold text-xl min-w-[60px] text-center`}>
+            <div class="tier-row glass rounded-lg sm:rounded-xl p-3 sm:p-4 mb-3 sm:mb-4">
+              <div class="flex items-start gap-3 sm:gap-4">
+                <div class={`tier-badge tier-${tier.toLowerCase()} px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-white font-bold text-lg sm:text-xl min-w-[50px] sm:min-w-[60px] text-center flex-shrink-0`}>
                   {tier}
                 </div>
-                <div class="flex-1 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-3">
+                <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 sm:gap-3">
                   {items.map((item) => (
                     <a href={`/${item.item_type === 'character' ? 'characters' : 'cards'}/${item.item_id}`} 
                        class="bg-white rounded-lg p-3 shadow hover:shadow-lg transition-shadow block hover:scale-105">
@@ -268,15 +286,15 @@ const topTierCharacters = tierList
     </div>
 
     <!-- SEO Content Section -->
-    <section class="mt-12 glass rounded-2xl p-8 mb-8">
-      <h2 class="text-2xl font-display mb-4">About UmamusumeDB</h2>
+    <section class="mt-8 sm:mt-12 glass rounded-lg sm:rounded-2xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
+      <h2 class="text-xl sm:text-2xl font-display mb-3 sm:mb-4">About UmamusumeDB</h2>
       <div class="prose max-w-none text-gray-700">
-        <p class="mb-4">
-          <strong>UmamusumeDB</strong> is your comprehensive online database for Uma Musume Pretty Derby. 
-          Our platform provides detailed information about all characters, support cards, and game mechanics 
+        <p class="mb-3 sm:mb-4 text-sm sm:text-base">
+          <strong>UmamusumeDB</strong> is your comprehensive online database for Uma Musume Pretty Derby.
+          Our platform provides detailed information about all characters, support cards, and game mechanics
           to help trainers build the perfect team.
         </p>
-        <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-6">
           <div>
             <h3 class="font-bold text-lg mb-2">Why Choose UmamusumeDB?</h3>
             <ul class="text-sm space-y-1">
@@ -316,41 +334,66 @@ const topTierCharacters = tierList
 
   <style>
     .filter-btn {
-      @apply px-4 py-2 rounded-full text-sm font-medium transition-all;
-      @apply bg-white/80 hover:bg-uma-primary/10 text-gray-700;
+      @apply px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all;
+      @apply bg-white/80 hover:bg-uma-primary/10 text-gray-700 whitespace-nowrap;
     }
-    
+
     .filter-btn.active {
       @apply bg-gradient-to-r from-uma-primary to-uma-secondary text-white;
     }
-    
+
     .tab-btn {
-      @apply px-4 py-2 rounded-lg font-medium transition-all flex items-center whitespace-nowrap;
+      @apply px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium transition-all flex items-center whitespace-nowrap flex-shrink-0;
       @apply bg-white hover:bg-uma-primary/10 text-gray-700;
     }
-    
+
     .tab-btn.active {
       @apply bg-gradient-to-r from-uma-primary to-uma-secondary text-white;
     }
-    
+
     .tier-filter-btn {
-      @apply px-3 py-1 rounded-lg text-sm font-medium transition-all;
+      @apply px-3 py-1.5 sm:py-1 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap flex-shrink-0;
       @apply bg-white hover:bg-uma-primary/10 text-gray-700;
     }
-    
+
     .tier-filter-btn.active {
       @apply bg-uma-primary text-white;
     }
-    
+
     .tab-content {
       @apply hidden;
     }
-    
+
     .tab-content.active {
       @apply block;
     }
-    
+
+    /* Scrollbar styling for horizontal scroll */
+    .overflow-x-auto::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb {
+      background: rgba(255, 107, 157, 0.3);
+      border-radius: 4px;
+    }
+
+    .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 107, 157, 0.5);
+    }
+
   </style>
+
+  <script define:vars={{ searchableCharacters, searchableCards }}>
+    // Expose search data globally for Header component
+    window.__CHARACTERS__ = searchableCharacters;
+    window.__CARDS__ = searchableCards;
+  </script>
 
   <script>
     // Global search
