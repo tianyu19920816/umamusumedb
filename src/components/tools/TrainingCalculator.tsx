@@ -104,51 +104,76 @@ export default function TrainingCalculator() {
 
   const calculateTraining = useMemo((): TrainingResult => {
     const baseStats = { ...selectedTraining.baseStats };
-    let multiplier = 1.0;
-    
-    // Apply motivation bonus
-    multiplier *= 1 + (motivation - 3) * 0.05;
-    
-    // Apply bond bonus
-    multiplier *= 1 + bond / 200;
-    
-    // Apply training level bonus
-    multiplier *= 1 + trainingLevel * 0.1;
-    
-    // Apply support card bonuses
+
+    // Stat bonus from support cards
+    let statBonus: {[key: string]: number} = {
+      speed: 0, stamina: 0, power: 0, guts: 0, wisdom: 0, skillPt: 0
+    };
+
     supportCards.forEach(card => {
-      if (card.type === selectedTraining.name.toLowerCase()) {
-        multiplier *= 1 + card.trainingBonus / 100;
-      }
-      multiplier *= 1 + card.friendshipBonus / 500;
-      
       Object.entries(card.specialtyBonus).forEach(([stat, bonus]) => {
-        if (baseStats[stat as keyof typeof baseStats] !== undefined) {
-          baseStats[stat as keyof typeof baseStats] += bonus;
+        if (statBonus[stat] !== undefined) {
+          statBonus[stat] += bonus;
         }
       });
     });
-    
-    // Calculate final stats
+
+    // Growth rate (example: 20% for matching specialty)
+    const growthRate = 0.20;
+
+    // Mood/Motivation bonus (Great: +20%, Good: +10%, Normal: 0%, Bad: -10%, Awful: -20%)
+    const moodMultiplier = motivation === 5 ? 1.20 :
+                          motivation === 4 ? 1.10 :
+                          motivation === 3 ? 1.00 :
+                          motivation === 2 ? 0.90 : 0.80;
+
+    // Training effectiveness (from support cards and training level)
+    const trainingEffectiveness = trainingLevel * 0.05; // 5% per level
+
+    // Support card count bonus (5% per card)
+    const supportCountBonus = 1 + (supportCards.length * 0.05);
+
+    // Friendship training bonus (activated when bond >= 80)
+    let friendshipMultiplier = 1.0;
+    if (bond >= 80) {
+      supportCards.forEach(card => {
+        if (card.type === selectedTraining.name.toLowerCase() || card.type === 'friend') {
+          friendshipMultiplier *= (1 + card.friendshipBonus / 100);
+        }
+      });
+    }
+
+    // Calculate final stats using the accurate formula:
+    // (base + statBonus) × (1 + growthRate) × mood × (1 + trainingEffect) × (1 + supportCount) × friendshipMultiplier
     const finalStats: { [key: string]: number } = {};
     let total = 0;
-    
-    Object.entries(baseStats).forEach(([stat, value]) => {
-      finalStats[stat] = Math.floor(value * multiplier);
+
+    Object.entries(baseStats).forEach(([stat, baseValue]) => {
+      let calculated = (baseValue + (statBonus[stat] || 0)) *
+                      (1 + growthRate) *
+                      moodMultiplier *
+                      (1 + trainingEffectiveness) *
+                      supportCountBonus *
+                      friendshipMultiplier;
+
+      // Training cap: max +100 per session (unless over 1200 stat, then halved with max +50)
+      calculated = Math.min(calculated, 100);
+
+      finalStats[stat] = Math.floor(calculated);
       if (stat !== 'skillPt') {
         total += finalStats[stat];
       }
     });
-    
+
     // Calculate energy cost
     const energyCost = 10 + Math.floor(total / 10);
-    
+
     // Calculate failure risk
     let failureRisk = selectedTraining.failureRate;
     failureRisk *= 1 - bond / 200;
     failureRisk *= 1 + (100 - energy) / 200;
     failureRisk = Math.max(0, Math.min(50, failureRisk));
-    
+
     return {
       stats: finalStats,
       total,
@@ -354,11 +379,15 @@ export default function TrainingCalculator() {
         </div>
         
         <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-          <h4 className="font-semibold mb-2">Training Tips</h4>
+          <h4 className="font-semibold mb-2">Training Formula & Tips</h4>
+          <div className="text-xs text-gray-600 mb-2 font-mono bg-white p-2 rounded">
+            (Base + Stat Bonus) × (1 + Growth Rate) × Mood × (1 + Training Effect) × (1 + Support Count × 0.05) × Friendship Bonus
+          </div>
           <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Higher motivation (★) increases all stat gains by 5% per level</li>
-            <li>• Bond level reduces failure chance and increases gains</li>
-            <li>• Support cards matching training type provide the biggest boost</li>
+            <li>• Motivation: Great★★★★★ +20%, Good★★★★ +10%, Normal★★★ 0%, Bad★★ -10%, Awful★ -20%</li>
+            <li>• Friendship Training activates when Bond ≥ 80 (orange gauge)</li>
+            <li>• Each support card adds +5% to all gains</li>
+            <li>• Training cap: +100 max per session (halved to +50 if stat &gt; 1200)</li>
             <li>• Low energy increases failure risk - rest when below 30%</li>
           </ul>
         </div>

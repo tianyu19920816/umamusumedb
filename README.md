@@ -8,12 +8,30 @@ A comprehensive database and tools platform for Uma Musume Pretty Derby, built w
 
 ## Features
 
-- 📊 **Complete Character Database** - Browse all Uma Musume with detailed stats and skills
-- 🎴 **Support Card Collection** - Filter and search support cards with effects
+### Database & Information
+- 📊 **Character Database** - 60+ Uma Musume with detailed stats, growth rates, and aptitudes
+- 🎴 **Support Card Collection** - 119+ support cards with complete skill and bonus data
+- 🎯 **Skill Database** - 47+ skills with exact numerical values, trigger conditions, and durations
 - 🏆 **Tier Lists** - Community-driven rankings for characters and cards
 - 🌍 **Multi-language Support** - English and Japanese interfaces
-- ⚡ **Lightning Fast** - Static site with CDN distribution
+
+### Training Tools
+- 🧮 **Training Calculator** - Accurate stat calculation using official game formula
+  - Growth rate, mood, and training effectiveness
+  - Support card bonuses and friendship training
+  - Training caps (+100 max, halved above 1200)
+- 🧬 **Factor Calculator** - Inheritance probability calculator
+  - Parent & grandparent factor inheritance rates
+  - Compatibility bonuses
+  - Blue (★3) factor probability
+- 🛠️ **Skill Builder** - Plan your skill setup
+- 📊 **Support Deck Builder** - Optimize your support card deck
+- 🎯 **Training Goals** - Set and track your training targets
+
+### Performance
+- ⚡ **Lightning Fast** - Static site with global CDN (img.umamusumedb.com)
 - 📱 **Mobile Friendly** - Responsive design for all devices
+- 🚀 **Cloudflare Pages** - Edge network deployment
 
 ## Tech Stack
 
@@ -25,7 +43,7 @@ A comprehensive database and tools platform for Uma Musume Pretty Derby, built w
 
 ## Data Sources & Credits
 
-This project wouldn't be possible without these amazing open-source projects:
+This project wouldn't be possible without these amazing open-source projects and community resources:
 
 ### Primary Data Sources
 
@@ -38,10 +56,36 @@ This project wouldn't be possible without these amazing open-source projects:
   - Browser-based master.mdb manipulation tools
   - Maintained by FabulousCupcake
 
+- **[Game8](https://game8.co/games/Umamusume-Pretty-Derby/)** - Comprehensive English game guide
+  - Training formulas and mechanics
+  - Character and support card evaluations
+
+- **[GameTora](https://gametora.com/umamusume/)** - Japanese community database
+  - Character aptitudes and stats
+  - Support card data
+
+- **[UmaMusume.run](https://umamusume.run/)** - Community tools and calculators
+  - Verified game formulas
+  - Legacy and training calculators
+
+### Formula Accuracy
+
+Our training calculator uses the official game formula verified by the community:
+
+```
+(Base + Stat Bonus) × (1 + Growth Rate) × Mood ×
+(1 + Training Effect) × (1 + Support Count × 0.05) × Friendship Bonus
+```
+
+With accurate implementation of:
+- Motivation bonuses (Great +20%, Good +10%, Normal 0%, Bad -10%, Awful -20%)
+- Friendship training activation at Bond ≥ 80
+- Training caps (+100 max per session, +50 max when stat > 1200)
+
 ### Special Thanks
 
 We extend our gratitude to:
-- The Uma Musume Pretty Derby community for continuous support
+- The Uma Musume Pretty Derby community for continuous support and data verification
 - All contributors to the open-source projects we depend on
 - Cygames for creating this amazing game
 
