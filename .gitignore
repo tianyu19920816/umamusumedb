@@ -95,7 +95,6 @@ coverage/
 r2-assets/
 
 # Project specific sensitive files
-CLAUDE.md
 .env.example
 wrangler.toml
 .dev.vars
