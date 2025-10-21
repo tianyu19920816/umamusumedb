@@ -32,9 +32,44 @@ const rarityColors = {
   SR: 'bg-gradient-to-r from-purple-400 to-purple-600',
   R: 'bg-gradient-to-r from-gray-400 to-gray-600'
 };
+
+const extractEffectValue = (value: any) => {
+  if (typeof value === 'number') return value;
+  if (typeof value === 'string') {
+    const numeric = Number(value.replace(/[^0-9.-]/g, ''));
+    return Number.isFinite(numeric) ? numeric : 0;
+  }
+  if (value && typeof value === 'object') {
+    return value.lv50 ?? value.lv45 ?? value.lv40 ?? value.lv35 ?? value.lv30 ?? value.lv1 ?? 0;
+  }
+  return 0;
+};
+
+const effectHighlights = Object.entries(card.effects || {})
+  .map(([key, value]) => ({
+    key,
+    value,
+    display: extractEffectValue(value)
+  }))
+  .filter(entry => entry.display > 0)
+  .sort((a, b) => b.display - a.display)
+  .slice(0, 3);
 ---
 
-<Layout title={`${card.name_en} - Support Cards - UmamusumeDB`}>
+<Layout
+  title={`${card.name_en} (${card.rarity} ${config.label}) - Support Card Guide | UmamusumeDB`}
+  description={`${card.name_en} support card skills, training effects and recommended usage for Uma Musume Pretty Derby. Review bonuses, events and best character pairings.`}
+  image={card.image_url || 'https://umamusumedb.com/og-image.png'}
+  structuredDataType="supportCard"
+  structuredData={{
+    id: card.id,
+    name_en: card.name_en,
+    name_ja: card.name_jp,
+    rarity: card.rarity,
+    type: card.type,
+    effects: card.effects
+  }}
+>
   <Header />
   
   <main class="container mx-auto px-4 py-8">
@@ -105,6 +140,18 @@ const rarityColors = {
 
       <!-- Right Column - Detailed Effects -->
       <div class="lg:col-span-2 space-y-6">
+        {effectHighlights.length > 0 && (
+          <div class="grid md:grid-cols-3 gap-3">
+            {effectHighlights.map(({ key, display }) => (
+              <div class="bg-white rounded-lg shadow-sm border border-uma-primary/10 p-4">
+                <div class="text-xs uppercase tracking-wide text-gray-500">Key Effect</div>
+                <div class="text-sm font-semibold text-gray-800 mt-1">{key.replace(/_/g, ' ')}</div>
+                <div class="text-2xl font-bold text-uma-primary mt-2">+{display}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
         <!-- Main Effects Section -->
         <div class="glass rounded-xl p-6">
           <h2 class="text-xl font-display mb-4 flex items-center gap-2">

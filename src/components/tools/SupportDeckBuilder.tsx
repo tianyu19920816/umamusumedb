@@ -1,17 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Plus, X, Star, TrendingUp, Users, Sparkles, AlertTriangle, Check, Image } from 'lucide-react';
+import { Plus, X, Star, TrendingUp, Users, Sparkles, AlertTriangle, Check, Lock, Unlock } from 'lucide-react';
 import PlaceholderImage from '../PlaceholderImage';
-
-interface SupportCard {
-  id: string;
-  name_en: string;
-  name_jp: string;
-  type: 'speed' | 'stamina' | 'power' | 'guts' | 'wisdom' | 'friend';
-  rarity: 'SSR' | 'SR' | 'R';
-  effects: any;
-  skills: string[];
-  image_url?: string;
-}
+import type { SupportCard } from '@/types';
 
 interface DeckSlot {
   card: SupportCard | null;
@@ -22,6 +12,9 @@ interface DeckAnalysis {
   totalBonus: { [key: string]: number };
   typeBalance: { [key: string]: number };
   recommendations: string[];
+  missingTypes: string[];
+  duplicateCards: string[];
+  rarityCount: { SSR: number; SR: number; R: number };
   score: number;
 }
 
@@ -83,6 +76,9 @@ export default function SupportDeckBuilder() {
   const [deck, setDeck] = useState<DeckSlot[]>(
     Array.from({ length: 6 }, (_, i) => ({ card: null, position: i }))
   );
+  const [lockedSlots, setLockedSlots] = useState<boolean[]>(
+    Array.from({ length: 6 }, () => false)
+  );
   const [selectedTemplate, setSelectedTemplate] = useState<typeof DECK_TEMPLATES[0] | null>(null);
   const [filterType, setFilterType] = useState<string>('all');
   const [filterRarity, setFilterRarity] = useState<string>('all');
@@ -127,65 +123,94 @@ export default function SupportDeckBuilder() {
         friend: 0
       },
       recommendations: [],
+      missingTypes: [],
+      duplicateCards: [],
+      rarityCount: { SSR: 0, SR: 0, R: 0 },
       score: 0
     };
 
+    const duplicateCounter = new Map<string, number>();
+
     deck.forEach(slot => {
       if (!slot.card) return;
-      
-      analysis.typeBalance[slot.card.type]++;
-      
-      if (slot.card.effects) {
-        const effects = slot.card.effects;
+
+      const card = slot.card;
+      analysis.typeBalance[card.type]++;
+      analysis.rarityCount[card.rarity] = (analysis.rarityCount[card.rarity] || 0) + 1;
+      duplicateCounter.set(card.id, (duplicateCounter.get(card.id) || 0) + 1);
+
+      const effects = card.effects;
+      if (effects) {
         if (effects.friendship_bonus) {
-          const bonus = typeof effects.friendship_bonus === 'object' 
-            ? (effects.friendship_bonus.lv50 || effects.friendship_bonus.lv1)
+          const bonus = typeof effects.friendship_bonus === 'object'
+            ? (effects.friendship_bonus.lv50 || effects.friendship_bonus.lv45 || effects.friendship_bonus.lv1)
             : effects.friendship_bonus;
-          analysis.totalBonus.friendship += bonus || 0;
+          analysis.totalBonus.friendship += Number(bonus) || 0;
         }
         if (effects.training_bonus) {
           const bonus = typeof effects.training_bonus === 'object'
-            ? (effects.training_bonus.lv50 || effects.training_bonus.lv1)
+            ? (effects.training_bonus.lv50 || effects.training_bonus.lv45 || effects.training_bonus.lv1)
             : effects.training_bonus;
-          analysis.totalBonus.training += bonus || 0;
+          analysis.totalBonus.training += Number(bonus) || 0;
         }
         if (effects.motivation_bonus) {
           const bonus = typeof effects.motivation_bonus === 'object'
-            ? (effects.motivation_bonus.lv50 || effects.motivation_bonus.lv1)
+            ? (effects.motivation_bonus.lv50 || effects.motivation_bonus.lv45 || effects.motivation_bonus.lv1)
             : effects.motivation_bonus;
-          analysis.totalBonus.motivation += bonus || 0;
+          analysis.totalBonus.motivation += Number(bonus) || 0;
         }
         if (effects.skill_pt_bonus) {
           const bonus = typeof effects.skill_pt_bonus === 'object'
-            ? (effects.skill_pt_bonus.lv50 || effects.skill_pt_bonus.lv1)
+            ? (effects.skill_pt_bonus.lv50 || effects.skill_pt_bonus.lv45 || effects.skill_pt_bonus.lv1)
             : effects.skill_pt_bonus;
-          analysis.totalBonus.skillPt += bonus || 0;
+          analysis.totalBonus.skillPt += Number(bonus) || 0;
         }
       }
     });
 
     const filledSlots = deck.filter(s => s.card).length;
-    
+
     if (filledSlots < 6) {
       analysis.recommendations.push(`Add ${6 - filledSlots} more cards to complete your deck`);
     }
-    
+
+    analysis.missingTypes = Object.entries(analysis.typeBalance)
+      .filter(([, count]) => count === 0)
+      .map(([type]) => type);
+
+    analysis.duplicateCards = Array.from(duplicateCounter.entries())
+      .filter(([, count]) => count > 1)
+      .map(([cardId]) => deck.find(slot => slot.card?.id === cardId)?.card?.name_en || cardId);
+
     const typeCount = Object.values(analysis.typeBalance).filter(v => v > 0).length;
     if (typeCount < 3 && filledSlots >= 4) {
       analysis.recommendations.push('Consider diversifying card types for better coverage');
     }
-    
+
     if (analysis.typeBalance.friend === 0 && filledSlots >= 5) {
       analysis.recommendations.push('Add a Friend card for event bonuses');
     }
-    
+
     const maxType = Math.max(...Object.values(analysis.typeBalance));
     if (maxType >= 4) {
       analysis.recommendations.push('Too many cards of the same type may limit training options');
     }
-    
+
     if (analysis.totalBonus.friendship < 100 && filledSlots === 6) {
       analysis.recommendations.push('Total friendship bonus is low - consider higher rarity cards');
+    }
+
+    if (analysis.missingTypes.includes('speed')) {
+      analysis.recommendations.push('No Speed cards detected — consider adding at least one for consistent stat gains');
+    }
+    if (analysis.missingTypes.includes('stamina')) {
+      analysis.recommendations.push('No Stamina cards detected — long training may struggle without stamina support');
+    }
+    if (analysis.rarityCount.SSR < 2 && filledSlots === 6) {
+      analysis.recommendations.push('Less than two SSR cards — aim for more high-rarity support if possible');
+    }
+    if (analysis.duplicateCards.length > 0) {
+      analysis.recommendations.push('Duplicate support cards detected — duplicates do not stack');
     }
 
     analysis.score = Math.round(
@@ -199,44 +224,70 @@ export default function SupportDeckBuilder() {
   }, [deck]);
 
   const addCardToDeck = (card: SupportCard, position: number) => {
+    if (lockedSlots[position]) return;
     const newDeck = [...deck];
     newDeck[position] = { card, position };
     setDeck(newDeck);
   };
 
   const removeCardFromDeck = (position: number) => {
+    if (lockedSlots[position]) return;
     const newDeck = [...deck];
     newDeck[position] = { card: null, position };
     setDeck(newDeck);
   };
 
+  const toggleLock = (position: number) => {
+    setLockedSlots(prev => {
+      const next = [...prev];
+      next[position] = !next[position];
+      return next;
+    });
+  };
+
   const applyTemplate = (template: typeof DECK_TEMPLATES[0]) => {
     setSelectedTemplate(template);
-    const newDeck = Array.from({ length: 6 }, (_, i) => ({ card: null, position: i }));
-    
-    let position = 0;
+
+    const retainedDeck = deck.map((slot, idx) =>
+      lockedSlots[idx] ? slot : { card: null, position: idx }
+    );
+
+    const occupiedIds = new Set(
+      retainedDeck
+        .map(slot => (slot.card ? slot.card.id : null))
+        .filter(Boolean) as string[]
+    );
+
+    const fillNextSlot = (card: SupportCard) => {
+      const targetIndex = retainedDeck.findIndex(
+        (slot, idx) => !lockedSlots[idx] && !slot.card
+      );
+      if (targetIndex === -1) return;
+      retainedDeck[targetIndex] = { card, position: targetIndex };
+      occupiedIds.add(card.id);
+    };
+
     Object.entries(template.composition).forEach(([type, count]) => {
       const cardsOfType = availableCards
         .filter(card => card.type === type)
         .sort((a, b) => {
           const rarityOrder = { SSR: 3, SR: 2, R: 1 };
           return rarityOrder[b.rarity] - rarityOrder[a.rarity];
-        })
-        .slice(0, count);
-      
-      cardsOfType.forEach(card => {
-        if (position < 6) {
-          newDeck[position] = { card, position };
-          position++;
-        }
-      });
+        });
+
+      for (const card of cardsOfType) {
+        if (occupiedIds.has(card.id)) continue;
+        fillNextSlot(card);
+        if (--count <= 0) break;
+      }
     });
-    
-    setDeck(newDeck);
+
+    setDeck(retainedDeck);
   };
 
   const clearDeck = () => {
     setDeck(Array.from({ length: 6 }, (_, i) => ({ card: null, position: i })));
+    setLockedSlots(Array.from({ length: 6 }, () => false));
     setSelectedTemplate(null);
   };
 
@@ -260,6 +311,18 @@ export default function SupportDeckBuilder() {
                 }
               }}
             >
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleLock(index);
+                }}
+                className={`absolute top-2 left-2 z-30 p-1 rounded-full transition ${
+                  lockedSlots[index] ? 'bg-blue-600 text-white' : 'bg-white/80 text-gray-600'
+                }`}
+                aria-label={lockedSlots[index] ? 'Unlock slot' : 'Lock slot'}
+              >
+                {lockedSlots[index] ? <Lock className="w-3 h-3" /> : <Unlock className="w-3 h-3" />}
+              </button>
               {slot.card ? (
                 <>
                   <div className={`absolute top-0 left-0 right-0 h-1 ${getTypeColorClasses(slot.card.type).split(' ')[0]}`} />
@@ -272,7 +335,12 @@ export default function SupportDeckBuilder() {
                           className="w-full h-full object-cover opacity-90"
                         />
                       ) : (
-                        <PlaceholderImage type="card" className="w-full h-full" />
+                        <PlaceholderImage
+                          type="card"
+                          name={slot.card.name_en}
+                          rarity={slot.card.rarity}
+                          className="w-full h-full"
+                        />
                       )}
                     </div>
                     <div className="relative z-10 p-2 h-full flex flex-col bg-gradient-to-t from-black/80 via-black/40 to-transparent">
@@ -286,10 +354,14 @@ export default function SupportDeckBuilder() {
                         <div className="flex items-center justify-between">
                           <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${getRarityColorClasses(slot.card.rarity)}`}>
                             {slot.card.rarity}
-                          </span>
-                          <button
+                         </span>
+                         <button
                             onClick={() => removeCardFromDeck(index)}
-                            className="opacity-0 group-hover:opacity-100 transition bg-red-500 rounded-full p-1"
+                            className={`transition rounded-full p-1 ${
+                              lockedSlots[index]
+                                ? 'bg-gray-400 cursor-not-allowed opacity-60'
+                                : 'bg-red-500 opacity-0 group-hover:opacity-100'
+                            }`}
                           >
                             <X className="w-3 h-3 text-white" />
                           </button>
@@ -348,6 +420,12 @@ export default function SupportDeckBuilder() {
                     <span className="font-bold">+{value}%</span>
                   </div>
                 ))}
+                <div className="flex items-center justify-between pt-2 border-t border-dashed border-gray-200">
+                  <span className="text-sm text-gray-600">SSR / SR / R</span>
+                  <span className="font-bold text-purple-600">
+                    {analyzeDeck.rarityCount.SSR}/{analyzeDeck.rarityCount.SR}/{analyzeDeck.rarityCount.R}
+                  </span>
+                </div>
               </div>
             </div>
             
@@ -366,6 +444,18 @@ export default function SupportDeckBuilder() {
                   </div>
                 ))}
               </div>
+              {analyzeDeck.missingTypes.length > 0 && (
+                <div className="mt-3 text-xs text-orange-600 flex items-start gap-1">
+                  <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                  <span>Missing types: {analyzeDeck.missingTypes.join(', ')}</span>
+                </div>
+              )}
+              {analyzeDeck.duplicateCards.length > 0 && (
+                <div className="mt-2 text-xs text-red-600 flex items-start gap-1">
+                  <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                  <span>Duplicates: {analyzeDeck.duplicateCards.join(', ')}</span>
+                </div>
+              )}
             </div>
           </div>
           
@@ -382,6 +472,12 @@ export default function SupportDeckBuilder() {
                     <span>{rec}</span>
                   </div>
                 ))}
+              </div>
+            )}
+            {analyzeDeck.recommendations.length === 0 && (
+              <div className="flex items-center gap-2 text-sm text-green-600">
+                <Check className="w-4 h-4" />
+                <span>Deck composition looks balanced and ready for training runs.</span>
               </div>
             )}
           </div>
@@ -420,19 +516,18 @@ export default function SupportDeckBuilder() {
         
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 max-h-96 overflow-y-auto">
           {filteredCards.map(card => {
-            const emptySlot = deck.find(s => !s.card);
+            const emptySlotIndex = deck.findIndex((s, idx) => !s.card && !lockedSlots[idx]);
             return (
               <button
                 key={card.id}
                 onClick={() => {
-                  const emptySlotIndex = deck.findIndex(s => !s.card);
                   if (emptySlotIndex !== -1) {
                     addCardToDeck(card, emptySlotIndex);
                   }
                 }}
-                disabled={deck.every(s => s.card !== null)}
+                disabled={emptySlotIndex === -1}
                 className={`aspect-[3/4] bg-gray-50 rounded-lg overflow-hidden text-left hover:shadow-lg transition relative ${
-                  deck.every(s => s.card !== null) ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
+                  emptySlotIndex === -1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'
                 }`}
               >
                 <div className={`absolute top-0 left-0 right-0 h-1 ${getTypeColorClasses(card.type).split(' ')[0]}`} />
@@ -445,7 +540,12 @@ export default function SupportDeckBuilder() {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <PlaceholderImage type="card" className="w-full h-full" />
+                      <PlaceholderImage
+                        type="card"
+                        name={card.name_en}
+                        rarity={card.rarity}
+                        className="w-full h-full"
+                      />
                     )}
                   </div>
                   <div className="relative z-10 p-2 h-full flex flex-col bg-gradient-to-t from-black/80 via-black/40 to-transparent">

@@ -224,76 +224,90 @@ import { Search, Menu, X, Github } from 'lucide-react';
   });
 
   // Search data
+  const SEARCH_CACHE_KEY = 'umadb-search-cache-v1';
+  const SEARCH_CACHE_TTL = 1000 * 60 * 60 * 6; // 6 hours
+
   let searchData: any[] = [];
   let isLoading = false;
 
+  const flattenSearchData = (data: any) => ([
+    ...(data?.pages || []),
+    ...(data?.tools || []),
+    ...(data?.characters || []),
+    ...(data?.cards || [])
+  ]);
+
+  const readCachedSearchData = () => {
+    try {
+      const raw = localStorage.getItem(SEARCH_CACHE_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      const generatedAt = parsed?.generatedAt;
+      if (!generatedAt) return null;
+      const age = Date.now() - new Date(generatedAt).getTime();
+      if (Number.isNaN(age) || age > SEARCH_CACHE_TTL) {
+        localStorage.removeItem(SEARCH_CACHE_KEY);
+        return null;
+      }
+      return parsed;
+    } catch (error) {
+      console.warn('[search] Failed to read cached search data', error);
+      return null;
+    }
+  };
+
+  const cacheSearchData = (data: any) => {
+    try {
+      localStorage.setItem(SEARCH_CACHE_KEY, JSON.stringify(data));
+    } catch (error) {
+      console.warn('[search] Failed to cache search data', error);
+    }
+  };
+
+  const fallbackSearchData = () => ([
+    { name_en: 'Characters', type: 'page', url: '/characters/' },
+    { name_en: 'Support Cards', type: 'page', url: '/cards/' },
+    { name_en: 'Tier List', type: 'page', url: '/tier-list/' },
+    { name_en: 'Tools', type: 'page', url: '/tools/' }
+  ]);
+
+  const fetchSearchData = async () => {
+    try {
+      const response = await fetch('/search-data.json', { cache: 'no-cache' });
+      if (!response.ok) {
+        throw new Error(`Unexpected status ${response.status}`);
+      }
+      const json = await response.json();
+      console.info(`[search] Loaded ${flattenSearchData(json).length} searchable items`);
+      return json;
+    } catch (error) {
+      console.warn('[search] Failed to fetch search data', error);
+      return null;
+    }
+  };
+
   // Load search data
   async function loadSearchData() {
-    if (isLoading || searchData.length > 20) return;
+    if (searchData.length || isLoading) return;
+
+    const cached = readCachedSearchData();
+    if (cached) {
+      searchData = flattenSearchData(cached);
+      return;
+    }
+
     isLoading = true;
-
-    try {
-      // Try to fetch pre-generated search data
-      const response = await fetch('/search-data.json');
-      if (response.ok) {
-        const data = await response.json();
-        searchData = [
-          ...(data.pages || []),
-          ...(data.tools || []),
-          ...(data.characters || []),
-          ...(data.cards || [])
-        ];
-        console.log(`✅ Loaded ${searchData.length} searchable items from cache`);
-        return;
+    const fetched = await fetchSearchData();
+    if (fetched) {
+      cacheSearchData(fetched);
+      searchData = flattenSearchData(fetched);
+    } else {
+      searchData = fallbackSearchData();
+      if (searchEmpty) {
+        searchEmpty.textContent = 'Offline mode: only basic links available.';
       }
-    } catch (e) {
-      console.warn('Could not load search-data.json, using fallback');
     }
-
-    try {
-      // Fallback: dynamically import static content
-      const { characters, supportCards } = await import('@/lib/static-content.ts');
-
-      searchData = [
-        { name_en: 'Characters', type: 'page', url: '/characters/' },
-        { name_en: 'Support Cards', type: 'page', url: '/cards/' },
-        { name_en: 'Tier List', type: 'page', url: '/tier-list/' },
-        { name_en: 'Tools', type: 'page', url: '/tools/' },
-        { name_en: 'Factor Calculator', type: 'tool', url: '/tools/factor-calculator/' },
-        { name_en: 'Training Calculator', type: 'tool', url: '/tools/training-calculator/' },
-        { name_en: 'Support Deck Builder', type: 'tool', url: '/tools/support-deck/' },
-        { name_en: 'Training Goals', type: 'tool', url: '/tools/training-goals/' },
-        { name_en: 'Skill Builder', type: 'tool', url: '/tools/skill-builder/' },
-        ...characters.map((c: any) => ({
-          id: c.id,
-          name_en: c.name_en,
-          name_ja: c.name_ja,
-          type: 'character',
-          rarity: c.rarity
-        })),
-        ...supportCards.map((c: any) => ({
-          id: c.id,
-          name_en: c.name_en,
-          name_ja: c.name_ja,
-          type: 'card',
-          rarity: c.rarity,
-          cardType: c.type
-        }))
-      ];
-
-      console.log(`✅ Loaded ${searchData.length} searchable items dynamically`);
-    } catch (error) {
-      console.error('❌ Failed to load search data:', error);
-      // Ultimate fallback
-      searchData = [
-        { name_en: 'Characters', type: 'page', url: '/characters/' },
-        { name_en: 'Support Cards', type: 'page', url: '/cards/' },
-        { name_en: 'Tier List', type: 'page', url: '/tier-list/' },
-        { name_en: 'Tools', type: 'page', url: '/tools/' },
-      ];
-    } finally {
-      isLoading = false;
-    }
+    isLoading = false;
   }
 
   // Load data when search is opened

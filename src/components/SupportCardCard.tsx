@@ -1,18 +1,7 @@
 import React from 'react';
 import { Star, Zap, Heart, Brain, Users, Sparkles } from 'lucide-react';
 import PlaceholderImage from './PlaceholderImage';
-
-interface SupportCard {
-  id: string;
-  name_en: string;
-  name_jp: string;
-  type: 'speed' | 'stamina' | 'power' | 'guts' | 'wisdom' | 'friend';
-  rarity: 'R' | 'SR' | 'SSR';
-  effects: Record<string, any>;
-  skills: string[];
-  events?: string[];
-  image_url?: string;
-}
+import type { SupportCard } from '@/types';
 
 interface SupportCardCardProps {
   card: SupportCard;

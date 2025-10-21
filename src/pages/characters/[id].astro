@@ -59,10 +59,16 @@ function getBestDistance(aptitudes: any) {
 }
 
 function getBestStrategy(aptitudes: any) {
-  if (!aptitudes) return 'Better';
-  const strategies = ['leader', 'better', 'chaser'];
-  const values: Record<string, number> = { 'S': 7, 'A': 6, 'B': 5, 'C': 4, 'D': 3, 'E': 2, 'F': 1, 'G': 0 };
-  let best = 'better';
+  if (!aptitudes) return 'Betweener';
+  const strategies = ['escape', 'lead', 'between', 'chase'];
+  const labels: Record<string, string> = {
+    escape: 'Escape',
+    lead: 'Leader',
+    between: 'Betweener',
+    chase: 'Chaser'
+  };
+  const values: Record<string, number> = { S: 7, A: 6, B: 5, C: 4, D: 3, E: 2, F: 1, G: 0 };
+  let best = 'between';
   let maxScore = 0;
   for (const strat of strategies) {
     const score = values[aptitudes[strat]] || 0;
@@ -71,11 +77,29 @@ function getBestStrategy(aptitudes: any) {
       best = strat;
     }
   }
-  return best.charAt(0).toUpperCase() + best.slice(1);
+  return labels[best] || best.charAt(0).toUpperCase() + best.slice(1);
 }
 ---
 
-<Layout title={`${character.name_en} - UmamusumeDB`}>
+<Layout
+  title={`${character.name_en} - Stats, Skills & Training Guide | UmamusumeDB`}
+  description={`${character.name_en} (${character.name_jp}) stats, growth rates, aptitudes and training tips for Uma Musume Pretty Derby. Learn best distances, strategy, unique skill and awakening info.`}
+  image={character.image_url || 'https://umamusumedb.com/og-image.png'}
+  structuredDataType="character"
+  structuredData={{
+    id: character.id,
+    name_en: character.name_en,
+    name_ja: character.name_jp,
+    distance_aptitude: {
+      short: character.aptitudes?.sprint,
+      mile: character.aptitudes?.mile,
+      medium: character.aptitudes?.medium,
+      long: character.aptitudes?.long
+    },
+    base_stats: character.initial_stats,
+    tier: character.rarity
+  }}
+>
   <Header />
   
   <main class="container mx-auto px-4 py-8">
@@ -140,6 +164,28 @@ function getBestStrategy(aptitudes: any) {
             <div class="flex items-center gap-2">
               <span class="text-sm text-gray-600">Voice Actor:</span>
               <span class="font-medium">{character.cv || 'Unknown'}</span>
+            </div>
+
+            <!-- Quick Highlights -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
+              <div class="bg-uma-accent/10 border border-uma-accent/30 rounded-lg px-3 py-2">
+                <div class="text-xs text-gray-500">Signature Stat</div>
+                <div class="font-semibold text-sm text-uma-dark">{getBestStat(character.attributes)}</div>
+              </div>
+              <div class="bg-uma-primary/10 border border-uma-primary/30 rounded-lg px-3 py-2">
+                <div class="text-xs text-gray-500">Best Distance</div>
+                <div class="font-semibold text-sm text-uma-dark">{getBestDistance(character.aptitudes)}</div>
+              </div>
+              <div class="bg-blue-50 border border-blue-100 rounded-lg px-3 py-2">
+                <div class="text-xs text-gray-500">Preferred Strategy</div>
+                <div class="font-semibold text-sm text-blue-700">{getBestStrategy(character.aptitudes)}</div>
+              </div>
+              <div class="bg-green-50 border border-green-100 rounded-lg px-3 py-2">
+                <div class="text-xs text-gray-500">Surface</div>
+                <div class="font-semibold text-sm text-green-700">
+                  Turf {character.aptitudes?.turf || 'G'} · Dirt {character.aptitudes?.dirt || 'G'}
+                </div>
+              </div>
             </div>
           </div>
         </div>

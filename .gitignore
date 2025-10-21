@@ -101,6 +101,7 @@ wrangler.toml
 .dev.vars
 scripts/upload-to-r2.js
 scripts/r2-urls.json
+DEPLOYMENT.md
 
 # Database files (contains local data)
 database/

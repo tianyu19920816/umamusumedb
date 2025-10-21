@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star, TrendingUp } from 'lucide-react';
-import type { Character } from '@/api/types';
+import type { Character } from '@/types';
 import PlaceholderImage from './PlaceholderImage';
 
 interface CharacterCardProps {

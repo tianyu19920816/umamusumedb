@@ -19,6 +19,10 @@ const {
   structuredDataType = 'website',
   structuredData
 } = Astro.props;
+
+const isJapanese = Astro.url.pathname.startsWith('/ja');
+const feedbackTitle = isJapanese ? 'フィードバック' : 'Feedback';
+const feedbackSubtitle = isJapanese ? 'GitHubでIssueを投稿' : 'Open a GitHub Issue';
 ---
 
 <!DOCTYPE html>
@@ -83,6 +87,21 @@ const {
       <div class="relative z-10">
         <slot />
         <Footer />
+        <a
+          href="https://github.com/tianyu19920816/umamusumedb/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="feedback-widget"
+          aria-label={isJapanese ? 'GitHubでフィードバックを投稿' : 'Share feedback on GitHub issues'}
+        >
+          <div class="feedback-widget__content">
+            <span class="feedback-widget__title">{feedbackTitle}</span>
+            <span class="feedback-widget__subtitle">{feedbackSubtitle}</span>
+          </div>
+          <svg class="feedback-widget__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12C0 17.3 3.438 21.8 8.205 23.385C8.805 23.49 9.025 23.115 9.025 22.785C9.025 22.485 9.015 21.705 9.01 20.745C5.672 21.495 4.968 19.17 4.968 19.17C4.422 17.805 3.633 17.445 3.633 17.445C2.546 16.77 3.717 16.785 3.717 16.785C4.922 16.875 5.555 18.03 5.555 18.03C6.625 19.935 8.438 19.38 9.155 19.065C9.258 18.285 9.563 17.76 9.905 17.46C7.215 17.16 4.39 16.095 4.39 11.475C4.39 10.17 4.86 9.105 5.64 8.28C5.514 7.98 5.094 6.735 5.76 5.07C5.76 5.07 6.75 4.74 8.985 6.33C9.93 6.06 10.95 5.925 11.97 5.92C12.99 5.925 14.01 6.06 14.955 6.33C17.19 4.74 18.18 5.07 18.18 5.07C18.846 6.735 18.426 7.98 18.3 8.28C19.08 9.105 19.55 10.17 19.55 11.475C19.55 16.11 16.72 17.155 14.025 17.445C14.445 17.805 14.835 18.525 14.835 19.635C14.835 21.255 14.82 22.335 14.82 22.785C14.82 23.115 15.03 23.495 15.645 23.38C20.421 21.795 23.85 17.295 23.85 12C23.85 5.37 18.48 0 11.85 0H12Z" fill="currentColor"/>
+          </svg>
+        </a>
       </div>
     </div>
   </body>
@@ -98,5 +117,63 @@ const {
   ::selection {
     background-color: rgb(var(--uma-primary) / 0.3);
     color: rgb(var(--uma-dark));
+  }
+
+  .feedback-widget {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.95), rgba(236, 72, 153, 0.95));
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px -12px rgba(79, 70, 229, 0.6);
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    z-index: 50;
+    text-decoration: none;
+  }
+
+  .feedback-widget:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px -14px rgba(79, 70, 229, 0.7);
+    opacity: 0.95;
+  }
+
+  .feedback-widget__content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .feedback-widget__title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .feedback-widget__subtitle {
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+
+  .feedback-widget__icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    .feedback-widget {
+      right: 1rem;
+      bottom: 1rem;
+      padding: 0.6rem 0.85rem;
+    }
+
+    .feedback-widget__content {
+      display: none;
+    }
   }
 </style>

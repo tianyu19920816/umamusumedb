@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { TrendingUp, Activity, Zap, Heart, Brain, Target, Plus, Minus, RotateCcw } from 'lucide-react';
+import { TrendingUp, Activity, Zap, Heart, Brain, Target, Plus, Minus, RotateCcw, AlertTriangle } from 'lucide-react';
 
 interface TrainingType {
   name: string;
@@ -23,11 +23,28 @@ interface SupportCard {
   specialtyBonus: { [key: string]: number };
 }
 
+interface TrainingBreakdown {
+  baseStats: { [key: string]: number };
+  statBonus: { [key: string]: number };
+  rawGains: { [key: string]: number };
+  caps: { [key: string]: boolean };
+  multipliers: {
+    growth: number;
+    mood: number;
+    training: number;
+    support: number;
+    friendship: number;
+    total: number;
+  };
+}
+
 interface TrainingResult {
   stats: { [key: string]: number };
   total: number;
   energy: number;
   failureRisk: number;
+  breakdown: TrainingBreakdown;
+  warnings: string[];
 }
 
 const TRAINING_TYPES: TrainingType[] = [
@@ -101,13 +118,18 @@ export default function TrainingCalculator() {
   const [energy, setEnergy] = useState<number>(100);
   const [bond, setBond] = useState<number>(50);
   const [trainingLevel, setTrainingLevel] = useState<number>(1);
+  const [showBreakdown, setShowBreakdown] = useState<boolean>(false);
 
   const calculateTraining = useMemo((): TrainingResult => {
     const baseStats = { ...selectedTraining.baseStats };
 
-    // Stat bonus from support cards
-    let statBonus: {[key: string]: number} = {
-      speed: 0, stamina: 0, power: 0, guts: 0, wisdom: 0, skillPt: 0
+    const statBonus: { [key: string]: number } = {
+      speed: 0,
+      stamina: 0,
+      power: 0,
+      guts: 0,
+      wisdom: 0,
+      skillPt: 0
     };
 
     supportCards.forEach(card => {
@@ -118,23 +140,21 @@ export default function TrainingCalculator() {
       });
     });
 
-    // Growth rate (example: 20% for matching specialty)
-    const growthRate = 0.20;
+    const growthRate = 0.2;
+    const growthMultiplier = 1 + growthRate;
 
-    // Mood/Motivation bonus (Great: +20%, Good: +10%, Normal: 0%, Bad: -10%, Awful: -20%)
-    const moodMultiplier = motivation === 5 ? 1.20 :
-                          motivation === 4 ? 1.10 :
-                          motivation === 3 ? 1.00 :
-                          motivation === 2 ? 0.90 : 0.80;
+    const moodMultiplier = motivation === 5 ? 1.2 :
+      motivation === 4 ? 1.1 :
+      motivation === 3 ? 1.0 :
+      motivation === 2 ? 0.9 : 0.8;
 
-    // Training effectiveness (from support cards and training level)
-    const trainingEffectiveness = trainingLevel * 0.05; // 5% per level
+    const trainingEffectiveness = trainingLevel * 0.05;
+    const trainingBonusFromCards = supportCards.reduce((sum, card) => sum + card.trainingBonus, 0) / 100;
+    const trainingMultiplier = 1 + trainingEffectiveness + trainingBonusFromCards;
 
-    // Support card count bonus (5% per card)
-    const supportCountBonus = 1 + (supportCards.length * 0.05);
+    const supportMultiplier = 1 + supportCards.length * 0.05;
 
-    // Friendship training bonus (activated when bond >= 80)
-    let friendshipMultiplier = 1.0;
+    let friendshipMultiplier = 1;
     if (bond >= 80) {
       supportCards.forEach(card => {
         if (card.type === selectedTraining.name.toLowerCase() || card.type === 'friend') {
@@ -143,21 +163,23 @@ export default function TrainingCalculator() {
       });
     }
 
-    // Calculate final stats using the accurate formula:
-    // (base + statBonus) × (1 + growthRate) × mood × (1 + trainingEffect) × (1 + supportCount) × friendshipMultiplier
+    const combinedMultiplier = growthMultiplier * moodMultiplier * trainingMultiplier * supportMultiplier * friendshipMultiplier;
+
     const finalStats: { [key: string]: number } = {};
+    const rawGains: { [key: string]: number } = {};
+    const caps: { [key: string]: boolean } = {};
     let total = 0;
 
     Object.entries(baseStats).forEach(([stat, baseValue]) => {
-      let calculated = (baseValue + (statBonus[stat] || 0)) *
-                      (1 + growthRate) *
-                      moodMultiplier *
-                      (1 + trainingEffectiveness) *
-                      supportCountBonus *
-                      friendshipMultiplier;
+      const basePlusBonus = baseValue + (statBonus[stat] || 0);
+      const uncapped = basePlusBonus * combinedMultiplier;
+      rawGains[stat] = uncapped;
 
-      // Training cap: max +100 per session (unless over 1200 stat, then halved with max +50)
-      calculated = Math.min(calculated, 100);
+      let calculated = uncapped;
+      if (stat !== 'skillPt' && calculated > 100) {
+        caps[stat] = true;
+        calculated = 100;
+      }
 
       finalStats[stat] = Math.floor(calculated);
       if (stat !== 'skillPt') {
@@ -165,20 +187,40 @@ export default function TrainingCalculator() {
       }
     });
 
-    // Calculate energy cost
     const energyCost = 10 + Math.floor(total / 10);
 
-    // Calculate failure risk
     let failureRisk = selectedTraining.failureRate;
     failureRisk *= 1 - bond / 200;
     failureRisk *= 1 + (100 - energy) / 200;
     failureRisk = Math.max(0, Math.min(50, failureRisk));
 
+    const warnings: string[] = [];
+    if (energy < 30) warnings.push('Energy below 30% — resting reduces injury chance.');
+    if (bond < 80) warnings.push('Bond below 80 — friendship bonuses inactive.');
+    if (motivation <= 2) warnings.push('Low motivation — consider cheering items or races.');
+    if (supportCards.length === 0) warnings.push('No support cards selected — gains will remain minimal.');
+    if (failureRisk > 30) warnings.push('Failure risk exceeds 30% — training could fail.');
+
     return {
       stats: finalStats,
       total,
       energy: energyCost,
-      failureRisk
+      failureRisk,
+      breakdown: {
+        baseStats,
+        statBonus,
+        rawGains,
+        caps,
+        multipliers: {
+          growth: growthMultiplier,
+          mood: moodMultiplier,
+          training: trainingMultiplier,
+          support: supportMultiplier,
+          friendship: friendshipMultiplier,
+          total: combinedMultiplier
+        }
+      },
+      warnings
     };
   }, [selectedTraining, supportCards, motivation, energy, bond, trainingLevel]);
 
@@ -377,11 +419,85 @@ export default function TrainingCalculator() {
             <div className="text-xl font-bold text-red-600">{calculateTraining.failureRisk.toFixed(1)}%</div>
           </div>
         </div>
-        
+
+        {calculateTraining.warnings.length > 0 && (
+          <div className="mt-4 space-y-1">
+            {calculateTraining.warnings.map((warning, index) => (
+              <div key={index} className="flex items-start gap-2 text-sm text-red-600">
+                <AlertTriangle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span>{warning}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-4">
+          <button
+            onClick={() => setShowBreakdown(prev => !prev)}
+            className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+          >
+            {showBreakdown ? 'Hide multiplier breakdown' : 'Show multiplier breakdown'}
+          </button>
+
+          {showBreakdown && (
+            <div className="mt-3 bg-white rounded-lg p-4 border border-blue-100">
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">Multipliers</h4>
+              <div className="grid sm:grid-cols-2 gap-2 text-xs text-gray-600">
+                <div className="flex items-center justify-between">
+                  <span>Growth</span>
+                  <span>{calculateTraining.breakdown.multipliers.growth.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Mood</span>
+                  <span>{calculateTraining.breakdown.multipliers.mood.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Training</span>
+                  <span>{calculateTraining.breakdown.multipliers.training.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Support Count</span>
+                  <span>{calculateTraining.breakdown.multipliers.support.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Friendship</span>
+                  <span>{calculateTraining.breakdown.multipliers.friendship.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between font-semibold text-blue-600">
+                  <span>Total Multiplier</span>
+                  <span>{calculateTraining.breakdown.multipliers.total.toFixed(2)}×</span>
+                </div>
+              </div>
+
+              <h4 className="text-sm font-semibold text-gray-700 mt-4 mb-2">Stat Bonuses</h4>
+              <div className="grid sm:grid-cols-2 gap-2 text-xs text-gray-600">
+                {Object.entries(calculateTraining.breakdown.statBonus).map(([stat, bonus]) => (
+                  <div key={stat} className="bg-gray-50 rounded p-2">
+                    <div className="flex items-center justify-between">
+                      <span className="uppercase text-gray-500">{stat}</span>
+                      <span className="font-semibold">+{bonus}</span>
+                    </div>
+                    <div className="flex items-center justify-between mt-1">
+                      <span>Raw Gain</span>
+                      <span>{calculateTraining.breakdown.rawGains[stat].toFixed(1)}</span>
+                    </div>
+                    {calculateTraining.breakdown.caps[stat] && (
+                      <div className="mt-1 text-[10px] text-red-500 flex items-center gap-1">
+                        <AlertTriangle className="w-3 h-3" />
+                        Cap reached at +100
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
         <div className="mt-4 p-4 bg-blue-50 rounded-lg">
           <h4 className="font-semibold mb-2">Training Formula & Tips</h4>
           <div className="text-xs text-gray-600 mb-2 font-mono bg-white p-2 rounded">
-            (Base + Stat Bonus) × (1 + Growth Rate) × Mood × (1 + Training Effect) × (1 + Support Count × 0.05) × Friendship Bonus
+            (Base + Stat Bonus) × {calculateTraining.breakdown.multipliers.growth.toFixed(2)} × {calculateTraining.breakdown.multipliers.mood.toFixed(2)} × {calculateTraining.breakdown.multipliers.training.toFixed(2)} × {calculateTraining.breakdown.multipliers.support.toFixed(2)} × {calculateTraining.breakdown.multipliers.friendship.toFixed(2)}
           </div>
           <ul className="text-sm text-gray-700 space-y-1">
             <li>• Motivation: Great★★★★★ +20%, Good★★★★ +10%, Normal★★★ 0%, Bad★★ -10%, Awful★ -20%</li>

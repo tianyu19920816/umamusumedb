@@ -40,7 +40,9 @@ const characterSchema = data ? {
   '@type': 'VideoGameCharacter',
   name: data.name_en,
   alternateName: data.name_ja,
-  description: `${data.name_en} is a character in Uma Musume Pretty Derby with ${data.distance_aptitude.short} short, ${data.distance_aptitude.mile} mile, ${data.distance_aptitude.medium} medium, and ${data.distance_aptitude.long} long distance aptitudes.`,
+  description: data.distance_aptitude
+    ? `${data.name_en} is a character in Uma Musume Pretty Derby with ${data.distance_aptitude.short} short, ${data.distance_aptitude.mile} mile, ${data.distance_aptitude.medium} medium, and ${data.distance_aptitude.long} long distance aptitudes.`
+    : `${data.name_en} is a character in Uma Musume Pretty Derby.`,
   image: data.image_url,
   url: `${siteUrl}/characters/${data.id}`,
   game: {

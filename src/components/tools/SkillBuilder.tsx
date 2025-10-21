@@ -1,15 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Zap, Star, TrendingUp, Filter, Package, AlertTriangle, Info } from 'lucide-react';
-
-interface Skill {
-  id: string;
-  name_en: string;
-  effect: string;
-  trigger_condition: string;
-  skill_type: string;
-  rarity: string;
-  cost?: number;
-}
+import { Zap, Star, TrendingUp, Package, AlertTriangle, Info } from 'lucide-react';
+import type { Skill } from '@/types';
 
 interface SkillCombo {
   name: string;
@@ -89,11 +80,25 @@ const SKILL_COSTS = {
   'training': 150
 };
 
+const TRIGGER_FILTERS = [
+  { value: 'all', label: 'All Conditions' },
+  { value: 'sprint', label: 'Sprint' },
+  { value: 'mile', label: 'Mile' },
+  { value: 'medium', label: 'Medium' },
+  { value: 'long', label: 'Long' },
+  { value: 'corner', label: 'Corners' },
+  { value: 'straight', label: 'Straight' },
+  { value: 'rain', label: 'Rainy Weather' }
+];
+
 export default function SkillBuilder() {
   const [availableSkills, setAvailableSkills] = useState<Skill[]>([]);
   const [selectedSkills, setSelectedSkills] = useState<Skill[]>([]);
   const [filterStrategy, setFilterStrategy] = useState<string>('all');
   const [filterRarity, setFilterRarity] = useState<string>('all');
+  const [filterSkillType, setFilterSkillType] = useState<string>('all');
+  const [filterTrigger, setFilterTrigger] = useState<string>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
   const [skillPointBudget, setSkillPointBudget] = useState<number>(2000);
   const [selectedCombo, setSelectedCombo] = useState<SkillCombo | null>(null);
 
@@ -110,21 +115,79 @@ export default function SkillBuilder() {
       .catch(console.error);
   }, []);
 
+  const skillTypes = useMemo(() => {
+    const types = new Set<string>();
+    availableSkills.forEach(skill => {
+      if (skill.skill_type) {
+        types.add(skill.skill_type);
+      }
+    });
+    return Array.from(types).sort((a, b) => a.localeCompare(b));
+  }, [availableSkills]);
+
   const filteredSkills = useMemo(() => {
     return availableSkills.filter(skill => {
       if (filterRarity !== 'all' && skill.rarity !== filterRarity) return false;
-      if (filterStrategy !== 'all') {
-        if (filterStrategy === 'speed' && !skill.effect.toLowerCase().includes('speed')) return false;
-        if (filterStrategy === 'stamina' && !skill.effect.toLowerCase().includes('stamina')) return false;
-        if (filterStrategy === 'power' && !skill.effect.toLowerCase().includes('power')) return false;
-        if (filterStrategy === 'guts' && !skill.effect.toLowerCase().includes('guts')) return false;
+      if (filterSkillType !== 'all') {
+        if (!skill.skill_type || skill.skill_type.toLowerCase() !== filterSkillType.toLowerCase()) {
+          return false;
+        }
       }
+
+      const effectText = `${skill.effect || ''} ${skill.description_en || ''}`.toLowerCase();
+      const triggerText = `${skill.trigger_condition || ''}`.toLowerCase();
+      const combinedText = `${effectText} ${triggerText}`;
+
+      if (filterStrategy !== 'all') {
+        if (filterStrategy === 'speed' && !combinedText.includes('speed')) return false;
+        if (filterStrategy === 'stamina' && !combinedText.includes('stamina')) return false;
+        if (filterStrategy === 'power' && !combinedText.includes('power')) return false;
+        if (filterStrategy === 'guts' && !combinedText.includes('guts')) return false;
+      }
+
+      if (filterTrigger !== 'all' && !combinedText.includes(filterTrigger)) {
+        return false;
+      }
+
+      if (searchTerm) {
+        const haystack = `${skill.name_en} ${skill.name_jp || ''} ${combinedText}`.toLowerCase();
+        if (!haystack.includes(searchTerm.toLowerCase())) {
+          return false;
+        }
+      }
+
       return !selectedSkills.some(s => s.id === skill.id);
     });
-  }, [availableSkills, filterRarity, filterStrategy, selectedSkills]);
+  }, [
+    availableSkills,
+    filterRarity,
+    filterSkillType,
+    filterStrategy,
+    filterTrigger,
+    searchTerm,
+    selectedSkills
+  ]);
 
   const totalCost = useMemo(() => {
     return selectedSkills.reduce((sum, skill) => sum + (skill.cost || 0), 0);
+  }, [selectedSkills]);
+
+  const selectedSummary = useMemo(() => {
+    const rarityCount = selectedSkills.reduce<Record<string, number>>((acc, skill) => {
+      acc[skill.rarity || 'unknown'] = (acc[skill.rarity || 'unknown'] || 0) + 1;
+      return acc;
+    }, {});
+
+    const typeCount = selectedSkills.reduce<Record<string, number>>((acc, skill) => {
+      const type = skill.skill_type || 'Unknown';
+      acc[type] = (acc[type] || 0) + 1;
+      return acc;
+    }, {});
+
+    return {
+      rarityCount,
+      typeEntries: Object.entries(typeCount)
+    };
   }, [selectedSkills]);
 
   const addSkill = (skill: Skill) => {
@@ -239,6 +302,21 @@ export default function SkillBuilder() {
               </span>
             </div>
           </div>
+
+          {selectedSkills.length > 0 && (
+            <div className="flex flex-wrap gap-2 text-xs text-gray-600 mb-3">
+              <span className="px-2 py-1 bg-gray-100 rounded">
+                Rarity: {Object.entries(selectedSummary.rarityCount).length > 0
+                  ? Object.entries(selectedSummary.rarityCount).map(([rarity, count]) => `${rarity}×${count}`).join(', ')
+                  : 'None'}
+              </span>
+              <span className="px-2 py-1 bg-gray-100 rounded">
+                Categories: {selectedSummary.typeEntries.length > 0
+                  ? selectedSummary.typeEntries.map(([type, count]) => `${type}×${count}`).join(', ')
+                  : 'None'}
+              </span>
+            </div>
+          )}
           
           {totalCost > skillPointBudget && (
             <div className="mb-3 p-2 bg-red-50 rounded flex items-center gap-2 text-sm text-red-700">
@@ -314,17 +392,43 @@ export default function SkillBuilder() {
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold">Available Skills</h3>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2 justify-end">
+              <input
+                type="search"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search name or effect"
+                className="text-sm border rounded px-2 py-1 w-44"
+              />
+              <select
+                value={filterSkillType}
+                onChange={(e) => setFilterSkillType(e.target.value)}
+                className="text-sm border rounded px-2 py-1"
+              >
+                <option value="all">All Skill Types</option>
+                {skillTypes.map(type => (
+                  <option key={type} value={type.toLowerCase()}>{type}</option>
+                ))}
+              </select>
               <select
                 value={filterStrategy}
                 onChange={(e) => setFilterStrategy(e.target.value)}
                 className="text-sm border rounded px-2 py-1"
               >
-                <option value="all">All Types</option>
+                <option value="all">All Stats</option>
                 <option value="speed">Speed</option>
                 <option value="stamina">Stamina</option>
                 <option value="power">Power</option>
                 <option value="guts">Guts</option>
+              </select>
+              <select
+                value={filterTrigger}
+                onChange={(e) => setFilterTrigger(e.target.value)}
+                className="text-sm border rounded px-2 py-1"
+              >
+                {TRIGGER_FILTERS.map(filter => (
+                  <option key={filter.value} value={filter.value}>{filter.label}</option>
+                ))}
               </select>
               <select
                 value={filterRarity}

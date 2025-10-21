@@ -6,6 +6,8 @@ A comprehensive database and tools platform for Uma Musume Pretty Derby, built w
 
 🌐 **Live Site**: [https://umamusumedb.com](https://umamusumedb.com)
 
+📄 **Japanese README**: [README.ja.md](README.ja.md)
+
 ## Features
 
 ### Database & Information
