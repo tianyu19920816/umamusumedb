@@ -17,8 +17,8 @@ const R2_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID || 'YOUR_ACCESS_KEY';
 const R2_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY || 'YOUR_SECRET_KEY';
 const R2_BUCKET_NAME = process.env.R2_BUCKET_NAME || 'umamusume';
 
-// R2 public URL (after enabling public access)
-const R2_PUBLIC_URL = `https://pub-${R2_ACCOUNT_ID}.r2.dev`;
+// R2 public URL - using custom domain
+const R2_PUBLIC_URL = process.env.R2_CUSTOM_DOMAIN || 'https://img.umamusumedb.com';
 
 // Initialize S3 client for R2
 const s3Client = new S3Client({
@@ -68,7 +68,8 @@ async function uploadFile(filePath, key) {
 
     await s3Client.send(command);
     console.log(`✅ Uploaded: ${key}`);
-    return `${R2_PUBLIC_URL}/${R2_BUCKET_NAME}/${key}`;
+    // Use custom domain directly (no bucket name needed)
+    return `${R2_PUBLIC_URL}/${key}`;
   } catch (error) {
     console.error(`❌ Failed to upload ${key}:`, error.message);
     return null;
@@ -192,7 +193,8 @@ function generateUrlMapping(imageUrls) {
       supportCard: imageConfig.supportCards.defaultImage,
       skill: imageConfig.skills.defaultImage,
     },
-    r2BaseUrl: `${R2_PUBLIC_URL}/${R2_BUCKET_NAME}`,
+    // Use custom domain directly
+    r2BaseUrl: R2_PUBLIC_URL,
   };
 
   fs.writeFileSync(mappingPath, JSON.stringify(mapping, null, 2));
