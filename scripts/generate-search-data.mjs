@@ -14,7 +14,7 @@ async function loadJson(filename) {
 async function buildSearchData() {
   const [characters, supportCards] = await Promise.all([
     loadJson('characters.json'),
-    loadJson('support-cards.json')
+    loadJson('supportCards.json')
   ]);
 
   const pages = [

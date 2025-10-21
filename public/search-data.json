@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-10-21T09:14:11.419Z",
+  "generatedAt": "2025-10-21T09:30:22.659Z",
   "pages": [
     {
       "name_en": "Characters",
@@ -473,151 +473,31 @@
   ],
   "cards": [
     {
-      "id": "eishin_flash_speed_ssr",
-      "name_en": "Eishin Flash [Flash of Lightning]",
-      "name_ja": "エイシンフラッシュ【閃光の一閃】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "tosen_jordan_power_ssr",
-      "name_en": "Tosen Jordan [Passionate Runner]",
-      "name_ja": "トーセンジョーダン【情熱のランナー】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "fujikiseki_guts_ssr",
-      "name_en": "Fuji Kiseki [Legendary Successor]",
-      "name_ja": "フジキセキ【伝説の後継者】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "daiichi_ruby_guts_ssr",
-      "name_en": "Daiichi Ruby [Ruby Shine]",
-      "name_ja": "ダイイチルビー【ルビーシャイン】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "dantz_frame_speed_ssr",
-      "name_en": "Dantz Frame [Blazing Frame]",
-      "name_ja": "ダンツフレーム【炎のフレーム】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "durandal_wisdom_ssr",
-      "name_en": "Durandal [Holy Sword]",
-      "name_ja": "デュランダル【聖剣】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "calston_lightO_speed_ssr",
-      "name_en": "Calston LightO [Speed of Light]",
-      "name_ja": "カルストンライトオ【光速】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "stay_gold_guts_ssr",
-      "name_en": "Stay Gold [Golden Will]",
-      "name_ja": "ステイゴールド【黄金の意志】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "admire_groove_speed_ssr",
-      "name_en": "Admire Groove [Empress Groove]",
-      "name_ja": "アドマイヤグルーヴ【女帝のグルーヴ】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "chrono_genesis_wisdom_ssr",
-      "name_en": "Chrono Genesis [Time Genesis]",
-      "name_ja": "クロノジェネシス【時の創世】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "viblos_power_ssr",
-      "name_en": "Viblos [Vibration Boss]",
-      "name_ja": "ヴィブロス【振動のボス】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "duramente_stamina_ssr",
-      "name_en": "Duramente [Enduring Spirit]",
-      "name_ja": "ドゥラメンテ【持久の魂】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "win_variation_wisdom_ssr",
-      "name_en": "Win Variation [Winning Strategy]",
-      "name_ja": "ウインバリアシオン【勝利の戦略】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "fusaichi_pandora_speed_ssr",
-      "name_en": "Fusaichi Pandora [Pandora's Speed]",
-      "name_ja": "フサイチパンドラ【パンドラの速さ】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "mejiro_ryan_stamina_ssr",
-      "name_en": "Mejiro Ryan [Elegant Stamina]",
-      "name_ja": "メジロライアン【優雅な持久力】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "kitasan_black_speed_ssr",
-      "name_en": "Kitasan Black [Fire at My Heels]",
+      "id": "kitasan_black_ssr",
+      "name_en": "Kitasan Black [Road to the Top]",
       "name_ja": "キタサンブラック【迫る熱に押されて】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "speed"
     },
     {
-      "id": "super_creek_stamina_ssr",
-      "name_en": "Super Creek [Piece of Mind]",
-      "name_ja": "スーパークリーク【一粒の安らぎ】",
+      "id": "super_creek_ssr",
+      "name_en": "Super Creek [Creek of Miracles]",
+      "name_ja": "スーパークリーク【奇跡の流星】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "stamina"
     },
     {
-      "id": "fine_motion_wisdom_ssr",
-      "name_en": "Fine Motion [Wave of Gratitude]",
-      "name_ja": "ファインモーション【感謝を指先まで込めて】",
+      "id": "fine_motion_ssr",
+      "name_en": "Fine Motion [Elegant Dancer]",
+      "name_ja": "ファインモーション【エレガントダンサー】",
       "type": "card",
       "rarity": "SSR",
-      "cardType": "wisdom"
+      "cardType": "power"
     },
     {
-      "id": "admire_vega_wisdom_ssr",
+      "id": "admire_vega_ssr",
       "name_en": "Admire Vega [Starry Night]",
       "name_ja": "アドマイヤベガ【星降る夜】",
       "type": "card",
@@ -625,15 +505,15 @@
       "cardType": "wisdom"
     },
     {
-      "id": "sakura_chiyono_o_speed_ssr",
-      "name_en": "Sakura Chiyono O [Peak Sakura Season]",
+      "id": "sakura_chiyono_o_ssr",
+      "name_en": "Sakura Chiyono O [Full Bloom]",
       "name_ja": "サクラチヨノオー【満開】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "speed"
     },
     {
-      "id": "daiwa_scarlet_power_ssr",
+      "id": "daiwa_scarlet_ssr",
       "name_en": "Daiwa Scarlet [Scarlet Sky]",
       "name_ja": "ダイワスカーレット【スカーレットスカイ】",
       "type": "card",
@@ -641,7 +521,7 @@
       "cardType": "power"
     },
     {
-      "id": "symboli_rudolf_stamina_ssr",
+      "id": "symboli_rudolf_ssr",
       "name_en": "Symboli Rudolf [Emperor's Road]",
       "name_ja": "シンボリルドルフ【皇帝の道】",
       "type": "card",
@@ -649,7 +529,7 @@
       "cardType": "stamina"
     },
     {
-      "id": "tokai_teio_guts_ssr",
+      "id": "tokai_teio_ssr",
       "name_en": "Tokai Teio [Miracle Run]",
       "name_ja": "トウカイテイオー【奇跡の走破】",
       "type": "card",
@@ -657,31 +537,23 @@
       "cardType": "guts"
     },
     {
-      "id": "tokai_teio_speed_ssr",
-      "name_en": "Tokai Teio [Dream Big!]",
-      "name_ja": "トウカイテイオー【夢は掴むものなんだ!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "mejiro_mcqueen_wisdom_ssr",
-      "name_en": "Mejiro McQueen [Your Team Ace]",
+      "id": "mejiro_mcqueen_ssr",
+      "name_en": "Mejiro McQueen [Elegant Master]",
       "name_ja": "メジロマックイーン【エレガントマスター】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "wisdom"
     },
     {
-      "id": "rice_shower_stamina_ssr",
-      "name_en": "Rice Shower [Showered In Joy]",
+      "id": "rice_shower_ssr",
+      "name_en": "Rice Shower [Blue Rose]",
       "name_ja": "ライスシャワー【青薔薇】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "stamina"
     },
     {
-      "id": "gold_ship_friend_ssr",
+      "id": "gold_ship_ssr",
       "name_en": "Gold Ship [Golden Voyage]",
       "name_ja": "ゴールドシップ【黄金の航海】",
       "type": "card",
@@ -689,47 +561,23 @@
       "cardType": "friend"
     },
     {
-      "id": "gold_ship_stamina_ssr",
-      "name_en": "Gold Ship [Breakaway Battleship]",
-      "name_ja": "ゴールドシップ【突破戦艦】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "gold_ship_speed_ssr",
-      "name_en": "Gold Ship [That Time I Became the Strongest]",
-      "name_ja": "ゴールドシップ【あの日、最強になった】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "silence_suzuka_speed_ssr",
-      "name_en": "Silence Suzuka [Beyond This Shining Moment]",
+      "id": "silence_suzuka_ssr",
+      "name_en": "Silence Suzuka [Silent Star]",
       "name_ja": "サイレンススズカ【サイレントスター】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "speed"
     },
     {
-      "id": "special_week_power_ssr",
-      "name_en": "Special Week [The Brightest Star in Japan!]",
+      "id": "special_week_ssr",
+      "name_en": "Special Week [Special Dream]",
       "name_ja": "スペシャルウィーク【スペシャルドリーム】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "power"
     },
     {
-      "id": "special_week_speed_ssr",
-      "name_en": "Special Week [The Setting Sun And Rising Stars]",
-      "name_ja": "スペシャルウィーク【夕焼けは世界を染めて】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "taiki_shuttle_speed_ssr",
+      "id": "taiki_shuttle_ssr",
       "name_en": "Taiki Shuttle [Shuttle Speed]",
       "name_ja": "タイキシャトル【シャトルスピード】",
       "type": "card",
@@ -737,7 +585,7 @@
       "cardType": "speed"
     },
     {
-      "id": "narita_brian_power_ssr",
+      "id": "narita_brian_ssr",
       "name_en": "Narita Brian [Shadow Roll]",
       "name_ja": "ナリタブライアン【シャドーロール】",
       "type": "card",
@@ -745,7 +593,7 @@
       "cardType": "power"
     },
     {
-      "id": "mihono_bourbon_stamina_ssr",
+      "id": "mihono_bourbon_ssr",
       "name_en": "Mihono Bourbon [Cyborg]",
       "name_ja": "ミホノブルボン【サイボーグ】",
       "type": "card",
@@ -753,7 +601,7 @@
       "cardType": "stamina"
     },
     {
-      "id": "air_groove_wisdom_ssr",
+      "id": "air_groove_ssr",
       "name_en": "Air Groove [Empress]",
       "name_ja": "エアグルーヴ【女帝】",
       "type": "card",
@@ -761,23 +609,23 @@
       "cardType": "wisdom"
     },
     {
-      "id": "grass_wonder_guts_ssr",
-      "name_en": "Grass Wonder [Fairest Fleur]",
+      "id": "grass_wonder_ssr",
+      "name_en": "Grass Wonder [Wonder Charge]",
       "name_ja": "グラスワンダー【ワンダーチャージ】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "guts"
     },
     {
-      "id": "el_condor_pasa_power_ssr",
-      "name_en": "El Condor Pasa [Champion's Passion]",
+      "id": "el_condor_pasa_ssr",
+      "name_en": "El Condor Pasa [Condor Flight]",
       "name_ja": "エルコンドルパサー【コンドル飛翔】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "power"
     },
     {
-      "id": "manhattan_cafe_stamina_ssr",
+      "id": "manhattan_cafe_ssr",
       "name_en": "Manhattan Cafe [Night Cafe]",
       "name_ja": "マンハッタンカフェ【夜のカフェ】",
       "type": "card",
@@ -785,383 +633,15 @@
       "cardType": "stamina"
     },
     {
-      "id": "twin_turbo_speed_ssr",
-      "name_en": "Twin Turbo [Turbo Booooost!]",
+      "id": "twin_turbo_ssr",
+      "name_en": "Twin Turbo [Turbo Engine]",
       "name_ja": "ツインターボ【ターボエンジン】",
       "type": "card",
       "rarity": "SSR",
       "cardType": "speed"
     },
     {
-      "id": "kawakami_princess_speed_ssr",
-      "name_en": "Kawakami Princess [Princess Bride]",
-      "name_ja": "カワカミプリンセス【プリンセスブライド】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "biko_pegasus_speed_ssr",
-      "name_en": "Biko Pegasus [Double Carrot Punch!]",
-      "name_ja": "ビコーペガサス【ダブルにんじんパンチ!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "nishino_flower_speed_ssr",
-      "name_en": "Nishino Flower [Even the Littlest Bud]",
-      "name_ja": "ニシノフラワー【小さな蕾も】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "sakura_bakushin_o_speed_ssr",
-      "name_en": "Sakura Bakushin O [Eat Fast! Yum Fast!]",
-      "name_ja": "サクラバクシンオー【速く食べて、速くウマい!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "gold_city_speed_ssr",
-      "name_en": "Gold City [Run(my)way]",
-      "name_ja": "ゴールドシティ【ランウェイ】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "satono_diamond_stamina_ssr",
-      "name_en": "Satono Diamond [The Will to Overtake]",
-      "name_ja": "サトノダイヤモンド【追い越す意志】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "tamamo_cross_stamina_ssr",
-      "name_en": "Tamamo Cross [Split the Sky, White Lightning!]",
-      "name_ja": "タマモクロス【空を裂く、白い稲妻!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "seiun_sky_stamina_ssr",
-      "name_en": "Seiun Sky [Foolproof Plan]",
-      "name_ja": "セイウンスカイ【万全の計画】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "seiun_sky_wisdom_ssr",
-      "name_en": "Seiun Sky [Paint the Sky Red]",
-      "name_ja": "セイウンスカイ【空を赤く染めて】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "bamboo_memory_power_ssr",
-      "name_en": "Bamboo Memory [Head-On Fight!]",
-      "name_ja": "バンブーメモリー【真っ向勝負!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "winning_ticket_power_ssr",
-      "name_en": "Winning Ticket [Dreams Do Come True!]",
-      "name_ja": "ウイニングチケット【夢は叶う!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "yaeno_muteki_power_ssr",
-      "name_en": "Yaeno Muteki [Fiery Discipline]",
-      "name_ja": "ヤエノムテキ【烈火の躾】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "oguri_cap_power_ssr",
-      "name_en": "Oguri Cap [Get Lots of Hugs for Me]",
-      "name_ja": "オグリキャップ【いっぱい抱きしめて】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "smart_falcon_power_ssr",
-      "name_en": "Smart Falcon [My Umadol Way! ☆]",
-      "name_ja": "スマートファルコン【私のウマドルの道! ☆】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "vodka_power_ssr",
-      "name_en": "Vodka [Wild Rider]",
-      "name_ja": "ウオッカ【ワイルドライダー】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "king_halo_power_ssr",
-      "name_en": "King Halo [Tonight, We Waltz]",
-      "name_ja": "キングヘイロー【今宵、ワルツを】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "hishi_akebono_guts_ssr",
-      "name_en": "Hishi Akebono [Who Wants the First Bite?]",
-      "name_ja": "ヒシアケボノ【最初の一口、誰にする?】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "matikane_tannhauser_guts_ssr",
-      "name_en": "Matikane Tannhauser [Just Keep Going]",
-      "name_ja": "マチカネタンホイザ【ただ進むだけ】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "mejiro_palmer_guts_ssr",
-      "name_en": "Mejiro Palmer [Go Ahead and Laugh]",
-      "name_ja": "メジロパーマー【笑っていいのよ】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "haru_urara_guts_ssr",
-      "name_en": "Haru Urara [Urara's Day Off!]",
-      "name_ja": "ハルウララ【ウララのお休み!】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "agnes_tachyon_wisdom_ssr",
-      "name_en": "Agnes Tachyon [Theory of Evolution]",
-      "name_ja": "アグネスタキオン【進化論】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "air_shakur_wisdom_ssr",
-      "name_en": "Air Shakur [Midnight Tactics]",
-      "name_ja": "エアシャカール【深夜の戦術】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "mejiro_ardan_wisdom_ssr",
-      "name_en": "Mejiro Ardan [Elegant Strategy]",
-      "name_ja": "メジロアルダン【優雅な戦略】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "tazuna_hayakawa_friend_ssr",
-      "name_en": "Tazuna Hayakawa [Training Partner]",
-      "name_ja": "駿川たづな【トレーニングパートナー】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "reporter_friend_ssr",
-      "name_en": "Reporter [Press Coverage]",
-      "name_ja": "記者【プレス取材】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "akikawa_yayoi_friend_ssr",
-      "name_en": "Akikawa Yayoi [Medical Support]",
-      "name_ja": "秋川やよい【医療サポート】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "tucker_brain_friend_ssr",
-      "name_en": "Tucker Brain [Turf Tactician]",
-      "name_ja": "タッカーブライン【ターフの戦術家】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "akikawa_director_friend_ssr",
-      "name_en": "Akikawa Director [Academy Director]",
-      "name_ja": "秋川理事長【学園理事長】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "tsurugisaki_ryoka_friend_ssr",
-      "name_en": "Tsurugisaki Ryoka [Cool Refreshment]",
-      "name_ja": "都留岐涼花【クールなおもてなし】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "satake_mei_friend_ssr",
-      "name_en": "Satake Mei [Passionate Cheering]",
-      "name_ja": "佐岳メイ【情熱の応援】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "light_halo_friend_ssr",
-      "name_en": "Light Halo [Shining Support]",
-      "name_ja": "ライトハロー【輝くサポート】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "mejiro_bright_stamina_ssr",
-      "name_en": "Mejiro Bright [Brilliant Endurance]",
-      "name_ja": "メジロブライト【輝く持久力】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "nice_nature_stamina_ssr",
-      "name_en": "Nice Nature [Nature's Blessing]",
-      "name_ja": "ナイスネイチャ【自然の祝福】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "air_messiah_wisdom_ssr",
-      "name_en": "Air Messiah [Divine Wisdom]",
-      "name_ja": "エアメサイア【神聖なる叡智】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "dearing_heart_wisdom_ssr",
-      "name_en": "Dearing Heart [Brave Heart]",
-      "name_ja": "デアリングハート【勇気ある心】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "buena_vista_power_ssr",
-      "name_en": "Buena Vista [Beautiful View]",
-      "name_ja": "ブエナビスタ【美しき眺望】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "power"
-    },
-    {
-      "id": "espowal_city_guts_ssr",
-      "name_en": "Espowal City [City of Hope]",
-      "name_ja": "エスポワールシチー【希望の街】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "narita_toproad_speed_ssr",
-      "name_en": "Narita Top Road [Top Speed]",
-      "name_ja": "ナリタトップロード【トップスピード】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "speed"
-    },
-    {
-      "id": "mejiro_ramonu_wisdom_ssr",
-      "name_en": "Mejiro Ramonu [Elegant Wisdom]",
-      "name_ja": "メジロラモーヌ【優雅な叡智】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "orfevre_guts_ssr",
-      "name_en": "Orfevre [Golden Craftsman]",
-      "name_ja": "オルフェーヴル【黄金の職人】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "guts"
-    },
-    {
-      "id": "kashimoto_riko_friend_ssr",
-      "name_en": "Kashimoto Riko [Friendly Support]",
-      "name_ja": "樫本理子【フレンドリーサポート】",
-      "type": "card",
-      "rarity": "SSR",
-      "cardType": "friend"
-    },
-    {
-      "id": "mayano_topgun_speed_sr",
-      "name_en": "Mayano Top Gun [Blue Sky]",
-      "name_ja": "マヤノトップガン【青空】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "shinko_windy_speed_sr",
-      "name_en": "Shinko Windy [Wind Chaser]",
-      "name_ja": "シンコウウインディ【風追い人】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "nice_nature_friend_sr",
-      "name_en": "Nice Nature [Natural Support]",
-      "name_ja": "ナイスネイチャ【ナチュラルサポート】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "friend"
-    },
-    {
-      "id": "agnes_digital_wisdom_sr",
-      "name_en": "Agnes Digital [Digital Age]",
-      "name_ja": "アグネスデジタル【デジタル時代】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "wisdom"
-    },
-    {
-      "id": "matikane_fukukitaru_guts_sr",
-      "name_en": "Matikane Fukukitaru [Fortune Comes]",
-      "name_ja": "マチカネフクキタル【福来る】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "guts"
-    },
-    {
-      "id": "nice_nature_guts_sr",
+      "id": "nice_nature_sr",
       "name_en": "Nice Nature [Third Time]",
       "name_ja": "ナイスネイチャ【三度目の正直】",
       "type": "card",
@@ -1169,7 +649,7 @@
       "cardType": "guts"
     },
     {
-      "id": "king_halo_wisdom_sr",
+      "id": "king_halo_sr",
       "name_en": "King Halo [King's Pride]",
       "name_ja": "キングヘイロー【王の誇り】",
       "type": "card",
@@ -1177,7 +657,7 @@
       "cardType": "wisdom"
     },
     {
-      "id": "sweep_tosho_power_sr",
+      "id": "sweep_tosho_sr",
       "name_en": "Sweep Tosho [Sweeper]",
       "name_ja": "スイープトウショウ【スイーパー】",
       "type": "card",
@@ -1185,239 +665,7 @@
       "cardType": "power"
     },
     {
-      "id": "rice_shower_speed_sr",
-      "name_en": "Rice Shower [Rainy Runner]",
-      "name_ja": "ライスシャワー【雨のランナー】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "bubble_gum_fellow_speed_sr",
-      "name_en": "Bubble Gum Fellow [Gum Friend]",
-      "name_ja": "バブルガムフェロー【ガムフレンド】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "tosen_jordan_speed_sr",
-      "name_en": "Tosen Jordan [Passionate Sprint]",
-      "name_ja": "トーセンジョーダン【情熱のスプリント】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "matikane_tannhauser_speed_sr",
-      "name_en": "Matikane Tannhauser [Steady Progress]",
-      "name_ja": "マチカネタンホイザ【着実な進歩】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "silence_suzuka_speed_sr",
-      "name_en": "Silence Suzuka [Silent Runner]",
-      "name_ja": "サイレンススズカ【サイレントランナー】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "jungle_pocket_speed_sr",
-      "name_en": "Jungle Pocket [Pocket Speed]",
-      "name_ja": "ジャングルポケット【ポケットスピード】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "aston_machan_speed_sr",
-      "name_en": "Aston Machan [Chan Speed]",
-      "name_ja": "アストンマーチャン【ちゃんスピード】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "el_condor_pasa_speed_sr",
-      "name_en": "El Condor Pasa [Condor Flight]",
-      "name_ja": "エルコンドルパサー【コンドル飛翔】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "curren_chan_speed_sr",
-      "name_en": "Curren Chan [Chan Sprint]",
-      "name_ja": "カレンチャン【ちゃんスプリント】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "vodka_speed_sr",
-      "name_en": "Vodka [Wild Sprint]",
-      "name_ja": "ウオッカ【ワイルドスプリント】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "eishin_flash_speed_sr",
-      "name_en": "Eishin Flash [Flash Sprint]",
-      "name_ja": "エイシンフラッシュ【フラッシュスプリント】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "narita_taishin_speed_sr",
-      "name_en": "Narita Taishin [Taishin Speed]",
-      "name_ja": "ナリタタイシン【タイシンスピード】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "king_halo_speed_sr",
-      "name_en": "King Halo [Halo Speed]",
-      "name_ja": "キングヘイロー【ハロースピード】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "speed"
-    },
-    {
-      "id": "curren_bouquet_dor_stamina_sr",
-      "name_en": "Curren Bouquet Dor [Golden Bouquet]",
-      "name_ja": "カレンブーケドール【ゴールデンブーケ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "mejiro_ramonu_stamina_sr",
-      "name_en": "Mejiro Ramonu [Elegant Stamina]",
-      "name_ja": "メジロラモーヌ【優雅なスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "mejiro_palmer_stamina_sr",
-      "name_en": "Mejiro Palmer [Palmer Endurance]",
-      "name_ja": "メジロパーマー【パーマー持久力】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "yaeno_muteki_stamina_sr",
-      "name_en": "Yaeno Muteki [Muteki Stamina]",
-      "name_ja": "ヤエノムテキ【ムテキスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "nice_nature_stamina_sr",
-      "name_en": "Nice Nature [Nature Stamina]",
-      "name_ja": "ナイスネイチャ【ネイチャースタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "kitasan_black_stamina_sr",
-      "name_en": "Kitasan Black [Black Stamina]",
-      "name_ja": "キタサンブラック【ブラックスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "gold_ship_stamina_sr",
-      "name_en": "Gold Ship [Ship Stamina]",
-      "name_ja": "ゴールドシップ【シップスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "symboli_rudolf_stamina_sr",
-      "name_en": "Symboli Rudolf [Rudolf Stamina]",
-      "name_ja": "シンボリルドルフ【ルドルフスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "teiemu_opera_o_stamina_sr",
-      "name_en": "Teiemu Opera O [Opera Stamina]",
-      "name_ja": "テイエムオペラオー【オペラスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "tokai_teio_stamina_sr",
-      "name_en": "Tokai Teio [Teio Stamina]",
-      "name_ja": "トウカイテイオー【テイオースタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "mejiro_ryan_stamina_sr",
-      "name_en": "Mejiro Ryan [Ryan Stamina]",
-      "name_ja": "メジロライアン【ライアンスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "manhattan_cafe_stamina_sr",
-      "name_en": "Manhattan Cafe [Cafe Stamina]",
-      "name_ja": "マンハッタンカフェ【カフェスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "mayano_topgun_stamina_sr",
-      "name_en": "Mayano Top Gun [Topgun Stamina]",
-      "name_ja": "マヤノトップガン【トップガンスタミナ】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "stamina"
-    },
-    {
-      "id": "dearing_heart_power_sr",
-      "name_en": "Dearing Heart [Heart Power]",
-      "name_ja": "デアリングハート【ハートパワー】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "power"
-    },
-    {
-      "id": "north_flight_power_sr",
-      "name_en": "North Flight [Flight Power]",
-      "name_ja": "ノースフライト【フライトパワー】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "power"
-    },
-    {
-      "id": "air_shakur_power_sr",
-      "name_en": "Air Shakur [Shakur Power]",
-      "name_ja": "エアシャカール【シャカールパワー】",
-      "type": "card",
-      "rarity": "SR",
-      "cardType": "power"
-    },
-    {
-      "id": "haru_urara_friend_r",
+      "id": "haru_urara_r",
       "name_en": "Haru Urara [Never Give Up]",
       "name_ja": "ハルウララ【ネバーギブアップ】",
       "type": "card",
