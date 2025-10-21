@@ -11,7 +11,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"A\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Triumphant Pulse\",\"name_jp\":\"トリンフパルス\",\"effect\":\"Powerful acceleration in the final spurt\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_starlight.png",
+      "image_url": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -26,7 +26,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Nevertheless\",\"name_jp\":\"ネバーザレス\",\"effect\":\"Massive stamina recovery and speed boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_taishin_nevertheless.png",
+      "image_url": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -41,7 +41,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"F\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Tach-nology\",\"name_jp\":\"タキノロジー\",\"effect\":\"Scientific precision boosts all stats mid-race\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_tachyon_tachnology.png",
+      "image_url": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -56,7 +56,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"B\",\"between\":\"C\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Big Catch\",\"name_jp\":\"大漁旗\",\"effect\":\"Speed boost when leading in late race\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seiun_sky_reeling.png",
+      "image_url": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -71,7 +71,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"G\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Bakushin Burst\",\"name_jp\":\"バクシン\",\"effect\":\"Explosive speed boost in sprint races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sakura_bakushin_o.png",
+      "image_url": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -86,7 +86,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Karen Step\",\"name_jp\":\"カレンステップ\",\"effect\":\"Graceful acceleration in sprint races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan.png",
+      "image_url": "https://img.umamusumedb.com/characters/curren_chan.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -101,7 +101,7 @@
       "aptitudes": "{\"turf\":\"C\",\"dirt\":\"A\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Falcon Strike\",\"name_jp\":\"ファルコンストライク\",\"effect\":\"Sharp acceleration on dirt tracks\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon.png",
+      "image_url": "https://img.umamusumedb.com/characters/smart_falcon.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -116,7 +116,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Eat Up and Work Hard♪\",\"name_jp\":\"食い下がり\",\"effect\":\"Stamina recovery when surrounded\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/special_week_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/special_week_2025.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -131,7 +131,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"E\",\"chase\":\"D\"}",
       "unique_skill": "{\"name_en\":\"Transcendent Flash\",\"name_jp\":\"先頭の景色は譲らない\",\"effect\":\"Massive speed boost when leading\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/silence_suzuka_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -146,7 +146,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"F\",\"lead\":\"E\",\"between\":\"C\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Unpredictable Chaos\",\"name_jp\":\"不沈艦、抜錨ォッ！\",\"effect\":\"Random massive stat boosts\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_ship_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/gold_ship_2025.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -161,7 +161,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Mejiro Family Pride\",\"name_jp\":\"貴顕の使命を果たすべく\",\"effect\":\"Perfect pacing increases speed\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_mcqueen_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png",
       "created_at": "2025-09-16 10:01:31",
       "updated_at": "2025-09-16 10:01:31"
     },
@@ -176,7 +176,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"B\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Scarlet Impact\",\"name_jp\":\"スカーレットインパクト\",\"effect\":\"Explosive acceleration when leading\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -191,7 +191,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Strong Heart\",\"name_jp\":\"ストロングハート\",\"effect\":\"Stamina recovery in final corner\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/vodka_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -206,7 +206,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Cafe's Rhythm\",\"name_jp\":\"カフェリズム\",\"effect\":\"Perfect pacing in long distance\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -221,7 +221,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Emperor's Dance\",\"name_jp\":\"帝王の舞\",\"effect\":\"Speed and guts boost when injured\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/tokai_teio_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -236,7 +236,7 @@
       "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"E\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Condor's Flight\",\"name_jp\":\"コンドルの飛翔\",\"effect\":\"Speed boost on dirt tracks\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -251,7 +251,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Wonder Charge\",\"name_jp\":\"ワンダーチャージ\",\"effect\":\"Acceleration in rain conditions\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/grass_wonder_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -266,7 +266,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Emperor's Authority\",\"name_jp\":\"皇帝の威厳\",\"effect\":\"All stats boost when in top 3\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -281,7 +281,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"C\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Blue Rose Prayer\",\"name_jp\":\"青薔薇の祈り\",\"effect\":\"Massive stamina conservation\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/rice_shower_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -296,7 +296,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"E\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"G\",\"between\":\"G\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Cyborg Sprint\",\"name_jp\":\"サイボーグスプリント\",\"effect\":\"Constant high speed when leading\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -311,7 +311,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Steady Pace\",\"name_jp\":\"ステディペース\",\"effect\":\"Perfect rhythm in long races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -326,7 +326,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Victory Ticket\",\"name_jp\":\"ビクトリーチケット\",\"effect\":\"Guts boost in crucial moments\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/winning_ticket_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -341,7 +341,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Third Place Magic\",\"name_jp\":\"3位の魔法\",\"effect\":\"Stats boost when in 3rd place\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/nice_nature_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -356,7 +356,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"White Lightning\",\"name_jp\":\"白い稲妻\",\"effect\":\"Speed burst in straight lines\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -371,7 +371,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Gray Monster\",\"name_jp\":\"グレーモンスター\",\"effect\":\"Power burst in final spurt\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png",
+      "image_url": "https://img.umamusumedb.com/characters/oguri_cap_original.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -386,7 +386,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"King's Pride\",\"name_jp\":\"王の誇り\",\"effect\":\"Wisdom boost in short races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/king_halo_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -401,7 +401,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Shuttle Burst\",\"name_jp\":\"シャトルバースト\",\"effect\":\"Extreme speed in sprint races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -416,7 +416,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Empress Pride\",\"name_jp\":\"女帝のプライド\",\"effect\":\"All-around stat boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/air_groove_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -431,7 +431,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Top Gun Maverick\",\"name_jp\":\"トップガンマーベリック\",\"effect\":\"Power boost in chase position\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -446,7 +446,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"C\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"E\",\"escape\":\"A\",\"lead\":\"G\",\"between\":\"G\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Turbo Engine\",\"name_jp\":\"ターボエンジン\",\"effect\":\"Extreme speed when escaping\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/twin_turbo_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -461,7 +461,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Dictus Authority\",\"name_jp\":\"ディクタスの威厳\",\"effect\":\"Guts and stamina boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -476,7 +476,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"F\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Mejiro Determination\",\"name_jp\":\"メジロの決意\",\"effect\":\"Stamina boost in long races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -491,7 +491,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Shadow Roll\",\"name_jp\":\"シャドーロール\",\"effect\":\"Overwhelming power in all positions\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/narita_brian_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -506,7 +506,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Rob Roy's March\",\"name_jp\":\"ロブロイの行進\",\"effect\":\"Steady pace throughout race\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -521,7 +521,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Sweep Away\",\"name_jp\":\"スイープアウェイ\",\"effect\":\"Chase acceleration boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -536,7 +536,7 @@
       "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Digital Revolution\",\"name_jp\":\"デジタル革命\",\"effect\":\"Tech-powered acceleration\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/agnes_digital_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -551,7 +551,7 @@
       "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"G\"}",
       "unique_skill": "{\"name_en\":\"Dawn Break\",\"name_jp\":\"夜明けの光\",\"effect\":\"Sprint specialist boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -566,7 +566,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"B\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Lucky Fortune\",\"name_jp\":\"福来る\",\"effect\":\"Random stat boosts\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -581,7 +581,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Snow Beauty\",\"name_jp\":\"雪の美人\",\"effect\":\"Speed boost in cold weather\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -596,7 +596,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"C.B. Revolution\",\"name_jp\":\"C.B.レボリューション\",\"effect\":\"Triple crown power\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/mr_cb_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -611,7 +611,7 @@
       "aptitudes": "{\"turf\":\"G\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"B\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Never Give Up\",\"name_jp\":\"ネバーギブアップ\",\"effect\":\"Guts boost when behind\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/haru_urara_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -626,7 +626,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Starlight Road\",\"name_jp\":\"スターライトロード\",\"effect\":\"Speed boost under night races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/admire_vega_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/admire_vega_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -641,7 +641,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"E\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Fox Spirit\",\"name_jp\":\"稲荷の加護\",\"effect\":\"Random power boosts\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/inari_one_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/inari_one_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -656,7 +656,7 @@
       "aptitudes": "{\"turf\":\"E\",\"dirt\":\"A\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Falcon Strike\",\"name_jp\":\"ファルコンストライク\",\"effect\":\"Dirt track domination\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/smart_falcon_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -671,7 +671,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Pearl Shine\",\"name_jp\":\"真珠の輝き\",\"effect\":\"Sprint specialization\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seeking_the_pearl_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -686,7 +686,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"C\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"E\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Invincible Spirit\",\"name_jp\":\"無敵の魂\",\"effect\":\"Guts boost when challenged\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yaeno_muteki_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -701,7 +701,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Festival March\",\"name_jp\":\"祭りの行進\",\"effect\":\"Stamina efficiency boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nakayama_festa_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -716,7 +716,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Flash of Light\",\"name_jp\":\"閃光一閃\",\"effect\":\"Speed burst in straight\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/eishin_flash_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/eishin_flash_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -731,7 +731,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Karen's Charm\",\"name_jp\":\"カレンの魅力\",\"effect\":\"Sprint domination\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/curren_chan_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -746,7 +746,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"G\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Princess Authority\",\"name_jp\":\"プリンセスの威厳\",\"effect\":\"Guts and power combo\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kawakami_princess_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -761,7 +761,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Golden Path\",\"name_jp\":\"黄金の道\",\"effect\":\"Balanced stat boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_city_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/gold_city_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -776,7 +776,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Diamond Brilliance\",\"name_jp\":\"ダイヤモンドの輝き\",\"effect\":\"Long distance mastery\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/satono_diamond_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/satono_diamond_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -791,7 +791,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
       "unique_skill": "{\"name_en\":\"Black Tide\",\"name_jp\":\"黒い激流\",\"effect\":\"Overwhelming long distance power\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kitasan_black_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/kitasan_black_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -806,7 +806,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Daring Challenge\",\"name_jp\":\"果敢な挑戦\",\"effect\":\"Triple crown specialist\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daring_tact_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/daring_tact_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -821,7 +821,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Time Genesis\",\"name_jp\":\"時の創世\",\"effect\":\"Perfect timing in long races\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/chrono_genesis_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/chrono_genesis_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -836,7 +836,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Almond Brilliance\",\"name_jp\":\"アーモンドの輝き\",\"effect\":\"All-distance excellence\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/almond_eye_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -851,7 +851,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Sky Trail\",\"name_jp\":\"空の軌跡\",\"effect\":\"Triple crown mastery\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/contrail_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/contrail_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -866,7 +866,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
       "unique_skill": "{\"name_en\":\"Euphoria Rush\",\"name_jp\":\"歓喜の疾走\",\"effect\":\"Power surge in key moments\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/efforia_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/efforia_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -881,7 +881,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
       "unique_skill": "{\"name_en\":\"Great Joy\",\"name_jp\":\"大いなる歓喜\",\"effect\":\"Sprint and mile excellence\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gran_alegria_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/gran_alegria_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     },
@@ -896,7 +896,7 @@
       "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
       "unique_skill": "{\"name_en\":\"Love's Devotion\",\"name_jp\":\"愛の献身\",\"effect\":\"Wisdom-based power boost\"}",
       "awakening_skills": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/loves_only_you_2025.png",
+      "image_url": "https://img.umamusumedb.com/characters/loves_only_you_2025.png",
       "created_at": "2025-09-17 03:54:47",
       "updated_at": "2025-09-17 03:54:47"
     }
@@ -911,7 +911,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":20,\"lv30\":25,\"lv35\":28,\"lv40\":30,\"lv45\":32,\"lv50\":35},\"training_bonus\":{\"lv1\":10,\"lv30\":15,\"lv35\":18,\"lv40\":20,\"lv45\":22,\"lv50\":25},\"initial_bond\":{\"lv1\":20,\"lv30\":25,\"lv35\":28,\"lv40\":30,\"lv45\":32,\"lv50\":35},\"motivation_bonus\":{\"lv1\":5,\"lv30\":8,\"lv35\":10,\"lv40\":12,\"lv45\":14,\"lv50\":15},\"speed_bonus\":{\"lv1\":1,\"lv30\":1,\"lv35\":2,\"lv40\":2,\"lv45\":2,\"lv50\":3}}",
       "skills": "[\"Arc Maestro\",\"Curve Specialist\",\"Speed Star\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/kitasan_black_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/kitasan_black_ssr.png",
       "created_at": "2025-09-16 10:01:31"
     },
     {
@@ -923,7 +923,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":18,\"lv30\":23,\"lv35\":26,\"lv40\":28,\"lv45\":30,\"lv50\":32},\"training_bonus\":{\"lv1\":8,\"lv30\":12,\"lv35\":15,\"lv40\":18,\"lv45\":20,\"lv50\":22},\"stamina_bonus\":{\"lv1\":2,\"lv30\":2,\"lv35\":3,\"lv40\":3,\"lv45\":3,\"lv50\":4},\"recovery_bonus\":{\"lv1\":10,\"lv30\":15,\"lv35\":18,\"lv40\":20,\"lv45\":22,\"lv50\":25}}",
       "skills": "[\"Stamina Keep\",\"Long Distance Runner\",\"Recovery Master\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/super_creek_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/super_creek_ssr.png",
       "created_at": "2025-09-16 10:01:31"
     },
     {
@@ -935,7 +935,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":15,\"lv30\":20,\"lv35\":23,\"lv40\":25,\"lv45\":27,\"lv50\":30},\"training_bonus\":{\"lv1\":10,\"lv30\":14,\"lv35\":17,\"lv40\":20,\"lv45\":22,\"lv50\":25},\"power_bonus\":{\"lv1\":2,\"lv30\":2,\"lv35\":3,\"lv40\":3,\"lv45\":3,\"lv50\":4},\"acceleration\":{\"lv1\":5,\"lv30\":8,\"lv35\":10,\"lv40\":12,\"lv45\":14,\"lv50\":15}}",
       "skills": "[\"Power Sprint\",\"Acceleration\",\"Positioning\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/fine_motion_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/fine_motion_ssr.png",
       "created_at": "2025-09-16 10:01:31"
     },
     {
@@ -947,7 +947,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":12,\"lv30\":18,\"lv35\":21,\"lv40\":24,\"lv45\":26,\"lv50\":28},\"training_bonus\":{\"lv1\":8,\"lv30\":12,\"lv35\":14,\"lv40\":16,\"lv45\":18,\"lv50\":20},\"wisdom_bonus\":{\"lv1\":2,\"lv30\":2,\"lv35\":3,\"lv40\":3,\"lv45\":3,\"lv50\":4},\"skill_pt_bonus\":{\"lv1\":20,\"lv30\":30,\"lv35\":35,\"lv40\":40,\"lv45\":45,\"lv50\":50}}",
       "skills": "[\"Concentration\",\"Skill Master\",\"Wisdom Star\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/admire_vega_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/admire_vega_ssr.png",
       "created_at": "2025-09-16 10:01:31"
     },
     {
@@ -959,7 +959,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":18,\"lv50\":32},\"training_bonus\":{\"lv1\":12,\"lv50\":28},\"initial_bond\":{\"lv1\":25,\"lv50\":40},\"motivation_bonus\":{\"lv1\":5,\"lv50\":20},\"speed_bonus\":{\"lv1\":2,\"lv50\":4}}",
       "skills": "[\"Straight Line Recovery\",\"Speed Star\",\"Concentration\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sakura_chiyono_o_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/sakura_chiyono_o_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -971,7 +971,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":20,\"lv50\":35},\"training_bonus\":{\"lv1\":15,\"lv50\":30},\"power_bonus\":{\"lv1\":2,\"lv50\":4},\"acceleration\":{\"lv1\":10,\"lv50\":20}}",
       "skills": "[\"Power Sprint\",\"Leading Pride\",\"Acceleration\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/daiwa_scarlet_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/daiwa_scarlet_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -983,7 +983,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":22,\"lv50\":38},\"training_bonus\":{\"lv1\":10,\"lv50\":25},\"stamina_bonus\":{\"lv1\":3,\"lv50\":5},\"recovery_bonus\":{\"lv1\":15,\"lv50\":30}}",
       "skills": "[\"Emperor's Authority\",\"Stamina Keep\",\"Long Distance Runner\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/symboli_rudolf_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/symboli_rudolf_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -995,7 +995,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":18,\"lv50\":33},\"training_bonus\":{\"lv1\":14,\"lv50\":28},\"guts_bonus\":{\"lv1\":2,\"lv50\":4},\"willpower\":{\"lv1\":20,\"lv50\":40}}",
       "skills": "[\"Never Give Up\",\"Guts Master\",\"Comeback\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/tokai_teio_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/tokai_teio_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1007,7 +1007,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":15,\"lv50\":30},\"training_bonus\":{\"lv1\":12,\"lv50\":25},\"wisdom_bonus\":{\"lv1\":3,\"lv50\":5},\"skill_pt_bonus\":{\"lv1\":30,\"lv50\":60}}",
       "skills": "[\"Concentration\",\"Skill Master\",\"Perfect Timing\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mejiro_mcqueen_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/mejiro_mcqueen_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1019,7 +1019,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":20,\"lv50\":35},\"training_bonus\":{\"lv1\":8,\"lv50\":20},\"stamina_bonus\":{\"lv1\":4,\"lv50\":6},\"endurance\":{\"lv1\":15,\"lv50\":25}}",
       "skills": "[\"Stamina Keep\",\"Marathon Runner\",\"Pace Control\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/rice_shower_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/rice_shower_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1031,7 +1031,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":25,\"lv50\":40},\"event_bonus\":{\"lv1\":20,\"lv50\":35},\"all_stats\":{\"lv1\":1,\"lv50\":3},\"energy_recovery\":{\"lv1\":5,\"lv50\":10}}",
       "skills": "[\"Good Mood\",\"Energy Drink\",\"All-rounder\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/gold_ship_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/gold_ship_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1043,7 +1043,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":22,\"lv50\":37},\"training_bonus\":{\"lv1\":18,\"lv50\":32},\"speed_bonus\":{\"lv1\":3,\"lv50\":5},\"escape_bonus\":{\"lv1\":20,\"lv50\":35}}",
       "skills": "[\"Escape Artist\",\"Leading Star\",\"Speed Zone\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/silence_suzuka_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/silence_suzuka_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1055,7 +1055,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":18,\"lv50\":32},\"training_bonus\":{\"lv1\":12,\"lv50\":26},\"power_bonus\":{\"lv1\":3,\"lv50\":5},\"sprint_power\":{\"lv1\":15,\"lv50\":25}}",
       "skills": "[\"Power Charge\",\"Food Fighter\",\"Last Spurt\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/special_week_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/special_week_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1067,7 +1067,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":20,\"lv50\":35},\"training_bonus\":{\"lv1\":16,\"lv50\":30},\"speed_bonus\":{\"lv1\":4,\"lv50\":6},\"sprint_bonus\":{\"lv1\":25,\"lv50\":40}}",
       "skills": "[\"Sprint Turbo\",\"Mile Champion\",\"Speed Demon\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/taiki_shuttle_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/taiki_shuttle_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1079,7 +1079,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":25,\"lv50\":40},\"training_bonus\":{\"lv1\":20,\"lv50\":35},\"power_bonus\":{\"lv1\":4,\"lv50\":6},\"dominance\":{\"lv1\":30,\"lv50\":50}}",
       "skills": "[\"Triple Crown\",\"Absolute Power\",\"Champion's Pride\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/narita_brian_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/narita_brian_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1091,7 +1091,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":16,\"lv50\":30},\"training_bonus\":{\"lv1\":14,\"lv50\":28},\"stamina_bonus\":{\"lv1\":3,\"lv50\":5},\"pace_keep\":{\"lv1\":20,\"lv50\":35}}",
       "skills": "[\"Steady Pace\",\"Machine Gun Pace\",\"Escape Stamina\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mihono_bourbon_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/mihono_bourbon_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1103,7 +1103,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":18,\"lv50\":33},\"training_bonus\":{\"lv1\":10,\"lv50\":22},\"wisdom_bonus\":{\"lv1\":4,\"lv50\":6},\"skill_hint\":{\"lv1\":3,\"lv50\":5}}",
       "skills": "[\"Wisdom Star\",\"Race Planner\",\"Cool Judgment\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/air_groove_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/air_groove_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1115,7 +1115,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":17,\"lv50\":31},\"training_bonus\":{\"lv1\":13,\"lv50\":27},\"guts_bonus\":{\"lv1\":3,\"lv50\":5},\"rain_bonus\":{\"lv1\":20,\"lv50\":35}}",
       "skills": "[\"Rain Master\",\"Muddy Track\",\"Guts Charge\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/grass_wonder_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/grass_wonder_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1127,7 +1127,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":19,\"lv50\":34},\"training_bonus\":{\"lv1\":14,\"lv50\":29},\"power_bonus\":{\"lv1\":3,\"lv50\":5},\"dirt_bonus\":{\"lv1\":25,\"lv50\":40}}",
       "skills": "[\"Dirt Master\",\"Mile King\",\"International\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/el_condor_pasa_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/el_condor_pasa_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1139,7 +1139,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":16,\"lv50\":29},\"training_bonus\":{\"lv1\":11,\"lv50\":24},\"stamina_bonus\":{\"lv1\":4,\"lv50\":6},\"long_distance\":{\"lv1\":20,\"lv50\":30}}",
       "skills": "[\"Long Runner\",\"Stamina Save\",\"Late Charge\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/manhattan_cafe_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/manhattan_cafe_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1151,7 +1151,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":15,\"lv50\":28},\"training_bonus\":{\"lv1\":20,\"lv50\":35},\"speed_bonus\":{\"lv1\":5,\"lv50\":7},\"escape_speed\":{\"lv1\":30,\"lv50\":45}}",
       "skills": "[\"Escape Speed\",\"Turbo Boost\",\"Front Runner\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/twin_turbo_ssr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/twin_turbo_ssr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1163,7 +1163,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":12,\"lv50\":22},\"training_bonus\":{\"lv1\":8,\"lv50\":18},\"guts_bonus\":{\"lv1\":2,\"lv50\":3},\"bronze_bonus\":{\"lv1\":15,\"lv50\":25}}",
       "skills": "[\"Bronze Collector\",\"Third Place\",\"Persistence\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/nice_nature_sr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/nice_nature_sr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1175,7 +1175,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":10,\"lv50\":20},\"training_bonus\":{\"lv1\":7,\"lv50\":16},\"wisdom_bonus\":{\"lv1\":2,\"lv50\":3},\"skill_pt_bonus\":{\"lv1\":20,\"lv50\":40}}",
       "skills": "[\"Sprint Wisdom\",\"Mile Strategy\",\"Quick Thinking\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/king_halo_sr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/king_halo_sr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1187,7 +1187,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":11,\"lv50\":21},\"training_bonus\":{\"lv1\":9,\"lv50\":19},\"power_bonus\":{\"lv1\":2,\"lv50\":3},\"chase_power\":{\"lv1\":10,\"lv50\":20}}",
       "skills": "[\"Chase Down\",\"Power Save\",\"Final Push\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sweep_tosho_sr.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/sweep_tosho_sr.png",
       "created_at": "2025-09-17 03:54:47"
     },
     {
@@ -1199,7 +1199,7 @@
       "effects": "{\"friendship_bonus\":{\"lv1\":8,\"lv50\":15},\"event_bonus\":{\"lv1\":10,\"lv50\":20},\"motivation_up\":{\"lv1\":5,\"lv50\":10},\"failure_rate_down\":{\"lv1\":5,\"lv50\":10}}",
       "skills": "[\"Cheerful\",\"Good Luck\",\"Fighting Spirit\"]",
       "events": "[]",
-      "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/haru_urara_r.png",
+      "image_url": "https://img.umamusumedb.com/support-cards/haru_urara_r.png",
       "created_at": "2025-09-17 03:54:47"
     }
   ],
@@ -1969,7 +1969,7 @@
       "item_name": "Oguri Cap (Starlight Beat)",
       "item_name_jp": "オグリキャップ（スターライトビート）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_starlight.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png"
     },
     {
       "id": 14,
@@ -1982,7 +1982,7 @@
       "item_name": "Oguri Cap (Starlight Beat)",
       "item_name_jp": "オグリキャップ（スターライトビート）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_starlight.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png"
     },
     {
       "id": 15,
@@ -1995,7 +1995,7 @@
       "item_name": "Oguri Cap (Starlight Beat)",
       "item_name_jp": "オグリキャップ（スターライトビート）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_starlight.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png"
     },
     {
       "id": 16,
@@ -2008,7 +2008,7 @@
       "item_name": "Narita Taishin (Nevertheless)",
       "item_name_jp": "ナリタタイシン（ネバーザレス）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_taishin_nevertheless.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png"
     },
     {
       "id": 17,
@@ -2021,7 +2021,7 @@
       "item_name": "Narita Taishin (Nevertheless)",
       "item_name_jp": "ナリタタイシン（ネバーザレス）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_taishin_nevertheless.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png"
     },
     {
       "id": 18,
@@ -2034,7 +2034,7 @@
       "item_name": "Narita Taishin (Nevertheless)",
       "item_name_jp": "ナリタタイシン（ネバーザレス）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_taishin_nevertheless.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png"
     },
     {
       "id": 19,
@@ -2047,7 +2047,7 @@
       "item_name": "Agnes Tachyon (Tach-nology)",
       "item_name_jp": "アグネスタキオン（タキノロジー）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_tachyon_tachnology.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png"
     },
     {
       "id": 20,
@@ -2060,7 +2060,7 @@
       "item_name": "Agnes Tachyon (Tach-nology)",
       "item_name_jp": "アグネスタキオン（タキノロジー）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_tachyon_tachnology.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png"
     },
     {
       "id": 21,
@@ -2073,7 +2073,7 @@
       "item_name": "Seiun Sky (Reeling in the Big One)",
       "item_name_jp": "セイウンスカイ（大漁旗）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seiun_sky_reeling.png"
+      "item_image": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png"
     },
     {
       "id": 22,
@@ -2086,7 +2086,7 @@
       "item_name": "Seiun Sky (Reeling in the Big One)",
       "item_name_jp": "セイウンスカイ（大漁旗）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seiun_sky_reeling.png"
+      "item_image": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png"
     },
     {
       "id": 23,
@@ -2099,7 +2099,7 @@
       "item_name": "Seiun Sky (Reeling in the Big One)",
       "item_name_jp": "セイウンスカイ（大漁旗）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seiun_sky_reeling.png"
+      "item_image": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png"
     },
     {
       "id": 24,
@@ -2112,7 +2112,7 @@
       "item_name": "Sakura Bakushin O",
       "item_name_jp": "サクラバクシンオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sakura_bakushin_o.png"
+      "item_image": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png"
     },
     {
       "id": 25,
@@ -2125,7 +2125,7 @@
       "item_name": "Sakura Bakushin O",
       "item_name_jp": "サクラバクシンオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sakura_bakushin_o.png"
+      "item_image": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png"
     },
     {
       "id": 26,
@@ -2138,7 +2138,7 @@
       "item_name": "Sakura Bakushin O",
       "item_name_jp": "サクラバクシンオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sakura_bakushin_o.png"
+      "item_image": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png"
     },
     {
       "id": 27,
@@ -2151,7 +2151,7 @@
       "item_name": "Curren Chan",
       "item_name_jp": "カレンチャン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan.png"
+      "item_image": "https://img.umamusumedb.com/characters/curren_chan.png"
     },
     {
       "id": 28,
@@ -2164,7 +2164,7 @@
       "item_name": "Curren Chan",
       "item_name_jp": "カレンチャン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan.png"
+      "item_image": "https://img.umamusumedb.com/characters/curren_chan.png"
     },
     {
       "id": 29,
@@ -2177,7 +2177,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon.png"
     },
     {
       "id": 30,
@@ -2190,7 +2190,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon.png"
     },
     {
       "id": 31,
@@ -2203,7 +2203,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon.png"
     },
     {
       "id": 32,
@@ -2216,7 +2216,7 @@
       "item_name": "Special Week",
       "item_name_jp": "スペシャルウィーク",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/special_week_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/special_week_2025.png"
     },
     {
       "id": 33,
@@ -2229,7 +2229,7 @@
       "item_name": "Special Week",
       "item_name_jp": "スペシャルウィーク",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/special_week_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/special_week_2025.png"
     },
     {
       "id": 34,
@@ -2242,7 +2242,7 @@
       "item_name": "Special Week",
       "item_name_jp": "スペシャルウィーク",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/special_week_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/special_week_2025.png"
     },
     {
       "id": 35,
@@ -2255,7 +2255,7 @@
       "item_name": "Silence Suzuka",
       "item_name_jp": "サイレンススズカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/silence_suzuka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png"
     },
     {
       "id": 36,
@@ -2268,7 +2268,7 @@
       "item_name": "Silence Suzuka",
       "item_name_jp": "サイレンススズカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/silence_suzuka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png"
     },
     {
       "id": 37,
@@ -2281,7 +2281,7 @@
       "item_name": "Silence Suzuka",
       "item_name_jp": "サイレンススズカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/silence_suzuka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png"
     },
     {
       "id": 38,
@@ -2294,7 +2294,7 @@
       "item_name": "Gold Ship",
       "item_name_jp": "ゴールドシップ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_ship_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gold_ship_2025.png"
     },
     {
       "id": 39,
@@ -2307,7 +2307,7 @@
       "item_name": "Gold Ship",
       "item_name_jp": "ゴールドシップ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_ship_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gold_ship_2025.png"
     },
     {
       "id": 40,
@@ -2320,7 +2320,7 @@
       "item_name": "Mejiro McQueen",
       "item_name_jp": "メジロマックイーン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_mcqueen_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png"
     },
     {
       "id": 41,
@@ -2333,7 +2333,7 @@
       "item_name": "Mejiro McQueen",
       "item_name_jp": "メジロマックイーン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_mcqueen_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png"
     },
     {
       "id": 42,
@@ -2346,7 +2346,7 @@
       "item_name": "Kitasan Black [Road to the Top]",
       "item_name_jp": "キタサンブラック【迫る熱に押されて】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/kitasan_black_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/kitasan_black_ssr.png"
     },
     {
       "id": 43,
@@ -2359,7 +2359,7 @@
       "item_name": "Super Creek [Creek of Miracles]",
       "item_name_jp": "スーパークリーク【奇跡の流星】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/super_creek_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/super_creek_ssr.png"
     },
     {
       "id": 44,
@@ -2372,7 +2372,7 @@
       "item_name": "Fine Motion [Elegant Dancer]",
       "item_name_jp": "ファインモーション【エレガントダンサー】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/fine_motion_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/fine_motion_ssr.png"
     },
     {
       "id": 45,
@@ -2385,7 +2385,7 @@
       "item_name": "Admire Vega [Starry Night]",
       "item_name_jp": "アドマイヤベガ【星降る夜】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/admire_vega_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/admire_vega_ssr.png"
     },
     {
       "id": 46,
@@ -2398,7 +2398,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 47,
@@ -2411,7 +2411,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 48,
@@ -2424,7 +2424,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 49,
@@ -2437,7 +2437,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 50,
@@ -2450,7 +2450,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 51,
@@ -2463,7 +2463,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 52,
@@ -2476,7 +2476,7 @@
       "item_name": "Manhattan Cafe",
       "item_name_jp": "マンハッタンカフェ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png"
     },
     {
       "id": 53,
@@ -2489,7 +2489,7 @@
       "item_name": "Manhattan Cafe",
       "item_name_jp": "マンハッタンカフェ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png"
     },
     {
       "id": 54,
@@ -2502,7 +2502,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 55,
@@ -2515,7 +2515,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 56,
@@ -2528,7 +2528,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 57,
@@ -2541,7 +2541,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 58,
@@ -2554,7 +2554,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 59,
@@ -2567,7 +2567,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 60,
@@ -2580,7 +2580,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 61,
@@ -2593,7 +2593,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 62,
@@ -2606,7 +2606,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 63,
@@ -2619,7 +2619,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 64,
@@ -2632,7 +2632,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 65,
@@ -2645,7 +2645,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 66,
@@ -2658,7 +2658,7 @@
       "item_name": "Rice Shower",
       "item_name_jp": "ライスシャワー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/rice_shower_2025.png"
     },
     {
       "id": 67,
@@ -2671,7 +2671,7 @@
       "item_name": "Rice Shower",
       "item_name_jp": "ライスシャワー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/rice_shower_2025.png"
     },
     {
       "id": 68,
@@ -2684,7 +2684,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 69,
@@ -2697,7 +2697,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 70,
@@ -2710,7 +2710,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 71,
@@ -2723,7 +2723,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 72,
@@ -2736,7 +2736,7 @@
       "item_name": "Biwa Hayahide",
       "item_name_jp": "ビワハヤヒデ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png"
     },
     {
       "id": 73,
@@ -2749,7 +2749,7 @@
       "item_name": "Biwa Hayahide",
       "item_name_jp": "ビワハヤヒデ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png"
     },
     {
       "id": 74,
@@ -2762,7 +2762,7 @@
       "item_name": "Winning Ticket",
       "item_name_jp": "ウイニングチケット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/winning_ticket_2025.png"
     },
     {
       "id": 75,
@@ -2775,7 +2775,7 @@
       "item_name": "Winning Ticket",
       "item_name_jp": "ウイニングチケット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/winning_ticket_2025.png"
     },
     {
       "id": 76,
@@ -2788,7 +2788,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 77,
@@ -2801,7 +2801,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 78,
@@ -2814,7 +2814,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 79,
@@ -2827,7 +2827,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 80,
@@ -2840,7 +2840,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 81,
@@ -2853,7 +2853,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 82,
@@ -2866,7 +2866,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 83,
@@ -2879,7 +2879,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 84,
@@ -2892,7 +2892,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 85,
@@ -2905,7 +2905,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 86,
@@ -2918,7 +2918,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 87,
@@ -2931,7 +2931,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 88,
@@ -2944,7 +2944,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 89,
@@ -2957,7 +2957,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 90,
@@ -2970,7 +2970,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 91,
@@ -2983,7 +2983,7 @@
       "item_name": "Air Groove",
       "item_name_jp": "エアグルーヴ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/air_groove_2025.png"
     },
     {
       "id": 92,
@@ -2996,7 +2996,7 @@
       "item_name": "Air Groove",
       "item_name_jp": "エアグルーヴ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/air_groove_2025.png"
     },
     {
       "id": 93,
@@ -3009,7 +3009,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 94,
@@ -3022,7 +3022,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 95,
@@ -3035,7 +3035,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 96,
@@ -3048,7 +3048,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 97,
@@ -3061,7 +3061,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 98,
@@ -3074,7 +3074,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 99,
@@ -3087,7 +3087,7 @@
       "item_name": "Ikuno Dictus",
       "item_name_jp": "イクノディクタス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png"
     },
     {
       "id": 100,
@@ -3100,7 +3100,7 @@
       "item_name": "Ikuno Dictus",
       "item_name_jp": "イクノディクタス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png"
     },
     {
       "id": 101,
@@ -3113,7 +3113,7 @@
       "item_name": "Mejiro Dober",
       "item_name_jp": "メジロドーベル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png"
     },
     {
       "id": 102,
@@ -3126,7 +3126,7 @@
       "item_name": "Mejiro Dober",
       "item_name_jp": "メジロドーベル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png"
     },
     {
       "id": 103,
@@ -3139,7 +3139,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 104,
@@ -3152,7 +3152,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 105,
@@ -3165,7 +3165,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 106,
@@ -3178,7 +3178,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 107,
@@ -3191,7 +3191,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 108,
@@ -3204,7 +3204,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 109,
@@ -3217,7 +3217,7 @@
       "item_name": "Sweep Tosho",
       "item_name_jp": "スイープトウショウ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png"
     },
     {
       "id": 110,
@@ -3230,7 +3230,7 @@
       "item_name": "Sweep Tosho",
       "item_name_jp": "スイープトウショウ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png"
     },
     {
       "id": 111,
@@ -3243,7 +3243,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 112,
@@ -3256,7 +3256,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 113,
@@ -3269,7 +3269,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 114,
@@ -3282,7 +3282,7 @@
       "item_name": "Hishi Akebono",
       "item_name_jp": "ヒシアケボノ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png"
     },
     {
       "id": 115,
@@ -3295,7 +3295,7 @@
       "item_name": "Hishi Akebono",
       "item_name_jp": "ヒシアケボノ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png"
     },
     {
       "id": 116,
@@ -3308,7 +3308,7 @@
       "item_name": "Matikane Fukukitaru",
       "item_name_jp": "マチカネフクキタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png"
     },
     {
       "id": 117,
@@ -3321,7 +3321,7 @@
       "item_name": "Matikane Fukukitaru",
       "item_name_jp": "マチカネフクキタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png"
     },
     {
       "id": 118,
@@ -3334,7 +3334,7 @@
       "item_name": "Yukino Bijin",
       "item_name_jp": "ユキノビジン",
       "item_rarity": 2,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png"
     },
     {
       "id": 119,
@@ -3347,7 +3347,7 @@
       "item_name": "Yukino Bijin",
       "item_name_jp": "ユキノビジン",
       "item_rarity": 2,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png"
     },
     {
       "id": 120,
@@ -3360,7 +3360,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 121,
@@ -3373,7 +3373,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 122,
@@ -3386,7 +3386,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 123,
@@ -3399,7 +3399,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 124,
@@ -3412,7 +3412,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 125,
@@ -3425,7 +3425,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 126,
@@ -3438,7 +3438,7 @@
       "item_name": "Sakura Chiyono O [Full Bloom]",
       "item_name_jp": "サクラチヨノオー【満開】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sakura_chiyono_o_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/sakura_chiyono_o_ssr.png"
     },
     {
       "id": 127,
@@ -3451,7 +3451,7 @@
       "item_name": "Daiwa Scarlet [Scarlet Sky]",
       "item_name_jp": "ダイワスカーレット【スカーレットスカイ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/daiwa_scarlet_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/daiwa_scarlet_ssr.png"
     },
     {
       "id": 128,
@@ -3464,7 +3464,7 @@
       "item_name": "Symboli Rudolf [Emperor's Road]",
       "item_name_jp": "シンボリルドルフ【皇帝の道】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/symboli_rudolf_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/symboli_rudolf_ssr.png"
     },
     {
       "id": 129,
@@ -3477,7 +3477,7 @@
       "item_name": "Tokai Teio [Miracle Run]",
       "item_name_jp": "トウカイテイオー【奇跡の走破】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/tokai_teio_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/tokai_teio_ssr.png"
     },
     {
       "id": 130,
@@ -3490,7 +3490,7 @@
       "item_name": "Mejiro McQueen [Elegant Master]",
       "item_name_jp": "メジロマックイーン【エレガントマスター】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mejiro_mcqueen_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/mejiro_mcqueen_ssr.png"
     },
     {
       "id": 131,
@@ -3503,7 +3503,7 @@
       "item_name": "Rice Shower [Blue Rose]",
       "item_name_jp": "ライスシャワー【青薔薇】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/rice_shower_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/rice_shower_ssr.png"
     },
     {
       "id": 132,
@@ -3516,7 +3516,7 @@
       "item_name": "Gold Ship [Golden Voyage]",
       "item_name_jp": "ゴールドシップ【黄金の航海】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/gold_ship_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/gold_ship_ssr.png"
     },
     {
       "id": 133,
@@ -3529,7 +3529,7 @@
       "item_name": "Silence Suzuka [Silent Star]",
       "item_name_jp": "サイレンススズカ【サイレントスター】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/silence_suzuka_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/silence_suzuka_ssr.png"
     },
     {
       "id": 134,
@@ -3542,7 +3542,7 @@
       "item_name": "Special Week [Special Dream]",
       "item_name_jp": "スペシャルウィーク【スペシャルドリーム】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/special_week_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/special_week_ssr.png"
     },
     {
       "id": 135,
@@ -3555,7 +3555,7 @@
       "item_name": "Taiki Shuttle [Shuttle Speed]",
       "item_name_jp": "タイキシャトル【シャトルスピード】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/taiki_shuttle_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/taiki_shuttle_ssr.png"
     },
     {
       "id": 136,
@@ -3568,7 +3568,7 @@
       "item_name": "Narita Brian [Shadow Roll]",
       "item_name_jp": "ナリタブライアン【シャドーロール】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/narita_brian_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/narita_brian_ssr.png"
     },
     {
       "id": 137,
@@ -3581,7 +3581,7 @@
       "item_name": "Mihono Bourbon [Cyborg]",
       "item_name_jp": "ミホノブルボン【サイボーグ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mihono_bourbon_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/mihono_bourbon_ssr.png"
     },
     {
       "id": 138,
@@ -3594,7 +3594,7 @@
       "item_name": "Air Groove [Empress]",
       "item_name_jp": "エアグルーヴ【女帝】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/air_groove_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/air_groove_ssr.png"
     },
     {
       "id": 139,
@@ -3607,7 +3607,7 @@
       "item_name": "Grass Wonder [Wonder Charge]",
       "item_name_jp": "グラスワンダー【ワンダーチャージ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/grass_wonder_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/grass_wonder_ssr.png"
     },
     {
       "id": 140,
@@ -3620,7 +3620,7 @@
       "item_name": "El Condor Pasa [Condor Flight]",
       "item_name_jp": "エルコンドルパサー【コンドル飛翔】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/el_condor_pasa_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/el_condor_pasa_ssr.png"
     },
     {
       "id": 141,
@@ -3633,7 +3633,7 @@
       "item_name": "Manhattan Cafe [Night Cafe]",
       "item_name_jp": "マンハッタンカフェ【夜のカフェ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/manhattan_cafe_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/manhattan_cafe_ssr.png"
     },
     {
       "id": 142,
@@ -3646,7 +3646,7 @@
       "item_name": "Twin Turbo [Turbo Engine]",
       "item_name_jp": "ツインターボ【ターボエンジン】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/twin_turbo_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/twin_turbo_ssr.png"
     },
     {
       "id": 143,
@@ -3659,7 +3659,7 @@
       "item_name": "Nice Nature [Third Time]",
       "item_name_jp": "ナイスネイチャ【三度目の正直】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/nice_nature_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/nice_nature_sr.png"
     },
     {
       "id": 144,
@@ -3672,7 +3672,7 @@
       "item_name": "King Halo [King's Pride]",
       "item_name_jp": "キングヘイロー【王の誇り】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/king_halo_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/king_halo_sr.png"
     },
     {
       "id": 145,
@@ -3685,7 +3685,7 @@
       "item_name": "Sweep Tosho [Sweeper]",
       "item_name_jp": "スイープトウショウ【スイーパー】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sweep_tosho_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/sweep_tosho_sr.png"
     },
     {
       "id": 146,
@@ -3698,7 +3698,7 @@
       "item_name": "Haru Urara [Never Give Up]",
       "item_name_jp": "ハルウララ【ネバーギブアップ】",
       "item_rarity": "R",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/haru_urara_r.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/haru_urara_r.png"
     },
     {
       "id": 147,
@@ -3711,7 +3711,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 148,
@@ -3724,7 +3724,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 149,
@@ -3737,7 +3737,7 @@
       "item_name": "Daiwa Scarlet",
       "item_name_jp": "ダイワスカーレット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png"
     },
     {
       "id": 150,
@@ -3750,7 +3750,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 151,
@@ -3763,7 +3763,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 152,
@@ -3776,7 +3776,7 @@
       "item_name": "Vodka",
       "item_name_jp": "ウオッカ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/vodka_2025.png"
     },
     {
       "id": 153,
@@ -3789,7 +3789,7 @@
       "item_name": "Manhattan Cafe",
       "item_name_jp": "マンハッタンカフェ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png"
     },
     {
       "id": 154,
@@ -3802,7 +3802,7 @@
       "item_name": "Manhattan Cafe",
       "item_name_jp": "マンハッタンカフェ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png"
     },
     {
       "id": 155,
@@ -3815,7 +3815,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 156,
@@ -3828,7 +3828,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 157,
@@ -3841,7 +3841,7 @@
       "item_name": "Tokai Teio",
       "item_name_jp": "トウカイテイオー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tokai_teio_2025.png"
     },
     {
       "id": 158,
@@ -3854,7 +3854,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 159,
@@ -3867,7 +3867,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 160,
@@ -3880,7 +3880,7 @@
       "item_name": "El Condor Pasa",
       "item_name_jp": "エルコンドルパサー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png"
     },
     {
       "id": 161,
@@ -3893,7 +3893,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 162,
@@ -3906,7 +3906,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 163,
@@ -3919,7 +3919,7 @@
       "item_name": "Grass Wonder",
       "item_name_jp": "グラスワンダー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/grass_wonder_2025.png"
     },
     {
       "id": 164,
@@ -3932,7 +3932,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 165,
@@ -3945,7 +3945,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 166,
@@ -3958,7 +3958,7 @@
       "item_name": "Symboli Rudolf",
       "item_name_jp": "シンボリルドルフ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png"
     },
     {
       "id": 167,
@@ -3971,7 +3971,7 @@
       "item_name": "Rice Shower",
       "item_name_jp": "ライスシャワー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/rice_shower_2025.png"
     },
     {
       "id": 168,
@@ -3984,7 +3984,7 @@
       "item_name": "Rice Shower",
       "item_name_jp": "ライスシャワー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/rice_shower_2025.png"
     },
     {
       "id": 169,
@@ -3997,7 +3997,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 170,
@@ -4010,7 +4010,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 171,
@@ -4023,7 +4023,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 172,
@@ -4036,7 +4036,7 @@
       "item_name": "Mihono Bourbon",
       "item_name_jp": "ミホノブルボン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png"
     },
     {
       "id": 173,
@@ -4049,7 +4049,7 @@
       "item_name": "Biwa Hayahide",
       "item_name_jp": "ビワハヤヒデ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png"
     },
     {
       "id": 174,
@@ -4062,7 +4062,7 @@
       "item_name": "Biwa Hayahide",
       "item_name_jp": "ビワハヤヒデ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png"
     },
     {
       "id": 175,
@@ -4075,7 +4075,7 @@
       "item_name": "Winning Ticket",
       "item_name_jp": "ウイニングチケット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/winning_ticket_2025.png"
     },
     {
       "id": 176,
@@ -4088,7 +4088,7 @@
       "item_name": "Winning Ticket",
       "item_name_jp": "ウイニングチケット",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/winning_ticket_2025.png"
     },
     {
       "id": 177,
@@ -4101,7 +4101,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 178,
@@ -4114,7 +4114,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 179,
@@ -4127,7 +4127,7 @@
       "item_name": "Nice Nature",
       "item_name_jp": "ナイスネイチャ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nice_nature_2025.png"
     },
     {
       "id": 180,
@@ -4140,7 +4140,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 181,
@@ -4153,7 +4153,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 182,
@@ -4166,7 +4166,7 @@
       "item_name": "Tamamo Cross",
       "item_name_jp": "タマモクロス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png"
     },
     {
       "id": 183,
@@ -4179,7 +4179,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 184,
@@ -4192,7 +4192,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 185,
@@ -4205,7 +4205,7 @@
       "item_name": "Oguri Cap (Original)",
       "item_name_jp": "オグリキャップ（オリジナル）",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png"
+      "item_image": "https://img.umamusumedb.com/characters/oguri_cap_original.png"
     },
     {
       "id": 186,
@@ -4218,7 +4218,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 187,
@@ -4231,7 +4231,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 188,
@@ -4244,7 +4244,7 @@
       "item_name": "King Halo",
       "item_name_jp": "キングヘイロー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/king_halo_2025.png"
     },
     {
       "id": 189,
@@ -4257,7 +4257,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 190,
@@ -4270,7 +4270,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 191,
@@ -4283,7 +4283,7 @@
       "item_name": "Taiki Shuttle",
       "item_name_jp": "タイキシャトル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png"
     },
     {
       "id": 192,
@@ -4296,7 +4296,7 @@
       "item_name": "Air Groove",
       "item_name_jp": "エアグルーヴ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/air_groove_2025.png"
     },
     {
       "id": 193,
@@ -4309,7 +4309,7 @@
       "item_name": "Air Groove",
       "item_name_jp": "エアグルーヴ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/air_groove_2025.png"
     },
     {
       "id": 194,
@@ -4322,7 +4322,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 195,
@@ -4335,7 +4335,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 196,
@@ -4348,7 +4348,7 @@
       "item_name": "Mayano Top Gun",
       "item_name_jp": "マヤノトップガン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png"
     },
     {
       "id": 197,
@@ -4361,7 +4361,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 198,
@@ -4374,7 +4374,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 199,
@@ -4387,7 +4387,7 @@
       "item_name": "Twin Turbo",
       "item_name_jp": "ツインターボ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/twin_turbo_2025.png"
     },
     {
       "id": 200,
@@ -4400,7 +4400,7 @@
       "item_name": "Ikuno Dictus",
       "item_name_jp": "イクノディクタス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png"
     },
     {
       "id": 201,
@@ -4413,7 +4413,7 @@
       "item_name": "Ikuno Dictus",
       "item_name_jp": "イクノディクタス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png"
     },
     {
       "id": 202,
@@ -4426,7 +4426,7 @@
       "item_name": "Mejiro Dober",
       "item_name_jp": "メジロドーベル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png"
     },
     {
       "id": 203,
@@ -4439,7 +4439,7 @@
       "item_name": "Mejiro Dober",
       "item_name_jp": "メジロドーベル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png"
     },
     {
       "id": 204,
@@ -4452,7 +4452,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 205,
@@ -4465,7 +4465,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 206,
@@ -4478,7 +4478,7 @@
       "item_name": "Narita Brian",
       "item_name_jp": "ナリタブライアン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/narita_brian_2025.png"
     },
     {
       "id": 207,
@@ -4491,7 +4491,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 208,
@@ -4504,7 +4504,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 209,
@@ -4517,7 +4517,7 @@
       "item_name": "Zenno Rob Roy",
       "item_name_jp": "ゼンノロブロイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png"
     },
     {
       "id": 210,
@@ -4530,7 +4530,7 @@
       "item_name": "Sweep Tosho",
       "item_name_jp": "スイープトウショウ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png"
     },
     {
       "id": 211,
@@ -4543,7 +4543,7 @@
       "item_name": "Sweep Tosho",
       "item_name_jp": "スイープトウショウ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png"
     },
     {
       "id": 212,
@@ -4556,7 +4556,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 213,
@@ -4569,7 +4569,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 214,
@@ -4582,7 +4582,7 @@
       "item_name": "Agnes Digital",
       "item_name_jp": "アグネスデジタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/agnes_digital_2025.png"
     },
     {
       "id": 215,
@@ -4595,7 +4595,7 @@
       "item_name": "Hishi Akebono",
       "item_name_jp": "ヒシアケボノ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png"
     },
     {
       "id": 216,
@@ -4608,7 +4608,7 @@
       "item_name": "Hishi Akebono",
       "item_name_jp": "ヒシアケボノ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png"
     },
     {
       "id": 217,
@@ -4621,7 +4621,7 @@
       "item_name": "Matikane Fukukitaru",
       "item_name_jp": "マチカネフクキタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png"
     },
     {
       "id": 218,
@@ -4634,7 +4634,7 @@
       "item_name": "Matikane Fukukitaru",
       "item_name_jp": "マチカネフクキタル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png"
     },
     {
       "id": 219,
@@ -4647,7 +4647,7 @@
       "item_name": "Yukino Bijin",
       "item_name_jp": "ユキノビジン",
       "item_rarity": 2,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png"
     },
     {
       "id": 220,
@@ -4660,7 +4660,7 @@
       "item_name": "Yukino Bijin",
       "item_name_jp": "ユキノビジン",
       "item_rarity": 2,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png"
     },
     {
       "id": 221,
@@ -4673,7 +4673,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 222,
@@ -4686,7 +4686,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 223,
@@ -4699,7 +4699,7 @@
       "item_name": "Mr. C.B.",
       "item_name_jp": "ミスターシービー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/mr_cb_2025.png"
     },
     {
       "id": 224,
@@ -4712,7 +4712,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 225,
@@ -4725,7 +4725,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 226,
@@ -4738,7 +4738,7 @@
       "item_name": "Haru Urara",
       "item_name_jp": "ハルウララ",
       "item_rarity": 1,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/haru_urara_2025.png"
     },
     {
       "id": 227,
@@ -4751,7 +4751,7 @@
       "item_name": "Admire Vega",
       "item_name_jp": "アドマイヤベガ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/admire_vega_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/admire_vega_2025.png"
     },
     {
       "id": 228,
@@ -4764,7 +4764,7 @@
       "item_name": "Admire Vega",
       "item_name_jp": "アドマイヤベガ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/admire_vega_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/admire_vega_2025.png"
     },
     {
       "id": 229,
@@ -4777,7 +4777,7 @@
       "item_name": "Admire Vega",
       "item_name_jp": "アドマイヤベガ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/admire_vega_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/admire_vega_2025.png"
     },
     {
       "id": 230,
@@ -4790,7 +4790,7 @@
       "item_name": "Inari One",
       "item_name_jp": "イナリワン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/inari_one_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/inari_one_2025.png"
     },
     {
       "id": 231,
@@ -4803,7 +4803,7 @@
       "item_name": "Inari One",
       "item_name_jp": "イナリワン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/inari_one_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/inari_one_2025.png"
     },
     {
       "id": 232,
@@ -4816,7 +4816,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon_2025.png"
     },
     {
       "id": 233,
@@ -4829,7 +4829,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon_2025.png"
     },
     {
       "id": 234,
@@ -4842,7 +4842,7 @@
       "item_name": "Smart Falcon",
       "item_name_jp": "スマートファルコン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/smart_falcon_2025.png"
     },
     {
       "id": 235,
@@ -4855,7 +4855,7 @@
       "item_name": "Seeking the Pearl",
       "item_name_jp": "シーキングザパール",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seeking_the_pearl_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png"
     },
     {
       "id": 236,
@@ -4868,7 +4868,7 @@
       "item_name": "Seeking the Pearl",
       "item_name_jp": "シーキングザパール",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seeking_the_pearl_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png"
     },
     {
       "id": 237,
@@ -4881,7 +4881,7 @@
       "item_name": "Yaeno Muteki",
       "item_name_jp": "ヤエノムテキ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yaeno_muteki_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png"
     },
     {
       "id": 238,
@@ -4894,7 +4894,7 @@
       "item_name": "Yaeno Muteki",
       "item_name_jp": "ヤエノムテキ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yaeno_muteki_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png"
     },
     {
       "id": 239,
@@ -4907,7 +4907,7 @@
       "item_name": "Yaeno Muteki",
       "item_name_jp": "ヤエノムテキ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yaeno_muteki_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png"
     },
     {
       "id": 240,
@@ -4920,7 +4920,7 @@
       "item_name": "Nakayama Festa",
       "item_name_jp": "ナカヤマフェスタ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nakayama_festa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png"
     },
     {
       "id": 241,
@@ -4933,7 +4933,7 @@
       "item_name": "Nakayama Festa",
       "item_name_jp": "ナカヤマフェスタ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nakayama_festa_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png"
     },
     {
       "id": 242,
@@ -4946,7 +4946,7 @@
       "item_name": "Eishin Flash",
       "item_name_jp": "エイシンフラッシュ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/eishin_flash_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/eishin_flash_2025.png"
     },
     {
       "id": 243,
@@ -4959,7 +4959,7 @@
       "item_name": "Eishin Flash",
       "item_name_jp": "エイシンフラッシュ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/eishin_flash_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/eishin_flash_2025.png"
     },
     {
       "id": 244,
@@ -4972,7 +4972,7 @@
       "item_name": "Eishin Flash",
       "item_name_jp": "エイシンフラッシュ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/eishin_flash_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/eishin_flash_2025.png"
     },
     {
       "id": 245,
@@ -4985,7 +4985,7 @@
       "item_name": "Curren Chan",
       "item_name_jp": "カレンチャン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/curren_chan_2025.png"
     },
     {
       "id": 246,
@@ -4998,7 +4998,7 @@
       "item_name": "Curren Chan",
       "item_name_jp": "カレンチャン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/curren_chan_2025.png"
     },
     {
       "id": 247,
@@ -5011,7 +5011,7 @@
       "item_name": "Curren Chan",
       "item_name_jp": "カレンチャン",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/curren_chan_2025.png"
     },
     {
       "id": 248,
@@ -5024,7 +5024,7 @@
       "item_name": "Kawakami Princess",
       "item_name_jp": "カワカミプリンセス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kawakami_princess_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png"
     },
     {
       "id": 249,
@@ -5037,7 +5037,7 @@
       "item_name": "Kawakami Princess",
       "item_name_jp": "カワカミプリンセス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kawakami_princess_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png"
     },
     {
       "id": 250,
@@ -5050,7 +5050,7 @@
       "item_name": "Gold City",
       "item_name_jp": "ゴールドシチー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_city_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gold_city_2025.png"
     },
     {
       "id": 251,
@@ -5063,7 +5063,7 @@
       "item_name": "Gold City",
       "item_name_jp": "ゴールドシチー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_city_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gold_city_2025.png"
     },
     {
       "id": 252,
@@ -5076,7 +5076,7 @@
       "item_name": "Satono Diamond",
       "item_name_jp": "サトノダイヤモンド",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/satono_diamond_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/satono_diamond_2025.png"
     },
     {
       "id": 253,
@@ -5089,7 +5089,7 @@
       "item_name": "Satono Diamond",
       "item_name_jp": "サトノダイヤモンド",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/satono_diamond_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/satono_diamond_2025.png"
     },
     {
       "id": 254,
@@ -5102,7 +5102,7 @@
       "item_name": "Kitasan Black",
       "item_name_jp": "キタサンブラック",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kitasan_black_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/kitasan_black_2025.png"
     },
     {
       "id": 255,
@@ -5115,7 +5115,7 @@
       "item_name": "Kitasan Black",
       "item_name_jp": "キタサンブラック",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kitasan_black_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/kitasan_black_2025.png"
     },
     {
       "id": 256,
@@ -5128,7 +5128,7 @@
       "item_name": "Kitasan Black",
       "item_name_jp": "キタサンブラック",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kitasan_black_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/kitasan_black_2025.png"
     },
     {
       "id": 257,
@@ -5141,7 +5141,7 @@
       "item_name": "Daring Tact",
       "item_name_jp": "デアリングタクト",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daring_tact_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daring_tact_2025.png"
     },
     {
       "id": 258,
@@ -5154,7 +5154,7 @@
       "item_name": "Daring Tact",
       "item_name_jp": "デアリングタクト",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daring_tact_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/daring_tact_2025.png"
     },
     {
       "id": 259,
@@ -5167,7 +5167,7 @@
       "item_name": "Chrono Genesis",
       "item_name_jp": "クロノジェネシス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/chrono_genesis_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/chrono_genesis_2025.png"
     },
     {
       "id": 260,
@@ -5180,7 +5180,7 @@
       "item_name": "Chrono Genesis",
       "item_name_jp": "クロノジェネシス",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/chrono_genesis_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/chrono_genesis_2025.png"
     },
     {
       "id": 261,
@@ -5193,7 +5193,7 @@
       "item_name": "Almond Eye",
       "item_name_jp": "アーモンドアイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/almond_eye_2025.png"
     },
     {
       "id": 262,
@@ -5206,7 +5206,7 @@
       "item_name": "Almond Eye",
       "item_name_jp": "アーモンドアイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/almond_eye_2025.png"
     },
     {
       "id": 263,
@@ -5219,7 +5219,7 @@
       "item_name": "Almond Eye",
       "item_name_jp": "アーモンドアイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/almond_eye_2025.png"
     },
     {
       "id": 264,
@@ -5232,7 +5232,7 @@
       "item_name": "Almond Eye",
       "item_name_jp": "アーモンドアイ",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/almond_eye_2025.png"
     },
     {
       "id": 265,
@@ -5245,7 +5245,7 @@
       "item_name": "Contrail",
       "item_name_jp": "コントレイル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/contrail_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/contrail_2025.png"
     },
     {
       "id": 266,
@@ -5258,7 +5258,7 @@
       "item_name": "Contrail",
       "item_name_jp": "コントレイル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/contrail_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/contrail_2025.png"
     },
     {
       "id": 267,
@@ -5271,7 +5271,7 @@
       "item_name": "Contrail",
       "item_name_jp": "コントレイル",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/contrail_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/contrail_2025.png"
     },
     {
       "id": 268,
@@ -5284,7 +5284,7 @@
       "item_name": "Efforia",
       "item_name_jp": "エフフォーリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/efforia_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/efforia_2025.png"
     },
     {
       "id": 269,
@@ -5297,7 +5297,7 @@
       "item_name": "Efforia",
       "item_name_jp": "エフフォーリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/efforia_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/efforia_2025.png"
     },
     {
       "id": 270,
@@ -5310,7 +5310,7 @@
       "item_name": "Efforia",
       "item_name_jp": "エフフォーリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/efforia_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/efforia_2025.png"
     },
     {
       "id": 271,
@@ -5323,7 +5323,7 @@
       "item_name": "Gran Alegria",
       "item_name_jp": "グランアレグリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gran_alegria_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gran_alegria_2025.png"
     },
     {
       "id": 272,
@@ -5336,7 +5336,7 @@
       "item_name": "Gran Alegria",
       "item_name_jp": "グランアレグリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gran_alegria_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gran_alegria_2025.png"
     },
     {
       "id": 273,
@@ -5349,7 +5349,7 @@
       "item_name": "Gran Alegria",
       "item_name_jp": "グランアレグリア",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gran_alegria_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/gran_alegria_2025.png"
     },
     {
       "id": 274,
@@ -5362,7 +5362,7 @@
       "item_name": "Loves Only You",
       "item_name_jp": "ラヴズオンリーユー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/loves_only_you_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/loves_only_you_2025.png"
     },
     {
       "id": 275,
@@ -5375,7 +5375,7 @@
       "item_name": "Loves Only You",
       "item_name_jp": "ラヴズオンリーユー",
       "item_rarity": 3,
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/loves_only_you_2025.png"
+      "item_image": "https://img.umamusumedb.com/characters/loves_only_you_2025.png"
     },
     {
       "id": 276,
@@ -5388,7 +5388,7 @@
       "item_name": "Sakura Chiyono O [Full Bloom]",
       "item_name_jp": "サクラチヨノオー【満開】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sakura_chiyono_o_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/sakura_chiyono_o_ssr.png"
     },
     {
       "id": 277,
@@ -5401,7 +5401,7 @@
       "item_name": "Daiwa Scarlet [Scarlet Sky]",
       "item_name_jp": "ダイワスカーレット【スカーレットスカイ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/daiwa_scarlet_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/daiwa_scarlet_ssr.png"
     },
     {
       "id": 278,
@@ -5414,7 +5414,7 @@
       "item_name": "Symboli Rudolf [Emperor's Road]",
       "item_name_jp": "シンボリルドルフ【皇帝の道】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/symboli_rudolf_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/symboli_rudolf_ssr.png"
     },
     {
       "id": 279,
@@ -5427,7 +5427,7 @@
       "item_name": "Tokai Teio [Miracle Run]",
       "item_name_jp": "トウカイテイオー【奇跡の走破】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/tokai_teio_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/tokai_teio_ssr.png"
     },
     {
       "id": 280,
@@ -5440,7 +5440,7 @@
       "item_name": "Mejiro McQueen [Elegant Master]",
       "item_name_jp": "メジロマックイーン【エレガントマスター】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mejiro_mcqueen_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/mejiro_mcqueen_ssr.png"
     },
     {
       "id": 281,
@@ -5453,7 +5453,7 @@
       "item_name": "Rice Shower [Blue Rose]",
       "item_name_jp": "ライスシャワー【青薔薇】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/rice_shower_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/rice_shower_ssr.png"
     },
     {
       "id": 282,
@@ -5466,7 +5466,7 @@
       "item_name": "Gold Ship [Golden Voyage]",
       "item_name_jp": "ゴールドシップ【黄金の航海】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/gold_ship_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/gold_ship_ssr.png"
     },
     {
       "id": 283,
@@ -5479,7 +5479,7 @@
       "item_name": "Silence Suzuka [Silent Star]",
       "item_name_jp": "サイレンススズカ【サイレントスター】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/silence_suzuka_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/silence_suzuka_ssr.png"
     },
     {
       "id": 284,
@@ -5492,7 +5492,7 @@
       "item_name": "Special Week [Special Dream]",
       "item_name_jp": "スペシャルウィーク【スペシャルドリーム】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/special_week_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/special_week_ssr.png"
     },
     {
       "id": 285,
@@ -5505,7 +5505,7 @@
       "item_name": "Taiki Shuttle [Shuttle Speed]",
       "item_name_jp": "タイキシャトル【シャトルスピード】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/taiki_shuttle_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/taiki_shuttle_ssr.png"
     },
     {
       "id": 286,
@@ -5518,7 +5518,7 @@
       "item_name": "Narita Brian [Shadow Roll]",
       "item_name_jp": "ナリタブライアン【シャドーロール】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/narita_brian_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/narita_brian_ssr.png"
     },
     {
       "id": 287,
@@ -5531,7 +5531,7 @@
       "item_name": "Mihono Bourbon [Cyborg]",
       "item_name_jp": "ミホノブルボン【サイボーグ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/mihono_bourbon_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/mihono_bourbon_ssr.png"
     },
     {
       "id": 288,
@@ -5544,7 +5544,7 @@
       "item_name": "Air Groove [Empress]",
       "item_name_jp": "エアグルーヴ【女帝】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/air_groove_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/air_groove_ssr.png"
     },
     {
       "id": 289,
@@ -5557,7 +5557,7 @@
       "item_name": "Grass Wonder [Wonder Charge]",
       "item_name_jp": "グラスワンダー【ワンダーチャージ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/grass_wonder_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/grass_wonder_ssr.png"
     },
     {
       "id": 290,
@@ -5570,7 +5570,7 @@
       "item_name": "El Condor Pasa [Condor Flight]",
       "item_name_jp": "エルコンドルパサー【コンドル飛翔】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/el_condor_pasa_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/el_condor_pasa_ssr.png"
     },
     {
       "id": 291,
@@ -5583,7 +5583,7 @@
       "item_name": "Manhattan Cafe [Night Cafe]",
       "item_name_jp": "マンハッタンカフェ【夜のカフェ】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/manhattan_cafe_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/manhattan_cafe_ssr.png"
     },
     {
       "id": 292,
@@ -5596,7 +5596,7 @@
       "item_name": "Twin Turbo [Turbo Engine]",
       "item_name_jp": "ツインターボ【ターボエンジン】",
       "item_rarity": "SSR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/twin_turbo_ssr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/twin_turbo_ssr.png"
     },
     {
       "id": 293,
@@ -5609,7 +5609,7 @@
       "item_name": "Nice Nature [Third Time]",
       "item_name_jp": "ナイスネイチャ【三度目の正直】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/nice_nature_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/nice_nature_sr.png"
     },
     {
       "id": 294,
@@ -5622,7 +5622,7 @@
       "item_name": "King Halo [King's Pride]",
       "item_name_jp": "キングヘイロー【王の誇り】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/king_halo_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/king_halo_sr.png"
     },
     {
       "id": 295,
@@ -5635,7 +5635,7 @@
       "item_name": "Sweep Tosho [Sweeper]",
       "item_name_jp": "スイープトウショウ【スイーパー】",
       "item_rarity": "SR",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/sweep_tosho_sr.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/sweep_tosho_sr.png"
     },
     {
       "id": 296,
@@ -5648,7 +5648,7 @@
       "item_name": "Haru Urara [Never Give Up]",
       "item_name_jp": "ハルウララ【ネバーギブアップ】",
       "item_rarity": "R",
-      "item_image": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/support-cards/haru_urara_r.png"
+      "item_image": "https://img.umamusumedb.com/support-cards/haru_urara_r.png"
     }
   ]
 }

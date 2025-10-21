@@ -10,7 +10,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"A\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Triumphant Pulse\",\"name_jp\":\"トリンフパルス\",\"effect\":\"Powerful acceleration in the final spurt\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_starlight.png",
+    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_starlight.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -25,7 +25,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Nevertheless\",\"name_jp\":\"ネバーザレス\",\"effect\":\"Massive stamina recovery and speed boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_taishin_nevertheless.png",
+    "image_url": "https://img.umamusumedb.com/characters/narita_taishin_nevertheless.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -40,7 +40,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"F\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Tach-nology\",\"name_jp\":\"タキノロジー\",\"effect\":\"Scientific precision boosts all stats mid-race\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_tachyon_tachnology.png",
+    "image_url": "https://img.umamusumedb.com/characters/agnes_tachyon_tachnology.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -55,7 +55,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"B\",\"between\":\"C\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Big Catch\",\"name_jp\":\"大漁旗\",\"effect\":\"Speed boost when leading in late race\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seiun_sky_reeling.png",
+    "image_url": "https://img.umamusumedb.com/characters/seiun_sky_reeling.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -70,7 +70,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"G\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Bakushin Burst\",\"name_jp\":\"バクシン\",\"effect\":\"Explosive speed boost in sprint races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sakura_bakushin_o.png",
+    "image_url": "https://img.umamusumedb.com/characters/sakura_bakushin_o.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -85,7 +85,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Karen Step\",\"name_jp\":\"カレンステップ\",\"effect\":\"Graceful acceleration in sprint races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan.png",
+    "image_url": "https://img.umamusumedb.com/characters/curren_chan.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -100,7 +100,7 @@
     "aptitudes": "{\"turf\":\"C\",\"dirt\":\"A\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Falcon Strike\",\"name_jp\":\"ファルコンストライク\",\"effect\":\"Sharp acceleration on dirt tracks\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon.png",
+    "image_url": "https://img.umamusumedb.com/characters/smart_falcon.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -115,7 +115,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Eat Up and Work Hard♪\",\"name_jp\":\"食い下がり\",\"effect\":\"Stamina recovery when surrounded\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/special_week_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/special_week_2025.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -130,7 +130,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"E\",\"chase\":\"D\"}",
     "unique_skill": "{\"name_en\":\"Transcendent Flash\",\"name_jp\":\"先頭の景色は譲らない\",\"effect\":\"Massive speed boost when leading\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/silence_suzuka_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/silence_suzuka_2025.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -145,7 +145,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"F\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"F\",\"lead\":\"E\",\"between\":\"C\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Unpredictable Chaos\",\"name_jp\":\"不沈艦、抜錨ォッ！\",\"effect\":\"Random massive stat boosts\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_ship_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/gold_ship_2025.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -160,7 +160,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Mejiro Family Pride\",\"name_jp\":\"貴顕の使命を果たすべく\",\"effect\":\"Perfect pacing increases speed\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_mcqueen_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/mejiro_mcqueen_2025.png",
     "created_at": "2025-09-16 10:01:31",
     "updated_at": "2025-09-16 10:01:31"
   },
@@ -175,7 +175,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"B\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Scarlet Impact\",\"name_jp\":\"スカーレットインパクト\",\"effect\":\"Explosive acceleration when leading\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daiwa_scarlet_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/daiwa_scarlet_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -190,7 +190,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Strong Heart\",\"name_jp\":\"ストロングハート\",\"effect\":\"Stamina recovery in final corner\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/vodka_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/vodka_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -205,7 +205,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Cafe's Rhythm\",\"name_jp\":\"カフェリズム\",\"effect\":\"Perfect pacing in long distance\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/manhattan_cafe_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/manhattan_cafe_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -220,7 +220,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Emperor's Dance\",\"name_jp\":\"帝王の舞\",\"effect\":\"Speed and guts boost when injured\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tokai_teio_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/tokai_teio_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -235,7 +235,7 @@
     "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"E\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Condor's Flight\",\"name_jp\":\"コンドルの飛翔\",\"effect\":\"Speed boost on dirt tracks\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/el_condor_pasa_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/el_condor_pasa_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -250,7 +250,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Wonder Charge\",\"name_jp\":\"ワンダーチャージ\",\"effect\":\"Acceleration in rain conditions\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/grass_wonder_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/grass_wonder_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -265,7 +265,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Emperor's Authority\",\"name_jp\":\"皇帝の威厳\",\"effect\":\"All stats boost when in top 3\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/symboli_rudolf_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/symboli_rudolf_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -280,7 +280,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"C\",\"between\":\"C\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Blue Rose Prayer\",\"name_jp\":\"青薔薇の祈り\",\"effect\":\"Massive stamina conservation\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/rice_shower_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/rice_shower_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -295,7 +295,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"E\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"A\",\"lead\":\"G\",\"between\":\"G\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Cyborg Sprint\",\"name_jp\":\"サイボーグスプリント\",\"effect\":\"Constant high speed when leading\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mihono_bourbon_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/mihono_bourbon_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -310,7 +310,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Steady Pace\",\"name_jp\":\"ステディペース\",\"effect\":\"Perfect rhythm in long races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/biwa_hayahide_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/biwa_hayahide_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -325,7 +325,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Victory Ticket\",\"name_jp\":\"ビクトリーチケット\",\"effect\":\"Guts boost in crucial moments\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/winning_ticket_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/winning_ticket_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -340,7 +340,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"G\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Third Place Magic\",\"name_jp\":\"3位の魔法\",\"effect\":\"Stats boost when in 3rd place\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nice_nature_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/nice_nature_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -355,7 +355,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"White Lightning\",\"name_jp\":\"白い稲妻\",\"effect\":\"Speed burst in straight lines\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/tamamo_cross_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/tamamo_cross_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -370,7 +370,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Gray Monster\",\"name_jp\":\"グレーモンスター\",\"effect\":\"Power burst in final spurt\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/oguri_cap_original.png",
+    "image_url": "https://img.umamusumedb.com/characters/oguri_cap_original.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -385,7 +385,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"King's Pride\",\"name_jp\":\"王の誇り\",\"effect\":\"Wisdom boost in short races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/king_halo_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/king_halo_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -400,7 +400,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Shuttle Burst\",\"name_jp\":\"シャトルバースト\",\"effect\":\"Extreme speed in sprint races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/taiki_shuttle_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/taiki_shuttle_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -415,7 +415,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Empress Pride\",\"name_jp\":\"女帝のプライド\",\"effect\":\"All-around stat boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/air_groove_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/air_groove_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -430,7 +430,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Top Gun Maverick\",\"name_jp\":\"トップガンマーベリック\",\"effect\":\"Power boost in chase position\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mayano_topgun_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/mayano_topgun_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -445,7 +445,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"C\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"E\",\"escape\":\"A\",\"lead\":\"G\",\"between\":\"G\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Turbo Engine\",\"name_jp\":\"ターボエンジン\",\"effect\":\"Extreme speed when escaping\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/twin_turbo_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/twin_turbo_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -460,7 +460,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"E\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Dictus Authority\",\"name_jp\":\"ディクタスの威厳\",\"effect\":\"Guts and stamina boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/ikuno_dictus_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/ikuno_dictus_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -475,7 +475,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"F\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Mejiro Determination\",\"name_jp\":\"メジロの決意\",\"effect\":\"Stamina boost in long races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mejiro_dober_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/mejiro_dober_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -490,7 +490,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Shadow Roll\",\"name_jp\":\"シャドーロール\",\"effect\":\"Overwhelming power in all positions\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/narita_brian_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/narita_brian_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -505,7 +505,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Rob Roy's March\",\"name_jp\":\"ロブロイの行進\",\"effect\":\"Steady pace throughout race\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/zenno_rob_roy_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/zenno_rob_roy_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -520,7 +520,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Sweep Away\",\"name_jp\":\"スイープアウェイ\",\"effect\":\"Chase acceleration boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/sweep_tosho_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/sweep_tosho_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -535,7 +535,7 @@
     "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Digital Revolution\",\"name_jp\":\"デジタル革命\",\"effect\":\"Tech-powered acceleration\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/agnes_digital_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/agnes_digital_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -550,7 +550,7 @@
     "aptitudes": "{\"turf\":\"B\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"G\"}",
     "unique_skill": "{\"name_en\":\"Dawn Break\",\"name_jp\":\"夜明けの光\",\"effect\":\"Sprint specialist boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/hishi_akebono_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/hishi_akebono_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -565,7 +565,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"B\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Lucky Fortune\",\"name_jp\":\"福来る\",\"effect\":\"Random stat boosts\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/matikane_fukukitaru_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/matikane_fukukitaru_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -580,7 +580,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Snow Beauty\",\"name_jp\":\"雪の美人\",\"effect\":\"Speed boost in cold weather\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yukino_bijin_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/yukino_bijin_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -595,7 +595,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"C.B. Revolution\",\"name_jp\":\"C.B.レボリューション\",\"effect\":\"Triple crown power\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/mr_cb_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/mr_cb_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -610,7 +610,7 @@
     "aptitudes": "{\"turf\":\"G\",\"dirt\":\"A\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"G\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"B\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Never Give Up\",\"name_jp\":\"ネバーギブアップ\",\"effect\":\"Guts boost when behind\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/haru_urara_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/haru_urara_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -625,7 +625,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"E\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"C\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Starlight Road\",\"name_jp\":\"スターライトロード\",\"effect\":\"Speed boost under night races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/admire_vega_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/admire_vega_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -640,7 +640,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"E\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Fox Spirit\",\"name_jp\":\"稲荷の加護\",\"effect\":\"Random power boosts\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/inari_one_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/inari_one_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -655,7 +655,7 @@
     "aptitudes": "{\"turf\":\"E\",\"dirt\":\"A\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Falcon Strike\",\"name_jp\":\"ファルコンストライク\",\"effect\":\"Dirt track domination\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/smart_falcon_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/smart_falcon_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -670,7 +670,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"C\",\"sprint\":\"A\",\"mile\":\"B\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Pearl Shine\",\"name_jp\":\"真珠の輝き\",\"effect\":\"Sprint specialization\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/seeking_the_pearl_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/seeking_the_pearl_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -685,7 +685,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"C\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"E\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Invincible Spirit\",\"name_jp\":\"無敵の魂\",\"effect\":\"Guts boost when challenged\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/yaeno_muteki_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/yaeno_muteki_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -700,7 +700,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"C\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Festival March\",\"name_jp\":\"祭りの行進\",\"effect\":\"Stamina efficiency boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/nakayama_festa_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/nakayama_festa_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -715,7 +715,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Flash of Light\",\"name_jp\":\"閃光一閃\",\"effect\":\"Speed burst in straight\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/eishin_flash_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/eishin_flash_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -730,7 +730,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"E\",\"long\":\"G\",\"escape\":\"B\",\"lead\":\"A\",\"between\":\"C\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Karen's Charm\",\"name_jp\":\"カレンの魅力\",\"effect\":\"Sprint domination\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/curren_chan_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/curren_chan_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -745,7 +745,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"B\",\"mile\":\"A\",\"medium\":\"B\",\"long\":\"G\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Princess Authority\",\"name_jp\":\"プリンセスの威厳\",\"effect\":\"Guts and power combo\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kawakami_princess_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/kawakami_princess_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -760,7 +760,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"B\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Golden Path\",\"name_jp\":\"黄金の道\",\"effect\":\"Balanced stat boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gold_city_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/gold_city_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -775,7 +775,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Diamond Brilliance\",\"name_jp\":\"ダイヤモンドの輝き\",\"effect\":\"Long distance mastery\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/satono_diamond_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/satono_diamond_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -790,7 +790,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"G\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"A\",\"between\":\"A\",\"chase\":\"C\"}",
     "unique_skill": "{\"name_en\":\"Black Tide\",\"name_jp\":\"黒い激流\",\"effect\":\"Overwhelming long distance power\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/kitasan_black_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/kitasan_black_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -805,7 +805,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Daring Challenge\",\"name_jp\":\"果敢な挑戦\",\"effect\":\"Triple crown specialist\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/daring_tact_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/daring_tact_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -820,7 +820,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"B\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"E\",\"between\":\"B\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Time Genesis\",\"name_jp\":\"時の創世\",\"effect\":\"Perfect timing in long races\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/chrono_genesis_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/chrono_genesis_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -835,7 +835,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"A\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Almond Brilliance\",\"name_jp\":\"アーモンドの輝き\",\"effect\":\"All-distance excellence\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/almond_eye_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/almond_eye_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -850,7 +850,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"C\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"G\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Sky Trail\",\"name_jp\":\"空の軌跡\",\"effect\":\"Triple crown mastery\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/contrail_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/contrail_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -865,7 +865,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"G\",\"sprint\":\"G\",\"mile\":\"E\",\"medium\":\"A\",\"long\":\"A\",\"escape\":\"E\",\"lead\":\"B\",\"between\":\"A\",\"chase\":\"B\"}",
     "unique_skill": "{\"name_en\":\"Euphoria Rush\",\"name_jp\":\"歓喜の疾走\",\"effect\":\"Power surge in key moments\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/efforia_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/efforia_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -880,7 +880,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"A\",\"mile\":\"A\",\"medium\":\"C\",\"long\":\"G\",\"escape\":\"C\",\"lead\":\"A\",\"between\":\"B\",\"chase\":\"E\"}",
     "unique_skill": "{\"name_en\":\"Great Joy\",\"name_jp\":\"大いなる歓喜\",\"effect\":\"Sprint and mile excellence\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/gran_alegria_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/gran_alegria_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   },
@@ -895,7 +895,7 @@
     "aptitudes": "{\"turf\":\"A\",\"dirt\":\"E\",\"sprint\":\"G\",\"mile\":\"B\",\"medium\":\"A\",\"long\":\"B\",\"escape\":\"E\",\"lead\":\"C\",\"between\":\"A\",\"chase\":\"A\"}",
     "unique_skill": "{\"name_en\":\"Love's Devotion\",\"name_jp\":\"愛の献身\",\"effect\":\"Wisdom-based power boost\"}",
     "awakening_skills": "[]",
-    "image_url": "https://pub-164966093c05481cab53a3e8cd2c7d2d.r2.dev/characters/loves_only_you_2025.png",
+    "image_url": "https://img.umamusumedb.com/characters/loves_only_you_2025.png",
     "created_at": "2025-09-17 03:54:47",
     "updated_at": "2025-09-17 03:54:47"
   }
