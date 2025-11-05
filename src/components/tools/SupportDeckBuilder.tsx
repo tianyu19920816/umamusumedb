@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Plus, X, Star, TrendingUp, Users, Sparkles, AlertTriangle, Check, Lock, Unlock } from 'lucide-react';
 import PlaceholderImage from '../PlaceholderImage';
 import type { SupportCard } from '@/types';
+import { supportCards as staticSupportCards } from '@/lib/static-content';
 
 interface DeckSlot {
   card: SupportCard | null;
@@ -85,17 +86,8 @@ export default function SupportDeckBuilder() {
   const [showAnalysis, setShowAnalysis] = useState(true);
 
   useEffect(() => {
-    fetch('/data/support-cards.json')
-      .then(res => res.json())
-      .then(data => {
-        const parsed = data.map((card: any) => ({
-          ...card,
-          effects: typeof card.effects === 'string' ? JSON.parse(card.effects) : card.effects,
-          skills: typeof card.skills === 'string' ? JSON.parse(card.skills) : card.skills
-        }));
-        setAvailableCards(parsed);
-      })
-      .catch(console.error);
+    // Use statically imported and pre-parsed data
+    setAvailableCards(staticSupportCards);
   }, []);
 
   const filteredCards = useMemo(() => {
@@ -213,11 +205,19 @@ export default function SupportDeckBuilder() {
       analysis.recommendations.push('Duplicate support cards detected — duplicates do not stack');
     }
 
+    // Improved scoring algorithm that better reflects card value
     analysis.score = Math.round(
-      (analysis.totalBonus.friendship + analysis.totalBonus.training) * 0.3 +
-      typeCount * 10 +
-      (6 - Math.abs(3 - maxType)) * 5 +
-      (analysis.typeBalance.friend > 0 ? 10 : 0)
+      // Primary: Friendship and training bonuses (50% weight)
+      (analysis.totalBonus.friendship + analysis.totalBonus.training) * 0.5 +
+      // Secondary: Rarity quality (SSR=15pts, SR=8pts each)
+      analysis.rarityCount.SSR * 15 +
+      analysis.rarityCount.SR * 8 +
+      // Type diversity (5pts per unique type)
+      typeCount * 5 +
+      // Bonus for having Friend card (20pts - very valuable)
+      (analysis.typeBalance.friend > 0 ? 20 : 0) +
+      // Small penalty for extreme type imbalance
+      (maxType >= 4 ? -10 : 0)
     );
 
     return analysis;

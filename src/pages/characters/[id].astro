@@ -342,16 +342,20 @@ function getBestStrategy(aptitudes: any) {
                   <span class={`${getAptitudeColor(character.aptitudes?.dirt || 'G')} text-lg`}>{character.aptitudes?.dirt || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Leader</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.leader || 'G')} text-lg`}>{character.aptitudes?.leader || 'G'}</span>
+                  <span class="text-sm">Escape</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.escape || 'G')} text-lg`}>{character.aptitudes?.escape || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Better</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.better || 'G')} text-lg`}>{character.aptitudes?.better || 'G'}</span>
+                  <span class="text-sm">Lead</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.lead || 'G')} text-lg`}>{character.aptitudes?.lead || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Chaser</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.chaser || 'G')} text-lg`}>{character.aptitudes?.chaser || 'G'}</span>
+                  <span class="text-sm">Between</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.between || 'G')} text-lg`}>{character.aptitudes?.between || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">Chase</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.chase || 'G')} text-lg`}>{character.aptitudes?.chase || 'G'}</span>
                 </div>
               </div>
             </div>

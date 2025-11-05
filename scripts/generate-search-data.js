@@ -11,14 +11,14 @@ try {
 
   // Get all characters
   const characters = db.prepare(`
-    SELECT id, name_en, name_ja, rarity
+    SELECT id, name_en, name_jp, rarity
     FROM characters
     ORDER BY name_en
   `).all();
 
   // Get all support cards
   const supportCards = db.prepare(`
-    SELECT id, name_en, name_ja, rarity, type
+    SELECT id, name_en, name_jp, rarity, type
     FROM support_cards
     ORDER BY name_en
   `).all();
@@ -43,14 +43,14 @@ try {
     characters: characters.map(c => ({
       id: c.id,
       name_en: c.name_en,
-      name_ja: c.name_ja,
+      name_jp: c.name_jp,
       type: 'character',
       rarity: c.rarity
     })),
     cards: supportCards.map(c => ({
       id: c.id,
       name_en: c.name_en,
-      name_ja: c.name_ja,
+      name_jp: c.name_jp,
       type: 'card',
       rarity: c.rarity,
       cardType: c.type

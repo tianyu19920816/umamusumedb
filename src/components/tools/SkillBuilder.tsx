@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Zap, Star, TrendingUp, Package, AlertTriangle, Info } from 'lucide-react';
 import type { Skill } from '@/types';
+import { skills as staticSkills } from '@/lib/static-content';
 
 interface SkillCombo {
   name: string;
@@ -70,14 +71,14 @@ const SKILL_COMBOS: SkillCombo[] = [
 ];
 
 const SKILL_COSTS = {
-  'SS': 500,
-  'S': 360,
-  'A': 250,
-  'B': 180,
-  'C': 120,
-  'unique': 600,
-  'common': 200,
-  'training': 150
+  'SS': 240,
+  'S': 200,
+  'A': 170,
+  'B': 140,
+  'C': 110,
+  'unique': 0,  // Unique skills are learned automatically
+  'common': 120,
+  'training': 130
 };
 
 const TRIGGER_FILTERS = [
@@ -99,20 +100,16 @@ export default function SkillBuilder() {
   const [filterSkillType, setFilterSkillType] = useState<string>('all');
   const [filterTrigger, setFilterTrigger] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
-  const [skillPointBudget, setSkillPointBudget] = useState<number>(2000);
+  const [skillPointBudget, setSkillPointBudget] = useState<number>(1600);
   const [selectedCombo, setSelectedCombo] = useState<SkillCombo | null>(null);
 
   useEffect(() => {
-    fetch('/data/skills.json')
-      .then(res => res.json())
-      .then(data => {
-        const skillsWithCost = data.map((skill: any) => ({
-          ...skill,
-          cost: SKILL_COSTS[skill.rarity as keyof typeof SKILL_COSTS] || 200
-        }));
-        setAvailableSkills(skillsWithCost);
-      })
-      .catch(console.error);
+    // Use statically imported and pre-parsed data
+    const skillsWithCost = staticSkills.map((skill) => ({
+      ...skill,
+      cost: SKILL_COSTS[skill.rarity as keyof typeof SKILL_COSTS] || 120
+    }));
+    setAvailableSkills(skillsWithCost);
   }, []);
 
   const skillTypes = useMemo(() => {
@@ -492,9 +489,9 @@ export default function SkillBuilder() {
           <div>
             <p className="font-medium mb-1">Budget Management:</p>
             <ul className="space-y-0.5 text-xs">
-              <li>• 2000-2500 pts: Standard build</li>
-              <li>• 2500-3000 pts: Advanced build</li>
-              <li>• 3000+ pts: Maxed build</li>
+              <li>• 1200-1600 pts: Standard build</li>
+              <li>• 1600-2000 pts: Advanced build</li>
+              <li>• 2000-2500 pts: High-quality build</li>
               <li>• Save points for crucial skills</li>
             </ul>
           </div>

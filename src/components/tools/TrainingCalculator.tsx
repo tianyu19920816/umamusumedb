@@ -154,14 +154,16 @@ export default function TrainingCalculator() {
 
     const supportMultiplier = 1 + supportCards.length * 0.05;
 
-    let friendshipMultiplier = 1;
+    // Friendship training bonus (activated when bond >= 80)
+    let friendshipBonus = 0;
     if (bond >= 80) {
       supportCards.forEach(card => {
         if (card.type === selectedTraining.name.toLowerCase() || card.type === 'friend') {
-          friendshipMultiplier *= (1 + card.friendshipBonus / 100);
+          friendshipBonus += card.friendshipBonus;
         }
       });
     }
+    const friendshipMultiplier = 1 + (friendshipBonus / 100);
 
     const combinedMultiplier = growthMultiplier * moodMultiplier * trainingMultiplier * supportMultiplier * friendshipMultiplier;
 
@@ -189,9 +191,14 @@ export default function TrainingCalculator() {
 
     const energyCost = 10 + Math.floor(total / 10);
 
+    // Improved failure rate calculation
     let failureRisk = selectedTraining.failureRate;
-    failureRisk *= 1 - bond / 200;
-    failureRisk *= 1 + (100 - energy) / 200;
+    // Bond reduces failure rate more significantly (up to -60% at max bond)
+    const bondReduction = (bond / 100) * 0.6;
+    failureRisk *= (1 - bondReduction);
+    // Low energy increases failure rate more dramatically
+    const energyPenalty = energy < 50 ? (50 - energy) / 25 : 0; // Up to 2x at 0 energy
+    failureRisk *= (1 + energyPenalty);
     failureRisk = Math.max(0, Math.min(50, failureRisk));
 
     const warnings: string[] = [];
