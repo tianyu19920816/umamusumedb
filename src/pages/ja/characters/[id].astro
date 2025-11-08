@@ -73,14 +73,15 @@ function getBestDistance(aptitudes: any) {
 
 function getBestStrategy(aptitudes: any) {
   if (!aptitudes) return '差し';
-  const strategies = ['leader', 'better', 'chaser'];
+  const strategies = ['escape', 'lead', 'between', 'chase'];
   const stratNames: Record<string, string> = {
-    leader: '逃げ',
-    better: '差し',
-    chaser: '追込'
+    escape: '逃げ',
+    lead: '先行',
+    between: '差し',
+    chase: '追込'
   };
   const values: Record<string, number> = { 'S': 7, 'A': 6, 'B': 5, 'C': 4, 'D': 3, 'E': 2, 'F': 1, 'G': 0 };
-  let best = 'better';
+  let best = 'between';
   let maxScore = 0;
   for (const strat of strategies) {
     const score = values[aptitudes[strat]] || 0;
@@ -285,15 +286,19 @@ function getBestStrategy(aptitudes: any) {
                 </div>
                 <div class="flex justify-between items-center">
                   <span class="text-sm">逃げ</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.leader || 'G')} text-lg`}>{character.aptitudes?.leader || 'G'}</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.escape || 'G')} text-lg`}>{character.aptitudes?.escape || 'G'}</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-sm">先行</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.lead || 'G')} text-lg`}>{character.aptitudes?.lead || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
                   <span class="text-sm">差し</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.better || 'G')} text-lg`}>{character.aptitudes?.better || 'G'}</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.between || 'G')} text-lg`}>{character.aptitudes?.between || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
                   <span class="text-sm">追込</span>
-                  <span class={`${getAptitudeColor(character.aptitudes?.chaser || 'G')} text-lg`}>{character.aptitudes?.chaser || 'G'}</span>
+                  <span class={`${getAptitudeColor(character.aptitudes?.chase || 'G')} text-lg`}>{character.aptitudes?.chase || 'G'}</span>
                 </div>
               </div>
             </div>
