@@ -59,15 +59,6 @@ const searchableCards = supportCards.map(c => ({
             class="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-base sm:text-lg rounded-lg sm:rounded-xl border-2 border-uma-primary/20 bg-white/90 focus:outline-none focus:border-uma-primary shadow-lg"
           />
         </div>
-
-        <!-- Quick Filters -->
-        <div class="flex flex-wrap gap-2 mt-3 sm:mt-4 justify-center">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="characters">Characters</button>
-          <button class="filter-btn" data-filter="cards">Cards</button>
-          <button class="filter-btn" data-filter="ssr">SSR</button>
-          <button class="filter-btn hidden sm:inline-flex" data-filter="tier-s">S+ Tier</button>
-        </div>
       </div>
 
       <!-- Stats -->
@@ -253,7 +244,7 @@ const searchableCards = supportCards.map(c => ({
           if (items.length === 0) return null;
           
           return (
-            <div class="tier-row glass rounded-lg sm:rounded-xl p-3 sm:p-4 mb-3 sm:mb-4">
+            <div class="tier-row glass rounded-lg sm:rounded-xl p-3 sm:p-4 mb-3 sm:mb-4" data-tier={tier}>
               <div class="flex items-start gap-3 sm:gap-4">
                 <div class={`tier-badge tier-${tier.toLowerCase()} px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-white font-bold text-lg sm:text-xl min-w-[50px] sm:min-w-[60px] text-center flex-shrink-0`}>
                   {tier}
@@ -446,6 +437,9 @@ const searchableCards = supportCards.map(c => ({
           // Show
         } else if (activeFilter === 'ssr') {
           show = show && rarity === '3';
+        } else if (activeFilter === 'tier-s') {
+          // For tier-s filter, we'll show tier list tab instead
+          show = false;
         } else {
           show = false;
         }
@@ -465,6 +459,9 @@ const searchableCards = supportCards.map(c => ({
           // Show
         } else if (activeFilter === 'ssr') {
           show = show && rarity === 'SSR';
+        } else if (activeFilter === 'tier-s') {
+          // For tier-s filter, we'll show tier list tab instead
+          show = false;
         } else if (activeFilter !== 'characters') {
           show = false;
         }
@@ -473,11 +470,30 @@ const searchableCards = supportCards.map(c => ({
         if (show) hasResults = true;
       });
       
+      // Filter tier list rows
+      document.querySelectorAll('.tier-row').forEach((row) => {
+        const tier = row.getAttribute('data-tier') || '';
+        let show = true;
+        
+        if (activeFilter === 'tier-s') {
+          // Show only SS and S tier
+          show = tier === 'SS' || tier === 'S';
+        } else if (activeFilter === 'all' || activeFilter === 'characters' || activeFilter === 'cards' || activeFilter === 'ssr') {
+          // Show all tiers when not filtering by tier
+          show = true;
+        }
+        
+        (row as HTMLElement).style.display = show ? '' : 'none';
+        if (show) hasResults = true;
+      });
+      
       // Show appropriate tab
       if (activeFilter === 'characters') {
         document.querySelector('[data-tab="characters"]')?.click();
       } else if (activeFilter === 'cards') {
         document.querySelector('[data-tab="support-cards"]')?.click();
+      } else if (activeFilter === 'tier-s') {
+        document.querySelector('[data-tab="tier-list"]')?.click();
       }
       
       // Show/hide no results
