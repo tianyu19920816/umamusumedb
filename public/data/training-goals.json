@@ -1,0 +1,523 @@
+[
+  {
+    "id": "special_week",
+    "name_en": "Special Week",
+    "name_jp": "スペシャルウィーク",
+    "goals": [
+      {
+        "id": "sw1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Focus on Speed training", "Aim for 300+ Speed stat"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "sw2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hopeful Stakes (G1, 2000m)",
+        "description_jp": "ホープフルS (G1, 2000m) 勝利",
+        "tips": ["Need 400+ Speed, 300+ Stamina", "Get acceleration skills"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "sw3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Japanese Derby (G1, 2400m)",
+        "description_jp": "日本ダービー (G1, 2400m) 勝利",
+        "tips": ["Aim for 600+ Speed, 400+ Stamina", "Power is important for this race"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "sw4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Japan Cup (G1, 2400m)",
+        "description_jp": "ジャパンカップ (G1, 2400m) 勝利",
+        "tips": ["Need balanced stats", "Recovery skills help"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "sw5",
+        "year": "Senior",
+        "half": "First Half",
+        "description_en": "Win Tenno Sho Spring (G1, 3200m)",
+        "description_jp": "天皇賞(春) (G1, 3200m) 勝利",
+        "tips": ["Stamina > 600 required", "Get stamina recovery skills"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "silence_suzuka",
+    "name_en": "Silence Suzuka",
+    "name_jp": "サイレンススズカ",
+    "goals": [
+      {
+        "id": "ss1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Focus on Speed training", "Front Runner strategy works best"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "ss2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "5th place or better in Asahi Hai (G1, 1600m)",
+        "description_jp": "朝日杯FS (G1, 1600m) 5着以内",
+        "tips": ["Speed focus", "Front Runner position bonus"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "ss3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Yasuda Kinen (G1, 1600m)",
+        "description_jp": "安田記念 (G1, 1600m) 勝利",
+        "tips": ["700+ Speed recommended", "Mile specialist skills"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "ss4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Mile Championship (G1, 1600m)",
+        "description_jp": "マイルCS (G1, 1600m) 勝利",
+        "tips": ["Maintain high speed", "Position keeping skills"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "ss5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win 3 G1 races",
+        "description_jp": "G1 3勝",
+        "tips": ["Focus on mile/medium races", "Keep motivation high"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "tokai_teio",
+    "name_en": "Tokai Teio",
+    "name_jp": "トウカイテイオー",
+    "goals": [
+      {
+        "id": "tt1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Balanced training", "Guts training helps"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "tt2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hopeful Stakes (G1, 2000m)",
+        "description_jp": "ホープフルS (G1, 2000m) 勝利",
+        "tips": ["Need good stamina", "Pace Chaser or Late Surger strategy"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "tt3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Satsuki Sho (G1, 2000m)",
+        "description_jp": "皐月賞 (G1, 2000m) 勝利",
+        "tips": ["Balanced stats important", "Get recovery skills"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "tt4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Japanese Derby (G1, 2400m)",
+        "description_jp": "日本ダービー (G1, 2400m) 勝利",
+        "tips": ["600+ Speed, 500+ Stamina", "Guts helps in final stretch"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "tt5",
+        "year": "Senior",
+        "half": "First Half",
+        "description_en": "Win Arima Kinen (G1, 2500m)",
+        "description_jp": "有馬記念 (G1, 2500m) 勝利",
+        "tips": ["High stamina required", "Never Give Up skill recommended"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "oguri_cap",
+    "name_en": "Oguri Cap",
+    "name_jp": "オグリキャップ",
+    "goals": [
+      {
+        "id": "oc1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Power training focus", "Both turf and dirt aptitude helps"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "oc2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "3rd place or better in Mile Championship",
+        "description_jp": "マイルCS 3着以内",
+        "tips": ["Mile aptitude important", "Power and speed balance"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "oc3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Yasuda Kinen (G1, 1600m)",
+        "description_jp": "安田記念 (G1, 1600m) 勝利",
+        "tips": ["High speed required", "Late Surger position"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "oc4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Arima Kinen (G1, 2500m)",
+        "description_jp": "有馬記念 (G1, 2500m) 勝利",
+        "tips": ["Need stamina training", "All-rounder build works"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "oc5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win both Mile and Medium/Long G1 races",
+        "description_jp": "マイル・中長距離のG1両方を勝利",
+        "tips": ["Versatile build required", "Focus on both speed and stamina"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "gold_ship",
+    "name_en": "Gold Ship",
+    "name_jp": "ゴールドシップ",
+    "goals": [
+      {
+        "id": "gs1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Stamina and Power focus", "End Closer position preferred"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "gs2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hopeful Stakes (G1, 2000m)",
+        "description_jp": "ホープフルS (G1, 2000m) 勝利",
+        "tips": ["Balanced stats", "Random nature - save before race"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "gs3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Satsuki Sho (G1, 2000m)",
+        "description_jp": "皐月賞 (G1, 2000m) 勝利",
+        "tips": ["High power helps", "End Closer skills recommended"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "gs4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Kikka Sho (G1, 3000m)",
+        "description_jp": "菊花賞 (G1, 3000m) 勝利",
+        "tips": ["700+ Stamina needed", "Long distance skills crucial"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "gs5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win Tenno Sho Spring and Takarazuka Kinen",
+        "description_jp": "天皇賞(春)と宝塚記念を勝利",
+        "tips": ["Focus on long races", "Stamina recovery skills essential"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "mejiro_mcqueen",
+    "name_en": "Mejiro McQueen",
+    "name_jp": "メジロマックイーン",
+    "goals": [
+      {
+        "id": "mm1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Focus on Stamina training", "Long distance specialist"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "mm2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win or place in Hopeful Stakes",
+        "description_jp": "ホープフルS 入着",
+        "tips": ["Need stamina base", "Pace Chaser strategy"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "mm3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Tenno Sho Spring (G1, 3200m)",
+        "description_jp": "天皇賞(春) (G1, 3200m) 勝利",
+        "tips": ["Stamina 700+ essential", "Long distance aptitude A+"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "mm4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Tenno Sho Autumn (G1, 2000m)",
+        "description_jp": "天皇賞(秋) (G1, 2000m) 勝利",
+        "tips": ["Balance speed and stamina", "Medium distance skills"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "mm5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win 3 consecutive Tenno Sho",
+        "description_jp": "天皇賞3連覇",
+        "tips": ["Master of long distance", "Elite-tier stamina required"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "rice_shower",
+    "name_en": "Rice Shower",
+    "name_jp": "ライスシャワー",
+    "goals": [
+      {
+        "id": "rs1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Stamina is key", "End Closer works best"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "rs2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Place in year-end G1",
+        "description_jp": "年末G1入着",
+        "tips": ["Build stamina foundation", "Don't neglect speed"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "rs3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Kikka Sho (G1, 3000m)",
+        "description_jp": "菊花賞 (G1, 3000m) 勝利",
+        "tips": ["Long distance specialist", "Stamina recovery crucial"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "rs4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Compete in Tenno Sho Spring",
+        "description_jp": "天皇賞(春)出走",
+        "tips": ["3200m preparation", "High stamina required"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "rs5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win Tenno Sho Spring (G1, 3200m)",
+        "description_jp": "天皇賞(春) (G1, 3200m) 勝利",
+        "tips": ["Ultimate long distance challenge", "Stamina 800+"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "vodka",
+    "name_en": "Vodka",
+    "name_jp": "ウオッカ",
+    "goals": [
+      {
+        "id": "vd1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Speed and Power focus", "Front Runner or Pace Chaser"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "vd2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hanshin JF (G1, 1600m)",
+        "description_jp": "阪神JF (G1, 1600m) 勝利",
+        "tips": ["Mile specialist", "High speed essential"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "vd3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Japanese Derby (G1, 2400m)",
+        "description_jp": "日本ダービー (G1, 2400m) 勝利",
+        "tips": ["Historic achievement", "Need stamina for distance"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "vd4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Tenno Sho Autumn (G1, 2000m)",
+        "description_jp": "天皇賞(秋) (G1, 2000m) 勝利",
+        "tips": ["Medium distance focus", "Speed is key"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "vd5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win Yasuda Kinen and Tenno Sho Autumn",
+        "description_jp": "安田記念と天皇賞(秋)を勝利",
+        "tips": ["Versatile middle-distance build", "Keep high motivation"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "daiwa_scarlet",
+    "name_en": "Daiwa Scarlet",
+    "name_jp": "ダイワスカーレット",
+    "goals": [
+      {
+        "id": "ds1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["Pace Chaser strategy", "Power training important"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "ds2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hanshin JF (G1, 1600m)",
+        "description_jp": "阪神JF (G1, 1600m) 勝利",
+        "tips": ["Rival with Vodka", "Mile preparation"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "ds3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Oka Sho (G1, 1600m)",
+        "description_jp": "桜花賞 (G1, 1600m) 勝利",
+        "tips": ["Triple tiara race 1", "Speed and power balance"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "ds4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Queen Elizabeth II Cup (G1, 2200m)",
+        "description_jp": "エリザベス女王杯 (G1, 2200m) 勝利",
+        "tips": ["Medium distance focus", "Stamina needed"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "ds5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Complete undefeated streak",
+        "description_jp": "無敗記録継続",
+        "tips": ["Legendary challenge", "Perfect training required"],
+        "difficulty": "hard"
+      }
+    ]
+  },
+  {
+    "id": "symboli_rudolf",
+    "name_en": "Symboli Rudolf",
+    "name_jp": "シンボリルドルフ",
+    "goals": [
+      {
+        "id": "sr1",
+        "year": "Junior",
+        "half": "First Half",
+        "description_en": "Make debut race",
+        "description_jp": "デビュー戦",
+        "tips": ["The Emperor's journey begins", "Balanced training"],
+        "difficulty": "easy"
+      },
+      {
+        "id": "sr2",
+        "year": "Junior",
+        "half": "Second Half",
+        "description_en": "Win Hopeful Stakes (G1, 2000m)",
+        "description_jp": "ホープフルS (G1, 2000m) 勝利",
+        "tips": ["Show dominance early", "All stats matter"],
+        "difficulty": "medium"
+      },
+      {
+        "id": "sr3",
+        "year": "Classic",
+        "half": "First Half",
+        "description_en": "Win Triple Crown (Satsuki, Derby, Kikka)",
+        "description_jp": "三冠達成 (皐月賞・ダービー・菊花賞)",
+        "tips": ["Legendary goal", "Need excellent all-around stats"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "sr4",
+        "year": "Classic",
+        "half": "Second Half",
+        "description_en": "Win Japan Cup (G1, 2400m)",
+        "description_jp": "ジャパンカップ (G1, 2400m) 勝利",
+        "tips": ["International challenge", "Peak performance"],
+        "difficulty": "hard"
+      },
+      {
+        "id": "sr5",
+        "year": "Senior",
+        "half": "Full Year",
+        "description_en": "Win 7 consecutive G1 races",
+        "description_jp": "G1 7連勝",
+        "tips": ["Emperor's record", "Maintain peak condition"],
+        "difficulty": "hard"
+      }
+    ]
+  }
+]
+

@@ -125,6 +125,7 @@ const typeCount = supportCards.reduce((acc, card) => {
               {cards.map((card) => (
                 <div class="card-item" 
                      data-name={card.name_en.toLowerCase()} 
+                     data-search={`${card.name_en} ${card.name_jp}`.toLowerCase()}
                      data-rarity={card.rarity}
                      data-type={card.type}>
                   <SupportCardCard card={card} client:load />
@@ -160,7 +161,7 @@ const typeCount = supportCards.reduce((acc, card) => {
       
       // Filter individual cards
       document.querySelectorAll('.card-item').forEach((item) => {
-        const name = item.getAttribute('data-name') || '';
+        const name = item.getAttribute('data-search') || item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         const type = item.getAttribute('data-type') || '';
         

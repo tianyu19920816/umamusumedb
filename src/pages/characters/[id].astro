@@ -1,7 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
-import { characters } from '@/lib/static-content';
+import { characters, skills, realHorses } from '@/lib/static-content';
+import { stripVariantName } from '@/lib/name-utils';
+import { createSkillIndex, findSkillIdByName } from '@/lib/skill-lookup';
 import { Star, Zap, Heart, Brain, Shield, TrendingUp, Trophy, Award } from 'lucide-react';
 
 export function getStaticPaths() {
@@ -12,6 +14,14 @@ export function getStaticPaths() {
 }
 
 const { character } = Astro.props;
+const baseNameEn = stripVariantName(character.name_en);
+const prototypeHorse = realHorses?.horsesByNameEn?.[baseNameEn] ?? null;
+
+const skillIndex = createSkillIndex(skills);
+const uniqueSkillId =
+  (character.unique_skill?.name_en && findSkillIdByName(skillIndex, character.unique_skill.name_en)) ||
+  (character.unique_skill?.name_jp && findSkillIdByName(skillIndex, character.unique_skill.name_jp)) ||
+  null;
 
 // Helper function to get aptitude color
 function getAptitudeColor(value: string) {
@@ -59,13 +69,13 @@ function getBestDistance(aptitudes: any) {
 }
 
 function getBestStrategy(aptitudes: any) {
-  if (!aptitudes) return 'Betweener';
+  if (!aptitudes) return 'Late Surger';
   const strategies = ['escape', 'lead', 'between', 'chase'];
   const labels: Record<string, string> = {
-    escape: 'Escape',
-    lead: 'Leader',
-    between: 'Betweener',
-    chase: 'Chaser'
+    escape: 'Front Runner',
+    lead: 'Pace Chaser',
+    between: 'Late Surger',
+    chase: 'End Closer'
   };
   const values: Record<string, number> = { S: 7, A: 6, B: 5, C: 4, D: 3, E: 2, F: 1, G: 0 };
   let best = 'between';
@@ -90,6 +100,7 @@ function getBestStrategy(aptitudes: any) {
     id: character.id,
     name_en: character.name_en,
     name_ja: character.name_jp,
+    image_url: character.image_url,
     distance_aptitude: {
       short: character.aptitudes?.sprint,
       mile: character.aptitudes?.mile,
@@ -342,19 +353,19 @@ function getBestStrategy(aptitudes: any) {
                   <span class={`${getAptitudeColor(character.aptitudes?.dirt || 'G')} text-lg`}>{character.aptitudes?.dirt || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Escape</span>
+                  <span class="text-sm">Front Runner (逃げ)</span>
                   <span class={`${getAptitudeColor(character.aptitudes?.escape || 'G')} text-lg`}>{character.aptitudes?.escape || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Lead</span>
+                  <span class="text-sm">Pace Chaser (先行)</span>
                   <span class={`${getAptitudeColor(character.aptitudes?.lead || 'G')} text-lg`}>{character.aptitudes?.lead || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Between</span>
+                  <span class="text-sm">Late Surger (差し)</span>
                   <span class={`${getAptitudeColor(character.aptitudes?.between || 'G')} text-lg`}>{character.aptitudes?.between || 'G'}</span>
                 </div>
                 <div class="flex justify-between items-center">
-                  <span class="text-sm">Chase</span>
+                  <span class="text-sm">End Closer (追込)</span>
                   <span class={`${getAptitudeColor(character.aptitudes?.chase || 'G')} text-lg`}>{character.aptitudes?.chase || 'G'}</span>
                 </div>
               </div>
@@ -375,7 +386,15 @@ function getBestStrategy(aptitudes: any) {
                 <Zap className="w-5 h-5 text-uma-accent" />
               </div>
               <div>
-                <h3 class="font-semibold">{character.unique_skill.name_en || 'Unique Skill'}</h3>
+                <h3 class="font-semibold">
+                  {uniqueSkillId ? (
+                    <a href={`/skills/${uniqueSkillId}/`} class="text-uma-primary hover:underline">
+                      {character.unique_skill.name_en || 'Unique Skill'}
+                    </a>
+                  ) : (
+                    character.unique_skill.name_en || 'Unique Skill'
+                  )}
+                </h3>
                 <p class="text-sm font-jp text-gray-500">{character.unique_skill.name_jp || ''}</p>
                 <p class="text-sm text-gray-600 mt-1">{character.unique_skill.effect || 'Special skill effect'}</p>
               </div>
@@ -392,18 +411,27 @@ function getBestStrategy(aptitudes: any) {
             </h2>
             
             <div class="grid gap-3">
-              {character.awakening_skills.map((skill: any) => (
+              {character.awakening_skills.map((skillName: string) => {
+                const skillId = findSkillIdByName(skillIndex, skillName);
+                return (
                 <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
                   <div class="w-10 h-10 bg-gradient-to-br from-uma-secondary/20 to-uma-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Star className="w-5 h-5 text-uma-secondary" />
                   </div>
                   <div>
-                    <h3 class="font-semibold">{skill.name_en || skill}</h3>
-                    {skill.name_jp && <p class="text-sm font-jp text-gray-500">{skill.name_jp}</p>}
-                    {skill.effect && <p class="text-sm text-gray-600 mt-1">{skill.effect}</p>}
+                    <h3 class="font-semibold">
+                      {skillId ? (
+                        <a href={`/skills/${skillId}/`} class="text-uma-primary hover:underline">
+                          {skillName}
+                        </a>
+                      ) : (
+                        skillName
+                      )}
+                    </h3>
                   </div>
                 </div>
-              ))}
+              );
+              })}
             </div>
           </div>
         )}
@@ -425,6 +453,71 @@ function getBestStrategy(aptitudes: any) {
             </ul>
           </div>
         </div>
+
+        <!-- Prototype Racehorse (Wikidata / CC0) -->
+        {prototypeHorse && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-uma-accent" />
+              Prototype Racehorse (Real Horse)
+            </h2>
+            <div class="bg-white rounded-lg p-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <div class="font-semibold text-gray-900">
+                    {prototypeHorse.name_en || baseNameEn}
+                  </div>
+                  {prototypeHorse.name_ja && (
+                    <div class="text-sm text-gray-600 font-jp">{prototypeHorse.name_ja}</div>
+                  )}
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <a
+                    href={prototypeHorse.wikidata_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-3 py-1.5 rounded-full bg-uma-primary/10 text-uma-primary hover:bg-uma-primary/15 transition-colors"
+                  >
+                    Wikidata
+                  </a>
+                  {prototypeHorse.wikipedia_en && (
+                    <a
+                      href={prototypeHorse.wikipedia_en}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+                    >
+                      Wikipedia
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              <div class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">Born</span>
+                  <span class="font-medium">{prototypeHorse.date_of_birth || 'Unknown'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">Died</span>
+                  <span class="font-medium">{prototypeHorse.date_of_death || '—'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">Sire</span>
+                  <span class="font-medium">{prototypeHorse.sire?.name_en || 'Unknown'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">Dam</span>
+                  <span class="font-medium">{prototypeHorse.dam?.name_en || 'Unknown'}</span>
+                </div>
+              </div>
+
+              <div class="mt-4 text-xs text-gray-500">
+                Source: Wikidata (CC0). See <a class="text-uma-primary hover:underline" href="/data-sources/">Data Sources</a>.
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   </main>

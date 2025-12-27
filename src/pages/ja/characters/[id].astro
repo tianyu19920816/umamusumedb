@@ -1,7 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import HeaderJa from '@/components/HeaderJa.astro';
-import { characters } from '@/lib/static-content';
+import Header from '@/components/Header.astro';
+import { characters, skills, realHorses } from '@/lib/static-content';
+import { stripVariantName } from '@/lib/name-utils';
+import { createSkillIndex, findSkillIdByName } from '@/lib/skill-lookup';
 import { Star, Zap, Heart, Brain, Shield, TrendingUp, Trophy, Award } from 'lucide-react';
 
 export function getStaticPaths() {
@@ -12,6 +14,14 @@ export function getStaticPaths() {
 }
 
 const { character } = Astro.props;
+const baseNameEn = stripVariantName(character.name_en);
+const prototypeHorse = realHorses?.horsesByNameEn?.[baseNameEn] ?? null;
+
+const skillIndex = createSkillIndex(skills);
+const uniqueSkillId =
+  (character.unique_skill?.name_en && findSkillIdByName(skillIndex, character.unique_skill.name_en)) ||
+  (character.unique_skill?.name_jp && findSkillIdByName(skillIndex, character.unique_skill.name_jp)) ||
+  null;
 
 // Helper function to get aptitude color
 function getAptitudeColor(value: string) {
@@ -95,7 +105,7 @@ function getBestStrategy(aptitudes: any) {
 ---
 
 <Layout title={`${character.name_jp || character.name_en} - ウマ娘DB`}>
-  <HeaderJa />
+  <Header />
   
   <main class="container mx-auto px-4 py-8">
     <!-- Breadcrumb -->
@@ -305,26 +315,64 @@ function getBestStrategy(aptitudes: any) {
           </div>
         </div>
 
-        <!-- Skills Section -->
-        {character.skills && character.skills.length > 0 && (
+        <!-- 固有スキル -->
+        {character.unique_skill && (
           <div class="glass rounded-xl p-6">
             <h2 class="text-xl font-display mb-4 flex items-center gap-2">
               <Zap className="w-5 h-5 text-uma-primary" />
               固有スキル
             </h2>
             
+            <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+              <div class="w-10 h-10 bg-gradient-to-br from-uma-accent/20 to-uma-accent/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Zap className="w-5 h-5 text-uma-accent" />
+              </div>
+              <div>
+                <h3 class="font-semibold">
+                  {uniqueSkillId ? (
+                    <a href={`/ja/skills/${uniqueSkillId}/`} class="text-uma-primary hover:underline">
+                      {character.unique_skill.name_jp || character.unique_skill.name_en || '固有スキル'}
+                    </a>
+                  ) : (
+                    character.unique_skill.name_jp || character.unique_skill.name_en || '固有スキル'
+                  )}
+                </h3>
+                <p class="text-sm text-gray-600 mt-1">{character.unique_skill.effect || '—'}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        <!-- 覚醒スキル -->
+        {character.awakening_skills && character.awakening_skills.length > 0 && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Star className="w-5 h-5 text-uma-primary" />
+              覚醒スキル
+            </h2>
+            
             <div class="grid gap-3">
-              {character.skills.map((skill: string) => (
-                <div class="flex items-center gap-3 p-3 bg-white rounded-lg">
-                  <div class="w-10 h-10 bg-gradient-to-br from-uma-accent/20 to-uma-accent/10 rounded-full flex items-center justify-center">
-                    <Zap className="w-5 h-5 text-uma-accent" />
+              {character.awakening_skills.map((skillName: string) => {
+                const skillId = findSkillIdByName(skillIndex, skillName);
+                return (
+                  <div class="flex items-start gap-3 p-3 bg-white rounded-lg">
+                    <div class="w-10 h-10 bg-gradient-to-br from-uma-secondary/20 to-uma-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Star className="w-5 h-5 text-uma-secondary" />
+                    </div>
+                    <div>
+                      <h3 class="font-semibold">
+                        {skillId ? (
+                          <a href={`/ja/skills/${skillId}/`} class="text-uma-primary hover:underline">
+                            {skillName}
+                          </a>
+                        ) : (
+                          skillName
+                        )}
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <h3 class="font-semibold">{skill}</h3>
-                    <p class="text-sm text-gray-600">固有スキル効果の説明</p>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
@@ -346,6 +394,71 @@ function getBestStrategy(aptitudes: any) {
             </ul>
           </div>
         </div>
+
+        <!-- 原型となった実在競走馬（Wikidata / CC0） -->
+        {prototypeHorse && (
+          <div class="glass rounded-xl p-6">
+            <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-uma-accent" />
+              原型（実在競走馬）
+            </h2>
+            <div class="bg-white rounded-lg p-4">
+              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                <div>
+                  <div class="font-semibold text-gray-900">
+                    {prototypeHorse.name_ja || prototypeHorse.name_en || baseNameEn}
+                  </div>
+                  {prototypeHorse.name_en && (
+                    <div class="text-sm text-gray-600">{prototypeHorse.name_en}</div>
+                  )}
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <a
+                    href={prototypeHorse.wikidata_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-3 py-1.5 rounded-full bg-uma-primary/10 text-uma-primary hover:bg-uma-primary/15 transition-colors"
+                  >
+                    Wikidata
+                  </a>
+                  {prototypeHorse.wikipedia_ja && (
+                    <a
+                      href={prototypeHorse.wikipedia_ja}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+                    >
+                      Wikipedia
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              <div class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">生年</span>
+                  <span class="font-medium">{prototypeHorse.date_of_birth || '不明'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">没年</span>
+                  <span class="font-medium">{prototypeHorse.date_of_death || '—'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">父</span>
+                  <span class="font-medium">{prototypeHorse.sire?.name_ja || prototypeHorse.sire?.name_en || '不明'}</span>
+                </div>
+                <div class="flex justify-between gap-3">
+                  <span class="text-gray-500">母</span>
+                  <span class="font-medium">{prototypeHorse.dam?.name_ja || prototypeHorse.dam?.name_en || '不明'}</span>
+                </div>
+              </div>
+
+              <div class="mt-4 text-xs text-gray-500">
+                出典: Wikidata（CC0）。<a class="text-uma-primary hover:underline" href="/ja/data-sources/">データソース</a> を参照。
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   </main>

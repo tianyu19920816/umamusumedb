@@ -1,0 +1,1315 @@
+{
+  "generatedAt": "2025-12-26T13:12:48.673Z",
+  "source": {
+    "name": "Wikidata",
+    "license": "CC0",
+    "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+    "queryServiceUrl": "https://query.wikidata.org/"
+  },
+  "horsesByNameEn": {
+    "Admire Vega": {
+      "qid": "Q17221619",
+      "matchedTerm": "Admire Vega",
+      "name_en": "Admire Vega",
+      "name_ja": "アドマイヤベガ",
+      "date_of_birth": "1996-00-00",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": {
+        "qid": "Q11336820",
+        "name_en": "Vega",
+        "name_ja": "ベガ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q17221619",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Admirevega.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Admirevega.jpg"
+      }
+    },
+    "Agnes Digital": {
+      "qid": "Q11283071",
+      "matchedTerm": "Agnes Digital",
+      "name_en": "Agnes Digital",
+      "name_ja": "アグネスデジタル",
+      "date_of_birth": "1997-05-15",
+      "date_of_death": "2021-12-08",
+      "sex_qid": "Q44148",
+      "sire": null,
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11283071",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Agnes Digital 20010603P1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agnes%20Digital%2020010603P1.jpg"
+      }
+    },
+    "Agnes Tachyon": {
+      "qid": "Q4693122",
+      "matchedTerm": "Agnes Tachyon",
+      "name_en": "Agnes Tachyon",
+      "name_ja": "アグネスタキオン",
+      "date_of_birth": "1998-04-13",
+      "date_of_death": "2009-06-22",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": {
+        "qid": "Q11283072",
+        "name_en": "Agnes Flora",
+        "name_ja": "アグネスフローラ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4693122",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Agnes Tachyon 20081005P2.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Agnes%20Tachyon%2020081005P2.jpg"
+      }
+    },
+    "Air Groove": {
+      "qid": "Q11289428",
+      "matchedTerm": "Air Groove",
+      "name_en": "Air Groove",
+      "name_ja": "エアグルーヴ",
+      "date_of_birth": "1993-04-06",
+      "date_of_death": "2013-04-23",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q7821904",
+        "name_en": "Tony Bin",
+        "name_ja": "トニービン"
+      },
+      "dam": {
+        "qid": "Q11316819",
+        "name_en": "Dyna Carle",
+        "name_ja": "ダイナカール"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11289428",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Air Groove-1998-4-5a.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Air%20Groove-1998-4-5a.jpg"
+      }
+    },
+    "Almond Eye": {
+      "qid": "Q51914025",
+      "matchedTerm": "Almond Eye",
+      "name_en": "Almond Eye",
+      "name_ja": "アーモンドアイ",
+      "date_of_birth": "2015-03-10",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11350999",
+        "name_en": "Lord Kanaloa",
+        "name_ja": "ロードカナロア"
+      },
+      "dam": {
+        "qid": "Q11333082",
+        "name_en": "Fusaichi Pandora",
+        "name_ja": "フサイチパンドラ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q51914025",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Almond Eye(JPN) IMG 9225-1 20181014.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Almond%20Eye(JPN)%20IMG%209225-1%2020181014.jpg"
+      }
+    },
+    "Biwa Hayahide": {
+      "qid": "Q11331057",
+      "matchedTerm": "Biwa Hayahide",
+      "name_en": "Biwa Hayahide",
+      "name_ja": "ビワハヤヒデ",
+      "date_of_birth": "1990-03-10",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11307816",
+        "name_en": "Sharrood",
+        "name_ja": "シャルード"
+      },
+      "dam": {
+        "qid": "Q11328777",
+        "name_en": "Pacificus",
+        "name_ja": "パシフィカス"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11331057",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Biwahayahide.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Biwahayahide.JPG"
+      }
+    },
+    "Chrono Genesis": {
+      "qid": "Q61787371",
+      "matchedTerm": "Chrono Genesis",
+      "name_en": "Chrono Genesis",
+      "name_ja": "クロノジェネシス",
+      "date_of_birth": "2016-03-06",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q2879150",
+        "name_en": "Bago",
+        "name_ja": "バゴ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q61787371",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Chrono Genesis Kyoto kinen 2020(IMG2).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chrono%20Genesis%20Kyoto%20kinen%202020(IMG2).jpg"
+      }
+    },
+    "Contrail": {
+      "qid": "Q76241407",
+      "matchedTerm": "Contrail",
+      "name_en": "Contrail",
+      "name_ja": "コントレイル",
+      "date_of_birth": "2017-04-01",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q730381",
+        "name_en": "Deep Impact",
+        "name_ja": "ディープインパクト"
+      },
+      "dam": {
+        "qid": "Q96272816",
+        "name_en": "Rhodochrosite",
+        "name_ja": "ロードクロサイト"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q76241407",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Contrail 2019 hopeful stakes honbaba nyujyou.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Contrail%202019%20hopeful%20stakes%20honbaba%20nyujyou.jpg"
+      }
+    },
+    "Curren Chan": {
+      "qid": "Q11295262",
+      "matchedTerm": "Curren Chan",
+      "name_en": "Curren Chan",
+      "name_ja": "カレンチャン",
+      "date_of_birth": "2007-03-31",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11299831",
+        "name_en": "Kurofune",
+        "name_ja": "クロフネ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11295262",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Curren-Chan20111002(1).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curren-Chan20111002(1).jpg"
+      }
+    },
+    "Daiwa Scarlet": {
+      "qid": "Q5209832",
+      "matchedTerm": "Daiwa Scarlet",
+      "name_en": "Daiwa Scarlet",
+      "name_ja": "ダイワスカーレット",
+      "date_of_birth": "2004-00-00",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q4693122",
+        "name_en": "Agnes Tachyon",
+        "name_ja": "アグネスタキオン"
+      },
+      "dam": {
+        "qid": "Q11311361",
+        "name_en": "Scarlet Bouquet",
+        "name_ja": "スカーレットブーケ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5209832",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Daiwa-Scarlet 20081102tokyo11race.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Daiwa-Scarlet%2020081102tokyo11race.jpg"
+      }
+    },
+    "Daring Tact": {
+      "qid": "Q92866902",
+      "matchedTerm": "Daring Tact",
+      "name_en": "Daring Tact",
+      "name_ja": "デアリングタクト",
+      "date_of_birth": "2017-04-15",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11290535",
+        "name_en": "Epiphaneia",
+        "name_ja": "エピファネイア"
+      },
+      "dam": {
+        "qid": "Q101192470",
+        "name_en": "Daring Bird",
+        "name_ja": "デアリングバード"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q92866902",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Daring Tact Victoria Mile 2022.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Daring%20Tact%20Victoria%20Mile%202022.jpg"
+      }
+    },
+    "Efforia": {
+      "qid": "Q105669684",
+      "matchedTerm": "Efforia",
+      "name_en": "Efforia",
+      "name_ja": "エフフォーリア",
+      "date_of_birth": "2018-03-10",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11290535",
+        "name_en": "Epiphaneia",
+        "name_ja": "エピファネイア"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q105669684",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "11R Tokyo Yushun (Japanese Derby) (Grade 1, 3yo) Turf 2400m 2021 at tokyo racecourse (51211964037).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/11R%20Tokyo%20Yushun%20(Japanese%20Derby)%20(Grade%201%2C%203yo)%20Turf%202400m%202021%20at%20tokyo%20racecourse%20(51211964037).jpg"
+      }
+    },
+    "Eishin Flash": {
+      "qid": "Q11289562",
+      "matchedTerm": "Eishin Flash",
+      "name_en": "Eishin Flash",
+      "name_ja": "エイシンフラッシュ",
+      "date_of_birth": "2007-03-27",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q6410851",
+        "name_en": "King's Best",
+        "name_ja": "キングズベスト"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11289562",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Eishin-Flash20100418.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eishin-Flash20100418.jpg"
+      }
+    },
+    "El Condor Pasa": {
+      "qid": "Q5351060",
+      "matchedTerm": "El Condor Pasa",
+      "name_en": "El Condor Pasa",
+      "name_ja": "エルコンドルパサー",
+      "date_of_birth": "1995-00-00",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q3197083",
+        "name_en": "Kingmambo",
+        "name_ja": "キングマンボ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q5351060",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "El Condor Pasa 19991128I1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Condor%20Pasa%2019991128I1.jpg"
+      }
+    },
+    "Gold City": {
+      "qid": "Q11303936",
+      "matchedTerm": "Gold City",
+      "name_en": "Gold City",
+      "name_ja": "ゴールドシチー",
+      "date_of_birth": "1984-04-16",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": null,
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11303936",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Gold Ship": {
+      "qid": "Q4309285",
+      "matchedTerm": "Gold Ship",
+      "name_en": "Gold Ship",
+      "name_ja": "ゴールドシップ",
+      "date_of_birth": "2009-03-06",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11312249",
+        "name_en": "Stay Gold",
+        "name_ja": "ステイゴールド"
+      },
+      "dam": {
+        "qid": "Q114798021",
+        "name_en": "Point Flag",
+        "name_ja": "ポイントフラッグ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q4309285",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Gold Ship IMG 6824 20140323.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gold%20Ship%20IMG%206824%2020140323.JPG"
+      }
+    },
+    "Gran Alegria": {
+      "qid": "Q57313819",
+      "matchedTerm": "Gran Alegria",
+      "name_en": "Gran Alegria",
+      "name_ja": "グランアレグリア",
+      "date_of_birth": "2016-00-00",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q730381",
+        "name_en": "Deep Impact",
+        "name_ja": "ディープインパクト"
+      },
+      "dam": {
+        "qid": "Q16962503",
+        "name_en": "Tapitsfly",
+        "name_ja": "タピッツフライ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q57313819",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Gran Alegria Maiden 2018.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gran%20Alegria%20Maiden%202018.jpg"
+      }
+    },
+    "Grass Wonder": {
+      "qid": "Q11300176",
+      "matchedTerm": "Grass Wonder",
+      "name_en": "Grass Wonder",
+      "name_ja": "グラスワンダー",
+      "date_of_birth": "1995-02-18",
+      "date_of_death": "2025-08-08",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11308429",
+        "name_en": "Silver Hawk",
+        "name_ja": "シルヴァーホーク"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11300176",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Grass Wonder 19991226.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grass%20Wonder%2019991226.jpg"
+      }
+    },
+    "Haru Urara": {
+      "qid": "Q1587832",
+      "matchedTerm": "Haru Urara",
+      "name_en": "Haru Urara",
+      "name_ja": "ハルウララ",
+      "date_of_birth": "1996-02-27",
+      "date_of_death": "2025-09-09",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11324558",
+        "name_en": "Nippo Teio",
+        "name_ja": "ニッポーテイオー"
+      },
+      "dam": {
+        "qid": "Q135294650",
+        "name_en": "Heroine",
+        "name_ja": "ヒロイン"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q1587832",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Haru Urara 20210518 2 (cropped).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haru%20Urara%2020210518%202%20(cropped).jpg"
+      }
+    },
+    "Hishi Akebono": {
+      "qid": "Q11330003",
+      "matchedTerm": "Hishi Akebono",
+      "name_en": "Hishi Akebono",
+      "name_ja": "ヒシアケボノ",
+      "date_of_birth": "1992-02-27",
+      "date_of_death": "2008-11-19",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q8033082",
+        "name_en": "Woodman",
+        "name_ja": "ウッドマン"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11330003",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "HishiAkebono-1996-11-17.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/HishiAkebono-1996-11-17.jpg"
+      }
+    },
+    "Ikuno Dictus": {
+      "qid": "Q11286426",
+      "matchedTerm": "Ikuno Dictus",
+      "name_en": "Ikuno Dictus",
+      "name_ja": "イクノディクタス",
+      "date_of_birth": "1987-04-16",
+      "date_of_death": "2019-02-07",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11320008",
+        "name_en": "Dictus",
+        "name_ja": "ディクタス"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11286426",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Inari One": {
+      "qid": "Q11286896",
+      "matchedTerm": "Inari One",
+      "name_en": "Inari One",
+      "name_ja": "イナリワン",
+      "date_of_birth": "1984-05-07",
+      "date_of_death": "2016-02-07",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11342941",
+        "name_en": "Mill George",
+        "name_ja": "ミルジョージ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11286896",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Kawakami Princess": {
+      "qid": "Q11295327",
+      "matchedTerm": "Kawakami Princess",
+      "name_en": "Kawakami Princess",
+      "name_ja": "カワカミプリンセス",
+      "date_of_birth": "2003-06-05",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11297913",
+        "name_en": "King Halo",
+        "name_ja": "キングヘイロー"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11295327",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Kawakami Princess 20070624P1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kawakami%20Princess%2020070624P1.jpg"
+      }
+    },
+    "King Halo": {
+      "qid": "Q11297913",
+      "matchedTerm": "King Halo",
+      "name_en": "King Halo",
+      "name_ja": "キングヘイロー",
+      "date_of_birth": "1995-04-28",
+      "date_of_death": "2019-03-19",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q3013377",
+        "name_en": "Dancing Brave",
+        "name_ja": "ダンシングブレーヴ"
+      },
+      "dam": {
+        "qid": "Q11300124",
+        "name_en": "Goodbye Halo",
+        "name_ja": "グッバイヘイロー"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11297913",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "King Halo 2 19971005.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/King%20Halo%202%2019971005.JPG"
+      }
+    },
+    "Kitasan Black": {
+      "qid": "Q22006995",
+      "matchedTerm": "Kitasan Black",
+      "name_en": "Kitasan Black",
+      "name_ja": "キタサンブラック",
+      "date_of_birth": "2012-03-10",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11334537",
+        "name_en": "Black Tide",
+        "name_ja": "ブラックタイド"
+      },
+      "dam": {
+        "qid": "Q127603169",
+        "name_en": "Sugar Heart",
+        "name_ja": "シュガーハート"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q22006995",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Kitasan-Black IMG 7729r R 20151025.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kitasan-Black%20IMG%207729r%20R%2020151025.JPG"
+      }
+    },
+    "Loves Only You": {
+      "qid": "Q64780107",
+      "matchedTerm": "Loves Only You",
+      "name_en": "Loves Only You",
+      "name_ja": "ラヴズオンリーユー",
+      "date_of_birth": "2016-03-26",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q730381",
+        "name_en": "Deep Impact",
+        "name_ja": "ディープインパクト"
+      },
+      "dam": {
+        "qid": "Q65093872",
+        "name_en": "Loves Only Me",
+        "name_ja": "ラヴズオンリーミー"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q64780107",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Loves Only You(JPN) IMG 7016-1 20191110.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Loves%20Only%20You(JPN)%20IMG%207016-1%2020191110.jpg"
+      }
+    },
+    "Manhattan Cafe": {
+      "qid": "Q11341616",
+      "matchedTerm": "Manhattan Cafe",
+      "name_en": "Manhattan Cafe",
+      "name_ja": "マンハッタンカフェ",
+      "date_of_birth": "1998-03-05",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11341616",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Manhattan Cafe 20020428.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manhattan%20Cafe%2020020428.jpg"
+      }
+    },
+    "Matikane Fukukitaru": {
+      "qid": "Q11340387",
+      "matchedTerm": "マチカネフクキタル",
+      "name_en": "Matikanefukukitaru",
+      "name_ja": "マチカネフクキタル",
+      "date_of_birth": "1994-05-22",
+      "date_of_death": "2020-07-31",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11299199",
+        "name_en": "Crystal Glitters",
+        "name_ja": "クリスタルグリッターズ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11340387",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "マチカネフクキタル.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%83%9E%E3%83%81%E3%82%AB%E3%83%8D%E3%83%95%E3%82%AF%E3%82%AD%E3%82%BF%E3%83%AB.jpg"
+      }
+    },
+    "Mayano Top Gun": {
+      "qid": "Q6796863",
+      "matchedTerm": "Mayano Top Gun",
+      "name_en": "Mayano Top Gun",
+      "name_ja": "マヤノトップガン",
+      "date_of_birth": "1992-00-00",
+      "date_of_death": "2019-11-03",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q4962908",
+        "name_en": "Brian's Time",
+        "name_ja": "ブライアンズタイム"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6796863",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Mayano Topgun 19960309P1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mayano%20Topgun%2019960309P1.jpg"
+      }
+    },
+    "Mejiro Dober": {
+      "qid": "Q11343610",
+      "matchedTerm": "Mejiro Dober",
+      "name_en": "Mejiro Dober",
+      "name_ja": "メジロドーベル",
+      "date_of_birth": "1994-05-06",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11343621",
+        "name_en": "Mejiro Ryan",
+        "name_ja": "メジロライアン"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11343610",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Mejiro Dober 19991121R1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mejiro%20Dober%2019991121R1.jpg"
+      }
+    },
+    "Mejiro McQueen": {
+      "qid": "Q6810492",
+      "matchedTerm": "Mejiro McQueen",
+      "name_en": "Mejiro McQueen",
+      "name_ja": "メジロマックイーン",
+      "date_of_birth": "1987-00-00",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11343607",
+        "name_en": "Mejiro Titan",
+        "name_ja": "メジロティターン"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6810492",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Mejiro McQueen 20020722.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mejiro%20McQueen%2020020722.jpg"
+      }
+    },
+    "Mihono Bourbon": {
+      "qid": "Q11342502",
+      "matchedTerm": "Mihono Bourbon",
+      "name_en": "Mihono Bourbon",
+      "name_ja": "ミホノブルボン",
+      "date_of_birth": "1989-04-25",
+      "date_of_death": "2017-02-22",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11340052",
+        "name_en": "Magnitude",
+        "name_ja": "マグニテュード"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11342502",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Mr. C.B.": {
+      "qid": "Q11342021",
+      "matchedTerm": "Mr. C.B.",
+      "name_en": "Mr C B",
+      "name_ja": "ミスターシービー",
+      "date_of_birth": "1980-00-00",
+      "date_of_death": "2000-12-15",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11321101",
+        "name_en": "Tosho Boy",
+        "name_ja": "トウショウボーイ"
+      },
+      "dam": {
+        "qid": "Q11308879",
+        "name_en": "C.B. Queen",
+        "name_ja": "シービークイン"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11342021",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Nakayama Festa": {
+      "qid": "Q6960385",
+      "matchedTerm": "Nakayama Festa",
+      "name_en": "Nakayama Festa",
+      "name_ja": "ナカヤマフェスタ",
+      "date_of_birth": "2006-04-05",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11312249",
+        "name_en": "Stay Gold",
+        "name_ja": "ステイゴールド"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6960385",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Nakayama-Festa20100627(2).jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nakayama-Festa20100627(2).jpg"
+      }
+    },
+    "Narita Brian": {
+      "qid": "Q6965984",
+      "matchedTerm": "Narita Brian",
+      "name_en": "Narita Brian",
+      "name_ja": "ナリタブライアン",
+      "date_of_birth": "1991-00-00",
+      "date_of_death": "1998-09-27",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q4962908",
+        "name_en": "Brian's Time",
+        "name_ja": "ブライアンズタイム"
+      },
+      "dam": {
+        "qid": "Q11328777",
+        "name_en": "Pacificus",
+        "name_ja": "パシフィカス"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q6965984",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Narita Brian 19960309R1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Narita%20Brian%2019960309R1.jpg"
+      }
+    },
+    "Narita Taishin": {
+      "qid": "Q11324059",
+      "matchedTerm": "Narita Taishin",
+      "name_en": "Narita Taishin",
+      "name_ja": "ナリタタイシン",
+      "date_of_birth": "1990-06-10",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11348703",
+        "name_en": "Rivlia",
+        "name_ja": "リヴリア"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11324059",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Naritataishin.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Naritataishin.JPG"
+      }
+    },
+    "Nice Nature": {
+      "qid": "Q11323568",
+      "matchedTerm": "Nice Nature",
+      "name_en": "Nice Nature",
+      "name_ja": "ナイスネイチャ",
+      "date_of_birth": "1988-04-16",
+      "date_of_death": "2023-05-30",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q7024658",
+        "name_en": "Nice Dancer",
+        "name_ja": "ナイスダンサー"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11323568",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "ナイスネイチャ.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E3%83%8A%E3%82%A4%E3%82%B9%E3%83%8D%E3%82%A4%E3%83%81%E3%83%A3.jpg"
+      }
+    },
+    "Oguri Cap": {
+      "qid": "Q7080301",
+      "matchedTerm": "Oguri Cap",
+      "name_en": "Oguri Cap",
+      "name_ja": "オグリキャップ",
+      "date_of_birth": "1985-00-00",
+      "date_of_death": "2010-07-03",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11317465",
+        "name_en": "Dancing Cap",
+        "name_ja": "ダンシングキャップ"
+      },
+      "dam": {
+        "qid": "Q11338112",
+        "name_en": "White Narubi",
+        "name_ja": "ホワイトナルビー"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7080301",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Oguri Cap in Yushun Stallion station.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oguri%20Cap%20in%20Yushun%20Stallion%20station.jpg"
+      }
+    },
+    "Rice Shower": {
+      "qid": "Q11346365",
+      "matchedTerm": "Rice Shower",
+      "name_en": "Rice Shower",
+      "name_ja": "ライスシャワー",
+      "date_of_birth": "1989-03-05",
+      "date_of_death": "1995-06-04",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q7301055",
+        "name_en": "Real Shadai",
+        "name_ja": "リアルシャダイ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11346365",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Riceshower.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Riceshower.JPG"
+      }
+    },
+    "Sakura Bakushin O": {
+      "qid": "Q11304520",
+      "matchedTerm": "Sakura Bakushin O",
+      "name_en": "Sakura Bakushin O",
+      "name_ja": "サクラバクシンオー",
+      "date_of_birth": "1989-04-14",
+      "date_of_death": "2011-04-30",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11304531",
+        "name_en": "Sakura Yutaka O",
+        "name_ja": "サクラユタカオー"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11304520",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Bakusin-o.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakusin-o.jpg"
+      }
+    },
+    "Satono Diamond": {
+      "qid": "Q24876319",
+      "matchedTerm": "Satono Diamond",
+      "name_en": "Satono Diamond",
+      "name_ja": "サトノダイヤモンド",
+      "date_of_birth": "2013-01-30",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q730381",
+        "name_en": "Deep Impact",
+        "name_ja": "ディープインパクト"
+      },
+      "dam": {
+        "qid": "Q55809090",
+        "name_en": "Malpensa",
+        "name_ja": "マルペンサ"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q24876319",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Satono Diamond IMG 4503r 20160207.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Satono%20Diamond%20IMG%204503r%2020160207.JPG"
+      }
+    },
+    "Seeking the Pearl": {
+      "qid": "Q11308764",
+      "matchedTerm": "Seeking the Pearl",
+      "name_en": "Seeking the Pearl",
+      "name_ja": "シーキングザパール",
+      "date_of_birth": "1994-04-16",
+      "date_of_death": "2005-06-10",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q7445798",
+        "name_en": "Seeking The Gold",
+        "name_ja": "シーキングザゴールド"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11308764",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Seiun Sky": {
+      "qid": "Q11314114",
+      "matchedTerm": "Seiun Sky",
+      "name_en": "Seiun Sky",
+      "name_ja": "セイウンスカイ",
+      "date_of_birth": "1995-04-26",
+      "date_of_death": "2011-08-16",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11306984",
+        "name_en": "Sheriff's Star",
+        "name_ja": "シェリフズスター"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11314114",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "SeiunSky-1998-11-8.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SeiunSky-1998-11-8.jpg"
+      }
+    },
+    "Silence Suzuka": {
+      "qid": "Q7514393",
+      "matchedTerm": "Silence Suzuka",
+      "name_en": "Silence Suzuka",
+      "name_ja": "サイレンススズカ",
+      "date_of_birth": "1994-05-01",
+      "date_of_death": "1998-11-01",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": {
+        "qid": "Q11351304",
+        "name_en": "Wakia",
+        "name_ja": "ワキア"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7514393",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Silence Suzuka.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silence%20Suzuka.jpg"
+      }
+    },
+    "Smart Falcon": {
+      "qid": "Q11313287",
+      "matchedTerm": "Smart Falcon",
+      "name_en": "Smart Falcon",
+      "name_ja": "スマートファルコン",
+      "date_of_birth": "2005-04-04",
+      "date_of_death": null,
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11303924",
+        "name_en": "Gold Allure",
+        "name_ja": "ゴールドアリュール"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11313287",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Smart Falcon.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Smart%20Falcon.jpg"
+      }
+    },
+    "Special Week": {
+      "qid": "Q11312941",
+      "matchedTerm": "Special Week",
+      "name_en": "Special Week",
+      "name_ja": "スペシャルウィーク",
+      "date_of_birth": "1995-05-02",
+      "date_of_death": "2018-04-27",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11312941",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Special Week 19991031.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Special%20Week%2019991031.jpg"
+      }
+    },
+    "Sweep Tosho": {
+      "qid": "Q11311170",
+      "matchedTerm": "Sweep Tosho",
+      "name_en": "Sweep Tosho",
+      "name_ja": "スイープトウショウ",
+      "date_of_birth": "2001-05-09",
+      "date_of_death": null,
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11291418",
+        "name_en": "End Sweep",
+        "name_ja": "エンドスウィープ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11311170",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Sweep Tosho20051009.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sweep%20Tosho20051009.jpg"
+      }
+    },
+    "Symboli Rudolf": {
+      "qid": "Q11308703",
+      "matchedTerm": "Symboli Rudolf",
+      "name_en": "Symboli Rudolf",
+      "name_ja": "シンボリルドルフ",
+      "date_of_birth": "1981-00-00",
+      "date_of_death": "2011-10-04",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11329825",
+        "name_en": "Partholon",
+        "name_ja": "パーソロン"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11308703",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Symboli-Rudolf2010.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Symboli-Rudolf2010.jpg"
+      }
+    },
+    "Taiki Shuttle": {
+      "qid": "Q7676023",
+      "matchedTerm": "Taiki Shuttle",
+      "name_en": "Taiki Shuttle",
+      "name_ja": "タイキシャトル",
+      "date_of_birth": "1994-00-00",
+      "date_of_death": "2022-08-17",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q5267067",
+        "name_en": "Devil's Bag",
+        "name_ja": "デヴィルズバッグ"
+      },
+      "dam": {
+        "qid": "Q11288587",
+        "name_en": "Welsh Muffin",
+        "name_ja": "ウェルシュマフィン"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7676023",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Taiki Shuttle.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taiki%20Shuttle.jpg"
+      }
+    },
+    "Tamamo Cross": {
+      "qid": "Q11316319",
+      "matchedTerm": "Tamamo Cross",
+      "name_en": "Tamamo Cross",
+      "name_ja": "タマモクロス",
+      "date_of_birth": "1984-00-00",
+      "date_of_death": "2003-04-10",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11308880",
+        "name_en": "C B Cross",
+        "name_ja": "シービークロス"
+      },
+      "dam": {
+        "qid": "Q11300536",
+        "name_en": "Green Chateau",
+        "name_ja": "グリーンシャトー"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11316319",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Tamamo Cross - 2002.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamamo%20Cross%20-%202002.jpg"
+      }
+    },
+    "Tokai Teio": {
+      "qid": "Q11321082",
+      "matchedTerm": "Tokai Teio",
+      "name_en": "Tokai Teio",
+      "name_ja": "トウカイテイオー",
+      "date_of_birth": "1988-00-00",
+      "date_of_death": "2013-08-30",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11308703",
+        "name_en": "Symboli Rudolf",
+        "name_ja": "シンボリルドルフ"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11321082",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Tokai Teio 199608.JPG",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tokai%20Teio%20199608.JPG"
+      }
+    },
+    "Twin Turbo": {
+      "qid": "Q11318680",
+      "matchedTerm": "Twin Turbo",
+      "name_en": "Twin Turbo",
+      "name_ja": "ツインターボ",
+      "date_of_birth": "1988-04-13",
+      "date_of_death": "1998-01-15",
+      "sex_qid": "Q44148",
+      "sire": null,
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11318680",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Vodka": {
+      "qid": "Q7939315",
+      "matchedTerm": "Vodka",
+      "name_en": "Vodka",
+      "name_ja": "ウオッカ",
+      "date_of_birth": "2004-04-04",
+      "date_of_death": "2019-04-01",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11316237",
+        "name_en": "Tanino Gimlet",
+        "name_ja": "タニノギムレット"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q7939315",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Vodka(horse) 20070527R1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vodka(horse)%2020070527R1.jpg"
+      }
+    },
+    "Winning Ticket": {
+      "qid": "Q11288343",
+      "matchedTerm": "Winning Ticket",
+      "name_en": "Winning Ticket",
+      "name_ja": "ウイニングチケット",
+      "date_of_birth": "1990-03-21",
+      "date_of_death": "2023-02-18",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q7821904",
+        "name_en": "Tony Bin",
+        "name_ja": "トニービン"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11288343",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Winning Ticket 20070422P1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Winning%20Ticket%2020070422P1.jpg"
+      }
+    },
+    "Yaeno Muteki": {
+      "qid": "Q11344960",
+      "matchedTerm": "Yaeno Muteki",
+      "name_en": "Yaeno Muteki",
+      "name_ja": "ヤエノムテキ",
+      "date_of_birth": "1985-04-11",
+      "date_of_death": "2014-03-28",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q11345209",
+        "name_en": "Yamaninsky",
+        "name_ja": "ヤマニンスキー"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11344960",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Yukino Bijin": {
+      "qid": "Q11345568",
+      "matchedTerm": "Yukino Bijin",
+      "name_en": "Yukino Bijin",
+      "name_ja": "ユキノビジン",
+      "date_of_birth": "1990-03-10",
+      "date_of_death": "2016-07-22",
+      "sex_qid": "Q43445",
+      "sire": {
+        "qid": "Q11304531",
+        "name_en": "Sakura Yutaka O",
+        "name_ja": "サクラユタカオー"
+      },
+      "dam": null,
+      "wikidata_url": "https://www.wikidata.org/wiki/Q11345568",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": null
+    },
+    "Zenno Rob Roy": {
+      "qid": "Q8069153",
+      "matchedTerm": "Zenno Rob Roy",
+      "name_en": "Zenno Rob Roy",
+      "name_ja": "ゼンノロブロイ",
+      "date_of_birth": "2000-03-27",
+      "date_of_death": "2022-09-02",
+      "sex_qid": "Q44148",
+      "sire": {
+        "qid": "Q180387",
+        "name_en": "Sunday Silence",
+        "name_ja": "サンデーサイレンス"
+      },
+      "dam": {
+        "qid": "Q136721561",
+        "name_en": "Roamin Rachel",
+        "name_ja": "ローミンレイチェル"
+      },
+      "wikidata_url": "https://www.wikidata.org/wiki/Q8069153",
+      "wikipedia_en": null,
+      "wikipedia_ja": null,
+      "image": {
+        "file": "Zenno Rob Roy 20041031.jpg",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zenno%20Rob%20Roy%2020041031.jpg"
+      }
+    }
+  },
+  "unresolved": []
+}

@@ -3,6 +3,13 @@ import '@/styles/global.css';
 import MetaTags from '@/components/SEO/MetaTags.astro';
 import StructuredData from '@/components/SEO/StructuredData.astro';
 import Footer from '@/components/Footer.astro';
+import {
+  getHtmlLang,
+  getLocaleFromPathname,
+  localizePathname,
+  stripLocaleFromPathname,
+  type Locale
+} from '@/lib/i18n';
 
 export interface Props {
   title: string;
@@ -20,13 +27,24 @@ const {
   structuredData
 } = Astro.props;
 
-const isJapanese = Astro.url.pathname.startsWith('/ja');
-const feedbackTitle = isJapanese ? 'フィードバック' : 'Feedback';
-const feedbackSubtitle = isJapanese ? 'GitHubでIssueを投稿' : 'Open a GitHub Issue';
+const locale: Locale = getLocaleFromPathname(Astro.url.pathname);
+const basePath = stripLocaleFromPathname(Astro.url.pathname);
+const canonicalPath = localizePathname(basePath, locale);
+const canonicalURL = new URL(canonicalPath, Astro.url.origin).toString();
+const alternates: Partial<Record<Locale, string>> = {
+  en: new URL(localizePathname(basePath, 'en'), Astro.url.origin).toString(),
+  ja: new URL(localizePathname(basePath, 'ja'), Astro.url.origin).toString()
+};
+
+const htmlLang = getHtmlLang(locale);
+
+const feedbackTitle = locale === 'ja' ? 'フィードバック' : locale === 'zh' ? '反馈' : 'Feedback';
+const feedbackSubtitle =
+  locale === 'ja' ? 'GitHubでIssueを投稿' : locale === 'zh' ? '在 GitHub 提交 Issue' : 'Open a GitHub Issue';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
     
@@ -55,13 +73,17 @@ const feedbackSubtitle = isJapanese ? 'GitHubでIssueを投稿' : 'Open a GitHub
       title={title}
       description={description}
       image={image}
-      canonicalURL={Astro.url.href}
+      canonicalURL={canonicalURL}
+      locale={locale}
+      alternates={alternates}
     />
     
     <!-- Structured Data -->
     <StructuredData 
       type={structuredDataType}
       data={structuredData}
+      pageUrl={canonicalURL}
+      locale={locale}
     />
     
     <!-- Twitter -->
@@ -92,7 +114,11 @@ const feedbackSubtitle = isJapanese ? 'GitHubでIssueを投稿' : 'Open a GitHub
           target="_blank"
           rel="noopener noreferrer"
           class="feedback-widget"
-          aria-label={isJapanese ? 'GitHubでフィードバックを投稿' : 'Share feedback on GitHub issues'}
+          aria-label={locale === 'ja'
+            ? 'GitHubでフィードバックを投稿'
+            : locale === 'zh'
+              ? '在 GitHub 提交反馈'
+              : 'Share feedback on GitHub issues'}
         >
           <div class="feedback-widget__content">
             <span class="feedback-widget__title">{feedbackTitle}</span>

@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import FactorCalculator from '@/components/tools/FactorCalculator';
+---
+
+<Layout
+  title="因子計算 - ウマ娘DB"
+  description="因子継承確率を計算して育成ルートを最適化するツール"
+  structuredDataType="tool"
+  structuredData={{
+    name: '因子計算',
+    description: '因子継承確率を計算して育成ルートを最適化するツール',
+    url: '/ja/tools/factor-calculator/'
+  }}
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ツール', href: '/ja/tools/' }, { label: '因子計算' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">因子継承計算</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        親・祖父母の因子から継承確率を整理して、狙う育成を決めやすくします。
+      </p>
+    </div>
+
+    <FactorCalculator client:load />
+  </main>
+</Layout>
+
+
+
+

@@ -2,6 +2,7 @@ import charactersData from '../../public/data/characters.json';
 import supportCardsData from '../../public/data/supportCards.json';
 import tierListsData from '../../public/data/tierLists.json';
 import skillsData from '../../public/data/skills.json';
+import realHorsesData from '../../public/data/realHorses.json';
 
 import type {
   Character,
@@ -12,7 +13,8 @@ import type {
   SupportCard,
   SupportCardRecord,
   TierListEntry,
-  Skill
+  Skill,
+  RealHorsesPayload
 } from '@/types';
 import { parseJsonField } from './parse-json-field';
 
@@ -125,6 +127,9 @@ export const tierLists = tierListsData as TierListEntry[];
 
 // Export skills
 export const skills = skillsData as Skill[];
+
+// Export prototype racehorse data (Wikidata / CC0)
+export const realHorses = realHorsesData as RealHorsesPayload;
 
 // Helper functions
 export function getCharacterById(id: string) {

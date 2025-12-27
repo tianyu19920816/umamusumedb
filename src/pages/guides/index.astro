@@ -1,0 +1,153 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { BookOpen, Rocket, Layers, Sparkles, Target, ChevronRight } from 'lucide-react';
+---
+
+<Layout
+  title="Guides - UmamusumeDB"
+  description="International-focused guides for Uma Musume Pretty Derby: training fundamentals, support deck building, skills & inheritance, and competitive race strategy."
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Guides' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Guides</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        Written with an <strong>international player</strong> mindset: clear terminology, practical priorities, and meta-aware recommendations.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 sm:gap-6">
+      <a href="#training-basics" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-primary/10 flex items-center justify-center">
+            <Rocket className="w-5 h-5 text-uma-primary" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">Training Basics (育成)</h2>
+            <p class="text-sm text-gray-600">
+              A fast on-ramp: what to focus on, why stats matter, and the “always good” early-game decisions.
+            </p>
+          </div>
+          <ChevronRight className="w-5 h-5 text-gray-400 mt-1" />
+        </div>
+      </a>
+
+      <a href="#support-decks" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-secondary/10 flex items-center justify-center">
+            <Layers className="w-5 h-5 text-uma-secondary" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">Support Deck Building</h2>
+            <p class="text-sm text-gray-600">
+              How to build a 6-card deck by goal: speed-based, stamina long distance, and balanced templates.
+            </p>
+          </div>
+          <ChevronRight className="w-5 h-5 text-gray-400 mt-1" />
+        </div>
+      </a>
+
+      <a href="#skills-and-inheritance" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-accent/10 flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-uma-accent" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">Skills & Inheritance (因子)</h2>
+            <p class="text-sm text-gray-600">
+              Skill priorities, acceleration vs speed, and how to think about factor inheritance without getting lost.
+            </p>
+          </div>
+          <ChevronRight className="w-5 h-5 text-gray-400 mt-1" />
+        </div>
+      </a>
+
+      <a href="#competitive" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
+            <Target className="w-5 h-5 text-green-600" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">Competitive Mindset</h2>
+            <p class="text-sm text-gray-600">
+              Team Stadium / competitive races: what “meta” really means and how to adapt with limited cards.
+            </p>
+          </div>
+          <ChevronRight className="w-5 h-5 text-gray-400 mt-1" />
+        </div>
+      </a>
+    </div>
+
+    <section id="training-basics" class="mt-10 sm:mt-12 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Rocket className="w-5 h-5 text-uma-primary" />
+        Training Basics (International Terms)
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <ul>
+          <li><strong>Running styles</strong>: Nige/逃げ → “Front Runner”, Senko/先行 → “Pace Chaser”, Sashi/差し → “Late Surger”, Oikomi/追込 → “End Closer”.</li>
+          <li><strong>Most common early win condition</strong>: consistent training + strong support deck beats “perfect” RNG attempts.</li>
+          <li><strong>Skill priority shortcut</strong>: acceleration (last spurt) &gt; position control &gt; speed procs, unless the track demands stamina.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support-decks" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Layers className="w-5 h-5 text-uma-secondary" />
+        Support Deck Building
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          For international players, the most important habit is to build decks around <strong>one plan</strong> (distance + style),
+          then only “splash” tech cards if your plan still hits stat targets.
+        </p>
+        <p>
+          Use the <a href="/tools/support-deck/" class="text-uma-primary hover:underline">Deck Builder</a> to draft templates quickly.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills-and-inheritance" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Sparkles className="w-5 h-5 text-uma-accent" />
+        Skills & Inheritance
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          If you’re unsure, start with “universal value” skills and avoid over-paying for situational ones.
+          The <a href="/tools/factor-calculator/" class="text-uma-primary hover:underline">Factor Calculator</a> helps you plan inheritance
+          without guesswork.
+        </p>
+      </div>
+    </section>
+
+    <section id="competitive" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Target className="w-5 h-5 text-green-600" />
+        Competitive Mindset
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          “Meta” is not a single tier list. It’s the combination of track conditions, popular styles, and what your card pool can support.
+          We’ll keep expanding this section with track-specific checklists and budget alternatives.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .prose ul {
+      @apply list-disc list-inside space-y-2;
+    }
+  </style>
+</Layout>
+
+
+
+

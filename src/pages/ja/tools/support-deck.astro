@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import SupportDeckBuilder from '@/components/tools/SupportDeckBuilder';
+---
+
+<Layout
+  title="デッキビルダー - ウマ娘DB"
+  description="6枚サポカデッキを素早く組み、目的別テンプレを整理するツール"
+  structuredDataType="tool"
+  structuredData={{
+    name: 'デッキビルダー',
+    description: '6枚サポカデッキを素早く組み、目的別テンプレを整理するツール',
+    url: '/ja/tools/support-deck/'
+  }}
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ツール', href: '/ja/tools/' }, { label: 'デッキビルダー' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">サポカデッキビルダー</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        目的（距離×脚質）に合わせて、デッキの雛形と入れ替え候補を整理します。
+      </p>
+    </div>
+
+    <SupportDeckBuilder client:load />
+  </main>
+</Layout>
+
+
+
+

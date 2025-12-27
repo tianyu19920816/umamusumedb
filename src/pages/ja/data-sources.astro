@@ -1,0 +1,74 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { ExternalLink, ShieldCheck, Database, Scale } from 'lucide-react';
+---
+
+<Layout
+  title="データソースとライセンス - UmamusumeDB"
+  description="UmamusumeDB のデータ出典・ライセンス・免責事項について"
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8 max-w-4xl">
+    <Breadcrumb items={[{ label: 'データソース' }]} />
+
+    <div class="glass rounded-2xl p-6 sm:p-8">
+      <h1 class="text-2xl sm:text-4xl font-display gradient-text mb-4">データソースとライセンス</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        UmamusumeDB はファンプロジェクトです。便利さとコンプライアンスの両立を目指します。
+      </p>
+
+      <div class="mt-8 space-y-6">
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <Database className="w-5 h-5 text-uma-primary" />
+            Wikidata（CC0）— 原型馬（実馬）情報
+          </h2>
+          <p class="text-sm text-gray-700 mt-2">
+            「原型となった実在競走馬」の基礎情報（生没年・性別・父など）は <strong>Wikidata の構造化データ</strong>を参照します。
+            Wikidata の構造化データは <strong>Creative Commons CC0</strong> で提供されています。
+          </p>
+          <div class="mt-3 flex flex-wrap gap-3 text-sm">
+            <a class="inline-flex items-center gap-2 text-uma-primary hover:underline" href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener noreferrer">
+              Wikidata Licensing
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <a class="inline-flex items-center gap-2 text-uma-primary hover:underline" href="https://query.wikidata.org/" target="_blank" rel="noopener noreferrer">
+              Wikidata Query Service（SPARQL）
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-green-600" />
+            ファン編集のゲーム向けデータ
+          </h2>
+          <p class="text-sm text-gray-700 mt-2">
+            キャラ/サポカ/スキルの情報は、育成の意思決定に役立つ形で整理しています（フィルタ、ツール、相互リンクなど）。
+            著作権保護されたゲームアセットの配布・ホスティングは行いません。
+          </p>
+        </section>
+
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-uma-accent" />
+            免責と著作権
+          </h2>
+          <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mt-2">
+            <li>Cygames, Inc. およびウマ娘公式とは<strong>無関係</strong>です。</li>
+            <li>商標・IP は各権利者に帰属します。</li>
+            <li>必要に応じて外部の公開ソースへリンクします。</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+
+
+

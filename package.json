@@ -10,6 +10,8 @@
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb",
     "deploy:preview": "npm run build && npx wrangler pages deploy dist --project-name=umamusumedb --branch=preview",
     "data:update": "node scripts/export-to-json.js",
+    "data:overrides": "node scripts/apply-overrides.mjs",
+    "data:real-horses": "node scripts/fetch-real-horses.mjs",
     "images:upload": "node scripts/upload-images-to-r2.js"
   },
   "keywords": [

@@ -6,10 +6,20 @@ import PlaceholderImage from './PlaceholderImage';
 interface CharacterCardProps {
   character: Character;
   tier?: string;
+  localePrefix?: string;
 }
 
-export default function CharacterCard({ character, tier }: CharacterCardProps) {
+function normalizeLocalePrefix(prefix?: string) {
+  const raw = (prefix ?? '').trim();
+  if (!raw) return '';
+  if (raw === '/') return '';
+  return raw.startsWith('/') ? raw.replace(/\/$/, '') : `/${raw.replace(/\/$/, '')}`;
+}
+
+export default function CharacterCard({ character, tier, localePrefix }: CharacterCardProps) {
   const rarityStars = Array.from({ length: character.rarity }, (_, i) => i);
+  const prefix = normalizeLocalePrefix(localePrefix);
+  const detailHref = `${prefix}/characters/${character.id}/`;
   
   return (
     <div className="group relative bg-white rounded-xl overflow-hidden shadow-lg card-hover">
@@ -80,7 +90,7 @@ export default function CharacterCard({ character, tier }: CharacterCardProps) {
 
       {/* Hover Overlay - Make entire overlay clickable */}
       <a
-        href={`/characters/${character.id}/`}
+        href={detailHref}
         className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer z-30"
       >
         <span className="btn-secondary pointer-events-none">View Details</span>

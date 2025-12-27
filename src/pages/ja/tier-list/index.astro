@@ -1,0 +1,197 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { getTierListByCategory } from '@/lib/static-content';
+import { Trophy, Info } from 'lucide-react';
+
+// Get tier lists for overall category
+const overallCharacters = getTierListByCategory('overall').filter(item => item.item_type === 'character');
+const overallCards = getTierListByCategory('overall').filter(item => item.item_type === 'support_card');
+
+// Group by tier
+function groupByTier(items: any[]) {
+  return items.reduce((acc, item) => {
+    if (!acc[item.tier]) acc[item.tier] = [];
+    acc[item.tier].push(item);
+    return acc;
+  }, {} as Record<string, typeof items>);
+}
+
+const overallCharacterTiers = groupByTier(overallCharacters);
+const overallCardTiers = groupByTier(overallCards);
+---
+
+<Layout title="ティアリスト - ウマ娘DB">
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ティアリスト' }]} />
+
+    <!-- Page Header -->
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">ティアリスト</h1>
+      <p class="text-gray-600">キャラ・サポカの評価（コミュニティ傾向）</p>
+
+      <!-- Disclaimer -->
+      <div class="bg-uma-accent/10 border border-uma-accent/30 rounded-lg p-4 mt-4 flex gap-3">
+        <Info className="w-5 h-5 text-uma-accent flex-shrink-0 mt-0.5" />
+        <div>
+          <p class="text-sm text-gray-700">
+            <strong>注記:</strong> これらの評価は主に日本コミュニティの傾向・メタ分析を参考にしています。
+            実際の強さはコース条件、チーム構成、手持ちカードにより変動します。
+          </p>
+          <p class="text-sm text-gray-600 mt-2">
+            バランス調整や環境変化に合わせて随時更新します。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="flex flex-wrap gap-2 mb-8">
+      <button class="tab-btn active" data-tab="overall-characters">
+        <Trophy className="w-4 h-4 mr-2" />
+        キャラクター
+      </button>
+      <button class="tab-btn" data-tab="overall-cards">
+        <Trophy className="w-4 h-4 mr-2" />
+        サポートカード
+      </button>
+    </div>
+
+    <!-- Tier List Content -->
+    <div id="tier-content">
+      <!-- Overall Characters Tab -->
+      <div class="tab-content active" id="overall-characters">
+        <h2 class="text-2xl font-display mb-6">総合 キャラティア</h2>
+        {['SS', 'S', 'A', 'B', 'C'].map(tier => {
+          const items = overallCharacterTiers[tier] || [];
+          if (items.length === 0) return null;
+
+          return (
+            <div class="tier-row glass rounded-xl p-4 mb-4">
+              <div class="flex items-start gap-4">
+                <div class={`tier-badge tier-${tier.toLowerCase()} px-4 py-2 rounded-lg text-white font-bold text-xl min-w-[60px] text-center`}>
+                  {tier}
+                </div>
+                <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                  {items.map((item: any) => (
+                    <a href={`/ja/characters/${item.item_id}/`} class="tier-item bg-white rounded-lg p-3 shadow hover:shadow-lg transition-all hover:scale-105">
+                      <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-semibold text-sm">{item.item_name_jp || item.item_name}</h3>
+                        <div class="flex gap-1">
+                          {Array.from({ length: item.item_rarity || 3 }, () => (
+                            <span class="text-uma-accent text-xs">★</span>
+                          ))}
+                        </div>
+                      </div>
+                      <div class="text-xs text-uma-primary hover:underline">
+                        詳細を見る →
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- Overall Support Cards Tab -->
+      <div class="tab-content" id="overall-cards">
+        <h2 class="text-2xl font-display mb-6">総合 サポカティア</h2>
+        {['SS', 'S', 'A', 'B', 'C'].map(tier => {
+          const items = overallCardTiers[tier] || [];
+          if (items.length === 0) return null;
+
+          return (
+            <div class="tier-row glass rounded-xl p-4 mb-4">
+              <div class="flex items-start gap-4">
+                <div class={`tier-badge tier-${tier.toLowerCase()} px-4 py-2 rounded-lg text-white font-bold text-xl min-w-[60px] text-center`}>
+                  {tier}
+                </div>
+                <div class="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                  {items.map((item: any) => (
+                    <a href={`/ja/cards/${item.item_id}/`} class="tier-item bg-white rounded-lg p-3 shadow hover:shadow-lg transition-all hover:scale-105">
+                      <div class="flex items-center justify-between mb-2">
+                        <h3 class="font-semibold text-sm">{item.item_name_jp || item.item_name}</h3>
+                        <span class={`text-xs px-2 py-1 rounded font-bold text-white ${
+                          item.item_rarity === 'SSR' ? 'rarity-ssr' :
+                          item.item_rarity === 'SR' ? 'rarity-sr' : 'rarity-r'
+                        }`}>
+                          {item.item_rarity}
+                        </span>
+                      </div>
+                      <div class="text-xs text-uma-primary hover:underline">
+                        詳細を見る →
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </main>
+
+  <style>
+    .tier-ss {
+      @apply bg-gradient-to-r from-red-500 to-pink-500;
+    }
+    .tier-s {
+      @apply bg-gradient-to-r from-orange-500 to-yellow-500;
+    }
+    .tier-a {
+      @apply bg-gradient-to-r from-green-500 to-emerald-500;
+    }
+    .tier-b {
+      @apply bg-gradient-to-r from-blue-500 to-cyan-500;
+    }
+    .tier-c {
+      @apply bg-gradient-to-r from-gray-500 to-gray-600;
+    }
+
+    .tab-btn {
+      @apply px-4 py-2 rounded-lg bg-white shadow hover:shadow-md transition-all flex items-center font-medium;
+    }
+    .tab-btn.active {
+      @apply bg-uma-primary text-white;
+    }
+
+    .tab-content {
+      @apply hidden;
+    }
+    .tab-content.active {
+      @apply block;
+    }
+  </style>
+
+  <script>
+    // Tab switching logic
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabName = btn.getAttribute('data-tab');
+
+        // Update button states
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Update content visibility
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        const targetContent = document.getElementById(tabName);
+        if (targetContent) {
+          targetContent.classList.add('active');
+        }
+      });
+    });
+  </script>
+</Layout>
+
+
+
+

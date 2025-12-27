@@ -1,31 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { Target, Check, AlertCircle, Trophy, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
+import { Target, Check, AlertCircle, Trophy, Calendar, ChevronDown, ChevronUp, Loader2 } from 'lucide-react';
 
 interface Goal {
   id: string;
   year: string;
   half: string;
-  description: string;
+  description_en: string;
+  description_jp?: string;
   tips: string[];
   difficulty: 'easy' | 'medium' | 'hard';
 }
 
 interface CharacterGoals {
   id: string;
-  name: string;
+  name_en: string;
+  name_jp?: string;
   goals: Goal[];
 }
 
-const CHARACTER_GOALS: CharacterGoals[] = [
+// Fallback data in case JSON fails to load
+const FALLBACK_CHARACTER_GOALS: CharacterGoals[] = [
   {
     id: 'special_week',
-    name: 'Special Week',
+    name_en: 'Special Week',
+    name_jp: 'スペシャルウィーク',
     goals: [
       {
         id: 'sw1',
         year: 'Junior',
         half: 'First Half',
-        description: 'Make debut race',
+        description_en: 'Make debut race',
+        description_jp: 'デビュー戦',
         tips: ['Focus on Speed training', 'Aim for 300+ Speed stat'],
         difficulty: 'easy'
       },
@@ -33,7 +38,8 @@ const CHARACTER_GOALS: CharacterGoals[] = [
         id: 'sw2',
         year: 'Junior',
         half: 'Second Half',
-        description: 'Win Hopeful Stakes (G1, 2000m)',
+        description_en: 'Win Hopeful Stakes (G1, 2000m)',
+        description_jp: 'ホープフルS (G1, 2000m) 勝利',
         tips: ['Need 400+ Speed, 300+ Stamina', 'Get acceleration skills'],
         difficulty: 'medium'
       },
@@ -41,208 +47,59 @@ const CHARACTER_GOALS: CharacterGoals[] = [
         id: 'sw3',
         year: 'Classic',
         half: 'First Half',
-        description: 'Win Japanese Derby (G1, 2400m)',
+        description_en: 'Win Japanese Derby (G1, 2400m)',
+        description_jp: '日本ダービー (G1, 2400m) 勝利',
         tips: ['Aim for 600+ Speed, 400+ Stamina', 'Power is important for this race'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'sw4',
-        year: 'Classic',
-        half: 'Second Half',
-        description: 'Win Japan Cup (G1, 2400m)',
-        tips: ['Need balanced stats', 'Recovery skills help'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'sw5',
-        year: 'Senior',
-        half: 'First Half',
-        description: 'Win Tenno Sho Spring (G1, 3200m)',
-        tips: ['Stamina > 600 required', 'Get stamina recovery skills'],
         difficulty: 'hard'
       }
     ]
   },
   {
     id: 'silence_suzuka',
-    name: 'Silence Suzuka',
+    name_en: 'Silence Suzuka',
+    name_jp: 'サイレンススズカ',
     goals: [
       {
         id: 'ss1',
         year: 'Junior',
         half: 'First Half',
-        description: 'Make debut race',
-        tips: ['Focus on Speed training', 'Escape strategy works best'],
+        description_en: 'Make debut race',
+        description_jp: 'デビュー戦',
+        tips: ['Focus on Speed training', 'Front Runner strategy works best'],
         difficulty: 'easy'
       },
       {
         id: 'ss2',
-        year: 'Junior',
-        half: 'Second Half',
-        description: '5th place or better in Asahi Hai (G1, 1600m)',
-        tips: ['Speed focus', 'Escape position bonus'],
-        difficulty: 'easy'
-      },
-      {
-        id: 'ss3',
         year: 'Classic',
         half: 'First Half',
-        description: 'Win Yasuda Kinen (G1, 1600m)',
+        description_en: 'Win Yasuda Kinen (G1, 1600m)',
+        description_jp: '安田記念 (G1, 1600m) 勝利',
         tips: ['700+ Speed recommended', 'Mile specialist skills'],
         difficulty: 'medium'
-      },
-      {
-        id: 'ss4',
-        year: 'Classic',
-        half: 'Second Half',
-        description: 'Win Mile Championship (G1, 1600m)',
-        tips: ['Maintain high speed', 'Position keeping skills'],
-        difficulty: 'medium'
-      },
-      {
-        id: 'ss5',
-        year: 'Senior',
-        half: 'Full Year',
-        description: 'Win 3 G1 races',
-        tips: ['Focus on mile/medium races', 'Keep motivation high'],
-        difficulty: 'hard'
       }
     ]
   },
   {
     id: 'tokai_teio',
-    name: 'Tokai Teio',
+    name_en: 'Tokai Teio',
+    name_jp: 'トウカイテイオー',
     goals: [
       {
         id: 'tt1',
         year: 'Junior',
         half: 'First Half',
-        description: 'Make debut race',
+        description_en: 'Make debut race',
+        description_jp: 'デビュー戦',
         tips: ['Balanced training', 'Guts training helps'],
         difficulty: 'easy'
       },
       {
         id: 'tt2',
-        year: 'Junior',
-        half: 'Second Half',
-        description: 'Win Hopeful Stakes (G1, 2000m)',
-        tips: ['Need good stamina', 'Lead or Betweener strategy'],
-        difficulty: 'medium'
-      },
-      {
-        id: 'tt3',
         year: 'Classic',
         half: 'First Half',
-        description: 'Win Satsuki Sho (G1, 2000m)',
+        description_en: 'Win Satsuki Sho (G1, 2000m)',
+        description_jp: '皐月賞 (G1, 2000m) 勝利',
         tips: ['Balanced stats important', 'Get recovery skills'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'tt4',
-        year: 'Classic',
-        half: 'Second Half',
-        description: 'Win Japanese Derby (G1, 2400m)',
-        tips: ['600+ Speed, 500+ Stamina', 'Guts helps in final stretch'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'tt5',
-        year: 'Senior',
-        half: 'First Half',
-        description: 'Win Arima Kinen (G1, 2500m)',
-        tips: ['High stamina required', 'Never Give Up skill recommended'],
-        difficulty: 'hard'
-      }
-    ]
-  },
-  {
-    id: 'oguri_cap',
-    name: 'Oguri Cap',
-    goals: [
-      {
-        id: 'oc1',
-        year: 'Junior',
-        half: 'First Half',
-        description: 'Make debut race',
-        tips: ['Power training focus', 'Both turf and dirt aptitude helps'],
-        difficulty: 'easy'
-      },
-      {
-        id: 'oc2',
-        year: 'Junior',
-        half: 'Second Half',
-        description: '3rd place or better in Mile Championship',
-        tips: ['Mile aptitude important', 'Power and speed balance'],
-        difficulty: 'medium'
-      },
-      {
-        id: 'oc3',
-        year: 'Classic',
-        half: 'First Half',
-        description: 'Win Yasuda Kinen (G1, 1600m)',
-        tips: ['High speed required', 'Between runner position'],
-        difficulty: 'medium'
-      },
-      {
-        id: 'oc4',
-        year: 'Classic',
-        half: 'Second Half',
-        description: 'Win Arima Kinen (G1, 2500m)',
-        tips: ['Need stamina training', 'All-rounder build works'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'oc5',
-        year: 'Senior',
-        half: 'Full Year',
-        description: 'Win both Mile and Medium/Long G1 races',
-        tips: ['Versatile build required', 'Focus on both speed and stamina'],
-        difficulty: 'hard'
-      }
-    ]
-  },
-  {
-    id: 'gold_ship',
-    name: 'Gold Ship',
-    goals: [
-      {
-        id: 'gs1',
-        year: 'Junior',
-        half: 'First Half',
-        description: 'Make debut race',
-        tips: ['Stamina and Power focus', 'Chase position preferred'],
-        difficulty: 'easy'
-      },
-      {
-        id: 'gs2',
-        year: 'Junior',
-        half: 'Second Half',
-        description: 'Win Hopeful Stakes (G1, 2000m)',
-        tips: ['Balanced stats', 'Random nature - save before race'],
-        difficulty: 'medium'
-      },
-      {
-        id: 'gs3',
-        year: 'Classic',
-        half: 'First Half',
-        description: 'Win Satsuki Sho (G1, 2000m)',
-        tips: ['High power helps', 'Chase skills recommended'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'gs4',
-        year: 'Classic',
-        half: 'Second Half',
-        description: 'Win Kikka Sho (G1, 3000m)',
-        tips: ['700+ Stamina needed', 'Long distance skills crucial'],
-        difficulty: 'hard'
-      },
-      {
-        id: 'gs5',
-        year: 'Senior',
-        half: 'Full Year',
-        description: 'Win Tenno Sho Spring and Takarazuka Kinen',
-        tips: ['Focus on long races', 'Stamina recovery skills essential'],
         difficulty: 'hard'
       }
     ]
@@ -250,11 +107,38 @@ const CHARACTER_GOALS: CharacterGoals[] = [
 ];
 
 export default function TrainingGoals() {
-  const [selectedCharacter, setSelectedCharacter] = useState<CharacterGoals>(CHARACTER_GOALS[0]);
+  const [characterGoals, setCharacterGoals] = useState<CharacterGoals[]>(FALLBACK_CHARACTER_GOALS);
+  const [selectedCharacter, setSelectedCharacter] = useState<CharacterGoals | null>(null);
   const [completedGoals, setCompletedGoals] = useState<Set<string>>(new Set());
   const [expandedGoals, setExpandedGoals] = useState<Set<string>>(new Set());
   const [showTips, setShowTips] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showJapanese, setShowJapanese] = useState(false);
 
+  // Load training goals from JSON
+  useEffect(() => {
+    const loadGoals = async () => {
+      try {
+        const response = await fetch('/data/training-goals.json');
+        if (response.ok) {
+          const data = await response.json();
+          setCharacterGoals(data);
+          setSelectedCharacter(data[0]);
+        } else {
+          console.warn('Failed to load training goals, using fallback');
+          setSelectedCharacter(FALLBACK_CHARACTER_GOALS[0]);
+        }
+      } catch (error) {
+        console.warn('Error loading training goals:', error);
+        setSelectedCharacter(FALLBACK_CHARACTER_GOALS[0]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadGoals();
+  }, []);
+
+  // Load saved progress
   useEffect(() => {
     const saved = localStorage.getItem('completedGoals');
     if (saved) {
@@ -284,10 +168,42 @@ export default function TrainingGoals() {
   };
 
   const getCompletionRate = () => {
+    if (!selectedCharacter) return 0;
     const characterGoalIds = selectedCharacter.goals.map(g => g.id);
     const completed = characterGoalIds.filter(id => completedGoals.has(id)).length;
     return Math.round((completed / characterGoalIds.length) * 100);
   };
+
+  const getGoalDescription = (goal: Goal) => {
+    if (showJapanese && goal.description_jp) {
+      return goal.description_jp;
+    }
+    return goal.description_en;
+  };
+
+  const getCharacterName = (character: CharacterGoals) => {
+    if (showJapanese && character.name_jp) {
+      return character.name_jp;
+    }
+    return character.name_en;
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center py-12">
+        <Loader2 className="w-8 h-8 animate-spin text-blue-500" />
+        <span className="ml-2 text-gray-600">Loading training goals...</span>
+      </div>
+    );
+  }
+
+  if (!selectedCharacter) {
+    return (
+      <div className="text-center py-12 text-gray-500">
+        No training goals available
+      </div>
+    );
+  }
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
@@ -315,7 +231,16 @@ export default function TrainingGoals() {
             <Trophy className="w-5 h-5 text-yellow-500" />
             Select Character
           </h2>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap">
+            <label className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={showJapanese}
+                onChange={(e) => setShowJapanese(e.target.checked)}
+                className="rounded"
+              />
+              <span className="text-sm">日本語</span>
+            </label>
             <label className="flex items-center gap-2">
               <input
                 type="checkbox"
@@ -337,18 +262,18 @@ export default function TrainingGoals() {
           </div>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
-          {CHARACTER_GOALS.map(character => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 max-h-64 overflow-y-auto">
+          {characterGoals.map(character => (
             <button
               key={character.id}
               onClick={() => setSelectedCharacter(character)}
               className={`p-3 rounded-lg border-2 transition ${
-                selectedCharacter.id === character.id
+                selectedCharacter?.id === character.id
                   ? 'border-blue-500 bg-blue-50'
                   : 'border-gray-200 hover:border-gray-300'
               }`}
             >
-              <div className="font-medium text-sm">{character.name}</div>
+              <div className="font-medium text-sm">{getCharacterName(character)}</div>
               <div className="text-xs text-gray-500 mt-1">
                 {character.goals.filter(g => completedGoals.has(g.id)).length}/{character.goals.length} completed
               </div>
@@ -358,8 +283,8 @@ export default function TrainingGoals() {
       </div>
 
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6">
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-bold">{selectedCharacter.name} Training Goals</h3>
+        <div className="flex items-center justify-between mb-6 flex-wrap gap-2">
+          <h3 className="text-xl font-bold">{getCharacterName(selectedCharacter)} Training Goals</h3>
           <div className="flex items-center gap-2">
             <div className="text-sm text-gray-600">Progress:</div>
             <div className="w-32 bg-gray-200 rounded-full h-2">
@@ -407,7 +332,7 @@ export default function TrainingGoals() {
                       
                       <div className="flex items-center justify-between">
                         <p className={`font-medium ${completedGoals.has(goal.id) ? 'line-through text-gray-500' : ''}`}>
-                          Goal {index + 1}: {goal.description}
+                          Goal {index + 1}: {getGoalDescription(goal)}
                         </p>
                         
                         {goal.tips.length > 0 && showTips && (

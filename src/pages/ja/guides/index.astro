@@ -1,0 +1,136 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { Rocket, Layers, Sparkles, Target } from 'lucide-react';
+---
+
+<Layout
+  title="ガイド - ウマ娘DB"
+  description="ウマ娘プリティーダービー攻略ガイド：育成の基本、サポカデッキ構築、スキル＆因子、対人向けの考え方。"
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ガイド' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">攻略ガイド</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        国際版ユーザーにも分かりやすい用語で、育成の要点と考え方をまとめます（順次拡充）。
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-4 sm:gap-6">
+      <a href="#training-basics" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-primary/10 flex items-center justify-center">
+            <Rocket className="w-5 h-5 text-uma-primary" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">育成の基本</h2>
+            <p class="text-sm text-gray-600">最短で伸びる優先順位と、序盤にやりがちな罠。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#support-decks" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-secondary/10 flex items-center justify-center">
+            <Layers className="w-5 h-5 text-uma-secondary" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">サポカデッキ構築</h2>
+            <p class="text-sm text-gray-600">距離×脚質で“1つの勝ち筋”を作る考え方。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#skills-and-inheritance" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-uma-accent/10 flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-uma-accent" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">スキル＆因子</h2>
+            <p class="text-sm text-gray-600">加速/速度/位置取りの優先順位と因子の考え方。</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#competitive" class="glass rounded-xl p-5 hover:shadow-lg transition-shadow">
+        <div class="flex items-start gap-3">
+          <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
+            <Target className="w-5 h-5 text-green-600" />
+          </div>
+          <div class="flex-1">
+            <h2 class="font-bold text-lg mb-1">対人の考え方</h2>
+            <p class="text-sm text-gray-600">“メタ”を分解して、手持ちで勝つ。</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <section id="training-basics" class="mt-10 sm:mt-12 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Rocket className="w-5 h-5 text-uma-primary" />
+        育成の基本（国際版用語）
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <ul>
+          <li><strong>脚質</strong>: 逃げ=Front Runner / 先行=Pace Chaser / 差し=Late Surger / 追込=End Closer</li>
+          <li><strong>迷ったら</strong>: 最終直線の加速スキルを最優先（スタミナが足りない条件では回復も重要）</li>
+          <li><strong>デッキ</strong>: 距離と脚質を決めて“ブレない”のが一番強い</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support-decks" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Layers className="w-5 h-5 text-uma-secondary" />
+        サポカデッキ構築
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          まずは <strong>目標（距離×脚質）</strong> を決め、必要ステータスの下限を満たす形でカードを積みます。
+          <a href="/ja/tools/support-deck/" class="text-uma-primary hover:underline">デッキビルダー</a> を使うと雛形が作りやすいです。
+        </p>
+      </div>
+    </section>
+
+    <section id="skills-and-inheritance" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Sparkles className="w-5 h-5 text-uma-accent" />
+        スキル＆因子
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          因子は“理想”より“再現性”が大事。まずは汎用性の高い因子から固めましょう。
+          <a href="/ja/tools/factor-calculator/" class="text-uma-primary hover:underline">因子計算</a> で継承確率を整理できます。
+        </p>
+      </div>
+    </section>
+
+    <section id="competitive" class="mt-6 glass rounded-xl p-5 sm:p-6">
+      <h2 class="text-xl font-display mb-3 flex items-center gap-2">
+        <Target className="w-5 h-5 text-green-600" />
+        対人の考え方
+      </h2>
+      <div class="prose max-w-none text-gray-700">
+        <p>
+          “メタ”は環境・コース条件・主流脚質の組み合わせです。手持ちカードで勝てる形に落とし込むのがコツ。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .prose ul {
+      @apply list-disc list-inside space-y-2;
+    }
+  </style>
+</Layout>
+
+
+
+

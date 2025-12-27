@@ -70,6 +70,7 @@ const SKILL_COMBOS: SkillCombo[] = [
   }
 ];
 
+// Base skill costs by rarity (without Hint discount)
 const SKILL_COSTS = {
   'SS': 240,
   'S': 200,
@@ -79,6 +80,29 @@ const SKILL_COSTS = {
   'unique': 0,  // Unique skills are learned automatically
   'common': 120,
   'training': 130
+};
+
+// Hint discount: skills obtained via Hint are cheaper
+// Typical discount is 10-30% depending on support card affinity
+const HINT_DISCOUNT = {
+  none: 1.0,      // No hint: full price
+  normal: 0.85,   // Normal hint: 15% off
+  strong: 0.70    // Strong hint (high affinity): 30% off
+};
+
+// Skill type labels for display
+const SKILL_TYPE_LABELS: Record<string, { label: string; color: string; icon: string }> = {
+  'unique': { label: 'Unique', color: 'bg-pink-100 text-pink-700', icon: '⭐' },
+  'inherited': { label: 'Inherited', color: 'bg-purple-100 text-purple-700', icon: '🧬' },
+  'speed': { label: 'Speed', color: 'bg-blue-100 text-blue-700', icon: '💨' },
+  'stamina': { label: 'Stamina', color: 'bg-red-100 text-red-700', icon: '❤️' },
+  'power': { label: 'Power', color: 'bg-orange-100 text-orange-700', icon: '💪' },
+  'guts': { label: 'Guts', color: 'bg-yellow-100 text-yellow-700', icon: '🔥' },
+  'wisdom': { label: 'Wisdom', color: 'bg-green-100 text-green-700', icon: '🧠' },
+  'recovery': { label: 'Recovery', color: 'bg-teal-100 text-teal-700', icon: '💚' },
+  'acceleration': { label: 'Acceleration', color: 'bg-indigo-100 text-indigo-700', icon: '🚀' },
+  'position': { label: 'Position', color: 'bg-cyan-100 text-cyan-700', icon: '📍' },
+  'default': { label: 'Skill', color: 'bg-gray-100 text-gray-700', icon: '✨' }
 };
 
 const TRIGGER_FILTERS = [
@@ -102,6 +126,8 @@ export default function SkillBuilder() {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [skillPointBudget, setSkillPointBudget] = useState<number>(1600);
   const [selectedCombo, setSelectedCombo] = useState<SkillCombo | null>(null);
+  const [globalHintLevel, setGlobalHintLevel] = useState<'none' | 'normal' | 'strong'>('none');
+  const [perSkillHints, setPerSkillHints] = useState<Record<string, 'none' | 'normal' | 'strong'>>({});
 
   useEffect(() => {
     // Use statically imported and pre-parsed data
@@ -165,9 +191,18 @@ export default function SkillBuilder() {
     selectedSkills
   ]);
 
+  const getSkillCost = (skill: Skill) => {
+    const baseCost = skill.cost || 0;
+    if (skill.rarity === 'unique' || skill.skill_type?.toLowerCase() === 'unique') {
+      return 0; // Unique skills are free
+    }
+    const hintLevel = perSkillHints[skill.id] || globalHintLevel;
+    return Math.floor(baseCost * HINT_DISCOUNT[hintLevel]);
+  };
+
   const totalCost = useMemo(() => {
-    return selectedSkills.reduce((sum, skill) => sum + (skill.cost || 0), 0);
-  }, [selectedSkills]);
+    return selectedSkills.reduce((sum, skill) => sum + getSkillCost(skill), 0);
+  }, [selectedSkills, globalHintLevel, perSkillHints]);
 
   const selectedSummary = useMemo(() => {
     const rarityCount = selectedSkills.reduce<Record<string, number>>((acc, skill) => {
@@ -188,9 +223,23 @@ export default function SkillBuilder() {
   }, [selectedSkills]);
 
   const addSkill = (skill: Skill) => {
-    if (totalCost + (skill.cost || 0) <= skillPointBudget) {
+    const skillCost = getSkillCost(skill);
+    if (totalCost + skillCost <= skillPointBudget) {
       setSelectedSkills([...selectedSkills, skill]);
     }
+  };
+
+  const toggleSkillHint = (skillId: string) => {
+    setPerSkillHints(prev => {
+      const current = prev[skillId] || globalHintLevel;
+      const next = current === 'none' ? 'normal' : current === 'normal' ? 'strong' : 'none';
+      return { ...prev, [skillId]: next };
+    });
+  };
+
+  const getSkillTypeInfo = (skill: Skill) => {
+    const type = skill.skill_type?.toLowerCase() || 'default';
+    return SKILL_TYPE_LABELS[type] || SKILL_TYPE_LABELS.default;
   };
 
   const removeSkill = (skillId: string) => {
@@ -283,7 +332,7 @@ export default function SkillBuilder() {
         <div className="bg-white rounded-lg shadow p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold">Selected Skills</h3>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="text-sm text-gray-600">Budget:</span>
               <input
                 type="number"
@@ -298,6 +347,22 @@ export default function SkillBuilder() {
                 {totalCost} / {skillPointBudget}
               </span>
             </div>
+          </div>
+          
+          <div className="flex items-center gap-2 mb-4 p-2 bg-yellow-50 rounded-lg">
+            <span className="text-xs text-gray-600">Global Hint:</span>
+            <select
+              value={globalHintLevel}
+              onChange={(e) => setGlobalHintLevel(e.target.value as 'none' | 'normal' | 'strong')}
+              className="text-xs border rounded px-2 py-1"
+            >
+              <option value="none">No Hint (Full Price)</option>
+              <option value="normal">Normal Hint (-15%)</option>
+              <option value="strong">Strong Hint (-30%)</option>
+            </select>
+            <span className="text-[10px] text-gray-500">
+              Click cost badge to toggle per-skill hint
+            </span>
           </div>
 
           {selectedSkills.length > 0 && (
@@ -328,29 +393,49 @@ export default function SkillBuilder() {
                 Select skills from the list or choose a combo
               </div>
             ) : (
-              selectedSkills.map(skill => (
-                <div key={skill.id} className="flex items-center justify-between p-2 bg-gray-50 rounded">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <Zap className="w-3 h-3 text-yellow-500" />
-                      <span className="font-medium text-sm">{skill.name_en}</span>
-                      <span className={`text-xs px-1.5 py-0.5 rounded ${getRarityColor(skill.rarity)}`}>
-                        {skill.rarity}
-                      </span>
+              selectedSkills.map(skill => {
+                const typeInfo = getSkillTypeInfo(skill);
+                const hintLevel = perSkillHints[skill.id] || globalHintLevel;
+                const actualCost = getSkillCost(skill);
+                const baseCost = skill.cost || 0;
+                const isDiscounted = actualCost < baseCost;
+                
+                return (
+                  <div key={skill.id} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-sm">{typeInfo.icon}</span>
+                        <span className="font-medium text-sm">{skill.name_en}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded ${getRarityColor(skill.rarity)}`}>
+                          {skill.rarity}
+                        </span>
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded ${typeInfo.color}`}>
+                          {typeInfo.label}
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-600 mt-1">{skill.effect}</div>
                     </div>
-                    <div className="text-xs text-gray-600 mt-1">{skill.effect}</div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => toggleSkillHint(skill.id)}
+                        className={`text-sm font-medium px-2 py-0.5 rounded cursor-pointer transition ${
+                          isDiscounted ? 'bg-green-100 text-green-700' : 'bg-gray-100'
+                        }`}
+                        title={`Click to toggle hint (current: ${hintLevel})`}
+                      >
+                        {isDiscounted && <span className="line-through text-gray-400 mr-1">{baseCost}</span>}
+                        {actualCost}pt
+                      </button>
+                      <button
+                        onClick={() => removeSkill(skill.id)}
+                        className="text-red-500 hover:text-red-700"
+                      >
+                        ×
+                      </button>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium">{skill.cost}pt</span>
-                    <button
-                      onClick={() => removeSkill(skill.id)}
-                      className="text-red-500 hover:text-red-700"
-                    >
-                      ×
-                    </button>
-                  </div>
-                </div>
-              ))
+                );
+              })
             )}
           </div>
           
@@ -443,30 +528,44 @@ export default function SkillBuilder() {
           </div>
           
           <div className="space-y-2 max-h-96 overflow-y-auto">
-            {filteredSkills.map(skill => (
-              <button
-                key={skill.id}
-                onClick={() => addSkill(skill)}
-                disabled={totalCost + (skill.cost || 0) > skillPointBudget}
-                className={`w-full text-left p-2 rounded hover:bg-gray-50 transition ${
-                  totalCost + (skill.cost || 0) > skillPointBudget ? 'opacity-50 cursor-not-allowed' : ''
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <Star className="w-3 h-3 text-yellow-500" />
-                      <span className="font-medium text-sm">{skill.name_en}</span>
-                      <span className={`text-xs px-1.5 py-0.5 rounded ${getRarityColor(skill.rarity)}`}>
-                        {skill.rarity}
-                      </span>
+            {filteredSkills.map(skill => {
+              const typeInfo = getSkillTypeInfo(skill);
+              const skillCost = getSkillCost(skill);
+              const baseCost = skill.cost || 0;
+              const isDiscounted = skillCost < baseCost;
+              const canAfford = totalCost + skillCost <= skillPointBudget;
+              
+              return (
+                <button
+                  key={skill.id}
+                  onClick={() => addSkill(skill)}
+                  disabled={!canAfford}
+                  className={`w-full text-left p-2 rounded hover:bg-gray-50 transition ${
+                    !canAfford ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-sm">{typeInfo.icon}</span>
+                        <span className="font-medium text-sm">{skill.name_en}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded ${getRarityColor(skill.rarity)}`}>
+                          {skill.rarity}
+                        </span>
+                        <span className={`text-[10px] px-1.5 py-0.5 rounded ${typeInfo.color}`}>
+                          {typeInfo.label}
+                        </span>
+                      </div>
+                      <div className="text-xs text-gray-600 mt-1">{skill.effect}</div>
                     </div>
-                    <div className="text-xs text-gray-600 mt-1">{skill.effect}</div>
+                    <div className="text-sm font-medium text-gray-500">
+                      {isDiscounted && <span className="line-through text-gray-300 mr-1">{baseCost}</span>}
+                      <span className={isDiscounted ? 'text-green-600' : ''}>{skillCost}pt</span>
+                    </div>
                   </div>
-                  <div className="text-sm font-medium text-gray-500">{skill.cost}pt</div>
-                </div>
-              </button>
-            ))}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -61,10 +61,10 @@ const charactersByRarity = characters.reduce((acc, char) => {
         <!-- Running Style Filter -->
         <select id="running-style-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
           <option value="all">All Styles</option>
-          <option value="escape">Escape</option>
-          <option value="lead">Lead</option>
-          <option value="between">Between</option>
-          <option value="chase">Chase</option>
+          <option value="escape">Front Runner (逃げ)</option>
+          <option value="lead">Pace Chaser (先行)</option>
+          <option value="between">Late Surger (差し)</option>
+          <option value="chase">End Closer (追込)</option>
         </select>
 
         <!-- Surface Filter -->
@@ -99,6 +99,7 @@ const charactersByRarity = characters.reduce((acc, char) => {
               {chars.map((character) => (
                 <div class="character-item" 
                      data-name={character.name_en.toLowerCase()} 
+                     data-search={`${character.name_en} ${character.name_jp}`.toLowerCase()}
                      data-rarity={character.rarity}
                      data-aptitudes={JSON.stringify(character.aptitudes)}>
                   <CharacterCard character={character} client:load />
@@ -137,7 +138,7 @@ const charactersByRarity = characters.reduce((acc, char) => {
 
       // Filter individual characters
       document.querySelectorAll('.character-item').forEach((item) => {
-        const name = item.getAttribute('data-name') || '';
+        const name = item.getAttribute('data-search') || item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         const aptitudes = JSON.parse(item.getAttribute('data-aptitudes') || '{}');
 

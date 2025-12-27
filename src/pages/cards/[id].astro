@@ -1,7 +1,8 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
-import { supportCards } from '@/lib/static-content';
+import { supportCards, skills } from '@/lib/static-content';
+import { createSkillIndex, findSkillIdByName } from '@/lib/skill-lookup';
 import { Star, Zap, Heart, Brain, Shield, Sparkles, Users, TrendingUp, Award } from 'lucide-react';
 
 export function getStaticPaths() {
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { card } = Astro.props;
+const skillIndex = createSkillIndex(skills);
 
 // Type colors and icons
 const typeConfig = {
@@ -65,6 +67,7 @@ const effectHighlights = Object.entries(card.effects || {})
     id: card.id,
     name_en: card.name_en,
     name_ja: card.name_jp,
+    image_url: card.image_url,
     rarity: card.rarity,
     type: card.type,
     effects: card.effects
@@ -100,9 +103,9 @@ const effectHighlights = Object.entries(card.effects || {})
               <TypeIcon className="w-6 h-6 text-white" />
             </div>
 
-            {card.image_url ? (
+            {(card.character_image_url || card.image_url) ? (
               <img 
-                src={card.image_url} 
+                src={card.character_image_url || card.image_url} 
                 alt={card.name_en}
                 class="absolute inset-0 w-full h-full object-contain object-center"
                 loading="lazy"
@@ -211,20 +214,31 @@ const effectHighlights = Object.entries(card.effects || {})
           </h2>
           
           <div class="grid gap-3">
-            {card.skills?.map((skill: string) => (
+            {card.skills?.map((skillName: string) => {
+              const skillId = findSkillIdByName(skillIndex, skillName);
+              return (
               <div class="flex items-center gap-3 p-3 bg-white rounded-lg hover:shadow-md transition-shadow">
                 <div class={`w-10 h-10 ${config.color} bg-opacity-20 rounded-full flex items-center justify-center`}>
                   <Zap className={`w-5 h-5 text-${config.color.replace('bg-', '')}`} />
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-semibold">{skill}</h3>
+                  <h3 class="font-semibold">
+                    {skillId ? (
+                      <a href={`/skills/${skillId}/`} class="text-uma-primary hover:underline">
+                        {skillName}
+                      </a>
+                    ) : (
+                      skillName
+                    )}
+                  </h3>
                   <p class="text-sm text-gray-600">Skill effect will be applied during training</p>
                 </div>
                 <div class="text-xs px-2 py-1 bg-gray-100 rounded-full">
                   Lv.1
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 

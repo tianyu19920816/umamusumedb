@@ -1,4 +1,6 @@
 ---
+import type { Locale } from '@/lib/i18n';
+
 export interface Props {
   title: string;
   description: string;
@@ -6,6 +8,8 @@ export interface Props {
   canonicalURL?: string;
   type?: 'website' | 'article';
   keywords?: string;
+  locale?: Locale;
+  alternates?: Partial<Record<Locale, string>>;
 }
 
 const {
@@ -14,11 +18,34 @@ const {
   image = 'https://umamusumedb.com/og-image.png',
   canonicalURL = Astro.url.href,
   type = 'website',
-  keywords = 'uma musume, pretty derby, umamusume database, ウマ娘, プリティーダービー, support cards, tier list, training calculator, character stats'
+  keywords = 'uma musume, pretty derby, umamusume database, ウマ娘, プリティーダービー, support cards, tier list, training calculator, character stats',
+  locale = 'en',
+  alternates
 } = Astro.props;
 
-const siteUrl = 'https://umamusumedb.com';
 const fullTitle = title.includes('UmamusumeDB') ? title : `${title} | UmamusumeDB`;
+
+const ogLocaleMap: Record<Locale, string> = {
+  en: 'en_US',
+  ja: 'ja_JP',
+  zh: 'zh_CN'
+};
+
+const ogLocale = ogLocaleMap[locale] ?? ogLocaleMap.en;
+const availableLocales = Array.from(
+  new Set<Locale>([
+    ...(alternates ? (Object.keys(alternates) as Locale[]) : []),
+    locale
+  ])
+);
+const ogAlternates = availableLocales
+  .filter((key) => key !== locale)
+  .map((key) => ogLocaleMap[key])
+  .filter(Boolean);
+
+const hrefEn = alternates?.en ?? canonicalURL;
+const hrefJa = alternates?.ja;
+const hrefZh = alternates?.zh;
 ---
 
 <!-- Primary Meta Tags -->
@@ -39,9 +66,10 @@ const fullTitle = title.includes('UmamusumeDB') ? title : `${title} | UmamusumeD
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:site_name" content="UmamusumeDB" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:locale:alternate" content="ja_JP" />
-<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale" content={ogLocale} />
+{ogAlternates.map((alt) => (
+  <meta property="og:locale:alternate" content={alt} />
+))}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -67,6 +95,7 @@ const fullTitle = title.includes('UmamusumeDB') ? title : `${title} | UmamusumeD
 <link rel="dns-prefetch" href="https://img.umamusumedb.com" />
 
 <!-- Language alternatives -->
-<link rel="alternate" hreflang="en" href={canonicalURL} />
-<link rel="alternate" hreflang="ja" href={canonicalURL.replace('umamusumedb.com', 'umamusumedb.com/ja')} />
-<link rel="alternate" hreflang="x-default" href={canonicalURL} />
+<link rel="alternate" hreflang="en" href={hrefEn} />
+{hrefJa && <link rel="alternate" hreflang="ja" href={hrefJa} />}
+{hrefZh && <link rel="alternate" hreflang="zh-Hans" href={hrefZh} />}
+<link rel="alternate" hreflang="x-default" href={hrefEn} />

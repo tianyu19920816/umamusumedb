@@ -1,34 +1,32 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import FactorCalculator from '../../components/tools/FactorCalculator';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import FactorCalculator from '@/components/tools/FactorCalculator';
 ---
 
-<Layout title="Factor Inheritance Calculator - UmamusumeDB" description="Calculate factor inheritance probabilities and optimize your breeding strategy in Uma Musume">
-  <div class="container mx-auto px-4 py-8">
-    <!-- Breadcrumb Navigation -->
-    <nav class="text-sm mb-6">
-      <ol class="flex items-center space-x-2">
-        <li><a href="/" class="text-uma-primary hover:underline">Home</a></li>
-        <li class="text-gray-400">/</li>
-        <li><a href="/tools/" class="text-uma-primary hover:underline">Tools</a></li>
-        <li class="text-gray-400">/</li>
-        <li class="text-gray-600">Factor Calculator</li>
-      </ol>
-    </nav>
+<Layout
+  title="Factor Inheritance Calculator - UmamusumeDB"
+  description="Calculate factor inheritance probabilities and optimize your breeding strategy in Uma Musume"
+  structuredDataType="tool"
+  structuredData={{
+    name: 'Factor Inheritance Calculator',
+    description: 'Calculate factor inheritance probabilities and optimize your breeding strategy in Uma Musume.',
+    url: '/tools/factor-calculator/'
+  }}
+>
+  <Header />
 
-    <div class="mb-8">
-      <h1 class="text-3xl font-bold mb-4">Factor Inheritance Calculator</h1>
-      <p class="text-gray-600">Calculate the probability of inheriting factors from parent Uma Musume and optimize your breeding strategy.</p>
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Tools', href: '/tools/' }, { label: 'Factor Calculator' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Factor Inheritance Calculator</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        Calculate inheritance probabilities and plan breeding efficiently.
+      </p>
     </div>
 
     <FactorCalculator client:load />
-
-    <!-- Back to Tools Button -->
-    <div class="mt-8">
-      <a href="/tools/" class="inline-flex items-center gap-2 px-4 py-2 bg-uma-primary text-white rounded-lg hover:bg-uma-primary/90 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-        Back to Tools
-      </a>
-    </div>
-  </div>
+  </main>
 </Layout>

@@ -104,6 +104,7 @@ export interface SupportCardRecord {
   skills?: string[] | string | null;
   events?: string[] | string | null;
   image_url?: string;
+  character_image_url?: string; // Fallback image using character portrait
   release_date?: string;
   created_at?: string;
   [key: string]: unknown;
@@ -113,6 +114,7 @@ export interface SupportCard extends Omit<SupportCardRecord, 'effects' | 'skills
   effects?: SupportCardEffects;
   skills?: string[];
   events?: string[];
+  character_image_url?: string;
 }
 
 export interface TierListEntry {
@@ -146,4 +148,31 @@ export interface Skill {
   icon_url?: string;
   created_at?: string;
   [key: string]: unknown;
+}
+
+export interface RealHorse {
+  qid: string;
+  name_en: string | null;
+  name_ja: string | null;
+  date_of_birth: string | null;
+  date_of_death: string | null;
+  sex_qid: string | null;
+  sire: { qid: string; name_en: string | null; name_ja: string | null } | null;
+  dam: { qid: string; name_en: string | null; name_ja: string | null } | null;
+  wikidata_url: string;
+  wikipedia_en: string | null;
+  wikipedia_ja: string | null;
+  image: { file: string; url: string } | null;
+}
+
+export interface RealHorsesPayload {
+  generatedAt: string | null;
+  source: {
+    name: string;
+    license: string;
+    licenseUrl: string;
+    queryServiceUrl: string;
+  };
+  horsesByNameEn: Record<string, RealHorse>;
+  unresolved: Array<{ name_en: string; reason: string; error?: string }>;
 }

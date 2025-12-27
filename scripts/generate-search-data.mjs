@@ -12,24 +12,27 @@ async function loadJson(filename) {
 }
 
 async function buildSearchData() {
-  const [characters, supportCards] = await Promise.all([
+  const [characters, supportCards, skills] = await Promise.all([
     loadJson('characters.json'),
-    loadJson('supportCards.json')
+    loadJson('supportCards.json'),
+    loadJson('skills.json')
   ]);
 
   const pages = [
-    { name_en: 'Characters', type: 'page', url: '/characters/' },
-    { name_en: 'Support Cards', type: 'page', url: '/cards/' },
-    { name_en: 'Tier List', type: 'page', url: '/tier-list/' },
-    { name_en: 'Tools', type: 'page', url: '/tools/' }
+    { name_en: 'Characters', name_ja: 'キャラクター', type: 'page', url: '/characters/' },
+    { name_en: 'Support Cards', name_ja: 'サポートカード', type: 'page', url: '/cards/' },
+    { name_en: 'Skills', name_ja: 'スキル', type: 'page', url: '/skills/' },
+    { name_en: 'Tier List', name_ja: 'ティアリスト', type: 'page', url: '/tier-list/' },
+    { name_en: 'Tools', name_ja: 'ツール', type: 'page', url: '/tools/' },
+    { name_en: 'Guides', name_ja: 'ガイド', type: 'page', url: '/guides/' }
   ];
 
   const tools = [
-    { name_en: 'Factor Calculator', type: 'tool', url: '/tools/factor-calculator/' },
-    { name_en: 'Training Calculator', type: 'tool', url: '/tools/training-calculator/' },
-    { name_en: 'Support Deck Builder', type: 'tool', url: '/tools/support-deck/' },
-    { name_en: 'Training Goals', type: 'tool', url: '/tools/training-goals/' },
-    { name_en: 'Skill Builder', type: 'tool', url: '/tools/skill-builder/' }
+    { name_en: 'Factor Calculator', name_ja: '因子計算', type: 'tool', url: '/tools/factor-calculator/' },
+    { name_en: 'Training Calculator', name_ja: '育成計算', type: 'tool', url: '/tools/training-calculator/' },
+    { name_en: 'Support Deck Builder', name_ja: 'デッキビルダー', type: 'tool', url: '/tools/support-deck/' },
+    { name_en: 'Training Goals', name_ja: '目標管理', type: 'tool', url: '/tools/training-goals/' },
+    { name_en: 'Skill Builder', name_ja: 'スキルビルダー', type: 'tool', url: '/tools/skill-builder/' }
   ];
 
   const characterEntries = characters.map((c) => ({
@@ -49,17 +52,27 @@ async function buildSearchData() {
     cardType: c.type
   }));
 
+  const skillEntries = skills.map((s) => ({
+    id: s.id,
+    name_en: s.name_en,
+    name_ja: s.name_jp,
+    type: 'skill',
+    rarity: s.rarity,
+    skillType: s.skill_type
+  }));
+
   const payload = {
     generatedAt: new Date().toISOString(),
     pages,
     tools,
     characters: characterEntries,
-    cards: cardEntries
+    cards: cardEntries,
+    skills: skillEntries
   };
 
   await writeFile(outputPath, JSON.stringify(payload, null, 2), 'utf-8');
   console.log(
-    `[generate-search-data] Wrote ${characterEntries.length} characters and ${cardEntries.length} support cards to ${outputPath}`
+    `[generate-search-data] Wrote ${characterEntries.length} characters, ${cardEntries.length} support cards, and ${skillEntries.length} skills to ${outputPath}`
   );
 }
 

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Calculator, Star, Sparkles, TrendingUp, Heart, Zap } from 'lucide-react';
 
 interface Factor {
-  type: 'stat' | 'aptitude' | 'unique';
+  type: 'stat' | 'aptitude' | 'scenario' | 'unique';
   name: string;
   stars: number;
   parent: 'parent1' | 'parent2' | 'grandparent';
@@ -16,21 +16,51 @@ interface InheritanceResult {
 
 const FACTOR_TYPES = {
   stat: ['Speed', 'Stamina', 'Power', 'Guts', 'Wisdom'],
-  aptitude: ['Turf', 'Dirt', 'Sprint', 'Mile', 'Medium', 'Long', 'Escape', 'Lead', 'Between', 'Chase'],
-  unique: ['URA Factor', 'Scenario Factor', 'Character Factor']
+  aptitude: [
+    'Turf',
+    'Dirt',
+    'Sprint',
+    'Mile',
+    'Medium',
+    'Long',
+    'Front Runner (逃げ)',
+    'Pace Chaser (先行)',
+    'Late Surger (差し)',
+    'End Closer (追込)'
+  ],
+  scenario: [
+    'URA Finals',
+    'Aoharu Cup (アオハル杯)',
+    'Make a New Track (新設)',
+    'Grand Live (グラライ)',
+    'Grand Masters (グラマス)',
+    'Project L\'Arc (LArc)'
+  ],
+  unique: ['Character Unique Factor']
 };
 
+// Realistic inheritance rates based on community research (GameWith, UmaDB)
+// Parent factors: ~35% for 1★, ~20% for 2★, ~10% for 3★
+// Grandparent factors: ~15% for 1★, ~10% for 2★, ~5% for 3★
 const INHERITANCE_RATES = {
-  parent1: { 1: 0.70, 2: 0.60, 3: 0.50 },
-  parent2: { 1: 0.70, 2: 0.60, 3: 0.50 },
-  grandparent: { 1: 0.21, 2: 0.18, 3: 0.15 }
+  parent1: { 1: 0.35, 2: 0.20, 3: 0.10 },
+  parent2: { 1: 0.35, 2: 0.20, 3: 0.10 },
+  grandparent: { 1: 0.15, 2: 0.10, 3: 0.05 }
+};
+
+// Star upgrade probability when factor is inherited
+// 1★ → 2★: ~8%, 2★ → 3★: ~5%
+const UPGRADE_RATES = {
+  1: 0.08, // 1★ can upgrade to 2★
+  2: 0.05, // 2★ can upgrade to 3★
+  3: 0.00  // 3★ cannot upgrade further
 };
 
 const COMPATIBILITY_BONUS = {
-  '◎': 1.1,
-  '○': 1.05,
-  '△': 1.0,
-  '×': 0.95
+  '◎': 1.20,  // Best compatibility: +20%
+  '○': 1.10,  // Good compatibility: +10%
+  '△': 1.00,  // Neutral: no bonus
+  '×': 0.85   // Bad compatibility: -15%
 };
 
 export default function FactorCalculator() {
@@ -170,6 +200,15 @@ export default function FactorCalculator() {
                   ))
                 )).flat()}
               </optgroup>
+              <optgroup label="Scenario Factors">
+                {FACTOR_TYPES.scenario.map(scenario => (
+                  [1, 2, 3].map(star => (
+                    <option key={`${scenario}-${star}`} value={`scenario|${scenario}|${star}`}>
+                      {scenario} ★{star}
+                    </option>
+                  ))
+                )).flat()}
+              </optgroup>
               <optgroup label="Unique Factors">
                 {FACTOR_TYPES.unique.map(unique => (
                   [1, 2, 3].map(star => (
@@ -274,10 +313,13 @@ export default function FactorCalculator() {
                 Breeding Tips
               </h4>
               <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Higher star factors have lower base inheritance rates but stronger effects</li>
-                <li>• Compatibility (◎ {'>'} ○ {'>'} △ {'>'} ×) affects all inheritance rates</li>
-                <li>• Same factors from multiple sources stack their probabilities</li>
-                <li>• Grandparent factors have significantly lower rates (~30% of parent rates)</li>
+                <li>• <strong>1★ factors:</strong> ~35% from parents, ~15% from grandparents</li>
+                <li>• <strong>2★ factors:</strong> ~20% from parents, ~10% from grandparents</li>
+                <li>• <strong>3★ factors:</strong> ~10% from parents, ~5% from grandparents</li>
+                <li>• <strong>Star upgrade:</strong> Inherited factors have ~5-8% chance to upgrade (1★→2★, 2★→3★)</li>
+                <li>• <strong>Compatibility:</strong> ◎ +20%, ○ +10%, △ ±0%, × -15%</li>
+                <li>• Same factors from multiple sources stack (1 - product of miss rates)</li>
+                <li>• <strong>Pro tip:</strong> For 3★ blue factors, use parents with matching 3★ factors from both sides</li>
               </ul>
             </div>
           </div>

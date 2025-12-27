@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import SkillBuilder from '@/components/tools/SkillBuilder';
+---
+
+<Layout
+  title="スキルビルダー - ウマ娘DB"
+  description="SP予算を見ながらスキル構成と相性を検討できるツール"
+  structuredDataType="tool"
+  structuredData={{
+    name: 'スキルビルダー',
+    description: 'SP予算を見ながらスキル構成と相性を検討できるツール',
+    url: '/ja/tools/skill-builder/'
+  }}
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ツール', href: '/ja/tools/' }, { label: 'スキルビルダー' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">スキルビルダー</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        スキルの組み合わせ、SPコスト、シナジーをまとめて整理できます。
+      </p>
+    </div>
+
+    <SkillBuilder client:load />
+  </main>
+</Layout>
+
+
+
+

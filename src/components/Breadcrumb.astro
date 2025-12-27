@@ -1,5 +1,6 @@
 ---
 import { Home, ChevronRight } from 'lucide-react';
+import { getLocaleFromPathname, localizePathname, type Locale } from '@/lib/i18n';
 
 export interface BreadcrumbItem {
   label: string;
@@ -11,16 +12,20 @@ interface Props {
 }
 
 const { items } = Astro.props;
+
+const locale: Locale = getLocaleFromPathname(Astro.url.pathname);
+const homeHref = localizePathname('/', locale);
+const homeLabel = locale === 'ja' ? 'ホーム' : locale === 'zh' ? '首页' : 'Home';
 ---
 
 <nav class="flex items-center gap-2 text-sm mb-6 sm:mb-8" aria-label="Breadcrumb">
   <a
-    href="/"
+    href={homeHref}
     class="flex items-center gap-1 text-gray-600 hover:text-uma-primary transition-colors"
-    aria-label="Home"
+    aria-label={homeLabel}
   >
     <Home className="w-4 h-4" />
-    <span class="hidden sm:inline">Home</span>
+    <span class="hidden sm:inline">{homeLabel}</span>
   </a>
 
   {items.map((item, index) => (

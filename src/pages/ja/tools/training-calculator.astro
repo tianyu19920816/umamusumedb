@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import TrainingCalculator from '@/components/tools/TrainingCalculator';
+---
+
+<Layout
+  title="育成計算 - ウマ娘DB"
+  description="サポカ構成別にステータス伸びを見積もる育成計算ツール"
+  structuredDataType="tool"
+  structuredData={{
+    name: '育成計算',
+    description: 'サポカ構成別にステータス伸びを見積もる育成計算ツール',
+    url: '/ja/tools/training-calculator/'
+  }}
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ツール', href: '/ja/tools/' }, { label: '育成計算' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">育成計算</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        育成方針とサポカ構成に応じて、ステータスの伸びをざっくり見積もります。
+      </p>
+    </div>
+
+    <TrainingCalculator client:load />
+  </main>
+</Layout>
+
+
+
+

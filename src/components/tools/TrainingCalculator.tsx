@@ -29,10 +29,11 @@ interface TrainingBreakdown {
   rawGains: { [key: string]: number };
   caps: { [key: string]: boolean };
   multipliers: {
+    trainingLevel: number;
     growth: number;
     mood: number;
-    training: number;
-    support: number;
+    cardTraining: number;
+    multiBonus: number;
     friendship: number;
     total: number;
   };
@@ -47,38 +48,59 @@ interface TrainingResult {
   warnings: string[];
 }
 
+// Base stats at Training Lv1 - these scale with training level
 const TRAINING_TYPES: TrainingType[] = [
   {
     name: 'Speed',
     icon: <Zap className="w-4 h-4 text-blue-500" />,
-    baseStats: { speed: 10, stamina: 0, power: 2, guts: 0, wisdom: 0, skillPt: 4 },
-    failureRate: 5
+    baseStats: { speed: 10, stamina: 0, power: 3, guts: 0, wisdom: 0, skillPt: 4 },
+    failureRate: 3
   },
   {
     name: 'Stamina',
     icon: <Heart className="w-4 h-4 text-red-500" />,
     baseStats: { speed: 0, stamina: 10, power: 0, guts: 3, wisdom: 0, skillPt: 4 },
-    failureRate: 10
+    failureRate: 5
   },
   {
     name: 'Power',
     icon: <Activity className="w-4 h-4 text-orange-500" />,
     baseStats: { speed: 2, stamina: 0, power: 10, guts: 0, wisdom: 0, skillPt: 4 },
-    failureRate: 10
+    failureRate: 5
   },
   {
     name: 'Guts',
     icon: <Target className="w-4 h-4 text-purple-500" />,
     baseStats: { speed: 0, stamina: 2, power: 2, guts: 10, wisdom: 0, skillPt: 4 },
-    failureRate: 15
+    failureRate: 8
   },
   {
     name: 'Wisdom',
     icon: <Brain className="w-4 h-4 text-green-500" />,
-    baseStats: { speed: 0, stamina: 0, power: 0, guts: 0, wisdom: 10, skillPt: 8 },
-    failureRate: 5
+    baseStats: { speed: 2, stamina: 0, power: 0, guts: 0, wisdom: 10, skillPt: 8 },
+    failureRate: 0 // Wisdom training restores energy, no failure
   }
 ];
+
+// Training level multipliers (Lv1=1.0x, Lv5=2.0x approximately)
+const TRAINING_LEVEL_MULTIPLIERS = {
+  1: 1.0,
+  2: 1.25,
+  3: 1.5,
+  4: 1.75,
+  5: 2.0
+};
+
+// Multi-character training bonus (number of support cards on same training)
+const MULTI_TRAINING_BONUS = {
+  0: 1.0,   // No support cards
+  1: 1.05,  // 1 card: +5%
+  2: 1.10,  // 2 cards: +10%
+  3: 1.15,  // 3 cards: +15%
+  4: 1.20,  // 4 cards: +20%
+  5: 1.25,  // 5 cards: +25%
+  6: 1.30   // 6 cards (all): +30%
+};
 
 const PRESET_CARDS: SupportCard[] = [
   {
@@ -140,19 +162,26 @@ export default function TrainingCalculator() {
       });
     });
 
-    const growthRate = 0.2;
+    // Character growth rate (depends on character's growth bonus, typically 0-30%)
+    const growthRate = 0.2; // Average 20% growth bonus
     const growthMultiplier = 1 + growthRate;
 
-    const moodMultiplier = motivation === 5 ? 1.2 :
-      motivation === 4 ? 1.1 :
-      motivation === 3 ? 1.0 :
-      motivation === 2 ? 0.9 : 0.8;
+    // Motivation multiplier (やる気)
+    const moodMultiplier = motivation === 5 ? 1.2 :  // 絶好調
+      motivation === 4 ? 1.1 :  // 好調
+      motivation === 3 ? 1.0 :  // 普通
+      motivation === 2 ? 0.9 :  // 不調
+      0.8;                      // 絶不調
 
-    const trainingEffectiveness = trainingLevel * 0.05;
+    // Training level multiplier (Lv1-5)
+    const trainingLevelMultiplier = TRAINING_LEVEL_MULTIPLIERS[trainingLevel as keyof typeof TRAINING_LEVEL_MULTIPLIERS] || 1.0;
+    
+    // Support card training bonus (from card effects)
     const trainingBonusFromCards = supportCards.reduce((sum, card) => sum + card.trainingBonus, 0) / 100;
-    const trainingMultiplier = 1 + trainingEffectiveness + trainingBonusFromCards;
+    const cardTrainingMultiplier = 1 + trainingBonusFromCards;
 
-    const supportMultiplier = 1 + supportCards.length * 0.05;
+    // Multi-character training bonus (number of cards present)
+    const multiBonus = MULTI_TRAINING_BONUS[supportCards.length as keyof typeof MULTI_TRAINING_BONUS] || 1.0;
 
     // Friendship training bonus (activated when bond >= 80)
     let friendshipBonus = 0;
@@ -165,7 +194,7 @@ export default function TrainingCalculator() {
     }
     const friendshipMultiplier = 1 + (friendshipBonus / 100);
 
-    const combinedMultiplier = growthMultiplier * moodMultiplier * trainingMultiplier * supportMultiplier * friendshipMultiplier;
+    const combinedMultiplier = trainingLevelMultiplier * growthMultiplier * moodMultiplier * cardTrainingMultiplier * multiBonus * friendshipMultiplier;
 
     const finalStats: { [key: string]: number } = {};
     const rawGains: { [key: string]: number } = {};
@@ -219,10 +248,11 @@ export default function TrainingCalculator() {
         rawGains,
         caps,
         multipliers: {
+          trainingLevel: trainingLevelMultiplier,
           growth: growthMultiplier,
           mood: moodMultiplier,
-          training: trainingMultiplier,
-          support: supportMultiplier,
+          cardTraining: cardTrainingMultiplier,
+          multiBonus: multiBonus,
           friendship: friendshipMultiplier,
           total: combinedMultiplier
         }
@@ -451,26 +481,30 @@ export default function TrainingCalculator() {
               <h4 className="text-sm font-semibold text-gray-700 mb-2">Multipliers</h4>
               <div className="grid sm:grid-cols-2 gap-2 text-xs text-gray-600">
                 <div className="flex items-center justify-between">
-                  <span>Growth</span>
+                  <span>Training Lv{trainingLevel}</span>
+                  <span>{calculateTraining.breakdown.multipliers.trainingLevel.toFixed(2)}×</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Character Growth</span>
                   <span>{calculateTraining.breakdown.multipliers.growth.toFixed(2)}×</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span>Mood</span>
+                  <span>Motivation (やる気)</span>
                   <span>{calculateTraining.breakdown.multipliers.mood.toFixed(2)}×</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span>Training</span>
-                  <span>{calculateTraining.breakdown.multipliers.training.toFixed(2)}×</span>
+                  <span>Card Training Bonus</span>
+                  <span>{calculateTraining.breakdown.multipliers.cardTraining.toFixed(2)}×</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span>Support Count</span>
-                  <span>{calculateTraining.breakdown.multipliers.support.toFixed(2)}×</span>
+                  <span>Multi-Training ({supportCards.length} cards)</span>
+                  <span>{calculateTraining.breakdown.multipliers.multiBonus.toFixed(2)}×</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span>Friendship</span>
+                  <span>Friendship Training</span>
                   <span>{calculateTraining.breakdown.multipliers.friendship.toFixed(2)}×</span>
                 </div>
-                <div className="flex items-center justify-between font-semibold text-blue-600">
+                <div className="flex items-center justify-between font-semibold text-blue-600 col-span-2 pt-2 border-t">
                   <span>Total Multiplier</span>
                   <span>{calculateTraining.breakdown.multipliers.total.toFixed(2)}×</span>
                 </div>
@@ -503,15 +537,16 @@ export default function TrainingCalculator() {
 
         <div className="mt-4 p-4 bg-blue-50 rounded-lg">
           <h4 className="font-semibold mb-2">Training Formula & Tips</h4>
-          <div className="text-xs text-gray-600 mb-2 font-mono bg-white p-2 rounded">
-            (Base + Stat Bonus) × {calculateTraining.breakdown.multipliers.growth.toFixed(2)} × {calculateTraining.breakdown.multipliers.mood.toFixed(2)} × {calculateTraining.breakdown.multipliers.training.toFixed(2)} × {calculateTraining.breakdown.multipliers.support.toFixed(2)} × {calculateTraining.breakdown.multipliers.friendship.toFixed(2)}
+          <div className="text-xs text-gray-600 mb-2 font-mono bg-white p-2 rounded overflow-x-auto">
+            Base × Lv({calculateTraining.breakdown.multipliers.trainingLevel.toFixed(2)}) × Growth({calculateTraining.breakdown.multipliers.growth.toFixed(2)}) × Mood({calculateTraining.breakdown.multipliers.mood.toFixed(2)}) × Cards({calculateTraining.breakdown.multipliers.cardTraining.toFixed(2)}) × Multi({calculateTraining.breakdown.multipliers.multiBonus.toFixed(2)}) × Friend({calculateTraining.breakdown.multipliers.friendship.toFixed(2)})
           </div>
           <ul className="text-sm text-gray-700 space-y-1">
-            <li>• Motivation: Great★★★★★ +20%, Good★★★★ +10%, Normal★★★ 0%, Bad★★ -10%, Awful★ -20%</li>
-            <li>• Friendship Training activates when Bond ≥ 80 (orange gauge)</li>
-            <li>• Each support card adds +5% to all gains</li>
-            <li>• Training cap: +100 max per session (halved to +50 if stat &gt; 1200)</li>
-            <li>• Low energy increases failure risk - rest when below 30%</li>
+            <li>• <strong>Training Level:</strong> Lv1=1.0×, Lv2=1.25×, Lv3=1.5×, Lv4=1.75×, Lv5=2.0×</li>
+            <li>• <strong>Motivation (やる気):</strong> 絶好調+20%, 好調+10%, 普通±0%, 不調-10%, 絶不調-20%</li>
+            <li>• <strong>Friendship Training:</strong> Activates when Bond ≥ 80 (orange gauge)</li>
+            <li>• <strong>Multi-Training:</strong> +5% per card present (up to +30% with 6 cards)</li>
+            <li>• <strong>Cap:</strong> +100 max per stat (reduces to +50 if stat &gt; 1200)</li>
+            <li>• <strong>Wisdom Training:</strong> Restores energy instead of consuming it</li>
           </ul>
         </div>
       </div>

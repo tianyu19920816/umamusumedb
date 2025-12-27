@@ -1,0 +1,111 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+---
+
+<Layout title="ツール - ウマ娘DB" description="ウマ娘の育成を最適化する計算機・ビルダー集">
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'ツール' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">育成ツール</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        育成の意思決定を早く・正確に。国際版ユーザー向けに用語も分かりやすく整理していきます。
+      </p>
+    </div>
+
+    <div class="min-h-screen">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <a
+            href="/ja/tools/factor-calculator/"
+            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-yellow-400"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-yellow-600"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h3 class="text-xl font-bold">因子計算</h3>
+            </div>
+            <p class="text-gray-600">因子継承確率を整理して、狙う育成ルートを決めやすくします。</p>
+            <span class="inline-block mt-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 opacity-50 cursor-not-allowed">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3 class="text-xl font-bold">チームビルダー</h3>
+            </div>
+            <p class="text-gray-600">チーム編成を最適化する機能（準備中）。</p>
+            <span class="inline-block mt-2 text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Coming Soon</span>
+          </div>
+
+          <a
+            href="/ja/tools/training-calculator/"
+            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-purple-400"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-purple-600"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+              </div>
+              <h3 class="text-xl font-bold">育成計算</h3>
+            </div>
+            <p class="text-gray-600">サポカ構成別にステータスの伸びを見積もり、育成方針を決めます。</p>
+            <span class="inline-block mt-2 text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/ja/tools/support-deck/"
+            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-red-400"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-red-600"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg>
+              </div>
+              <h3 class="text-xl font-bold">デッキビルダー</h3>
+            </div>
+            <p class="text-gray-600">6枚デッキの雛形作りと相性整理を素早く行えます。</p>
+            <span class="inline-block mt-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/ja/tools/training-goals/"
+            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-green-400"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-600"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+              </div>
+              <h3 class="text-xl font-bold">目標管理</h3>
+            </div>
+            <p class="text-gray-600">キャラ別の目標レースと達成のコツを一覧できます。</p>
+            <span class="inline-block mt-2 text-xs bg-green-100 text-green-800 px-2 py-1 rounded">NEW</span>
+          </a>
+
+          <a
+            href="/ja/tools/skill-builder/"
+            class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow border-2 border-indigo-400"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-indigo-600"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+              </div>
+              <h3 class="text-xl font-bold">スキルビルダー</h3>
+            </div>
+            <p class="text-gray-600">SP予算を見ながらスキル構成と相性を検討できます。</p>
+            <span class="inline-block mt-2 text-xs bg-indigo-100 text-indigo-800 px-2 py-1 rounded">NEW</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+
+
+

@@ -7,6 +7,7 @@ import { supportCards as staticSupportCards } from '@/lib/static-content';
 interface DeckSlot {
   card: SupportCard | null;
   position: number;
+  lb: number; // Limit Break level 0-4
 }
 
 interface DeckAnalysis {
@@ -49,6 +50,26 @@ const getRarityColorClasses = (rarity: string) => {
   }
 };
 
+// Limit Break bonus multipliers (LB0 = 1.0x, LB4 = ~1.5x for stats)
+const LB_MULTIPLIERS = {
+  0: 1.0,
+  1: 1.1,
+  2: 1.2,
+  3: 1.35,
+  4: 1.5
+};
+
+// LB color classes
+const getLBColorClass = (lb: number) => {
+  switch (lb) {
+    case 4: return 'bg-yellow-500 text-white';
+    case 3: return 'bg-purple-500 text-white';
+    case 2: return 'bg-blue-500 text-white';
+    case 1: return 'bg-green-500 text-white';
+    default: return 'bg-gray-300 text-gray-700';
+  }
+};
+
 const DECK_TEMPLATES = [
   {
     name: 'Speed Focus',
@@ -75,7 +96,7 @@ const DECK_TEMPLATES = [
 export default function SupportDeckBuilder() {
   const [availableCards, setAvailableCards] = useState<SupportCard[]>([]);
   const [deck, setDeck] = useState<DeckSlot[]>(
-    Array.from({ length: 6 }, (_, i) => ({ card: null, position: i }))
+    Array.from({ length: 6 }, (_, i) => ({ card: null, position: i, lb: 0 }))
   );
   const [lockedSlots, setLockedSlots] = useState<boolean[]>(
     Array.from({ length: 6 }, () => false)
@@ -205,13 +226,21 @@ export default function SupportDeckBuilder() {
       analysis.recommendations.push('Duplicate support cards detected — duplicates do not stack');
     }
 
+    // Calculate total LB value
+    const totalLB = deck.reduce((sum, slot) => sum + (slot.card ? slot.lb : 0), 0);
+    const avgLBMultiplier = deck.filter(s => s.card).length > 0
+      ? deck.reduce((sum, slot) => sum + (slot.card ? LB_MULTIPLIERS[slot.lb as keyof typeof LB_MULTIPLIERS] : 0), 0) / deck.filter(s => s.card).length
+      : 1.0;
+
     // Improved scoring algorithm that better reflects card value
     analysis.score = Math.round(
-      // Primary: Friendship and training bonuses (50% weight)
-      (analysis.totalBonus.friendship + analysis.totalBonus.training) * 0.5 +
+      // Primary: Friendship and training bonuses with LB multiplier (50% weight)
+      (analysis.totalBonus.friendship + analysis.totalBonus.training) * 0.5 * avgLBMultiplier +
       // Secondary: Rarity quality (SSR=15pts, SR=8pts each)
       analysis.rarityCount.SSR * 15 +
       analysis.rarityCount.SR * 8 +
+      // LB bonus (3pts per LB level)
+      totalLB * 3 +
       // Type diversity (5pts per unique type)
       typeCount * 5 +
       // Bonus for having Friend card (20pts - very valuable)
@@ -223,11 +252,19 @@ export default function SupportDeckBuilder() {
     return analysis;
   }, [deck]);
 
-  const addCardToDeck = (card: SupportCard, position: number) => {
+  const addCardToDeck = (card: SupportCard, position: number, lb: number = 0) => {
     if (lockedSlots[position]) return;
     const newDeck = [...deck];
-    newDeck[position] = { card, position };
+    newDeck[position] = { card, position, lb };
     setDeck(newDeck);
+  };
+
+  const setCardLB = (position: number, lb: number) => {
+    const newDeck = [...deck];
+    if (newDeck[position].card) {
+      newDeck[position] = { ...newDeck[position], lb: Math.max(0, Math.min(4, lb)) };
+      setDeck(newDeck);
+    }
   };
 
   const removeCardFromDeck = (position: number) => {
@@ -249,7 +286,7 @@ export default function SupportDeckBuilder() {
     setSelectedTemplate(template);
 
     const retainedDeck = deck.map((slot, idx) =>
-      lockedSlots[idx] ? slot : { card: null, position: idx }
+      lockedSlots[idx] ? slot : { card: null, position: idx, lb: 0 }
     );
 
     const occupiedIds = new Set(
@@ -263,7 +300,7 @@ export default function SupportDeckBuilder() {
         (slot, idx) => !lockedSlots[idx] && !slot.card
       );
       if (targetIndex === -1) return;
-      retainedDeck[targetIndex] = { card, position: targetIndex };
+      retainedDeck[targetIndex] = { card, position: targetIndex, lb: 0 };
       occupiedIds.add(card.id);
     };
 
@@ -286,7 +323,7 @@ export default function SupportDeckBuilder() {
   };
 
   const clearDeck = () => {
-    setDeck(Array.from({ length: 6 }, (_, i) => ({ card: null, position: i })));
+    setDeck(Array.from({ length: 6 }, (_, i) => ({ card: null, position: i, lb: 0 })));
     setLockedSlots(Array.from({ length: 6 }, () => false));
     setSelectedTemplate(null);
   };
@@ -328,11 +365,15 @@ export default function SupportDeckBuilder() {
                   <div className={`absolute top-0 left-0 right-0 h-1 ${getTypeColorClasses(slot.card.type).split(' ')[0]}`} />
                   <div className="h-full flex flex-col relative overflow-hidden">
                     <div className="absolute inset-0">
-                      {slot.card.image_url ? (
+                      {(slot.card.character_image_url || slot.card.image_url) ? (
                         <img 
-                          src={slot.card.image_url} 
+                          src={slot.card.character_image_url || slot.card.image_url} 
                           alt={slot.card.name_en}
                           className="w-full h-full object-cover opacity-90"
+                          onError={(e) => {
+                            // Fallback to placeholder on error
+                            e.currentTarget.style.display = 'none';
+                          }}
                         />
                       ) : (
                         <PlaceholderImage
@@ -352,10 +393,28 @@ export default function SupportDeckBuilder() {
                       </div>
                       <div className="mt-auto">
                         <div className="flex items-center justify-between">
-                          <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${getRarityColorClasses(slot.card.rarity)}`}>
-                            {slot.card.rarity}
-                         </span>
-                         <button
+                          <div className="flex items-center gap-1">
+                            <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${getRarityColorClasses(slot.card.rarity)}`}>
+                              {slot.card.rarity}
+                            </span>
+                            <select
+                              value={slot.lb}
+                              onChange={(e) => {
+                                e.stopPropagation();
+                                setCardLB(index, parseInt(e.target.value));
+                              }}
+                              onClick={(e) => e.stopPropagation()}
+                              className={`text-[10px] font-bold px-1 py-0.5 rounded cursor-pointer ${getLBColorClass(slot.lb)}`}
+                              title="Limit Break Level"
+                            >
+                              <option value={0}>LB0</option>
+                              <option value={1}>LB1</option>
+                              <option value={2}>LB2</option>
+                              <option value={3}>LB3</option>
+                              <option value={4}>LB4</option>
+                            </select>
+                          </div>
+                          <button
                             onClick={() => removeCardFromDeck(index)}
                             className={`transition rounded-full p-1 ${
                               lockedSlots[index]
@@ -424,6 +483,20 @@ export default function SupportDeckBuilder() {
                   <span className="text-sm text-gray-600">SSR / SR / R</span>
                   <span className="font-bold text-purple-600">
                     {analyzeDeck.rarityCount.SSR}/{analyzeDeck.rarityCount.SR}/{analyzeDeck.rarityCount.R}
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600">Total LB</span>
+                  <span className="font-bold text-yellow-600">
+                    {deck.reduce((sum, slot) => sum + (slot.card ? slot.lb : 0), 0)}/24
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-600">Avg. Multiplier</span>
+                  <span className="font-bold text-green-600">
+                    {deck.filter(s => s.card).length > 0
+                      ? (deck.reduce((sum, slot) => sum + (slot.card ? LB_MULTIPLIERS[slot.lb as keyof typeof LB_MULTIPLIERS] : 0), 0) / deck.filter(s => s.card).length).toFixed(2)
+                      : '1.00'}×
                   </span>
                 </div>
               </div>
@@ -533,11 +606,14 @@ export default function SupportDeckBuilder() {
                 <div className={`absolute top-0 left-0 right-0 h-1 ${getTypeColorClasses(card.type).split(' ')[0]}`} />
                 <div className="h-full relative overflow-hidden">
                   <div className="absolute inset-0">
-                    {card.image_url ? (
+                    {(card.character_image_url || card.image_url) ? (
                       <img 
-                        src={card.image_url} 
+                        src={card.character_image_url || card.image_url} 
                         alt={card.name_en}
                         className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
                       />
                     ) : (
                       <PlaceholderImage

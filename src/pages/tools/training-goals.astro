@@ -1,34 +1,32 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import TrainingGoals from '../../components/tools/TrainingGoals';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import TrainingGoals from '@/components/tools/TrainingGoals';
 ---
 
-<Layout title="Training Goals Tracker - UmamusumeDB" description="Track and manage training goals for each Uma Musume character">
-  <div class="container mx-auto px-4 py-8">
-    <!-- Breadcrumb Navigation -->
-    <nav class="text-sm mb-6">
-      <ol class="flex items-center space-x-2">
-        <li><a href="/" class="text-uma-primary hover:underline">Home</a></li>
-        <li class="text-gray-400">/</li>
-        <li><a href="/tools/" class="text-uma-primary hover:underline">Tools</a></li>
-        <li class="text-gray-400">/</li>
-        <li class="text-gray-600">Training Goals</li>
-      </ol>
-    </nav>
+<Layout
+  title="Training Goals Tracker - UmamusumeDB"
+  description="Track and manage training goals for each Uma Musume character"
+  structuredDataType="tool"
+  structuredData={{
+    name: 'Training Goals Tracker',
+    description: "Track your progress through each character's training goals and get tips for completing them.",
+    url: '/tools/training-goals/'
+  }}
+>
+  <Header />
 
-    <div class="mb-8">
-      <h1 class="text-3xl font-bold mb-4">Training Goals Tracker</h1>
-      <p class="text-gray-600">Track your progress through each character's training goals and get tips for completing them.</p>
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Tools', href: '/tools/' }, { label: 'Training Goals' }]} />
+
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Training Goals Tracker</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        Track character-specific goals and get practical tips for each checkpoint.
+      </p>
     </div>
 
     <TrainingGoals client:load />
-
-    <!-- Back to Tools Button -->
-    <div class="mt-8">
-      <a href="/tools/" class="inline-flex items-center gap-2 px-4 py-2 bg-uma-primary text-white rounded-lg hover:bg-uma-primary/90 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-        Back to Tools
-      </a>
-    </div>
-  </div>
+  </main>
 </Layout>

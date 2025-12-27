@@ -1,0 +1,162 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import CharacterCard from '@/components/CharacterCard';
+import SupportCardCard from '@/components/SupportCardCard';
+import { characters, supportCards, skills } from '@/lib/static-content';
+import type { Skill } from '@/types';
+import { Sparkles, Info, Zap, Users } from 'lucide-react';
+
+export function getStaticPaths() {
+  return skills.map((skill) => ({
+    params: { id: skill.id },
+    props: { skill }
+  }));
+}
+
+const { skill } = Astro.props as { skill: Skill };
+
+const norm = (s: string) =>
+  String(s ?? '')
+    .trim()
+    .toLowerCase();
+
+const skillNames = new Set([norm(skill.name_en), norm(skill.name_jp || '')].filter(Boolean));
+
+const linkedCards = supportCards.filter((card) =>
+  (card.skills || []).some((name) => skillNames.has(norm(name)))
+);
+
+const linkedCharacters = characters.filter((c) => {
+  const unique = c.unique_skill?.name_en ? norm(c.unique_skill.name_en) : '';
+  const uniqueJp = c.unique_skill?.name_jp ? norm(c.unique_skill.name_jp) : '';
+  if (unique && skillNames.has(unique)) return true;
+  if (uniqueJp && skillNames.has(uniqueJp)) return true;
+  return (c.awakening_skills || []).some((s) => skillNames.has(norm(s)));
+});
+---
+
+<Layout
+  title={`${skill.name_en} - Skill Details | UmamusumeDB`}
+  description={`${skill.name_en} (${skill.name_jp || ''}) skill details: effect, trigger condition, duration, and cross-links to support cards and characters.`}
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Skills', href: '/skills/' }, { label: skill.name_en }]} />
+
+    <div class="grid lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Left: Skill summary -->
+      <div class="lg:col-span-1">
+        <div class="glass rounded-xl p-6 sticky top-20">
+          <h1 class="text-2xl font-display gradient-text">{skill.name_en}</h1>
+          {skill.name_jp && <p class="text-gray-600 font-jp mt-1">{skill.name_jp}</p>}
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            {skill.rarity && (
+              <span class="text-xs px-3 py-1.5 rounded-full bg-uma-primary/10 text-uma-primary font-bold">
+                {skill.rarity}
+              </span>
+            )}
+            {skill.skill_type && (
+              <span class="text-xs px-3 py-1.5 rounded-full bg-gray-100 text-gray-700 uppercase">
+                {skill.skill_type}
+              </span>
+            )}
+            {typeof skill.cost === 'number' && (
+              <span class="text-xs px-3 py-1.5 rounded-full bg-uma-accent/10 text-uma-dark">
+                SP {skill.cost}
+              </span>
+            )}
+          </div>
+
+          <div class="mt-5 space-y-3 text-sm text-gray-700">
+            <div class="flex items-start gap-2">
+              <Sparkles className="w-4 h-4 text-uma-accent mt-0.5" />
+              <div>
+                <div class="text-gray-500 text-xs uppercase tracking-wide">Effect</div>
+                <div class="font-medium">{skill.effect || skill.description_en || '—'}</div>
+              </div>
+            </div>
+            {skill.trigger_condition && (
+              <div class="flex items-start gap-2">
+                <Info className="w-4 h-4 text-uma-primary mt-0.5" />
+                <div>
+                  <div class="text-gray-500 text-xs uppercase tracking-wide">Trigger</div>
+                  <div class="font-medium">{skill.trigger_condition}</div>
+                </div>
+              </div>
+            )}
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-white rounded-lg p-3 border border-uma-primary/10">
+                <div class="text-xs text-gray-500">Duration</div>
+                <div class="font-semibold">{skill.duration || '—'}</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border border-uma-primary/10">
+                <div class="text-xs text-gray-500">Cooldown</div>
+                <div class="font-semibold">{skill.cooldown || '—'}</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border border-uma-primary/10">
+                <div class="text-xs text-gray-500">Activation</div>
+                <div class="font-semibold">{skill.activation_rate || '—'}</div>
+              </div>
+              <div class="bg-white rounded-lg p-3 border border-uma-primary/10">
+                <div class="text-xs text-gray-500">Skill ID</div>
+                <div class="font-mono text-xs">{skill.id}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 text-sm">
+            <a href="/tools/skill-builder/" class="text-uma-primary hover:underline inline-flex items-center gap-2">
+              <Zap className="w-4 h-4" />
+              Open Skill Builder
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Cross-links -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Users className="w-5 h-5 text-uma-primary" />
+            Related Characters
+            <span class="text-sm text-gray-500 font-normal">({linkedCharacters.length})</span>
+          </h2>
+          {linkedCharacters.length ? (
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {linkedCharacters.map((c) => (
+                <CharacterCard character={c} client:load />
+              ))}
+            </div>
+          ) : (
+            <p class="text-gray-600 text-sm">No linked characters found for this skill yet.</p>
+          )}
+        </div>
+
+        <div class="glass rounded-xl p-6">
+          <h2 class="text-xl font-display mb-4 flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-uma-secondary" />
+            Related Support Cards
+            <span class="text-sm text-gray-500 font-normal">({linkedCards.length})</span>
+          </h2>
+          {linkedCards.length ? (
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {linkedCards.map((c) => (
+                <SupportCardCard card={c} client:load />
+              ))}
+            </div>
+          ) : (
+            <p class="text-gray-600 text-sm">No linked support cards found for this skill yet.</p>
+          )}
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+
+
+

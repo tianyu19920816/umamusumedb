@@ -1,5 +1,113 @@
 ---
-// Footer component for legal links and site info
+import { getLocaleFromPathname, localizePathname, type Locale } from '@/lib/i18n';
+
+const locale: Locale = getLocaleFromPathname(Astro.url.pathname);
+
+const hrefHome = localizePathname('/', locale);
+const hrefCharacters = localizePathname('/characters/', locale);
+const hrefCards = localizePathname('/cards/', locale);
+const hrefSkills = localizePathname('/skills/', locale);
+const hrefTierList = localizePathname('/tier-list/', locale);
+const hrefTools = localizePathname('/tools/', locale);
+const hrefGuides = localizePathname('/guides/', locale);
+
+const STRINGS: Record<
+  Locale,
+  {
+    about: string;
+    quickLinks: string;
+    tools: string;
+    legal: string;
+    links: {
+      home: string;
+      characters: string;
+      cards: string;
+      skills: string;
+      tierList: string;
+      tools: string;
+      guides: string;
+      privacy: string;
+      tos: string;
+      dataSources: string;
+      factorCalc: string;
+      trainingCalc: string;
+      deckBuilder: string;
+    };
+    disclaimer: string;
+  }
+> = {
+  en: {
+    about: 'Fan-created database and tools for Uma Musume Pretty Derby.',
+    quickLinks: 'Quick Links',
+    tools: 'Tools',
+    legal: 'Legal',
+    links: {
+      home: 'Home',
+      characters: 'Characters',
+      cards: 'Support Cards',
+      skills: 'Skills',
+      tierList: 'Tier Lists',
+      tools: 'Tools',
+      guides: 'Guides',
+      privacy: 'Privacy Policy',
+      tos: 'Terms of Service',
+      dataSources: 'Data Sources',
+      factorCalc: 'Factor Calculator',
+      trainingCalc: 'Training Calculator',
+      deckBuilder: 'Deck Builder'
+    },
+    disclaimer:
+      'Not affiliated with Cygames, Inc. or Uma Musume Pretty Derby. All game content and trademarks are property of their respective owners.'
+  },
+  ja: {
+    about: 'ファン制作のウマ娘プリティーダービー用データベース＆ツール。',
+    quickLinks: 'リンク',
+    tools: 'ツール',
+    legal: '法的情報',
+    links: {
+      home: 'ホーム',
+      characters: 'キャラクター',
+      cards: 'サポートカード',
+      skills: 'スキル',
+      tierList: 'ティアリスト',
+      tools: 'ツール',
+      guides: 'ガイド',
+      privacy: 'プライバシーポリシー',
+      tos: '利用規約',
+      dataSources: 'データソース',
+      factorCalc: '因子計算',
+      trainingCalc: '育成計算',
+      deckBuilder: 'デッキビルダー'
+    },
+    disclaimer:
+      '当サイトは Cygames, Inc. およびウマ娘プリティーダービーとは無関係です。ゲーム内コンテンツおよび商標は各権利者に帰属します。'
+  },
+  zh: {
+    about: '由玩家制作的赛马娘数据库与工具站。',
+    quickLinks: '快速链接',
+    tools: '工具',
+    legal: '法律信息',
+    links: {
+      home: '首页',
+      characters: '角色',
+      cards: '支援卡',
+      skills: '技能',
+      tierList: '梯度榜',
+      tools: '工具',
+      guides: '攻略',
+      privacy: '隐私政策',
+      tos: '服务条款',
+      dataSources: '数据来源',
+      factorCalc: '因子计算器',
+      trainingCalc: '育成计算器',
+      deckBuilder: '卡组构建器'
+    },
+    disclaimer:
+      '本站与 Cygames, Inc. 或《赛马娘Pretty Derby》无关。游戏内容与商标归各自权利人所有。'
+  }
+};
+
+const s = STRINGS[locale] ?? STRINGS.en;
 ---
 
 <footer class="mt-16 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
@@ -9,38 +117,41 @@
       <div>
         <h3 class="font-bold text-lg mb-3 gradient-text">UmamusumeDB</h3>
         <p class="text-sm text-gray-600">
-          Fan-created database and tools for Uma Musume Pretty Derby.
+          {s.about}
         </p>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h3 class="font-bold text-sm mb-3 text-gray-800">Quick Links</h3>
+        <h3 class="font-bold text-sm mb-3 text-gray-800">{s.quickLinks}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/" class="text-gray-600 hover:text-uma-primary transition-colors">Home</a></li>
-          <li><a href="/characters/" class="text-gray-600 hover:text-uma-primary transition-colors">Characters</a></li>
-          <li><a href="/cards/" class="text-gray-600 hover:text-uma-primary transition-colors">Support Cards</a></li>
-          <li><a href="/tier-list/" class="text-gray-600 hover:text-uma-primary transition-colors">Tier Lists</a></li>
-          <li><a href="/tools/" class="text-gray-600 hover:text-uma-primary transition-colors">Tools</a></li>
+          <li><a href={hrefHome} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.home}</a></li>
+          <li><a href={hrefCharacters} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.characters}</a></li>
+          <li><a href={hrefCards} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.cards}</a></li>
+          <li><a href={hrefSkills} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.skills}</a></li>
+          <li><a href={hrefTierList} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.tierList}</a></li>
+          <li><a href={hrefTools} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.tools}</a></li>
+          <li><a href={hrefGuides} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.guides}</a></li>
         </ul>
       </div>
 
       <!-- Tools -->
       <div>
-        <h3 class="font-bold text-sm mb-3 text-gray-800">Tools</h3>
+        <h3 class="font-bold text-sm mb-3 text-gray-800">{s.tools}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/tools/factor-calculator/" class="text-gray-600 hover:text-uma-primary transition-colors">Factor Calculator</a></li>
-          <li><a href="/tools/training-calculator/" class="text-gray-600 hover:text-uma-primary transition-colors">Training Calculator</a></li>
-          <li><a href="/tools/support-deck/" class="text-gray-600 hover:text-uma-primary transition-colors">Deck Builder</a></li>
+          <li><a href={localizePathname('/tools/factor-calculator/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.factorCalc}</a></li>
+          <li><a href={localizePathname('/tools/training-calculator/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.trainingCalc}</a></li>
+          <li><a href={localizePathname('/tools/support-deck/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.deckBuilder}</a></li>
         </ul>
       </div>
 
       <!-- Legal -->
       <div>
-        <h3 class="font-bold text-sm mb-3 text-gray-800">Legal</h3>
+        <h3 class="font-bold text-sm mb-3 text-gray-800">{s.legal}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/privacy-policy/" class="text-gray-600 hover:text-uma-primary transition-colors">Privacy Policy</a></li>
-          <li><a href="/terms-of-service/" class="text-gray-600 hover:text-uma-primary transition-colors">Terms of Service</a></li>
+          <li><a href={localizePathname('/privacy-policy/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.privacy}</a></li>
+          <li><a href={localizePathname('/terms-of-service/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.tos}</a></li>
+          <li><a href={localizePathname('/data-sources/', locale)} class="text-gray-600 hover:text-uma-primary transition-colors">{s.links.dataSources}</a></li>
         </ul>
       </div>
     </div>
@@ -52,8 +163,7 @@
           © {new Date().getFullYear()} UmamusumeDB. All rights reserved.
         </p>
         <p class="text-xs text-gray-500 text-center">
-          Not affiliated with Cygames, Inc. or Uma Musume Pretty Derby.<br>
-          All game content and trademarks are property of their respective owners.
+          {s.disclaimer}
         </p>
       </div>
     </div>

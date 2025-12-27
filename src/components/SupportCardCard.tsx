@@ -5,9 +5,17 @@ import type { SupportCard } from '@/types';
 
 interface SupportCardCardProps {
   card: SupportCard;
+  localePrefix?: string;
 }
 
-export default function SupportCardCard({ card }: SupportCardCardProps) {
+function normalizeLocalePrefix(prefix?: string) {
+  const raw = (prefix ?? '').trim();
+  if (!raw) return '';
+  if (raw === '/') return '';
+  return raw.startsWith('/') ? raw.replace(/\/$/, '') : `/${raw.replace(/\/$/, '')}`;
+}
+
+export default function SupportCardCard({ card, localePrefix }: SupportCardCardProps) {
   const typeColors = {
     speed: 'bg-red-500',
     stamina: 'bg-green-500',
@@ -48,12 +56,16 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
 
       {/* Card Image */}
       <div className="relative h-56 overflow-hidden bg-gradient-to-br from-uma-primary/10 to-uma-secondary/10">
-        {card.image_url ? (
+        {(card.character_image_url || card.image_url) ? (
           <img 
-            src={card.image_url} 
+            src={card.character_image_url || card.image_url} 
             alt={card.name_en}
             className="absolute inset-0 w-full h-full object-contain object-center"
             loading="lazy"
+            onError={(e) => {
+              // Hide broken image
+              e.currentTarget.style.display = 'none';
+            }}
           />
         ) : (
           <PlaceholderImage 
@@ -118,7 +130,7 @@ export default function SupportCardCard({ card }: SupportCardCardProps) {
 
       {/* Hover Overlay - Make entire overlay clickable */}
       <a
-        href={`/cards/${card.id}/`}
+        href={`${normalizeLocalePrefix(localePrefix)}/cards/${card.id}/`}
         className="absolute inset-0 bg-gradient-to-t from-uma-primary/90 to-uma-secondary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center cursor-pointer z-30"
       >
         <span className="btn-secondary pointer-events-none">View Details</span>

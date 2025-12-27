@@ -1,50 +1,71 @@
 {
-  "generatedAt": "2025-11-08T07:43:48.435Z",
+  "generatedAt": "2025-12-27T09:26:14.258Z",
   "pages": [
     {
       "name_en": "Characters",
+      "name_ja": "キャラクター",
       "type": "page",
       "url": "/characters/"
     },
     {
       "name_en": "Support Cards",
+      "name_ja": "サポートカード",
       "type": "page",
       "url": "/cards/"
     },
     {
+      "name_en": "Skills",
+      "name_ja": "スキル",
+      "type": "page",
+      "url": "/skills/"
+    },
+    {
       "name_en": "Tier List",
+      "name_ja": "ティアリスト",
       "type": "page",
       "url": "/tier-list/"
     },
     {
       "name_en": "Tools",
+      "name_ja": "ツール",
       "type": "page",
       "url": "/tools/"
+    },
+    {
+      "name_en": "Guides",
+      "name_ja": "ガイド",
+      "type": "page",
+      "url": "/guides/"
     }
   ],
   "tools": [
     {
       "name_en": "Factor Calculator",
+      "name_ja": "因子計算",
       "type": "tool",
       "url": "/tools/factor-calculator/"
     },
     {
       "name_en": "Training Calculator",
+      "name_ja": "育成計算",
       "type": "tool",
       "url": "/tools/training-calculator/"
     },
     {
       "name_en": "Support Deck Builder",
+      "name_ja": "デッキビルダー",
       "type": "tool",
       "url": "/tools/support-deck/"
     },
     {
       "name_en": "Training Goals",
+      "name_ja": "目標管理",
       "type": "tool",
       "url": "/tools/training-goals/"
     },
     {
       "name_en": "Skill Builder",
+      "name_ja": "スキルビルダー",
       "type": "tool",
       "url": "/tools/skill-builder/"
     }
@@ -671,6 +692,384 @@
       "type": "card",
       "rarity": "R",
       "cardType": "friend"
+    }
+  ],
+  "skills": [
+    {
+      "id": "arc_maestro",
+      "name_en": "Arc Maestro",
+      "name_ja": "アーク・マエストロ",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "triumphant_pulse",
+      "name_en": "Triumphant Pulse",
+      "name_ja": "トリンフパルス",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "bakushin_burst",
+      "name_en": "Bakushin Burst",
+      "name_ja": "バクシン",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "transcendent_flash",
+      "name_en": "Transcendent Flash",
+      "name_ja": "先頭の景色は譲らない",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "speed_star",
+      "name_en": "Speed Star",
+      "name_ja": "スピードスター",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "stamina_keep",
+      "name_en": "Stamina Keep",
+      "name_ja": "スタミナキープ",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "positioning",
+      "name_en": "Positioning",
+      "name_ja": "ポジショニング",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "escape_artist",
+      "name_en": "Escape Artist",
+      "name_ja": "逃げの達人",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "leading_pride",
+      "name_en": "Leading Pride",
+      "name_ja": "先頭プライド",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "common"
+    },
+    {
+      "id": "chase_down",
+      "name_en": "Chase Down",
+      "name_ja": "追い込み",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "stamina_save",
+      "name_en": "Stamina Save",
+      "name_ja": "スタミナセーブ",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "pace_control",
+      "name_en": "Pace Control",
+      "name_ja": "ペースコントロール",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "final_push",
+      "name_en": "Final Push",
+      "name_ja": "最後の一押し",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "sprint_turbo",
+      "name_en": "Sprint Turbo",
+      "name_ja": "スプリントターボ",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "common"
+    },
+    {
+      "id": "mile_champion",
+      "name_en": "Mile Champion",
+      "name_ja": "マイルチャンピオン",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "long_runner",
+      "name_en": "Long Runner",
+      "name_ja": "長距離ランナー",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "dirt_master",
+      "name_en": "Dirt Master",
+      "name_ja": "ダートマスター",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "rain_master",
+      "name_en": "Rain Master",
+      "name_ja": "雨の達人",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "shadow_roll",
+      "name_en": "Shadow Roll",
+      "name_ja": "シャドーロール",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "emperors_authority",
+      "name_en": "Emperor's Authority",
+      "name_ja": "皇帝の威厳",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "turbo_engine",
+      "name_en": "Turbo Engine",
+      "name_ja": "ターボエンジン",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "scarlet_impact",
+      "name_en": "Scarlet Impact",
+      "name_ja": "スカーレットインパクト",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "never_give_up",
+      "name_en": "Never Give Up",
+      "name_ja": "ネバーギブアップ",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "comeback",
+      "name_en": "Comeback",
+      "name_ja": "カムバック",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "acceleration",
+      "name_en": "Acceleration",
+      "name_ja": "加速",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "curve_specialist",
+      "name_en": "Curve Specialist",
+      "name_ja": "カーブ巧者",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "straight_line_recovery",
+      "name_en": "Straight Line Recovery",
+      "name_ja": "直線回復",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "power_sprint",
+      "name_en": "Power Sprint",
+      "name_ja": "パワースプリント",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "concentration",
+      "name_en": "Concentration",
+      "name_ja": "集中力",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "skill_master",
+      "name_en": "Skill Master",
+      "name_ja": "スキルマスター",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "perfect_timing",
+      "name_en": "Perfect Timing",
+      "name_ja": "完璧なタイミング",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "common"
+    },
+    {
+      "id": "energy_drink",
+      "name_en": "Energy Drink",
+      "name_ja": "エナジードリンク",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "training"
+    },
+    {
+      "id": "good_mood",
+      "name_en": "Good Mood",
+      "name_ja": "上機嫌",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "training"
+    },
+    {
+      "id": "all_rounder",
+      "name_en": "All-rounder",
+      "name_ja": "オールラウンダー",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "common"
+    },
+    {
+      "id": "triple_crown",
+      "name_en": "Triple Crown",
+      "name_ja": "三冠",
+      "type": "skill",
+      "rarity": "SS",
+      "skillType": "unique"
+    },
+    {
+      "id": "machine_gun_pace",
+      "name_en": "Machine Gun Pace",
+      "name_ja": "マシンガンペース",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "unique"
+    },
+    {
+      "id": "blue_rose_prayer",
+      "name_en": "Blue Rose Prayer",
+      "name_ja": "青薔薇の祈り",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "emperors_dance",
+      "name_en": "Emperor's Dance",
+      "name_ja": "帝王の舞",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "condors_flight",
+      "name_en": "Condor's Flight",
+      "name_ja": "コンドルの飛翔",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "unique"
+    },
+    {
+      "id": "wonder_charge",
+      "name_en": "Wonder Charge",
+      "name_ja": "ワンダーチャージ",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "unique"
+    },
+    {
+      "id": "steady_pace",
+      "name_en": "Steady Pace",
+      "name_ja": "ステディペース",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "common"
+    },
+    {
+      "id": "bronze_collector",
+      "name_en": "Bronze Collector",
+      "name_ja": "ブロンズコレクター",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "unique"
+    },
+    {
+      "id": "white_lightning",
+      "name_en": "White Lightning",
+      "name_ja": "白い稲妻",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "unique"
+    },
+    {
+      "id": "victory_ticket",
+      "name_en": "Victory Ticket",
+      "name_ja": "ビクトリーチケット",
+      "type": "skill",
+      "rarity": "B",
+      "skillType": "unique"
+    },
+    {
+      "id": "shuttle_burst",
+      "name_en": "Shuttle Burst",
+      "name_ja": "シャトルバースト",
+      "type": "skill",
+      "rarity": "S",
+      "skillType": "unique"
+    },
+    {
+      "id": "empress_pride",
+      "name_en": "Empress Pride",
+      "name_ja": "女帝のプライド",
+      "type": "skill",
+      "rarity": "A",
+      "skillType": "unique"
+    },
+    {
+      "id": "food_fighter",
+      "name_en": "Food Fighter",
+      "name_ja": "フードファイター",
+      "type": "skill",
+      "rarity": "C",
+      "skillType": "training"
     }
   ]
 }

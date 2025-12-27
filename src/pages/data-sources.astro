@@ -1,0 +1,74 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { ExternalLink, ShieldCheck, Database, Scale } from 'lucide-react';
+---
+
+<Layout
+  title="Data Sources & Licensing - UmamusumeDB"
+  description="Transparency page for UmamusumeDB: where data comes from, what licenses apply, and how we keep the site compliant and fan-friendly."
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8 max-w-4xl">
+    <Breadcrumb items={[{ label: 'Data Sources' }]} />
+
+    <div class="glass rounded-2xl p-6 sm:p-8">
+      <h1 class="text-2xl sm:text-4xl font-display gradient-text mb-4">Data Sources & Licensing</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        UmamusumeDB is a fan project. We aim to keep the site useful for players while respecting data licensing and copyrights.
+      </p>
+
+      <div class="mt-8 space-y-6">
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <Database className="w-5 h-5 text-uma-primary" />
+            Wikidata (CC0) — real racehorse facts
+          </h2>
+          <p class="text-sm text-gray-700 mt-2">
+            For “prototype racehorse” information (birth/death dates, sex, sire, etc.), we use <strong>Wikidata structured data</strong>.
+            Wikidata’s structured data is available under <strong>Creative Commons CC0</strong>.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-3 text-sm">
+            <a class="inline-flex items-center gap-2 text-uma-primary hover:underline" href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener noreferrer">
+              Wikidata Licensing
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <a class="inline-flex items-center gap-2 text-uma-primary hover:underline" href="https://query.wikidata.org/" target="_blank" rel="noopener noreferrer">
+              Wikidata Query Service (SPARQL)
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-green-600" />
+            Fan-curated game data
+          </h2>
+          <p class="text-sm text-gray-700 mt-2">
+            Character/support card/skill data on this site is curated for gameplay reference (filters, tools, cross-links, etc.).
+            We avoid hosting or distributing copyrighted game assets and do not claim ownership of any official content.
+          </p>
+        </section>
+
+        <section class="bg-white rounded-xl p-5 border border-uma-primary/10">
+          <h2 class="text-lg font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-uma-accent" />
+            Copyright & attribution
+          </h2>
+          <ul class="text-sm text-gray-700 list-disc list-inside space-y-1 mt-2">
+            <li><strong>Not affiliated</strong> with Cygames, Inc. or Uma Musume Pretty Derby.</li>
+            <li>All trademarks and game-related IP belong to their respective owners.</li>
+            <li>We provide external links to public sources when applicable.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+
+
+

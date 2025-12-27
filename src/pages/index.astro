@@ -3,11 +3,12 @@ import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import CharacterCard from '@/components/CharacterCard';
 import SupportCardCard from '@/components/SupportCardCard';
-import { characters, supportCards, getTierListByCategory } from '@/lib/static-content';
+import { characters, supportCards, skills, tierLists, getTierListByCategory } from '@/lib/static-content';
 import { Search, Filter, Trophy, Users, Sparkles, ChevronRight, Star, Calculator, TrendingUp } from 'lucide-react';
 
 // Load all data
 const tierList = getTierListByCategory('overall');
+const categoryCount = new Set(tierLists.map((entry) => entry.category)).size;
 
 // Get top tier items
 const topCharacters = characters.slice(0, 8);
@@ -15,24 +16,6 @@ const topSupportCards = supportCards.filter(card => card.rarity === 'SSR').slice
 const topTierCharacters = tierList
   .filter(item => item.item_type === 'character' && ['SS', 'S'].includes(item.tier))
   .slice(0, 6);
-
-// Prepare search data for client
-const searchableCharacters = characters.map(c => ({
-  id: c.id,
-  name_en: c.name_en,
-  name_ja: c.name_ja,
-  type: 'character',
-  rarity: c.rarity
-}));
-
-const searchableCards = supportCards.map(c => ({
-  id: c.id,
-  name_en: c.name_en,
-  name_ja: c.name_ja,
-  type: 'card',
-  rarity: c.rarity,
-  cardType: c.type
-}));
 ---
 
 <Layout 
@@ -76,11 +59,11 @@ const searchableCards = supportCards.map(c => ({
           <div class="text-xs sm:text-sm text-gray-600">SSR</div>
         </div>
         <div class="text-center">
-          <div class="text-xl sm:text-2xl font-bold gradient-text">30</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">{skills.length}</div>
           <div class="text-xs sm:text-sm text-gray-600">Skills</div>
         </div>
         <div class="text-center">
-          <div class="text-xl sm:text-2xl font-bold gradient-text">6</div>
+          <div class="text-xl sm:text-2xl font-bold gradient-text">{categoryCount}</div>
           <div class="text-xs sm:text-sm text-gray-600">Categories</div>
         </div>
         <div class="text-center">
@@ -183,6 +166,7 @@ const searchableCards = supportCards.map(c => ({
         {characters.map((character) => (
           <div class="character-item" 
                data-name={character.name_en.toLowerCase()}
+               data-search={`${character.name_en} ${character.name_jp}`.toLowerCase()}
                data-rarity={character.rarity}
                data-speed={character.attributes?.speed || 0}
                data-stamina={character.attributes?.stamina || 0}>
@@ -219,6 +203,7 @@ const searchableCards = supportCards.map(c => ({
         {supportCards.map((card) => (
           <div class="card-item"
                data-name={card.name_en.toLowerCase()}
+               data-search={`${card.name_en} ${card.name_jp}`.toLowerCase()}
                data-rarity={card.rarity}
                data-type={card.type}>
             <SupportCardCard card={card} client:load />
@@ -380,12 +365,6 @@ const searchableCards = supportCards.map(c => ({
 
   </style>
 
-  <script define:vars={{ searchableCharacters, searchableCards }}>
-    // Expose search data globally for Header component
-    window.__CHARACTERS__ = searchableCharacters;
-    window.__CARDS__ = searchableCards;
-  </script>
-
   <script>
     // Global search
     const searchInput = document.getElementById('global-search') as HTMLInputElement;
@@ -428,7 +407,7 @@ const searchableCards = supportCards.map(c => ({
       
       // Filter characters
       document.querySelectorAll('.character-item').forEach((item) => {
-        const name = item.getAttribute('data-name') || '';
+        const name = item.getAttribute('data-search') || item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         
         let show = name.includes(searchTerm);
@@ -450,7 +429,7 @@ const searchableCards = supportCards.map(c => ({
       
       // Filter support cards
       document.querySelectorAll('.card-item').forEach((item) => {
-        const name = item.getAttribute('data-name') || '';
+        const name = item.getAttribute('data-search') || item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         
         let show = name.includes(searchTerm);

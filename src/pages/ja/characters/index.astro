@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import HeaderJa from '@/components/HeaderJa.astro';
+import Header from '@/components/Header.astro';
 import CharacterCard from '@/components/CharacterCard';
 import { characters } from '@/lib/static-content';
 import { Filter, Search, Grid, List } from 'lucide-react';
@@ -15,7 +15,7 @@ const charactersByRarity = characters.reduce((acc, char) => {
 ---
 
 <Layout title="キャラクター - ウマ娘DB">
-  <HeaderJa />
+  <Header />
   
   <main class="container mx-auto px-4 py-8">
     <!-- Page Header -->
@@ -89,9 +89,10 @@ const charactersByRarity = characters.reduce((acc, char) => {
               {chars.map((character) => (
                 <div class="character-item" 
                      data-name={character.name_en.toLowerCase()} 
+                     data-search={`${character.name_en} ${character.name_jp}`.toLowerCase()}
                      data-rarity={character.rarity}
                      data-aptitudes={JSON.stringify(character.aptitudes)}>
-                  <CharacterCard character={character} client:load />
+                  <CharacterCard character={character} localePrefix="/ja" client:load />
                 </div>
               ))}
             </div>
@@ -135,7 +136,7 @@ const charactersByRarity = characters.reduce((acc, char) => {
       
       // Filter individual characters
       document.querySelectorAll('.character-item').forEach((item) => {
-        const name = item.getAttribute('data-name') || '';
+        const name = item.getAttribute('data-search') || item.getAttribute('data-name') || '';
         const rarity = item.getAttribute('data-rarity') || '';
         const aptitudes = JSON.parse(item.getAttribute('data-aptitudes') || '{}');
         

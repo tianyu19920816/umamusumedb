@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import HeaderJa from '@/components/HeaderJa.astro';
+import Header from '@/components/Header.astro';
 import CharacterCard from '@/components/CharacterCard';
 import SupportCardCard from '@/components/SupportCardCard';
 import { characters, supportCards, getTierListByCategory } from '@/lib/static-content';
@@ -15,7 +15,7 @@ const topTierCharacters = getTierListByCategory('overall')
 ---
 
 <Layout title="ウマ娘DB - ウマ娘プリティーダービー完全データベース">
-  <HeaderJa />
+  <Header />
   
   <main>
     <!-- Hero Section -->
@@ -115,7 +115,7 @@ const topTierCharacters = getTierListByCategory('overall')
           <div class="tab-content active" id="characters-tab">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {featuredCharacters.map((character) => (
-                <CharacterCard character={character} client:load />
+                <CharacterCard character={character} localePrefix="/ja" client:load />
               ))}
             </div>
             <div class="text-center mt-8">
@@ -129,7 +129,7 @@ const topTierCharacters = getTierListByCategory('overall')
           <div class="tab-content" id="support-cards-tab">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {featuredCards.map((card) => (
-                <SupportCardCard card={card} client:load />
+                <SupportCardCard card={card} localePrefix="/ja" client:load />
               ))}
             </div>
             <div class="text-center mt-8">

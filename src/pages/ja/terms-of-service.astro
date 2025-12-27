@@ -1,0 +1,33 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { ExternalLink } from 'lucide-react';
+---
+
+<Layout title="利用規約 - UmamusumeDB" description="UmamusumeDB の利用規約（英語版への案内）">
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8 max-w-3xl">
+    <Breadcrumb items={[{ label: '利用規約' }]} />
+
+    <div class="glass rounded-2xl p-6 sm:p-8">
+      <h1 class="text-2xl sm:text-3xl font-display gradient-text mb-4">利用規約</h1>
+      <p class="text-sm sm:text-base text-gray-600 mb-6">
+        法的整合性のため、正式な規約本文は英語版を参照してください。
+      </p>
+
+      <a
+        href="/terms-of-service/"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-uma-primary text-white hover:bg-uma-primary/90 transition-colors"
+      >
+        <ExternalLink className="w-4 h-4" />
+        英語版 利用規約を開く
+      </a>
+    </div>
+  </main>
+</Layout>
+
+
+
+
