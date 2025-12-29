@@ -151,3 +151,5 @@ console.log(`No match found: ${notFoundCount}`);
 console.log('\nSupport cards updated with character_image_url field.');
 console.log('Components should now use card.character_image_url as fallback when card.image_url is unavailable.');
 
+
+
