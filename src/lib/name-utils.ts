@@ -10,3 +10,4 @@ export function stripVariantName(nameEn: string): string {
 
 
 
+
