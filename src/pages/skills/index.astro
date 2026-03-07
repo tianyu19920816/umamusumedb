@@ -2,16 +2,93 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
+import SkillFilter from '@/components/tools/SkillFilter';
 import { skills } from '@/lib/static-content';
-import { Search, Sparkles, Filter } from 'lucide-react';
+import { Search, Sparkles, Filter, Zap, Target, Timer, MapPin, Wind } from 'lucide-react';
+
+// Pre-process skills for enhanced filtering
+const processedSkills = skills.map(skill => {
+  // Infer phase from trigger condition
+  const trigger = (skill.trigger_condition || '').toLowerCase();
+  let phase = 'other';
+  if (trigger.includes('start') || trigger.includes('immediately')) phase = 'start';
+  else if (trigger.includes('middle') || trigger.includes('throughout')) phase = 'middle';
+  else if (trigger.includes('final') || trigger.includes('last') || trigger.includes('spurt')) phase = 'final';
+  else if (trigger.includes('corner') || trigger.includes('curve')) phase = 'corner';
+  else if (trigger.includes('straight')) phase = 'straight';
+
+  // Infer distance type
+  const effect = (skill.effect || '').toLowerCase();
+  let distance = 'all';
+  if (trigger.includes('sprint') || effect.includes('sprint')) distance = 'sprint';
+  else if (trigger.includes('mile') || effect.includes('mile')) distance = 'mile';
+  else if (trigger.includes('medium') || trigger.includes('middle distance')) distance = 'medium';
+  else if (trigger.includes('long') || effect.includes('long')) distance = 'long';
+
+  // Infer running style
+  let style = 'all';
+  if (trigger.includes('escap') || trigger.includes('lead position') || effect.includes('escap')) style = 'escape';
+  else if (trigger.includes('lead') || trigger.includes('1st') || trigger.includes('chase')) style = 'lead';
+  else if (trigger.includes('between') || trigger.includes('overtaking') || trigger.includes('pass')) style = 'between';
+  else if (trigger.includes('chase') || trigger.includes('5th') || trigger.includes('last')) style = 'chase';
+
+  // Infer effect type
+  let effectType = 'other';
+  if (effect.includes('speed')) effectType = 'speed';
+  else if (effect.includes('acceleration') || effect.includes('accel')) effectType = 'acceleration';
+  else if (effect.includes('stamina') || effect.includes('energy')) effectType = 'stamina';
+  else if (effect.includes('power')) effectType = 'power';
+  else if (effect.includes('position')) effectType = 'positioning';
+  else if (effect.includes('stat')) effectType = 'all_stats';
+
+  return {
+    ...skill,
+    _phase: phase,
+    _distance: distance,
+    _style: style,
+    _effectType: effectType
+  };
+});
 
 const rarities = ['SS', 'S', 'A', 'B', 'C'] as const;
 const types = ['all', 'unique', 'common', 'training'] as const;
+const phases = [
+  { value: 'all', label: 'All Phases' },
+  { value: 'start', label: '🚀 Start' },
+  { value: 'middle', label: '⚡ Middle' },
+  { value: 'final', label: '🔥 Final' },
+  { value: 'corner', label: '🔄 Corner' },
+  { value: 'straight', label: '📏 Straight' }
+] as const;
+const distances = [
+  { value: 'all', label: 'All Distances' },
+  { value: 'sprint', label: '⚡ Sprint' },
+  { value: 'mile', label: '🏃 Mile' },
+  { value: 'medium', label: '🏇 Medium' },
+  { value: 'long', label: '🏔️ Long' }
+] as const;
+const styles = [
+  { value: 'all', label: 'All Styles' },
+  { value: 'escape', label: '💨 Escape (逃)' },
+  { value: 'lead', label: '🏆 Lead (先)' },
+  { value: 'between', label: '⚡ Between (差)' },
+  { value: 'chase', label: '🎯 Chase (追)' }
+] as const;
+const effectTypes = [
+  { value: 'all', label: 'All Effects' },
+  { value: 'speed', label: '🚀 Speed' },
+  { value: 'acceleration', label: '⚡ Acceleration' },
+  { value: 'stamina', label: '💚 Stamina' },
+  { value: 'power', label: '💪 Power' },
+  { value: 'positioning', label: '🎯 Position' },
+  { value: 'all_stats', label: '📊 All Stats' },
+  { value: 'other', label: '🎲 Other' }
+] as const;
 ---
 
 <Layout
   title="Skills - UmamusumeDB"
-  description="Browse all Uma Musume Pretty Derby skills with effects, triggers, rarity, and cross-links to characters and support cards."
+  description="Browse all Uma Musume Pretty Derby skills with advanced filtering. Filter by phase, distance, running style, effect type, and more."
 >
   <Header />
 
@@ -19,79 +96,218 @@ const types = ['all', 'unique', 'common', 'training'] as const;
     <Breadcrumb items={[{ label: 'Skills' }]} />
 
     <div class="mb-6 sm:mb-8">
-      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Skills</h1>
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Skills Database</h1>
       <p class="text-sm sm:text-base text-gray-600">
-        {skills.length} skills. Search by English/Japanese name, trigger condition, or effect text.
+        Browse {skills.length} skills with advanced filtering. Find the perfect skills for your training strategy.
       </p>
     </div>
 
-    <!-- Filters and Search -->
-    <div class="glass rounded-xl p-4 mb-8">
-      <div class="flex flex-col md:flex-row gap-4">
+    <!-- Enhanced Filters -->
+    <div class="glass rounded-xl p-4 mb-6">
+      <!-- Search Row -->
+      <div class="flex flex-col md:flex-row gap-4 mb-4">
         <div class="flex-1 relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
           <input
             type="text"
             id="skill-search"
-            placeholder="Search skills..."
+            placeholder="Search skill name, effect, or trigger..."
             class="w-full pl-10 pr-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50 focus:outline-none focus:border-uma-primary"
           />
         </div>
+        <button
+          id="reset-filters"
+          class="px-4 py-2 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-sm font-medium text-gray-600 transition"
+        >
+          Reset Filters
+        </button>
+      </div>
 
-        <select id="rarity-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
-          <option value="all">All Rarities</option>
-          {rarities.map((r) => (
-            <option value={r}>{r}</option>
-          ))}
-        </select>
+      <!-- Filter Rows -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <!-- Rarity Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">Rarity</label>
+          <select id="rarity-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            <option value="all">All Rarities</option>
+            {rarities.map((r) => (
+              <option value={r}>{r} Rank</option>
+            ))}
+          </select>
+        </div>
 
-        <select id="type-filter" class="px-4 py-2 rounded-lg border border-uma-primary/20 bg-white/50">
-          <option value="all">All Types</option>
-          <option value="unique">Unique</option>
-          <option value="common">Common</option>
-          <option value="training">Training</option>
-        </select>
+        <!-- Type Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">Skill Type</label>
+          <select id="type-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            <option value="all">All Types</option>
+            <option value="unique">Unique</option>
+            <option value="common">Common</option>
+            <option value="training">Training</option>
+          </select>
+        </div>
+
+        <!-- Phase Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">
+            <Timer className="w-3 h-3 inline mr-1" />
+            Phase
+          </label>
+          <select id="phase-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            {phases.map((p) => (
+              <option value={p.value}>{p.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Distance Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">
+            <MapPin className="w-3 h-3 inline mr-1" />
+            Distance
+          </label>
+          <select id="distance-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            {distances.map((d) => (
+              <option value={d.value}>{d.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Style Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">
+            <Wind className="w-3 h-3 inline mr-1" />
+            Running Style
+          </label>
+          <select id="style-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            {styles.map((s) => (
+              <option value={s.value}>{s.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <!-- Effect Type Filter -->
+        <div>
+          <label class="text-xs font-medium text-gray-600 mb-1 block">
+            <Zap className="w-3 h-3 inline mr-1" />
+            Effect Type
+          </label>
+          <select id="effect-filter" class="w-full px-3 py-2 rounded-lg border border-uma-primary/20 bg-white/50 text-sm">
+            {effectTypes.map((e) => (
+              <option value={e.value}>{e.label}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <!-- Active Filter Tags -->
+      <div id="active-filters" class="flex flex-wrap gap-2 mt-4 min-h-[28px]">
+        <!-- Filter tags will be inserted here by JS -->
       </div>
     </div>
 
+    <!-- Results Count -->
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-sm text-gray-600">
+        Showing <span id="result-count" class="font-semibold text-uma-primary">{skills.length}</span> skills
+      </div>
+      <div class="text-xs text-gray-500">
+        Filter by race phase, distance, and style to find optimal skills
+      </div>
+    </div>
+
+    <!-- Skills Grid -->
     <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
-      {skills.map((skill) => (
+      {processedSkills.map((skill) => (
         <a
           href={`/skills/${skill.id}/`}
-          class="skill-item bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-uma-primary/10 p-5 block"
+          class="skill-item bg-white rounded-xl shadow-lg hover:shadow-xl transition-all border border-uma-primary/10 p-5 block group"
           data-search={`${skill.name_en} ${skill.name_jp || ''} ${skill.effect || ''} ${skill.trigger_condition || ''}`.toLowerCase()}
           data-rarity={skill.rarity || ''}
           data-type={(skill.skill_type || '').toLowerCase()}
+          data-phase={skill._phase}
+          data-distance={skill._distance}
+          data-style={skill._style}
+          data-effect-type={skill._effectType}
         >
           <div class="flex items-start justify-between gap-3">
-            <div>
-              <h2 class="font-bold text-lg">{skill.name_en}</h2>
-              {skill.name_jp && <div class="text-sm text-gray-600 font-jp">{skill.name_jp}</div>}
+            <div class="flex-1 min-w-0">
+              <h2 class="font-bold text-lg group-hover:text-uma-primary transition-colors">{skill.name_en}</h2>
+              {skill.name_jp && <div class="text-sm text-gray-600 font-jp truncate">{skill.name_jp}</div>}
             </div>
-            <div class="flex flex-col items-end gap-2">
+            <div class="flex flex-col items-end gap-2 flex-shrink-0">
               {skill.rarity && (
-                <span class="text-xs px-2 py-1 rounded-full bg-uma-primary/10 text-uma-primary font-bold">
+                <span class={`text-xs px-2 py-1 rounded-full font-bold ${
+                  skill.rarity === 'SS' ? 'bg-red-100 text-red-700' :
+                  skill.rarity === 'S' ? 'bg-orange-100 text-orange-700' :
+                  skill.rarity === 'A' ? 'bg-yellow-100 text-yellow-700' :
+                  skill.rarity === 'B' ? 'bg-blue-100 text-blue-700' :
+                  'bg-gray-100 text-gray-700'
+                }`}>
                   {skill.rarity}
                 </span>
               )}
               {skill.skill_type && (
-                <span class="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700 uppercase">
+                <span class={`text-[11px] px-2 py-1 rounded-full uppercase font-medium ${
+                  skill.skill_type === 'unique' ? 'bg-purple-100 text-purple-700' :
+                  skill.skill_type === 'common' ? 'bg-green-100 text-green-700' :
+                  'bg-gray-100 text-gray-700'
+                }`}>
                   {skill.skill_type}
                 </span>
               )}
             </div>
           </div>
 
-          <div class="mt-3 text-sm text-gray-700">
-            <div class="flex items-center gap-2 text-gray-600">
-              <Sparkles className="w-4 h-4 text-uma-accent" />
-              <span class="truncate">{skill.effect || skill.description_en || '—'}</span>
+          <div class="mt-3 text-sm">
+            <div class="flex items-start gap-2 text-gray-700">
+              <Sparkles className="w-4 h-4 text-uma-accent flex-shrink-0 mt-0.5" />
+              <span class="line-clamp-2">{skill.effect || skill.description_en || '—'}</span>
             </div>
             {skill.trigger_condition && (
-              <div class="flex items-center gap-2 mt-2 text-gray-500">
-                <Filter className="w-4 h-4" />
-                <span class="truncate">{skill.trigger_condition}</span>
+              <div class="flex items-start gap-2 mt-2 text-gray-500">
+                <Target className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span class="line-clamp-1 text-xs">{skill.trigger_condition}</span>
               </div>
+            )}
+          </div>
+
+          {/* Inferred Tags */}
+          <div class="mt-3 flex flex-wrap gap-1">
+            {skill._phase !== 'other' && (
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-blue-50 text-blue-600 capitalize">
+                {skill._phase === 'start' ? '🚀 Start' :
+                 skill._phase === 'middle' ? '⚡ Middle' :
+                 skill._phase === 'final' ? '🔥 Final' :
+                 skill._phase === 'corner' ? '🔄 Corner' :
+                 skill._phase === 'straight' ? '📏 Straight' : skill._phase}
+              </span>
+            )}
+            {skill._distance !== 'all' && (
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-green-50 text-green-600 capitalize">
+                {skill._distance === 'sprint' ? '⚡ Sprint' :
+                 skill._distance === 'mile' ? '🏃 Mile' :
+                 skill._distance === 'medium' ? '🏇 Medium' :
+                 skill._distance === 'long' ? '🏔️ Long' : skill._distance}
+              </span>
+            )}
+            {skill._style !== 'all' && (
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-50 text-purple-600">
+                {skill._style === 'escape' ? '💨 Escape' :
+                 skill._style === 'lead' ? '🏆 Lead' :
+                 skill._style === 'between' ? '⚡ Between' :
+                 skill._style === 'chase' ? '🎯 Chase' : skill._style}
+              </span>
+            )}
+            {skill._effectType !== 'other' && (
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-orange-50 text-orange-600 capitalize">
+                {skill._effectType === 'speed' ? '🚀 Speed' :
+                 skill._effectType === 'acceleration' ? '⚡ Accel' :
+                 skill._effectType === 'stamina' ? '💚 Stamina' :
+                 skill._effectType === 'power' ? '💪 Power' :
+                 skill._effectType === 'positioning' ? '🎯 Position' :
+                 skill._effectType === 'all_stats' ? '📊 All Stats' : skill._effectType}
+              </span>
             )}
           </div>
         </a>
@@ -99,50 +315,193 @@ const types = ['all', 'unique', 'common', 'training'] as const;
     </div>
 
     <div id="no-results" class="hidden text-center py-12">
-      <p class="text-xl text-gray-500">No skills found matching your filters</p>
+      <Filter className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+      <p class="text-xl text-gray-500 mb-2">No skills found matching your filters</p>
+      <p class="text-sm text-gray-400">Try adjusting your search or filter criteria</p>
+      <button
+        id="clear-all-filters"
+        class="mt-4 px-4 py-2 bg-uma-primary text-white rounded-lg hover:bg-uma-primary/90 transition"
+      >
+        Clear All Filters
+      </button>
+    </div>
+
+    <!-- Usage Guide -->
+    <div class="mt-8 glass rounded-xl p-6">
+      <h2 class="text-lg font-semibold mb-4">Skill Filter Guide</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-gray-700">
+        <div>
+          <div class="font-medium text-uma-primary mb-2 flex items-center gap-2">
+            <Timer className="w-4 h-4" />
+            Race Phase
+          </div>
+          <ul class="space-y-1 text-xs text-gray-600">
+            <li><strong>Start:</strong> Skills that activate at the beginning</li>
+            <li><strong>Middle:</strong> Mid-race phase skills</li>
+            <li><strong>Final:</strong> Last spurt / closing phase</li>
+            <li><strong>Corner/Straight:</strong> Position-based triggers</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-medium text-uma-primary mb-2 flex items-center gap-2">
+            <MapPin className="w-4 h-4" />
+            Distance
+          </div>
+          <ul class="space-y-1 text-xs text-gray-600">
+            <li><strong>Sprint:</strong> Short races (1000-1600m)</li>
+            <li><strong>Mile:</strong> Medium-short (1600-2000m)</li>
+            <li><strong>Medium:</strong> Classic distances (2000-2400m)</li>
+            <li><strong>Long:</strong> Stamina-intensive (2500m+)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-medium text-uma-primary mb-2 flex items-center gap-2">
+            <Wind className="w-4 h-4" />
+            Running Style
+          </div>
+          <ul class="space-y-1 text-xs text-gray-600">
+            <li><strong>Escape:</strong> Front runner (逃げ)</li>
+            <li><strong>Lead:</strong> Pace chaser (先行)</li>
+            <li><strong>Between:</strong> Mid-pack surger (差し)</li>
+            <li><strong>Chase:</strong> Late closer (追込)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-medium text-uma-primary mb-2 flex items-center gap-2">
+            <Zap className="w-4 h-4" />
+            Effect Type
+          </div>
+          <ul class="space-y-1 text-xs text-gray-600">
+            <li><strong>Speed:</strong> Velocity increase</li>
+            <li><strong>Acceleration:</strong> Speed build-up</li>
+            <li><strong>Stamina:</strong> Energy efficiency</li>
+            <li><strong>Power:</strong> Strength boost</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </main>
 
   <script>
+    // DOM Elements
     const searchInput = document.getElementById('skill-search') as HTMLInputElement;
     const rarityFilter = document.getElementById('rarity-filter') as HTMLSelectElement;
     const typeFilter = document.getElementById('type-filter') as HTMLSelectElement;
+    const phaseFilter = document.getElementById('phase-filter') as HTMLSelectElement;
+    const distanceFilter = document.getElementById('distance-filter') as HTMLSelectElement;
+    const styleFilter = document.getElementById('style-filter') as HTMLSelectElement;
+    const effectFilter = document.getElementById('effect-filter') as HTMLSelectElement;
+    const resetBtn = document.getElementById('reset-filters') as HTMLButtonElement;
+    const clearAllBtn = document.getElementById('clear-all-filters') as HTMLButtonElement;
     const container = document.getElementById('skills-container');
     const noResults = document.getElementById('no-results');
+    const resultCount = document.getElementById('result-count');
+    const activeFiltersContainer = document.getElementById('active-filters');
+
+    // Filter state
+    const filterLabels: Record<string, Record<string, string>> = {
+      rarity: { SS: 'SS Rank', S: 'S Rank', A: 'A Rank', B: 'B Rank', C: 'C Rank' },
+      type: { unique: 'Unique', common: 'Common', training: 'Training' },
+      phase: { start: '🚀 Start', middle: '⚡ Middle', final: '🔥 Final', corner: '🔄 Corner', straight: '📏 Straight' },
+      distance: { sprint: '⚡ Sprint', mile: '🏃 Mile', medium: '🏇 Medium', long: '🏔️ Long' },
+      style: { escape: '💨 Escape', lead: '🏆 Lead', between: '⚡ Between', chase: '🎯 Chase' },
+      effect: { speed: '🚀 Speed', acceleration: '⚡ Accel', stamina: '💚 Stamina', power: '💪 Power', positioning: '🎯 Position', all_stats: '📊 All Stats', other: '🎲 Other' }
+    };
+
+    function updateActiveFilters() {
+      if (!activeFiltersContainer) return;
+      
+      const filters = [];
+      if (rarityFilter?.value !== 'all') filters.push({ type: 'rarity', value: rarityFilter.value, label: filterLabels.rarity[rarityFilter.value] });
+      if (typeFilter?.value !== 'all') filters.push({ type: 'type', value: typeFilter.value, label: filterLabels.type[typeFilter.value] });
+      if (phaseFilter?.value !== 'all') filters.push({ type: 'phase', value: phaseFilter.value, label: filterLabels.phase[phaseFilter.value] });
+      if (distanceFilter?.value !== 'all') filters.push({ type: 'distance', value: distanceFilter.value, label: filterLabels.distance[distanceFilter.value] });
+      if (styleFilter?.value !== 'all') filters.push({ type: 'style', value: styleFilter.value, label: filterLabels.style[styleFilter.value] });
+      if (effectFilter?.value !== 'all') filters.push({ type: 'effect', value: effectFilter.value, label: filterLabels.effect[effectFilter.value] });
+
+      activeFiltersContainer.innerHTML = filters.map(f => `
+        <button class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-uma-primary/10 text-uma-primary text-xs font-medium hover:bg-uma-primary/20 transition"
+          data-filter-type="${f.type}" data-filter-value="${f.value}">
+          ${f.label}
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      `).join('');
+
+      // Add click handlers to remove individual filters
+      activeFiltersContainer.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const type = btn.getAttribute('data-filter-type');
+          const filterEl = document.getElementById(`${type}-filter`) as HTMLSelectElement;
+          if (filterEl) {
+            filterEl.value = 'all';
+            filterSkills();
+          }
+        });
+      });
+    }
 
     function filterSkills() {
       const q = searchInput?.value.toLowerCase().trim() || '';
       const rarity = rarityFilter?.value || 'all';
       const type = typeFilter?.value || 'all';
+      const phase = phaseFilter?.value || 'all';
+      const distance = distanceFilter?.value || 'all';
+      const style = styleFilter?.value || 'all';
+      const effectType = effectFilter?.value || 'all';
 
-      let has = false;
+      let visibleCount = 0;
+
       document.querySelectorAll('.skill-item').forEach((item) => {
         const haystack = item.getAttribute('data-search') || '';
         const itemRarity = item.getAttribute('data-rarity') || '';
         const itemType = item.getAttribute('data-type') || '';
+        const itemPhase = item.getAttribute('data-phase') || '';
+        const itemDistance = item.getAttribute('data-distance') || '';
+        const itemStyle = item.getAttribute('data-style') || '';
+        const itemEffect = item.getAttribute('data-effect-type') || '';
 
         const matchesSearch = !q || haystack.includes(q);
         const matchesRarity = rarity === 'all' || itemRarity === rarity;
         const matchesType = type === 'all' || itemType === type;
+        const matchesPhase = phase === 'all' || itemPhase === phase;
+        const matchesDistance = distance === 'all' || itemDistance === distance;
+        const matchesStyle = style === 'all' || itemStyle === style;
+        const matchesEffect = effectType === 'all' || itemEffect === effectType;
 
-        const show = matchesSearch && matchesRarity && matchesType;
+        const show = matchesSearch && matchesRarity && matchesType && matchesPhase && 
+                     matchesDistance && matchesStyle && matchesEffect;
+        
         (item as HTMLElement).style.display = show ? '' : 'none';
-        if (show) has = true;
+        if (show) visibleCount++;
       });
 
-      if (noResults) noResults.classList.toggle('hidden', has);
-      if (container) container.classList.toggle('hidden', !has);
+      if (noResults) noResults.classList.toggle('hidden', visibleCount > 0);
+      if (container) container.classList.toggle('hidden', visibleCount === 0);
+      if (resultCount) resultCount.textContent = visibleCount.toString();
+
+      updateActiveFilters();
     }
 
+    function resetAllFilters() {
+      if (searchInput) searchInput.value = '';
+      if (rarityFilter) rarityFilter.value = 'all';
+      if (typeFilter) typeFilter.value = 'all';
+      if (phaseFilter) phaseFilter.value = 'all';
+      if (distanceFilter) distanceFilter.value = 'all';
+      if (styleFilter) styleFilter.value = 'all';
+      if (effectFilter) effectFilter.value = 'all';
+      filterSkills();
+    }
+
+    // Event listeners
     searchInput?.addEventListener('input', filterSkills);
     rarityFilter?.addEventListener('change', filterSkills);
     typeFilter?.addEventListener('change', filterSkills);
+    phaseFilter?.addEventListener('change', filterSkills);
+    distanceFilter?.addEventListener('change', filterSkills);
+    styleFilter?.addEventListener('change', filterSkills);
+    effectFilter?.addEventListener('change', filterSkills);
+    resetBtn?.addEventListener('click', resetAllFilters);
+    clearAllBtn?.addEventListener('click', resetAllFilters);
   </script>
 </Layout>
-
-
-
-
-
-
-

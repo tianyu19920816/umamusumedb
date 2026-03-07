@@ -1,0 +1,73 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import CharacterComparisonTool from '@/components/tools/CharacterComparisonTool';
+import { characters } from '@/lib/static-content';
+---
+
+<Layout
+  title="Character Comparison - UmamusumeDB"
+  description="Compare Uma Musume characters side by side. Analyze stats, aptitudes, growth rates, and skills to find your perfect training candidate."
+>
+  <Header />
+
+  <main class="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
+    <Breadcrumb items={[{ label: 'Tools', href: '/tools/' }, { label: 'Character Comparison' }]} />
+
+    <!-- Page Header -->
+    <div class="mb-6 sm:mb-8">
+      <h1 class="text-3xl sm:text-4xl font-display gradient-text mb-3 sm:mb-4">Character Comparison</h1>
+      <p class="text-sm sm:text-base text-gray-600">
+        Compare up to 4 Uma Musume side by side. Analyze stats, aptitudes, growth rates, and skills to find your perfect training candidate.
+      </p>
+    </div>
+
+    <!-- Comparison Tool -->
+    <CharacterComparisonTool characters={characters} client:load />
+
+    <!-- Usage Guide -->
+    <div class="mt-8 glass rounded-xl p-6">
+      <h2 class="text-lg font-semibold mb-3">How to Use</h2>
+      <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-700">
+        <div>
+          <div class="font-medium text-uma-primary mb-1">1. Select Characters</div>
+          <p>Click "Add Character" to choose from the database. You can compare up to 4 characters at once.</p>
+        </div>
+        <div>
+          <div class="font-medium text-uma-primary mb-1">2. Analyze Stats</div>
+          <p>Compare base stats, max stats, and growth rates. Higher growth = faster stat gains during training.</p>
+        </div>
+        <div>
+          <div class="font-medium text-uma-primary mb-1">3. Check Aptitudes</div>
+          <p>S, A, B ratings indicate compatibility. Higher ratings mean better performance and easier training.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Legend -->
+    <div class="mt-6 glass rounded-xl p-6">
+      <h2 class="text-lg font-semibold mb-3">Understanding the Data</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-medium mb-2 text-gray-800">Aptitude Ratings</h3>
+          <div class="space-y-1 text-gray-600">
+            <div class="flex items-center gap-2"><span class="w-6 h-6 flex items-center justify-center rounded bg-red-100 text-red-700 font-bold text-xs">S</span> <span>Best - Excellent performance and training efficiency</span></div>
+            <div class="flex items-center gap-2"><span class="w-6 h-6 flex items-center justify-center rounded bg-orange-100 text-orange-700 font-bold text-xs">A</span> <span>Great - Good performance with normal training</span></div>
+            <div class="flex items-center gap-2"><span class="w-6 h-6 flex items-center justify-center rounded bg-yellow-100 text-yellow-700 font-bold text-xs">B</span> <span>Good - Decent performance, slightly harder training</span></div>
+            <div class="flex items-center gap-2"><span class="w-6 h-6 flex items-center justify-center rounded bg-gray-100 text-gray-600 font-bold text-xs">C-F</span> <span>Challenging - Significantly harder to train</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-medium mb-2 text-gray-800">Growth Rate Impact</h3>
+          <div class="space-y-1 text-gray-600">
+            <div class="flex items-center gap-2"><span class="text-green-600 font-bold">20%+</span> <span>Excellent - Very fast stat growth</span></div>
+            <div class="flex items-center gap-2"><span class="text-blue-600 font-bold">10-20%</span> <span>Good - Above average growth</span></div>
+            <div class="flex items-center gap-2"><span class="text-yellow-600 font-bold">0-10%</span> <span>Average - Standard growth rate</span></div>
+            <div class="flex items-center gap-2"><span class="text-gray-500 font-bold">&lt;0%</span> <span>Below Average - Slower growth, needs more focus</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
